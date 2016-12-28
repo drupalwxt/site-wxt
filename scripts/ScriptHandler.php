@@ -14,7 +14,6 @@ use Symfony\Component\Filesystem\Filesystem;
 
 class ScriptHandler {
 
-
   /**
    * Retrieves the Drupal root directory.
    *
