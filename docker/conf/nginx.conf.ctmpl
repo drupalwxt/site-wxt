@@ -1,0 +1,50 @@
+{{ range "nginx" | ls }}
+{{ .Key }} {{ .Value }};{{ end }}
+
+events {
+  {{ range "nginx/events" | ls }}
+  {{ .Key }} {{ .Value }};{{ end }}
+}
+
+http {
+  {{ range "nginx/http" | ls }}
+  {{ .Key }} {{ .Value }};{{ end }}
+
+  # Virtual Hosts
+  include /etc/nginx/conf.d/*.conf;
+
+  server {
+      #IPv4
+      listen 80;
+
+      #IPv6
+      listen [::]:80;
+
+      # Filesystem root of the site and index with fallback.
+      root /var/www/html;
+      index index.php index.html index.htm;
+
+      # Make site accessible from http://wxt.dev;
+      server_name wxt.dev;
+
+      location / {
+          # First attempt to serve request as file, then
+          # as directory, then fall back to displaying a 404.
+          try_files $uri $uri/ /index.html /index.php?$query_string;
+      }
+
+      location ~ \.php$ {
+        proxy_intercept_errors on;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        #NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $request_filename;
+        fastcgi_intercept_errors on;
+        fastcgi_pass web:9000;
+      }
+
+      location ~ /\.ht {
+        deny all;
+      }
+  }
+}

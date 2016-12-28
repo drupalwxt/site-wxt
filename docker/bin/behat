@@ -1,0 +1,32 @@
+#!/bin/bash
+# strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+IFS=$'\n\t'
+
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if ! type docker > /dev/null; then
+  echo "Docker is required to be present on $PATH"
+  exit 0
+fi
+
+if [[ "${CI:-}" ]] ; then
+  image='sitewxt_web_scripts'
+else
+  image='sitewxt_web'
+fi
+
+docker run -i \
+  -e "IDE_BEHAT_VERSION=3.2.2" \
+  -e "IDE_BEHAT_DIR=/var/www/vendor/behat/behat/bin/behat" \
+  --entrypoint=behat \
+  -v "${PWD}":"${PWD}" \
+  -v /tmp/:/tmp/ \
+  -w "/var/www/html/profiles/wxt/modules/custom/wxt_test/tests/" \
+  -e BEHAT_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drupal":{"drupal_root":"/var/www/html"}, "drush":{"root":"/var/www/html"}}, "Behat\\MinkExtension":{"base_url" : "http://nginx", "selenium2":{"wd_host":"http://hub:4444/wd/hub"}}}}' \
+  --sig-proxy=true \
+  --pid=host \
+  --volumes-from wxt_web \
+  --net sitewxt_default \
+  --rm \
+  $image "$@"

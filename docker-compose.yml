@@ -1,0 +1,128 @@
+# Docker Compose (v2)
+
+version: "2"
+services:
+
+  web:
+    build: docker/images/dev
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - db
+    environment:
+     - DRUPAL_SETTINGS=development
+    ports:
+     - "9000"
+    container_name: wxt_web
+
+  db:
+    image: mysql:5.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=wxt
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    container_name: wxt_db
+    command: mysqld --max_allowed_packet=32M
+
+  consul:
+    image: consul
+    ports:
+      - '8400:8400'   # rpc/rest
+      - '8500:8500'   # ui
+      - '8600:53/udp' # dns
+    restart: always
+    container_name: wxt_consul
+
+  registrator:
+    image: 'gliderlabs/registrator:latest'
+    volumes:
+      - '/var/run/docker.sock:/tmp/docker.sock'
+    depends_on:
+      - consul
+    command: 'consul://consul:8500'
+    restart: always
+    container_name: wxt_registrator
+
+  nginx:
+    image: 'drupalwxt/nginx-consul-template'
+    environment:
+      - CONSUL_KV_PREFIX=nginx
+      - CONSUL_PORT_8500_TCP_ADDR=consul
+    volumes:
+     - ./html:/var/www/html
+     - ./docker/conf/nginx.conf.ctmpl:/etc/nginx/nginx.conf.ctmpl
+    ports:
+      - '80:80'
+    depends_on:
+      - consul
+      - registrator
+      - web
+    restart: always
+    container_name: wxt_nginx
+
+  cron:
+    build: docker/images/cron
+    volumes:
+      - ./:/var/www
+    depends_on:
+     - db
+     - web
+    environment:
+     - DRUPAL_SETTINGS=development
+    container_name: wxt_cron
+
+  hub:
+    image: drupalwxt/selenium:hub
+    ports:
+      - "4444:4444"
+    depends_on:
+     - db
+     - web
+    container_name: wxt_hub
+
+  firefox:
+    image: drupalwxt/selenium:node-firefox
+    depends_on:
+     - db
+     - web
+     - hub
+    container_name: wxt_firefox
+
+  mailhog:
+    image: mailhog/mailhog
+    hostname: mailhog
+    ports:
+      - '1025:1025'
+      - '8025:8025'
+    container_name: wxt_mailhog
+
+#  solr:
+#    image: solr:6.1-alpine
+#    hostname: solr
+#    ports:
+#      - "8983:8983"
+#      - "10616:10616"
+#    container_name: wxt_solr
+
+#  vault:
+#    image: vault:0.6
+#    hostname: vault
+#    environment:
+#      - 'VAULT_LOCAL_CONFIG={"backend": {"file": {"path": "/vault/file"}}}'
+#    ports:
+#      - "8200:8200"
+#    volumes:
+#      - vault_data:/vault/file
+#    cap_add:
+#      - IPC_LOCK
+#    mem_limit: 250MB
+#    memswap_limit: -1
+#    command: 'server'
+#    container_name: wxt_vault
+
+volumes:
+  db_data:
+#  vault_data:

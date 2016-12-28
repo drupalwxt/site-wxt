@@ -1,0 +1,32 @@
+#!/bin/bash
+# strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+IFS=$'\n\t'
+
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if ! type docker > /dev/null; then
+  echo "Docker is required to be present on $PATH"
+  exit 0
+fi
+
+if [[ "${CI:-}" ]] ; then
+  image='sitewxt_web_scripts'
+else
+  image='sitewxt_web'
+fi
+
+docker run -i \
+  --entrypoint=php \
+  -v "${PWD}":"${PWD}" \
+  -v /tmp/:/tmp/ \
+  --sig-proxy=true \
+  --pid=host \
+  --volumes-from wxt_web \
+  --net sitewxt_default \
+  --rm \
+  $image /var/www/html/core/scripts/run-tests.sh --php /usr/local/bin/php \
+                                                 --url http://wxt.dev \
+                                                 --color \
+                                                 --verbose \
+                                                 "$@"

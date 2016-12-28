@@ -1,0 +1,38 @@
+#!/bin/bash
+# strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+IFS=$'\n\t'
+
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if ! type docker > /dev/null; then
+  echo "Docker is required to be present on $PATH"
+  exit 0
+fi
+
+if [[ "${CI:-}" ]] ; then
+  image='sitewxt_web_scripts'
+else
+  image='sitewxt_web'
+fi
+
+if [ -z "${HTTP_PROXY-}" ]; then
+  HTTP_PROXY=''
+fi
+
+docker run -i \
+  --entrypoint=drupal \
+  -v "${PWD}":"${PWD}" \
+  -v "${PWD}/conf/docker/console":"/root/.console" \
+  -v /tmp/:/tmp/ \
+  -w "/var/www/html" \
+  -e HTTP_PROXY=$HTTP_PROXY \
+  -e HTTPS_PROXY=$HTTP_PROXY \
+  -e http_proxy=$HTTP_PROXY \
+  -e https_proxy=$HTTP_PROXY \
+  --sig-proxy=true \
+  --pid=host \
+  --volumes-from wxt_web \
+  --net sitewxt_default \
+  --rm \
+  $image "$@"

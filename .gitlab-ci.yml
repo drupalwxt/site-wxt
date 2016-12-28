@@ -1,0 +1,25 @@
+stages:
+  - build
+
+variables:
+  PROJECT_NAME: drupalwxt/site-wxt
+
+image: drupalwxt/gitlab-ci
+
+services:
+  - docker:dind
+
+before_script:
+  - docker info
+
+build:
+  stage: build
+  script:
+   - echo "Building $PROJECT_NAME test runner"
+   - composer install
+   - export COMPOSE_HTTP_TIMEOUT=200
+   - docker-compose -f docker-compose-ci.yml up -d
+   - docker ps -a
+   - sleep 10
+   - make drupal_install
+   - make test

@@ -1,0 +1,15 @@
+#!/bin/bash
+# strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+IFS=$'\n\t'
+
+echo "Linting Drupal WxT Dockerfile(s) ..."
+
+find . -type f \
+       -name Dockerfile \
+       -exec sh -c 'ls {} && \
+                    printf "\n" && \
+                    docker run -it \
+                               -v ${PWD}/{}:/Dockerfile:ro \
+                               --rm \
+                               redcoolbeans/dockerlint' \;
