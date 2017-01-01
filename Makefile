@@ -70,6 +70,10 @@ phpunit:
                 --testsuite=kernel \
                 --group wxt
 
+	./docker/bin/phpunit --colors=always \
+                --testsuite=unit \
+                --group wxt
+
 test: lint phpcs phpunit behat
 
 up:
