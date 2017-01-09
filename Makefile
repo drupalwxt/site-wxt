@@ -2,7 +2,7 @@ NAME := drupalwxt/site-wxt
 VERSION := $(or $(VERSION),$(VERSION),'latest')
 PLATFORM := $(shell uname -s)
 
-all: drupal_wxt
+all: wxt
 
 build: all
 
@@ -21,7 +21,7 @@ drupal_cs:
 	cp docker/conf/phpcs.xml html/core/phpcs.xml
 	cp docker/conf/phpunit.xml html/core/phpunit.xml
 
-drupal_wxt:
+wxt:
 	docker build -f docker/Dockerfile \
                -t $(NAME):$(VERSION) \
                --no-cache .
@@ -81,7 +81,7 @@ up:
 	eval $$(docker-machine env default)
 	docker-compose up -d
 
-update: drupal_wxt
+update: wxt
 	git pull origin 8.x
 	composer update
 	docker-compose build --no-cache
@@ -103,7 +103,6 @@ tag_latest:
 	drupal_cs \
 	drupal_install \
 	drupal_migrate \
-	drupal_wxt \
 	drush_archive \
 	env \
 	lint \
@@ -114,4 +113,5 @@ tag_latest:
 	tag_latest \
 	test \
 	up \
-	update
+	update \
+	wxt
