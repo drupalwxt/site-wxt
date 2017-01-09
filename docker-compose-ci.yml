@@ -4,21 +4,41 @@ version: "2"
 services:
 
   web_scripts:
-    build: docker/images/ci
-    volumes:
-      - ./:/var/www
+    build:
+      context: docker/images/ci
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTP_PROXY}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTP_PROXY}
     environment:
       - DRUPAL_SETTINGS=production
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTP_PROXY}
+    volumes:
+      - ./:/var/www
     container_name: wxt_web_scripts
 
   web:
-    build: docker/images/ci
+    build:
+      context: docker/images/ci
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTP_PROXY}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTP_PROXY}
+    environment:
+      - DRUPAL_SETTINGS=production
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTP_PROXY}
     volumes:
       - ./:/var/www
     depends_on:
       - db
-    environment:
-      - DRUPAL_SETTINGS=production
     ports:
      - "9000"
     container_name: wxt_web

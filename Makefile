@@ -24,7 +24,11 @@ drupal_cs:
 wxt:
 	docker build -f docker/Dockerfile \
                -t $(NAME):$(VERSION) \
-               --no-cache .
+               --no-cache \
+               --build-arg http_proxy=$$HTTP_PROXY \
+               --build-arg HTTP_PROXY=$$HTTP_PROXY \
+               --build-arg https_proxy=$$HTTP_PROXY \
+               --build-arg HTTPS_PROXY=$$HTTP_PROXY .
 
 drupal_install:
 	docker exec wxt_web bash /var/www/scripts/wxt/main.sh wxt-first-run

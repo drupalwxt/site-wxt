@@ -4,7 +4,19 @@ version: "2"
 services:
 
   web:
-    build: docker/images/dev
+    build:
+      context: docker/images/dev
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTP_PROXY}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTP_PROXY}
+    environment:
+      - DRUPAL_SETTINGS=development
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTP_PROXY}
     volumes:
       - ./:/var/www
     depends_on:
