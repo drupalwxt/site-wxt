@@ -79,7 +79,6 @@ Where possible we try to follow the best practices laid out by the top-tier dist
 
 You are heavily encouraged to check these distributions out!
 
-
 [acquia]:             https://acquia.com
 [composer]:           https://getcomposer.org
 [docker_compose]:     https://www.docker.com/products/docker-compose

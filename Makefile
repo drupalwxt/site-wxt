@@ -34,7 +34,7 @@ drupal_migrate:
 
 drush_archive:
 	./docker/bin/drush archive-dump --destination="/var/www/files_private/wxt$$(date +%Y%m%d_%H%M%S).tgz" \
-                           --generator="Drupal WxT" \
+                                  --generator="Drupal WxT" \
 
 env:
 	eval $$(docker-machine env default)
@@ -51,7 +51,7 @@ phpcs: drupal_cs
 
 	./docker/bin/phpcs --standard=/var/www/html/core/phpcs.xml \
               --extensions=php,module,inc,install,test,profile,theme \
-              --report=full \
+              --report=summary \
               --colors \
               --ignore=/var/www/html/profiles/wxt/modules/custom/wxt_test \
               /var/www/html/modules/custom \
