@@ -21,8 +21,6 @@ services:
       - ./:/var/www
     depends_on:
       - db
-    environment:
-     - DRUPAL_SETTINGS=development
     ports:
      - "9000"
     container_name: wxt_web
