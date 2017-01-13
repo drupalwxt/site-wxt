@@ -38,7 +38,7 @@ drupal_migrate:
 
 drush_archive:
 	./docker/bin/drush archive-dump --destination="/var/www/files_private/wxt$$(date +%Y%m%d_%H%M%S).tgz" \
-                                  --generator="Drupal WxT" \
+                                  --generator="Drupal WxT"
 
 env:
 	eval $$(docker-machine env default)
