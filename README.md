@@ -60,7 +60,7 @@ The baseline development codebase for the [Drupal WxT][drupalwxt] distribution.
 1. With all of the pre-requisites installed + built you can now simply install [Drupal WxT][drupalwxt] via the following:
 
     ```sh
-    docker exec wxt_web bash /root/scripts/wxt/main.sh wxt-first-run
+    docker exec wxt_web bash /root/scripts/drupal/main.sh drupal-first-run
     ```
 
     or by leveraging our Makefile:

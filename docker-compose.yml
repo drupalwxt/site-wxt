@@ -74,14 +74,24 @@ services:
     container_name: wxt_nginx
 
   cron:
-    build: docker/images/cron
+    build:
+      context: docker/images/cron
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTP_PROXY}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTP_PROXY}
+    environment:
+      - DRUPAL_SETTINGS=development
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTP_PROXY}
     volumes:
       - ./:/var/www
     depends_on:
      - db
      - web
-    environment:
-     - DRUPAL_SETTINGS=development
     container_name: wxt_cron
 
   hub:

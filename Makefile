@@ -31,10 +31,10 @@ wxt:
                --build-arg HTTPS_PROXY=$$HTTP_PROXY .
 
 drupal_install:
-	docker exec wxt_web bash /var/www/scripts/wxt/main.sh wxt-first-run wxt
+	docker exec wxt_web bash /var/www/scripts/drupal/main.sh drupal-first-run wxt
 
 drupal_migrate:
-	docker exec wxt_web bash /var/www/scripts/wxt/main.sh wxt-migrate
+	docker exec wxt_web bash /var/www/scripts/drupal/main.sh drupal-migrate wxt
 
 drush_archive:
 	./docker/bin/drush archive-dump --destination="/var/www/files_private/wxt$$(date +%Y%m%d_%H%M%S).tgz" \

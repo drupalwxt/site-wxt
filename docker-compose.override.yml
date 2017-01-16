@@ -14,12 +14,12 @@ services:
 
   cron:
     build:
-        context: docker/images/cron
-        args:
-           - http_proxy=${HTTP_PROXY}
-           - https_proxy=${HTTP_PROXY}
-           - HTTP_PROXY=${HTTP_PROXY}
-           - HTTPS_PROXY=${HTTP_PROXY}
+      context: docker/images/cron
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTP_PROXY}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTP_PROXY}
 
 volumes:
   db_data:
