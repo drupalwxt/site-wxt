@@ -55,7 +55,7 @@ phpcs: drupal_cs
 
 	./docker/bin/phpcs --standard=/var/www/html/core/phpcs.xml \
               --extensions=php,module,inc,install,test,profile,theme \
-              --report=summary \
+              --report=full \
               --colors \
               --ignore=/var/www/html/profiles/wxt/modules/custom/wxt_test \
               /var/www/html/modules/custom \
@@ -64,7 +64,7 @@ phpcs: drupal_cs
 
 	./docker/bin/phpcs --standard=/var/www/html/core/phpcs.xml \
               --extensions=php,module,inc,install,test,profile,theme \
-              --report=summary \
+              --report=full \
               --colors \
               -l \
               /var/www/html/profiles/wxt
