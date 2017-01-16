@@ -8,12 +8,13 @@ with Drupal.
 
 ### Docker Toolbox
 
-Install [Docker Toolbox][docker_toolbox] which is comprised of the following
+Install [Docker Toolbox][docker-toolbox] which is comprised of the following
 tools:
 
-- [Docker Engine][docker_engine]
-- [Docker Compose][docker_compose]
-- [Docker Machine][docker_machine]
+- [Docker Engine][docker-engine]
+- [Docker Compose][docker-compose]
+- [Docker Machine][docker-machine]
+- [Docker Machine NFS][docker-machine-nfs]
 - [Kitematic][kitematic]
 
 ### Docker Machine
@@ -69,13 +70,13 @@ target inside of our `Makefile`.
 #### Docker Bin
 
 The docker bin folder provides idempotent control over a range of services.
-The following is an examples of some common commands to illustrate how they
-can be leveraged:
+The following is an examples of some common commands to illustrate how they can
+be leveraged:
 
-Call any Drush command:
+Call any `Drush` command:
 
 ```sh
-  ./docker/bin/drush archive-dump --destination="wxt$$(date +%Y%m%d_%H%M%S).tgz"
+./docker/bin/drush archive-dump --destination="wxt$$(date +%Y%m%d_%H%M%S).tgz"
 ```
 
 Lint all of the Docker files:
@@ -84,7 +85,7 @@ Lint all of the Docker files:
 ./docker/bin/lint
 ```
 
-Run PHPCS + PhpUnit:
+Run `PHPCS` + `PHPUnit`:
 
 ```sh
 ./docker/bin/phpcs --standard=/var/www/html/core/phpcs.xml
@@ -171,11 +172,11 @@ off of each other to take advantage of docker layering best practices. Due to
 this you will be downloading far less then the listed amounts. Finally every
 image in some form or another is directly derived from Docker official images.
 
-Note: There are additional tricks such as leveraging a
-[docker registry proxy][docker_registry] cache so on rebuilds etc, you won't
+> Note: There are additional tricks such as leveraging a
+[docker registry proxy][docker-registry] cache so on rebuilds, you won't
 need to download the images when rebuilding etc.
 
-### Official Images (Contrib)
+### Images (Official)
 
 | Repository                      | Tag          | Tag       |
 | ------------------------------- | ------------ | --------- |
@@ -187,9 +188,10 @@ need to download the images when rebuilding etc.
 
 ##### Alpine
 
-[Alpine][alpine] is the base layer that was chosen for its small size, resource
-isolation, and memory efficiency. Additionally [Alpine][alpine] provides a
-great packager to help with docker layering namely [apk][apk].
+[Alpine][alpine] is the base layer that all of our images leverage. Chosen for
+its small size, resource isolation, and memory efficiency. Additionally
+[Alpine][alpine] provides a great packager to help with docker layering namely
+[apk][apk].
 
 #### Registrator
 
@@ -214,9 +216,9 @@ delivery, view messages in the web UI, or retrieve them with the JSON api.
 #### MySQL
 
 The only non alpine image is the MySQL image. Currently it is being worked to
-create an Alpine variant much like the PostgreSQL image.
+create an [Alpine][alpine] variant much like the PostgreSQL image.
 
-### Helper Images (Custom)
+### Helper Images (Extended)
 
 | Repository                      | Tag          | Tag       |
 | ------------------------------- | ------------ | --------- |
@@ -227,8 +229,8 @@ create an Alpine variant much like the PostgreSQL image.
 #### Nginx + Consul Template
 
 Creates a configurable load balancer through [Consul][consul]'s key / value
-store which dynamically populates Nginx with the different Docker environments.
-Can be interacted with via simple curl requests.
+store which dynamically populates `Nginx` with the different Docker
+environments. Can be interacted with via simple curl requests.
 
 Link:
 
@@ -237,14 +239,14 @@ Link:
 #### Selenium (Hub + Node Firefox)
 
 A bare bones selenium environment built in [Alpine][alpine]. Contains both the
-[Selenium Grid Hub][selenium_grid] and [Selenium Node][selenium_node] images
+[Selenium Grid Hub][selenium-grid] and [Selenium Node][selenium-node] images
 configured to run firefox.
 
 Link:
 
 - [drupalwxt/selenium][selenium]
 
-### Drupal Specific Images via Composer (Custom)
+### Drupal Images (Local)
 
 | Repository                      | Tag          | Tag       |
 | ------------------------------- | ------------ | --------- |
@@ -263,11 +265,11 @@ will eventually be accepted. Right now this image directly extends off of
 
 Link:
 
-- [drupalwxt/drupal][docker_drupal]
+- [drupalwxt/drupal][docker-drupal]
 
 #### Drupal Site Layer (org/site-name)
 
-This image when built or pulled from Docker Hub (if present) is a direct
+This image when built or pulled from Docker Hub (if desired) is a direct
 extension of the base Drupal layer. It simply calls the base layer and runs the
 following composer command (amongst others) in the container:
 
@@ -278,37 +280,75 @@ composer install --prefer-dist \
                  --no-dev
 ```
 
-Note: This layer doesn't include the dev dependencies from composer.json
+>  Note: This layer doesn't include the dev dependencies from composer.json
+
+Link:
+
+- [Dockerfile][drupal-site-layer]
 
 #### Drupal Cron Layer (sitename_cron)
 
 This container when built is directly extended off of the Drupal Site Layer with
 the only concern of carrying out cron tasks.
 
-#### Drupal Development Site Layer (sitename_web)
+Link:
 
-This image when built or pulled from Docker Hub (if present) is a direct
-extension of the Drupal Site layer with the added composer dev dependencies and
-XDebug as well as a few other important developer tooling.
+- [Dockerfile][drupal-site-cron-layer]
+
+#### Drupal Site Development Layer (sitename_web)
+
+This image when built or pulled from the `Docker Hub` (if present) is a direct
+extension of the `Drupal Site layer` with the added composer dev dependencies
+and `XDebug` as well as a few other important developer tooling.
 
 ```
 composer install --prefer-dist --no-interaction
 ```
 
-### Live Examples
+Link:
 
-Currently there are two public GitHub projects using this workflow:
+- [Dockerfile][drupal-site-dev-layer]
 
-Note: see `docker` folder and `docker-compose.yml` files):
+#### Drupal Site CI Layer (sitename_web_scripts)
+
+This image when built or pulled from the `Docker Hub` (if present) is a direct
+extension of the `Drupal Site layer` with only the added composer dev
+dependencies.
+
+```
+composer install --prefer-dist --no-interaction
+```
+
+Link:
+
+- [Dockerfile][drupal-site-ci-layer]
+
+### Implementations
+
+Currently there are two public GitHub projects using this Docker workflow as
+well as a few private ones:
+
+> Note: see the respective `docker` folder and `docker-compose.yml` file):
+
+Link:
 
 - [site-wxt][site-wxt]
 - [site-open-data][site-open-data]
 
-You can also see Travis CI leveraging docker-compose and the full test
-tool-chain being run:
+Tests can be accessed via Travis CI and are simply leveraging docker-compose to
+instantiate the infrastructure.
+
+Link:
 
 - [site-wxt][travisci-site-wxt]
 - [site-open-data][travisci-site-open-data]
+
+The specific default templates for both Gitlab CI / Travis CI can be found here:
+
+Link:
+
+- [.gitlab-ci.yml][ci-gitlab-ci]
+- [.travis-ci.yml][ci-travis-ci]
 
 ## Roadmap
 
@@ -317,29 +357,37 @@ appropriate files
 
 ## Diagram
 
-Below is a graphviz dot representation of our docker-compose.yml file.
+Below is a `graphviz` dot representation of our `docker-compose.yml` file.
 
 ![Infrastructure](infra.png "Docker Infrastructure")
 
 ## Acknowledgements
 
 Where possible we try to follow the best practices laid out by the top-tier
-distributions:
+Drupal projects namely:
 
 * [Lightning][lightning] distribution created by [Acquia][acquia]
 * [Open Social][open_social] distribution created by [Goal Gorilla][goalgorilla]
 
+
 [acquia]:                       https://acquia.com
 [alpine]:                       https://alpinelinux.org
 [apk]:                          http://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
+[ci-gitlab-ci]:                 .gitlab-ci.yml
+[ci-travis-ci]:                 .travis.yml
 [console]:                      https://drupalconsole.com
 [consul]:                       https://www.consul.io
-[docker_compose]:               https://www.docker.com/products/docker-compose
-[docker_engine]:                https://www.docker.com/products/docker-engine
-[docker_machine]:               https://www.docker.com/products/docker-machine
-[docker_toolbox]:               https://www.docker.com/products/docker-toolbox
-[docker_drupal]:                https://github.com/drupalwxt/drupal
-[docker_registry]:              https://docs.docker.com/registry/recipes/mirror
+[docker-compose]:               https://www.docker.com/products/docker-compose
+[docker-engine]:                https://www.docker.com/products/docker-engine
+[docker-machine]:               https://www.docker.com/products/docker-machine
+[docker-machine-nfs]:           https://github.com/adlogix/docker-machine-nfs
+[docker-toolbox]:               https://www.docker.com/products/docker-toolbox
+[docker-drupal]:                https://github.com/drupalwxt/drupal
+[docker-registry]:              https://docs.docker.com/registry/recipes/mirror
+[drupal-site-layer]:            docker/Dockerfile
+[drupal-site-ci-layer]:         docker/images/ci/Dockerfile
+[drupal-site-cron-layer]:       docker/images/cron/Dockerfile
+[drupal-site-dev-layer]:        docker/images/dev/Dockerfile
 [go]:                           https://golang.org
 [goalgorilla]:                  https://www.goalgorilla.com/en
 [lightning]:                    https://github.com/acquia/lightning
@@ -350,8 +398,8 @@ distributions:
 [panopoly]:                     https://github.com/panopoly/panopoly
 [registrator]:                  https://github.com/gliderlabs/registrator
 [selenium]:                     https://github.com/drupalwxt/selenium
-[selenium_grid]:                http://www.seleniumhq.org/projects/grid
-[selenium_node]:                https://github.com/SeleniumHQ/selenium
+[selenium-grid]:                http://www.seleniumhq.org/projects/grid
+[selenium-node]:                https://github.com/SeleniumHQ/selenium
 [site-open-data]:               https://github.com/open-data/site-open-data
 [site-wxt]:                     https://github.com/drupalwxt/site-wxt
 [travisci-site-open-data]:      https://travis-ci.org/open-data/site-open-data
