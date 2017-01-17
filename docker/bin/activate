@@ -1,9 +1,11 @@
 #!/bin/bash
 # strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
-set -uo pipefail
 IFS=$'\n\t'
-
-dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+if [ ! -n "${ZSH_VERSION-}" ] ; then
+  dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+else
+  dir="$( cd "$( dirname "${(%):-%N}" )" && pwd )"
+fi
 project="${PWD##*/}"
 bins=("behat" "composer" "drupal" "drush" "lint" "php" "phpcs" "phpmd" "phpunit" "simpletest")
 
@@ -20,15 +22,22 @@ deactivate () {
   fi
 }
 
-if [ "$(type -t drush)" == "alias" ]; then
-  echo "Already activated!"
+
+if ( [ ! -n "${ZSH_VERSION-}" ] && [ "$(type -t drush)" == "alias" ] ) ||
+  ( [ -n "${ZSH_VERSION-}" ] && [ "$(type -w drush)" = "drush: alias" ] ); then
+    echo "Already activated!"
 else
   for bin in "${bins[@]}"
   do
-  alias "$bin=$dir/$bin"
+    alias "$bin=$dir/$bin"
   done
 
   _OLD_PS1="$PS1"
-  PS1="\e[1;35m(Docker $project)\e[0m $PS1"
+  PS1_APPEND="(Docker $project)"
+  if [ ! -n "${ZSH_VERSION-}" ] ; then
+    PS1="\e[1;35m$PS1_APPEND\e[0m $PS1"
+  else
+    PS1="%F{magenta}$PS1_APPEND%F{white} $PS1"
+  fi
   export PS1
 fi
