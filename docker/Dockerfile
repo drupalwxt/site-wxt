@@ -17,7 +17,7 @@ RUN php /tmp/composer-setup.php --no-ansi \
                                 --version=${COMPOSER_VERSION} && \
     rm -rf /tmp/composer-setup.php
 
-# Install Drupal WxT via composer.
+# Install Drupal via composer.
 RUN rm -f /var/www/composer.lock && \
     rm -rf /root/.composer
 

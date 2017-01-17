@@ -10,10 +10,23 @@ if ! type docker > /dev/null; then
   exit 0
 fi
 
-if [[ "${CI:-}" ]] ; then
-  image='sitewxt_web_scripts'
+. "${dir}/parse_yml.sh"
+
+if [ -f "${dir}/../../config.yml" ]; then
+  eval $(parse_yml ${dir}/../../config.yml "config_")
+  site="${config_docker_site}"
+  volume="${config_docker_volume}"
+  network="${config_docker_network}"
 else
-  image='sitewxt_web'
+  site="drupal_web"
+  volume="drupal_web"
+  network="drupal_default"
+fi
+
+if [[ "${CI:-}" ]] ; then
+  image="${site}_scripts"
+else
+  image="${site}"
 fi
 
 docker run -i \
@@ -22,6 +35,6 @@ docker run -i \
   -v /tmp/:/tmp/ \
   --sig-proxy=true \
   --pid=host \
-  --volumes-from wxt_web \
+  --volumes-from "${volume}" \
   --rm \
-  $image "$@"
+  "${image}" "$@"

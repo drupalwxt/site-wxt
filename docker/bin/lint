@@ -3,7 +3,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-echo "Linting Drupal WxT Dockerfile(s) ..."
+echo "Linting Drupal Dockerfile(s) ..."
 
 find . -type f \
        -name Dockerfile \
