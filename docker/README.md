@@ -232,8 +232,6 @@ Creates a configurable load balancer through [Consul][consul]'s key / value
 store which dynamically populates `Nginx` with the different Docker
 environments. Can be interacted with via simple curl requests.
 
-Link:
-
 - [drupalwxt/nginx-consul-template][nginx-consul-template]
 
 #### Selenium (Hub + Node Firefox)
@@ -241,8 +239,6 @@ Link:
 A bare bones selenium environment built in [Alpine][alpine]. Contains both the
 [Selenium Grid Hub][selenium-grid] and [Selenium Node][selenium-node] images
 configured to run firefox.
-
-Link:
 
 - [drupalwxt/selenium][selenium]
 
@@ -263,8 +259,6 @@ variant. As most other popular projects have an [Alpine][alpine] variant this
 will eventually be accepted. Right now this image directly extends off of
 `php:7.0-fpm-alpine`.
 
-Link:
-
 - [drupalwxt/drupal][docker-drupal]
 
 #### Drupal Site Layer (org/site-name)
@@ -282,16 +276,12 @@ composer install --prefer-dist \
 
 >  Note: This layer doesn't include the dev dependencies from composer.json
 
-Link:
-
 - [Dockerfile][drupal-site-layer]
 
 #### Drupal Cron Layer (sitename_cron)
 
 This container when built is directly extended off of the Drupal Site Layer with
 the only concern of carrying out cron tasks.
-
-Link:
 
 - [Dockerfile][drupal-site-cron-layer]
 
@@ -305,8 +295,6 @@ and `XDebug` as well as a few other important developer tooling.
 composer install --prefer-dist --no-interaction
 ```
 
-Link:
-
 - [Dockerfile][drupal-site-dev-layer]
 
 #### Drupal Site CI Layer (sitename_web_scripts)
@@ -319,8 +307,6 @@ dependencies.
 composer install --prefer-dist --no-interaction
 ```
 
-Link:
-
 - [Dockerfile][drupal-site-ci-layer]
 
 ### Implementations
@@ -330,22 +316,16 @@ well as a few private ones:
 
 > Note: see the respective `docker` folder and `docker-compose.yml` file):
 
-Link:
-
 - [site-wxt][site-wxt]
 - [site-open-data][site-open-data]
 
 Tests can be accessed via Travis CI and are simply leveraging docker-compose to
 instantiate the infrastructure.
 
-Link:
-
 - [site-wxt][travisci-site-wxt]
 - [site-open-data][travisci-site-open-data]
 
 The specific default templates for both Gitlab CI / Travis CI can be found here:
-
-Link:
 
 - [.gitlab-ci.yml][ci-gitlab-ci]
 - [.travis-ci.yml][ci-travis-ci]
