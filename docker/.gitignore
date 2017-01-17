@@ -1,7 +1,7 @@
-# WxT
+# Drupal
 test-results
 scripts/local
-scripts/wxt
+scripts/drupal
 files_private/
 
 # Composer files
