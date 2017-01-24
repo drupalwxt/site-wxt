@@ -22,8 +22,8 @@ services:
     depends_on:
       - db
     ports:
-     - "9000"
-    container_name: wxt_web
+      - "9000"
+    container_name: sitewxt_web
 
   db:
     image: mysql:5.6
@@ -34,7 +34,7 @@ services:
       - db_data:/var/lib/mysql
     ports:
       - "3308:3306"
-    container_name: wxt_db
+    container_name: sitewxt_db
     command: mysqld --max_allowed_packet=32M
 
   consul:
@@ -44,7 +44,7 @@ services:
       - '8500:8500'   # ui
       - '8600:53/udp' # dns
     restart: always
-    container_name: wxt_consul
+    container_name: sitewxt_consul
 
   registrator:
     image: 'gliderlabs/registrator:latest'
@@ -54,7 +54,7 @@ services:
       - consul
     command: 'consul://consul:8500'
     restart: always
-    container_name: wxt_registrator
+    container_name: sitewxt_registrator
 
   nginx:
     image: 'drupalwxt/nginx-consul-template'
@@ -71,7 +71,7 @@ services:
       - registrator
       - web
     restart: always
-    container_name: wxt_nginx
+    container_name: sitewxt_nginx
 
   cron:
     build:
@@ -92,7 +92,7 @@ services:
     depends_on:
      - db
      - web
-    container_name: wxt_cron
+    container_name: sitewxt_cron
 
   hub:
     image: drupalwxt/selenium:hub
@@ -101,7 +101,7 @@ services:
     depends_on:
      - db
      - web
-    container_name: wxt_hub
+    container_name: sitewxt_hub
 
   firefox:
     image: drupalwxt/selenium:node-firefox
@@ -109,7 +109,7 @@ services:
      - db
      - web
      - hub
-    container_name: wxt_firefox
+    container_name: sitewxt_firefox
 
   mailhog:
     image: mailhog/mailhog
@@ -117,7 +117,7 @@ services:
     ports:
       - '1025:1025'
       - '8025:8025'
-    container_name: wxt_mailhog
+    container_name: sitewxt_mailhog
 
 #  solr:
 #    image: solr:6.1-alpine
@@ -125,7 +125,7 @@ services:
 #    ports:
 #      - "8983:8983"
 #      - "10616:10616"
-#    container_name: wxt_solr
+#    container_name: sitewxt_solr
 
 #  vault:
 #    image: vault:0.6
@@ -141,7 +141,7 @@ services:
 #    mem_limit: 250MB
 #    memswap_limit: -1
 #    command: 'server'
-#    container_name: wxt_vault
+#    container_name: sitewxt_vault
 
 volumes:
   db_data:

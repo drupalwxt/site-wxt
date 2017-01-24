@@ -2,7 +2,7 @@ NAME := drupalwxt/site-wxt
 VERSION := $(or $(VERSION),$(VERSION),'latest')
 PLATFORM := $(shell uname -s)
 
-all: wxt
+all: base
 
 build: all
 
@@ -21,7 +21,7 @@ drupal_cs:
 	cp docker/conf/phpcs.xml html/core/phpcs.xml
 	cp docker/conf/phpunit.xml html/core/phpunit.xml
 
-wxt:
+base:
 	docker build -f docker/Dockerfile \
                -t $(NAME):$(VERSION) \
                --no-cache \
@@ -31,14 +31,14 @@ wxt:
                --build-arg HTTPS_PROXY=$$HTTP_PROXY .
 
 drupal_install:
-	docker exec wxt_web bash /var/www/scripts/drupal/main.sh drupal-first-run wxt
+	docker exec sitewxt_web bash /var/www/docker/bin/cli drupal-first-run wxt
 
 drupal_migrate:
-	docker exec wxt_web bash /var/www/scripts/drupal/main.sh drupal-migrate wxt
+	docker exec sitewxt_web bash /var/www/docker/bin/cli drupal-migrate wxt
 
 drush_archive:
-	./docker/bin/drush archive-dump --destination="/var/www/files_private/wxt$$(date +%Y%m%d_%H%M%S).tgz" \
-                                  --generator="Drupal WxT"
+	./docker/bin/drush archive-dump --destination="/var/www/files_private/drupal$$(date +%Y%m%d_%H%M%S).tgz" \
+                                  --generator="Drupal"
 
 env:
 	eval $$(docker-machine env default)
@@ -85,7 +85,7 @@ up:
 	eval $$(docker-machine env default)
 	docker-compose up -d
 
-update: wxt
+update: base
 	git pull origin 8.x
 	composer update
 	docker-compose build --no-cache
@@ -101,6 +101,7 @@ tag_latest:
 
 .PHONY: \
 	all \
+	base \
 	behat \
 	build \
 	clean \
@@ -117,5 +118,4 @@ tag_latest:
 	tag_latest \
 	test \
 	up \
-	update \
-	wxt
+	update

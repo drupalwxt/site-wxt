@@ -10,10 +10,10 @@ if ! type docker > /dev/null; then
   exit 0
 fi
 
-. "${dir}/parse_yml.sh"
+. "${dir}/parse_yml"
 
-if [ -f "${dir}/../../config.yml" ]; then
-  eval $(parse_yml ${dir}/../../config.yml "config_")
+if [ -f "${dir}/../config.yml" ]; then
+  eval $(parse_yml ${dir}/../config.yml "config_")
   site="${config_docker_site}"
   volume="${config_docker_volume}"
   network="${config_docker_network}"

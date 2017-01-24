@@ -35,6 +35,8 @@ before_install:
   - docker-compose --version
   # Build out the Drupal infrastructure.
   - docker-compose -f docker-compose-ci.yml up -d
+  # make build can be avoided if leveraging Docker Hub.
+  # - make build
   - docker ps -a
   - sleep 10
 
