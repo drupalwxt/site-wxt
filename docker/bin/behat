@@ -10,17 +10,19 @@ if ! type docker > /dev/null; then
   exit 0
 fi
 
-. "${dir}/parse_yml.sh"
+. "${dir}/parse_yml"
 
-if [ -f "${dir}/../../config.yml" ]; then
-  eval $(parse_yml ${dir}/../../config.yml "config_")
+if [ -f "${dir}/../config.yml" ]; then
+  eval $(parse_yml ${dir}/../config.yml "config_")
   site="${config_docker_site}"
   volume="${config_docker_volume}"
   network="${config_docker_network}"
+  behat_path="/var/www/html/${config_docker_behat_path}"
 else
   site="drupal_web"
   volume="drupal_web"
   network="drupal_default"
+  behat_path="/var/www/html"
 fi
 
 if [[ "${CI:-}" ]] ; then
@@ -35,7 +37,7 @@ docker run -i \
   --entrypoint=behat \
   -v "${PWD}":"${PWD}" \
   -v /tmp/:/tmp/ \
-  -w "/var/www/html/profiles/wxt/modules/custom/wxt_test/tests/" \
+  -w "${behat_path}" \
   -e BEHAT_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drupal":{"drupal_root":"/var/www/html"}, "drush":{"root":"/var/www/html"}}, "Behat\\MinkExtension":{"base_url" : "http://nginx", "selenium2":{"wd_host":"http://hub:4444/wd/hub"}}}}' \
   --sig-proxy=true \
   --pid=host \

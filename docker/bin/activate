@@ -22,7 +22,6 @@ deactivate () {
   fi
 }
 
-
 if ( [ ! -n "${ZSH_VERSION-}" ] && [ "$(type -t drush)" == "alias" ] ) ||
   ( [ -n "${ZSH_VERSION-}" ] && [ "$(type -w drush)" = "drush: alias" ] ); then
     echo "Already activated!"

@@ -1,4 +1,0 @@
-docker:
-  site: sitewxt_web
-  volume: wxt_web
-  network: sitewxt_default

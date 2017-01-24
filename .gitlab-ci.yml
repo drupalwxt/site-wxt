@@ -1,5 +1,6 @@
 stages:
   - build
+  - deploy
 
 variables:
   PROJECT_NAME: drupalwxt/site-wxt
@@ -12,7 +13,7 @@ services:
 before_script:
   - docker info
 
-build:
+build_job:
   stage: build
   script:
    - echo "Building $PROJECT_NAME test runner"
@@ -23,3 +24,13 @@ build:
    - sleep 10
    - make drupal_install
    - make test
+
+# deploy_release:
+#   stage: deploy
+#   script:
+#     - composer install --prefer-dist --no-interaction
+#     - ./vendor/bin/dep --file=./docker/deploy.php develop
+#   dependencies:
+#     - build_job
+#   only:
+#     - /v[0-9].*$/

@@ -24,8 +24,8 @@ http {
       root /var/www/html;
       index index.php index.html index.htm;
 
-      # Make site accessible from http://wxt.dev;
-      server_name wxt.dev;
+      # Make site accessible from http://drupal.dev;
+      server_name drupal.dev;
 
       location / {
           # First attempt to serve request as file, then
