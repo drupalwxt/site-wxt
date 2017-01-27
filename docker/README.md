@@ -74,7 +74,7 @@ docker-machine-nfs site-name
 All of the Docker containers rely on a composer build. Since this is a first
 run this command will be executed first. The next command is to build the base
 container for this project from which all dependent containers will derive.
-Finally the whole infrastructure is instantiate with `docker-compose`.
+Finally the whole infrastructure is instantiated with `docker-compose`.
 
 ```sh
 composer update
@@ -88,10 +88,9 @@ continuously rebuilt with CI.
 ## Architecture
 
 Now that all of the infrastructure and pre-requisites have now been installed +
-built out we can take a moment to go over the architecture.
-
-The tree diagram represented below gives a overview of the generated scaffold.
-All logic is contained within a single docker folder + 5 controller files.
+built out we can take a moment to go over the architecture. The tree represented
+below gives a overview of the generated scaffold. All logic is contained within
+a single docker folder + 5 controller files.
 
 ```
 .
@@ -145,8 +144,16 @@ All logic is contained within a single docker folder + 5 controller files.
 └── Makefile              (controller file for Docker)
 ```
 
-> Note: The `composer.json` + `scripts/scriptHandler.php` file will be copied
-from the project into the `docker` + `docker/images/<release>` folder.
+### Composer
+
+The `composer.json` + `scripts/scriptHandler.php` file will be copied
+from the project into the `docker` + `docker/images/<release>` folder(s) and is
+the primary configuration for the majority of the containers. The image below
+gives a rough overview:
+
+![drupal-scaffold-docker](docs/docker.png "drupal-scaffold-docker")
+
+### Drupal Scaffold Docker (Composer Plugin)
 
 Overall the bulk of the logic for how the `drupal-scaffold-docker` plugin works
 can be gathered from the the `downloadScaffold()` function in the `Handler.php`
@@ -158,25 +165,25 @@ All the `downloadScaffold()` does is iterate over all of the template
 (a.k.a skeleton) files performing token replacement while downloading the
 scaffold. The following tokens are given below:
 
-### Tokens
+#### Tokens
 
-`{{__ORG__}}`
+`drupalwxt`
 
 Replaced by the organization name given in a project's root `composer.json`
 file name property.
 
-`{{__PROFILE__}}`
+`wxt`
 
 Replaced by the detected installation profile name. This supports detecting the
 base installation profile through dependency resolving (`depResolve()`) and
 iterating over the `type:drupal-profile` composer configuration property.
 
-`{{__REPO__}}`
+`site-wxt`
 
 Replaced by the repository name given in a project's root `composer.json`
 file `name` property.
 
-`{{__REPO_SHORT__}}`
+`sitewxt`
 
 Replaced by the repository name given in a project's root `composer.json`
 file `name` property and passed through a custom regex `[^A-Za-z0-9]` filter.
@@ -267,7 +274,7 @@ to download the images when rebuilding etc.
 | mailhog/mailhog                 | latest       | 46.56 MB  |
 | mysql                           | 5.6          | 327.5 MB  |
 
-##### Alpine
+#### Alpine
 
 [Alpine][alpine] is the base layer that all of our images leverage. Chosen for
 its small size, resource isolation, and memory efficiency. Additionally
@@ -332,21 +339,21 @@ configured to run firefox.
 | sitename_cron                   | latest       | 523.7 MB  |
 | sitename_web                    | latest       | 650.6 MB  |
 
-#### Base Drupal Layer (drupalwxt/drupal)
+#### Overridden (`_/drupal`)
 
 Eventually this image should be ported to the Docker official library for
 Drupal. Currently the official Drupal image doesn't support the [Alpine][alpine]
 variant. As most other popular projects have an [Alpine][alpine] variant this
-will eventually be accepted. Right now this image directly extends off of
-`php:7.0-fpm-alpine`.
+should eventually be accepted. Right now this image directly extends off of
+the official `php:7.0-fpm-alpine` image one layer below Drupal official.
 
 - [drupalwxt/drupal][docker-drupal]
 
-#### Drupal Site Layer (org/site-name)
+#### Base (`org/repo`)
 
 This image when built or pulled from Docker Hub (if desired) is a direct
-extension of the base Drupal layer. It simply calls the base layer and runs the
-following composer command (amongst others) in the container:
+extension of the official Drupal image. It simply calls the base layer and runs
+the following composer command (amongst others) in the container:
 
 ```
 composer global require "hirak/prestissimo:^0.3" && \
@@ -359,18 +366,11 @@ composer install --prefer-dist \
 
 - [Dockerfile][drupal-site-layer]
 
-#### Drupal Cron Layer (sitename_cron)
-
-This container when built is directly extended off of the Drupal Site Layer
-with the only concern of carrying out cron tasks.
-
-- [Dockerfile][drupal-site-cron-layer]
-
-#### Drupal Site Development Layer (sitename_web)
+#### Development (`org/repo_web`)
 
 This image when built or pulled from the `Docker Hub` (if present) is a direct
-extension of the `Drupal Site layer` with the added composer dev dependencies
-and `XDebug` as well as a few other important developer tooling.
+extension of the `Base` image with the added composer dev dependencies
+and `xdebug` as well as a few other important developer tooling.
 
 ```
 composer install --prefer-dist --no-interaction
@@ -378,11 +378,17 @@ composer install --prefer-dist --no-interaction
 
 - [Dockerfile][drupal-site-dev-layer]
 
-#### Drupal Site CI Layer (sitename_web_scripts)
+#### Cron (`org/repo_cron`)
 
-This image when built or pulled from the `Docker Hub` (if present) is a direct
-extension of the `Drupal Site layer` with only the added composer dev
-dependencies.
+This image when built is directly extended off of the `Base` image with the
+only concern related to carrying out cron tasks.
+
+- [Dockerfile][drupal-site-cron-layer]
+
+#### CI (`org/repo_ci`)
+
+This image when built is directly extended off of the `Base` image with only
+the added composer dev dependencies and slightly optimized php.ini settings.
 
 ```
 composer install --prefer-dist --no-interaction
@@ -406,16 +412,18 @@ instantiate the infrastructure.
 - [site-wxt][travisci-site-wxt]
 - [site-open-data][travisci-site-open-data]
 
+### CI Template Files
+
 The specific default templates for both Gitlab CI / Travis CI can be found here:
 
 - [.gitlab-ci.yml][ci-gitlab-ci]
 - [.travis-ci.yml][ci-travis-ci]
 
-## Diagram
+## Diagram(s)
 
 Below is a `graphviz` dot representation of our `docker-compose.yml` file.
 
-![Infrastructure](infra.png "Docker Infrastructure")
+![Infrastructure](docs/infra.png "Docker Infrastructure")
 
 ## Acknowledgements
 
