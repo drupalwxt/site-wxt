@@ -17,6 +17,10 @@ if [ -f "${dir}/../config.yml" ]; then
   site="${config_docker_site}"
   volume="${config_docker_volume}"
   network="${config_docker_network}"
+  if [ -z "${config_docker_behat_path-}" ]; then
+    echo "No behat configuration detected exiting..."
+    exit
+  fi
   behat_path="/var/www/html/${config_docker_behat_path}"
 else
   site="drupal_web"
