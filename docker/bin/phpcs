@@ -29,12 +29,25 @@ else
   image="${site}"
 fi
 
-docker run -i \
-  --entrypoint=phpcs \
-  -v "${PWD}":"${PWD}" \
-  -v /tmp/:/tmp/ \
-  --sig-proxy=true \
-  --pid=host \
-  --volumes-from "${volume}" \
-  --rm \
-  "${image}" "$@"
+if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
+  docker run -i \
+    --entrypoint=phpcs \
+    -v "${PWD}":"${PWD}" \
+    -v /tmp/:/tmp/ \
+    -v "${HOME}/.phpstorm_helpers/":"${HOME}/.phpstorm_helpers/" \
+    --sig-proxy=true \
+    --pid=host \
+    --volumes-from "${volume}" \
+    --rm \
+    "${image}" "$@"
+else
+  docker run -i \
+    --entrypoint=phpcs \
+    -v "${PWD}":"${PWD}" \
+    -v /tmp/:/tmp/ \
+    --sig-proxy=true \
+    --pid=host \
+    --volumes-from "${volume}" \
+    --rm \
+    "${image}" "$@"
+fi
