@@ -7,7 +7,7 @@ all: base
 build: all
 
 behat:
-	./docker/bin/behat -c behat.common.yml --colors
+	./docker/bin/behat -c behat.yml --colors
 
 clean:
 	rm -rf {html,vendor}
