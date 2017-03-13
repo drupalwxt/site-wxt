@@ -58,6 +58,8 @@ phpcs: drupal_cs
               --report=full \
               --colors \
               --ignore=/var/www/html/profiles/wxt/modules/custom/wxt_test \
+              --ignore=/var/www/html/modules/custom/wxt_library \
+              --ignore=*.css \
               /var/www/html/modules/custom \
               /var/www/html/profiles/wxt/modules/custom \
               /var/www/html/themes/custom \
