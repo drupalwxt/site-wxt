@@ -55,38 +55,14 @@ services:
     container_name: sitewxt_db
     command: mysqld --max_allowed_packet=32M
 
-  consul:
-    image: consul
-    ports:
-      - '8400:8400'   # rpc/rest
-      - '8500:8500'   # ui
-      - '8600:53/udp' # dns
-    restart: always
-    container_name: sitewxt_consul
-
-  registrator:
-    image: 'gliderlabs/registrator:latest'
-    volumes:
-      - '/var/run/docker.sock:/tmp/docker.sock'
-    depends_on:
-      - consul
-    command: 'consul://consul:8500'
-    restart: always
-    container_name: sitewxt_registrator
-
   nginx:
-    image: 'drupalwxt/nginx-consul-template'
-    environment:
-      - CONSUL_KV_PREFIX=nginx
-      - CONSUL_PORT_8500_TCP_ADDR=consul
+    image: nginx:alpine
     volumes:
      - ./html:/var/www/html
-     - ./docker/conf/nginx.conf.ctmpl:/etc/nginx/nginx.conf.ctmpl
+     - ./docker/conf/nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - '80:80'
     depends_on:
-      - consul
-      - registrator
       - web
     restart: always
     container_name: sitewxt_nginx
