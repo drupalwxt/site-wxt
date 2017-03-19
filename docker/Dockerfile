@@ -1,4 +1,4 @@
-FROM drupalwxt/drupal
+FROM drupalcomposer/drupal
 MAINTAINER William Hearn <sylus1984@gmail.com>
 
 # Allow Composer to be run as root.

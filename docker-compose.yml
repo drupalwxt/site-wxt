@@ -71,7 +71,7 @@ services:
     container_name: sitewxt_cron
 
   hub:
-    image: drupalwxt/selenium:hub
+    image: drupalcomposer/selenium:hub
     ports:
       - "4444:4444"
     depends_on:
@@ -80,7 +80,7 @@ services:
     container_name: sitewxt_hub
 
   firefox:
-    image: drupalwxt/selenium:node-firefox
+    image: drupalcomposer/selenium:node-firefox
     depends_on:
      - db
      - web

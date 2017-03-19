@@ -5,10 +5,10 @@ stages:
 variables:
   PROJECT_NAME: drupalwxt/site-wxt
 
-image: drupalwxt/gitlab-ci
+image: sylus/gitlab-ci
 
 services:
-  - docker:dind
+  - sylus/gitlab-ci:dind
 
 before_script:
   - docker info

@@ -1,7 +1,7 @@
 Docker template for Composer + Drupal
 =====================================
 
-Provides an optimized, fast, and lightweight local / CI docker environment to
+Provides an barebones, fast, and lightweight local / CI docker environment to
 work with Drupal.
 
 ## Install + Configuration
@@ -54,7 +54,8 @@ echo "export http_proxy=$HTTP_PROXY" >> /home/docker/.ashrc
 echo "export https_proxy=$HTTP_PROXY" >> /home/docker/.ashrc
 ```
 
-Switch between multiple Docker Machines with the following command:
+Switch between multiple `Docker Machines / Drupal environments` with the
+following command:
 
 ```sh
 eval $(docker-machine env site-name)
@@ -72,9 +73,9 @@ docker-machine-nfs site-name
 #### Build + Start Docker Machine
 
 All of the Docker containers rely on a composer build. Since this is a first
-run this command will be executed first. The next command is to build the base
-container for this project from which all dependent containers will derive.
-Finally the whole infrastructure is instantiated with `docker-compose`.
+run the `composer update` command will be executed first. The next command is
+to build the base container for this project from which all dependent
+containers will derive and then to instantiate the infrastructure.
 
 ```sh
 composer update
@@ -87,10 +88,11 @@ continuously rebuilt with CI.
 
 ## Architecture
 
-Now that all of the infrastructure and pre-requisites have now been installed +
-built out we can take a moment to go over the architecture. The tree represented
+Now that all of the infrastructure and pre-requisites have been installed +
+built out we can take a moment to go over the file system. The tree represented
 below gives a overview of the generated scaffold. All logic is contained within
-a single docker folder + 5 controller files.
+a single docker folder + 5 controller files. Please note the controller files
+will never be regenerated to prevent overrides from being deleted.
 
 ```
 .
@@ -114,7 +116,7 @@ a single docker folder + 5 controller files.
 │   │   ├── phpcs.xml
 │   │   └── phpunit.xml
 │   ├── images
-│   │   │── 1.0-alpha1
+│   │   │── 1.0-alpha1 (example of tagged release for Docker Hub)
 │   │   │   ├── scripts
 │   │   │   │   └── ScriptHandler.php
 │   │   │   └── Dockerfile
@@ -137,10 +139,10 @@ a single docker folder + 5 controller files.
 │   ├── config.yml
 │   ├── deploy.php
 │   └── Dockerfile
-├── .gitlab-ci.yml        (controller file for CI)
-├── .travis.yml           (controller file for CI)
+├── .gitlab-ci.yml        (controller file for GitLab CI)
+├── .travis.yml           (controller file for Travis CI)
 ├── docker-compose.yml    (controller file for Docker)
-├── docker-compose-ci.yml (controller file for Docker)
+├── docker-compose-ci.yml (controller file for Docker on CI builds)
 └── Makefile              (controller file for Docker)
 ```
 
@@ -209,10 +211,11 @@ You can interact with Drupal and associated tools via the `docker/bin` commands.
 ```
 
 > Note: The `docker/bin` folder provides idempotent control over a range of
-docker services as they are wrappers to `docker run`.
+docker services as they are merely wrappers to `docker run`. This `bin` folder
+will be useful when configuring PHPStorm to support Behat, Composer, PHP, etc.
 
 The following are some example(s) of commonly used commands to help illustrate
-how they can be leveraged:
+how the `bin` folder can be leveraged:
 
 Call any `drush` command:
 
@@ -254,11 +257,12 @@ make list
 
 ## Docker Images
 
-Every image (except for MySQL) is based on the lightweight [Alpine][alpine]
-Linux distribution. Additionally most of the images listed below are extended
-off of each other to take advantage of docker layering best practices. Due to
-this you will be downloading far less then the listed amounts. Finally every
-image in some form or another is directly derived from Docker official images.
+Every image (except for MySQL until P.R. is merged) is based on the lightweight
+[Alpine][alpine] Linux distribution. Additionally most of the images listed
+below are extended off of each other to take advantage of docker layering best
+practices. Due to this you will be downloading far less then the listed amounts.
+Finally every image in some form or another is directly derived from Docker
+official images.
 
 > Note: There are additional tricks such as leveraging a
 [docker registry proxy][docker-registry] cache so on rebuilds, you won't need
@@ -269,8 +273,7 @@ to download the images when rebuilding etc.
 | Repository                      | Tag          | Size      |
 | ------------------------------- | ------------ | --------- |
 | alpine                          | latest       | 3.98  MB  |
-| gliderlabs/registrator          | latest       | 23.76 MB  |
-| consul                          | latest       | 38.75 MB  |
+| nginx:alpine                    | latest       | 54.27 MB  |
 | mailhog/mailhog                 | latest       | 46.56 MB  |
 | mysql                           | 5.6          | 327.5 MB  |
 
@@ -280,20 +283,6 @@ to download the images when rebuilding etc.
 its small size, resource isolation, and memory efficiency. Additionally
 [Alpine][alpine] provides a great packager to help with docker layering namely
 [apk][apk].
-
-#### Registrator
-
-[Registrator][registrator] automatically registers and deregisters services for
-any Docker container by inspecting containers as they come online.
-[Registrator][registrator] is configured to automatically populate
-[Consul][consul].
-
-#### Consul
-
-[Consul][consul] makes it simple for services to register themselves and to
-discover other  services via a DNS or HTTP interface. [Consul][consul] provides
-a flexible key/value store enables storing dynamic configuration, feature
-flagging, coordination, leader election and more.
 
 #### Mailhog
 
@@ -310,17 +299,17 @@ create an [Alpine][alpine] variant much like the PostgreSQL image.
 
 | Repository                      | Tag          | Size      |
 | ------------------------------- | ------------ | --------- |
-| drupalwxt/nginx-consul-template | latest       | 74.82 MB  |
-| drupalwxt/selenium              | hub          | 155.4 MB  |
-| drupalwxt/selenium              | node-firefox | 326.5 MB  |
+| drupalcomposer/drupal                | latest       | 177.2 MB  |
+| drupalcomposer/selenium              | hub          | 155.4 MB  |
+| drupalcomposer/selenium              | node-firefox | 326.5 MB  |
 
-#### Nginx + Consul Template
+- [drupalcomposer/drupal][docker-drupal]
 
-Creates a configurable load balancer through [Consul][consul]'s key / value
-store which dynamically populates `Nginx` with the different Docker
-environments. Can be interacted with via simple curl requests.
+#### Overridden (`_/drupal`)
 
-- [drupalwxt/nginx-consul-template][nginx-consul-template]
+> Note: The Dockerfile in `drupalcomposer/drupal` extends from the
+`drupal:fpm-alpine` container and simply provides missing support. Eventually
+this image should be ported to the Docker official library for Drupal.
 
 #### Selenium (Hub + Node Firefox)
 
@@ -328,32 +317,32 @@ A bare bones selenium environment built in [Alpine][alpine]. Contains both the
 [Selenium Grid Hub][selenium-grid] and [Selenium Node][selenium-node] images
 configured to run firefox.
 
-- [drupalwxt/selenium][selenium]
+- [drupalcomposer/selenium][selenium]
 
-### Drupal Images (Local)
+#### Namespace change for `Helper Images`
+
+Ideally I would like to change these images to be namespaced under the
+`drupal-composer` organization.
 
 | Repository                      | Tag          | Size      |
 | ------------------------------- | ------------ | --------- |
-| drupalwxt/drupal                | latest       | 190.2 MB  |
-| org/site-name                   | latest       | 523.7 MB  |
-| sitename_cron                   | latest       | 523.7 MB  |
-| sitename_web                    | latest       | 650.6 MB  |
+| drupal-composer/drupal          | latest       | 177.2 MB  |
+| drupal-composer/selenium        | hub          | 155.4 MB  |
+| drupal-composer/selenium        | node-firefox | 326.5 MB  |
 
-#### Overridden (`_/drupal`)
+### Scaffolded Drupal Images derived from `composer.json`
 
-Eventually this image should be ported to the Docker official library for
-Drupal. Currently the official Drupal image doesn't support the [Alpine][alpine]
-variant. As most other popular projects have an [Alpine][alpine] variant this
-should eventually be accepted. Right now this image directly extends off of
-the official `php:7.0-fpm-alpine` image one layer below Drupal official.
-
-- [drupalwxt/drupal][docker-drupal]
+| Repository                      | Tag          | Size                        |
+| ------------------------------- | ------------ | --------------------------- |
+| org/repo                        | latest       | depends on `composer.json`  |
+| sitename_cron                   | latest       | depends on `composer.json`  |
+| sitename_web                    | latest       | depends on `composer.json`  |
 
 #### Base (`org/repo`)
 
-This image when built or pulled from Docker Hub (if desired) is a direct
-extension of the official Drupal image. It simply calls the base layer and runs
-the following composer command (amongst others) in the container:
+This image when built locally or possibly pulled from Docker Hub (if setup) is
+a direct extension of the official Drupal image. It simply calls the base layer
+and runs the following composer command (amongst others) in the container:
 
 ```
 composer global require "hirak/prestissimo:^0.3" && \
@@ -362,7 +351,7 @@ composer install --prefer-dist \
                  --no-dev
 ```
 
-> Note: This layer doesn't include the dev dependencies from composer.json
+> Note: This layer doesn't include the dev dependencies from `composer.json`
 
 - [Dockerfile][drupal-site-layer]
 
@@ -427,8 +416,8 @@ Below is a `graphviz` dot representation of our `docker-compose.yml` file.
 
 ## Acknowledgements
 
-Where possible we try to follow the best practices laid out by the top-tier
-Drupal projects namely:
+Where possible we try to integrate with the best practices laid out by the
+top-tier Drupal projects namely:
 
 * [Lightning][lightning] distribution created by [Acquia][acquia]
 * [Open Social][open_social] distribution created by [Goal Gorilla][goalgorilla]
@@ -455,11 +444,11 @@ pulled to be transparently saved locally for subsequent docker pulls.
 [docker-machine]:               https://www.docker.com/products/docker-machine
 [docker-machine-nfs]:           https://github.com/adlogix/docker-machine-nfs
 [docker-toolbox]:               https://www.docker.com/products/docker-toolbox
-[docker-drupal]:                https://github.com/drupalwxt/drupal
-[docker-drupal-scaffold]:       https://github.com/drupalwxt/drupal-scaffold-docker
-[docker-drupal-scaffold-down]:  https://github.com/drupalwxt/drupal-scaffold-docker/blob/master/src/Handler.php#L104
+[docker-drupal]:                https://github.com/drupal-composer-ext/drupal
+[docker-drupal-scaffold]:       https://github.com/drupal-composer-ext/drupal-scaffold-docker
+[docker-drupal-scaffold-down]:  https://github.com/drupal-composer-ext/drupal-scaffold-docker/blob/8.x/src/Handler.php#L104
 [docker-registry]:              https://docs.docker.com/registry/recipes/mirror
-[docker-registry-proxy-cache]:  https://github.com/drupalwxt/registry-proxy-cache
+[docker-registry-proxy-cache]:  https://github.com/sylus/registry-proxy-cache
 [drupal-site-layer]:            docker/Dockerfile
 [drupal-site-ci-layer]:         docker/images/ci/Dockerfile
 [drupal-site-cron-layer]:       docker/images/cron/Dockerfile
@@ -469,11 +458,10 @@ pulled to be transparently saved locally for subsequent docker pulls.
 [lightning]:                    https://github.com/acquia/lightning
 [kitematic]:                    https://www.docker.com/products/docker-kitematic
 [mailhog]:                      https://github.com/mailhog/MailHog
-[nginx-consul-template]:        https://github.com/drupalwxt/nginx-consul-template
 [open_social]:                  https://www.drupal.org/project/social
 [panopoly]:                     https://github.com/panopoly/panopoly
 [registrator]:                  https://github.com/gliderlabs/registrator
-[selenium]:                     https://github.com/drupalwxt/selenium
+[selenium]:                     https://github.com/drupal-composer-ext/selenium
 [selenium-grid]:                http://www.seleniumhq.org/projects/grid
 [selenium-node]:                https://github.com/SeleniumHQ/selenium
 [site-open-data]:               https://github.com/open-data/site-open-data
