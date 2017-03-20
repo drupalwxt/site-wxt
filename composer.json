@@ -22,7 +22,7 @@
         "phpmd/phpmd": "@stable",
         "pdepend/pdepend": "2.1.0",
         "sebastian/phpcpd": "*",
-        "phpunit/phpunit": "4.8",
+        "phpunit/phpunit": "~4.8",
         "deployer/deployer": "^4.0",
         "deployer/recipes": "^4.0"
     },
