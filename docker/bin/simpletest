@@ -41,7 +41,7 @@ docker run -i \
   --net "${network}" \
   --rm \
   "${image}" /var/www/html/core/scripts/run-tests.sh --php /usr/local/bin/php \
-                                                     --url http://$DOMAIN \
+                                                     --url http://nginx \
                                                      --color \
                                                      --verbose \
                                                      "$@"
