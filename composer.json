@@ -26,13 +26,12 @@
         "deployer/deployer": "^4.0",
         "deployer/recipes": "^4.0"
     },
-    "require": {
-        "composer/installers": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.0.0",
-        "cweagans/composer-patches": "^1.6.0",
-        "drush/drush": "8.*@stable",
-        "drupalwxt/wxt": "dev-8.x-2.x",
-        "drupal-composer-ext/drupal-scaffold-docker": "8.x-dev"
+    "config": {
+        "secure-http": false,
+        "prestissimo": {
+            "maxConnections": 10,
+            "minConnections": 5
+        }
     },
     "repositories": [
         {
@@ -179,18 +178,6 @@
           "DrupalWxT\\WxT\\ScriptHandler::deployLibraries"
       ]
     },
-    "config": {
-        "secure-http": false,
-        "prestissimo": {
-            "maxConnections": 10,
-            "minConnections": 5
-        }
-    },
-    "autoload": {
-        "classmap": [
-            "scripts/ScriptHandler.php"
-        ]
-    },
     "extra": {
         "installer-paths": {
             "html/core": [
@@ -225,5 +212,18 @@
                 "https://patch-diff.githubusercontent.com/raw/deployphp/recipes/pull/80.patch"
             }
         }
+    },
+    "require": {
+        "composer/installers": "^1.0",
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "cweagans/composer-patches": "^1.6.0",
+        "drush/drush": "8.*@stable",
+        "drupalwxt/wxt": "dev-8.x-2.x",
+        "drupal-composer-ext/drupal-scaffold-docker": "8.x-dev"
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/ScriptHandler.php"
+        ]
     }
 }
