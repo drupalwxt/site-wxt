@@ -39,6 +39,10 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+          "type": "vcs",
+          "url": "http://github.com/heshanlk/webform_migrate.git"
+        },
+        {
             "type"    : "package",
             "package" : {
                 "name"    : "wet-boew/wet-boew",
@@ -214,9 +218,9 @@
         }
     },
     "require": {
-        "composer/installers": "^1.0",
-        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.0",
+        "drupal-composer/drupal-scaffold": "^2.0.0",
         "drush/drush": "8.1.11",
         "drupalwxt/wxt": "dev-8.x-2.x",
         "drupal-composer-ext/drupal-scaffold-docker": "8.x-dev"
