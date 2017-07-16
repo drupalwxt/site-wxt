@@ -3,7 +3,7 @@ MAINTAINER William Hearn <sylus1984@gmail.com>
 
 # Allow Composer to be run as root.
 ENV COMPOSER_ALLOW_SUPERUSER 1
-ENV COMPOSER_VERSION 1.2.2
+ENV COMPOSER_VERSION 1.4.2
 
 # Setup the Composer installer.
 RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
