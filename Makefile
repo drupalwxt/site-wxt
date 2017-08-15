@@ -60,9 +60,10 @@ phpcs: drupal_cs
               --ignore=/var/www/html/profiles/wxt/modules/custom/wxt_test \
               --ignore=/var/www/html/modules/custom/wxt_library \
               --ignore=*.css \
+              --ignore=/var/www/html/*/custom/*/*.info.yml \
               /var/www/html/modules/custom \
-              /var/www/html/profiles/wxt/modules/custom \
               /var/www/html/themes/custom \
+              /var/www/html/profiles/od/modules/custom
 
 	./docker/bin/phpcs --standard=/var/www/html/core/phpcs.xml \
               --extensions=php,module,inc,install,test,profile,theme \
