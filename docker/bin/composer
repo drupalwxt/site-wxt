@@ -33,7 +33,7 @@ if [ -z "${HTTP_PROXY-}" ]; then
   HTTP_PROXY=''
 fi
 
-docker run -i \
+docker run -it \
   --entrypoint=composer \
   -v "${PWD}":"${PWD}" \
   -v /tmp/:/tmp/ \
