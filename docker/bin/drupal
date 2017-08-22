@@ -33,8 +33,8 @@ if [ -z "${HTTP_PROXY-}" ]; then
   HTTP_PROXY=''
 fi
 
-docker run -i \
-  --entrypoint=drupal \
+docker run -it \
+  --entrypoint=/var/www/vendor/drupal/console/bin/drupal \
   -v "${PWD}":"${PWD}" \
   -v "${PWD}/docker/conf/console":"/root/.console" \
   -v /tmp/:/tmp/ \

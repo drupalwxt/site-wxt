@@ -35,7 +35,7 @@ else
   image="${site}"
 fi
 
-docker run -i \
+docker run -it \
   -e "IDE_BEHAT_VERSION=3.2.2" \
   -e "IDE_BEHAT_DIR=/var/www/vendor/behat/behat/bin/behat" \
   --entrypoint=behat \
