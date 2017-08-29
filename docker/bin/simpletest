@@ -29,8 +29,6 @@ else
   image="${site}"
 fi
 
-DOMAIN=$1
-
 docker run -i \
   --entrypoint=php \
   -v "${PWD}":"${PWD}" \

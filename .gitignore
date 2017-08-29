@@ -35,3 +35,6 @@ bower_components/
 .sass-cache
 *.sass-cache*
 **/sass/*.css
+
+# Custom
+docker/conf/console
