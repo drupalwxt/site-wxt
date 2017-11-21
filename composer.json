@@ -9,8 +9,7 @@
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
         "mikey179/vfsStream": "~1.2",
-        "symfony/css-selector": "2.8",
-        "symfony/http-foundation": "2.8.28",
+        "symfony/css-selector": "~2.8|~3.0",
         "behat/behat": "^3.0",
         "behat/mink": "~1.7",
         "behat/mink-extension": "*",
@@ -244,7 +243,7 @@
         "cweagans/composer-patches": "^1.6.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "drupal-composer/drupal-scaffold": "^2.0.0",
-        "drush/drush": "9.0.0-beta7",
+        "drush/drush": "~8.0|^9.0.0-beta7",
         "drupalwxt/wxt": "dev-8.x-2.x"
     },
     "autoload": {
