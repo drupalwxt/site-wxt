@@ -32,9 +32,6 @@
         "prestissimo": {
             "maxConnections": 10,
             "minConnections": 5
-        },
-        "platform": {
-            "php": "5.6"
         }
     },
     "repositories": [
