@@ -1729,6 +1729,7 @@
                     }
                 },
                 "patches_applied": {
+                    "Issue #2918685 by duncan.moo: Alert close link does not work on D8.4": "https://www.drupal.org/files/issues/altert-close-switch-to-button-2918685-1.patch",
                     "Enter drupal/bootstrap patch #2834732 description here": "https://www.drupal.org/files/issues/temporarily_disable-2881978-2.patch",
                     "Enter drupal/bootstrap patch #2905729 description here": "https://www.drupal.org/files/issues/bootstrap-improve_alterManager_performance-2905729-5.patch",
                     "Enter drupal/bootstrap patch #2905747 description here": "https://www.drupal.org/files/issues/bootstrap-theme_context_generation_expensive-2905747-2.patch"
@@ -6956,17 +6957,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/wxt_bootstrap",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "9b14e8df792e73dd30152b416bdb51a5f1410edf"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "58044a52bf020231464a6adf072f85cc7b7cd551"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -6980,8 +6981,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1519835284",
+                    "version": "8.x-1.1",
+                    "datestamp": "1519844284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7014,7 +7015,11 @@
                     ]
                 },
                 "enable-patching": true,
-                "patches": []
+                "patches": {
+                    "drupal/bootstrap": {
+                        "Issue #2918685 by duncan.moo: Alert close link does not work on D8.4": "https://www.drupal.org/files/issues/altert-close-switch-to-button-2918685-1.patch"
+                    }
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -7154,12 +7159,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "2b515c9a864b1a836527775db0cc2a5172e7b903"
+                "reference": "3051e2b059a8314841c6868664025409f889a9e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/2b515c9a864b1a836527775db0cc2a5172e7b903",
-                "reference": "2b515c9a864b1a836527775db0cc2a5172e7b903",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/3051e2b059a8314841c6868664025409f889a9e9",
+                "reference": "3051e2b059a8314841c6868664025409f889a9e9",
                 "shasum": ""
             },
             "require": {
@@ -7205,7 +7210,7 @@
                 "drupal/views_bootstrap": "3.0",
                 "drupal/webform": "5.0-beta25",
                 "drupal/webform_migrate": "1.0-alpha1",
-                "drupal/wxt_bootstrap": "1.0",
+                "drupal/wxt_bootstrap": "1.1",
                 "drupal/wxt_library": "1.0",
                 "oomphinc/composer-installers-extender": "^1.1",
                 "w8tcha/ckeditor-codemirror": "1.16",
@@ -7372,7 +7377,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2018-02-28T16:43:54+00:00"
+            "time": "2018-02-28T19:20:12+00:00"
         },
         {
             "name": "drush/drush",
