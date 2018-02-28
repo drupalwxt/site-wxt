@@ -5,7 +5,6 @@ scripts/drupal
 files_private/
 
 # Composer files
-composer.lock
 html
 vendor
 */*/*/vendor
