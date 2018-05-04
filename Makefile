@@ -60,6 +60,7 @@ phpcs: drupal_cs
               --ignore=/var/www/html/profiles/wxt/modules/custom/wxt_test \
               --ignore=/var/www/html/modules/custom/wxt_library \
               --ignore=*.css \
+              --ignore=*.md \
               --ignore=/var/www/html/*/custom/*/*.info.yml \
               /var/www/html/modules/custom \
               /var/www/html/themes/custom \
@@ -69,6 +70,7 @@ phpcs: drupal_cs
               --extensions=php,module,inc,install,test,profile,theme \
               --report=full \
               --colors \
+              --ignore=*.md \
               -l \
               /var/www/html/profiles/wxt
 
