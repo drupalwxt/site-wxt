@@ -31,7 +31,7 @@ base:
                --build-arg HTTPS_PROXY=$$HTTP_PROXY .
 
 drupal_install:
-	docker exec sitewxt_web bash /var/www/docker/bin/cli drupal-first-run wxt
+	docker exec sitewxt_cli bash /var/www/docker/bin/cli drupal-first-run wxt
 
 drupal_migrate:
 	docker exec sitewxt_web bash /var/www/docker/bin/cli drupal-migrate wxt

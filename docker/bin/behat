@@ -23,7 +23,7 @@ if [ -f "${dir}/../config.yml" ]; then
   fi
   behat_path="/var/www/html/${config_docker_behat_path}"
 else
-  site="drupal_web"
+  site="drupal_cli"
   volume="drupal_web"
   network="drupal_default"
   behat_path="/var/www/html"

@@ -95,6 +95,22 @@ services:
       - '8025:8025'
     container_name: sitewxt_mailhog
 
+  cli:
+    image: drupalwxt/site-wxt:latest
+    environment:
+      - DRUPAL_SETTINGS=development
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_proxy=${HTTP_PROXY}
+    entrypoint: /bin/sleep 3650d
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - db
+      - web
+    container_name: sitewxt_cli
+
 #  solr:
 #    image: solr:6.1-alpine
 #    hostname: solr
