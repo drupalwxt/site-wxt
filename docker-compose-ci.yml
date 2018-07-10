@@ -3,7 +3,7 @@
 version: "2"
 services:
 
-  web_scripts:
+  cli_scripts:
     build:
       context: docker/images/ci
       args:
@@ -19,7 +19,7 @@ services:
       - HTTPS_PROXY=${HTTP_PROXY}
     volumes:
       - ./:/var/www
-    container_name: sitewxt_web_scripts
+    container_name: sitewxt_cli_scripts
 
   web:
     build:
