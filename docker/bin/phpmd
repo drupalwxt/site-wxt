@@ -30,7 +30,7 @@ else
 fi
 
 docker run -i \
-  --entrypoint=phpmd \
+  --entrypoint=/var/www/vendor/bin/phpmd \
   -v "${PWD}":"${PWD}" \
   -v /tmp/:/tmp/ \
   --sig-proxy=true \

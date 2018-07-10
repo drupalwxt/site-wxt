@@ -31,7 +31,7 @@ fi
 
 if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
   docker run -i \
-    --entrypoint=phpcs \
+    --entrypoint=/var/www/vendor/bin/phpcs \
     -v "${PWD}":"${PWD}" \
     -v /tmp/:/tmp/ \
     -v "${HOME}/.phpstorm_helpers/":"${HOME}/.phpstorm_helpers/" \
@@ -42,7 +42,7 @@ if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
     "${image}" "$@"
 else
   docker run -i \
-    --entrypoint=phpcs \
+    --entrypoint=/var/www/vendor/bin/phpcs \
     -v "${PWD}":"${PWD}" \
     -v /tmp/:/tmp/ \
     --sig-proxy=true \
