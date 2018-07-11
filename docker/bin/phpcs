@@ -18,7 +18,7 @@ if [ -f "${dir}/../config.yml" ]; then
   volume="${config_docker_volume}"
   network="${config_docker_network}"
 else
-  site="drupal_web"
+  site="drupal_cli"
   volume="drupal_web"
   network="drupal_default"
 fi
@@ -31,7 +31,7 @@ fi
 
 if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
   docker run -i \
-    --entrypoint=phpcs \
+    --entrypoint=/var/www/vendor/bin/phpcs \
     -v "${PWD}":"${PWD}" \
     -v /tmp/:/tmp/ \
     -v "${HOME}/.phpstorm_helpers/":"${HOME}/.phpstorm_helpers/" \
@@ -42,7 +42,7 @@ if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
     "${image}" "$@"
 else
   docker run -i \
-    --entrypoint=phpcs \
+    --entrypoint=/var/www/vendor/bin/phpcs \
     -v "${PWD}":"${PWD}" \
     -v /tmp/:/tmp/ \
     --sig-proxy=true \

@@ -18,7 +18,7 @@ if [ -f "${dir}/../config.yml" ]; then
   volume="${config_docker_volume}"
   network="${config_docker_network}"
 else
-  site="drupal_web"
+  site="drupal_cli"
   volume="drupal_web"
   network="drupal_default"
 fi
@@ -30,7 +30,7 @@ else
 fi
 
 docker run -i \
-  --entrypoint=phpmd \
+  --entrypoint=/var/www/vendor/bin/phpmd \
   -v "${PWD}":"${PWD}" \
   -v /tmp/:/tmp/ \
   --sig-proxy=true \

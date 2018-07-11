@@ -18,7 +18,7 @@ if [ -f "${dir}/../config.yml" ]; then
   volume="${config_docker_volume}"
   network="${config_docker_network}"
 else
-  site="drupal_web"
+  site="drupal_cli"
   volume="drupal_web"
   network="drupal_default"
 fi
@@ -34,7 +34,7 @@ if [ -z "${HTTP_PROXY-}" ]; then
 fi
 
 docker run -it \
-  --entrypoint=drupal \
+  --entrypoint=/var/www/vendor/bin/drupal \
   -v "${PWD}":"${PWD}" \
   -v "${PWD}/docker/conf/console":"/root/.console" \
   -v /tmp/:/tmp/ \

@@ -3,7 +3,7 @@
 version: "2"
 services:
 
-  web_scripts:
+  cli_scripts:
     build:
       context: docker/images/ci
       args:
@@ -19,7 +19,7 @@ services:
       - HTTPS_PROXY=${HTTP_PROXY}
     volumes:
       - ./:/var/www
-    container_name: sitewxt_web_scripts
+    container_name: sitewxt_cli_scripts
 
   web:
     build:
@@ -42,6 +42,22 @@ services:
     ports:
       - "9000"
     container_name: sitewxt_web
+
+  cli:
+    image: drupalwxt/site-wxt:latest
+    environment:
+      - DRUPAL_SETTINGS=production
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_proxy=${HTTP_PROXY}
+    entrypoint: /bin/sleep 3650d
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - db
+      - web
+    container_name: sitewxt_cli
 
   db:
     image: mysql:5.6
