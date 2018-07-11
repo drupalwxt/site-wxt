@@ -34,7 +34,7 @@ drupal_install:
 	docker exec sitewxt_cli bash /var/www/docker/bin/cli drupal-first-run wxt
 
 drupal_migrate:
-	docker exec sitewxt_web bash /var/www/docker/bin/cli drupal-migrate wxt
+	docker exec sitewxt_cli bash /var/www/docker/bin/cli drupal-migrate wxt
 
 drush_archive:
 	./docker/bin/drush archive-dump --destination="/var/www/files_private/drupal$$(date +%Y%m%d_%H%M%S).tgz" \
