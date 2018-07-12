@@ -96,14 +96,14 @@ services:
     container_name: sitewxt_mailhog
 
   cli:
-    image: drupalwxt/site-wxt:latest
+    build:
+      context: docker/images/cli
     environment:
       - DRUPAL_SETTINGS=development
       - http_proxy=${HTTP_PROXY}
       - https_proxy=${HTTP_PROXY}
       - HTTP_PROXY=${HTTP_PROXY}
       - HTTPS_proxy=${HTTP_PROXY}
-    entrypoint: /bin/sleep 3650d
     volumes:
       - ./:/var/www
     depends_on:
