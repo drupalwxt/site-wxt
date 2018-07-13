@@ -50,6 +50,7 @@ drupal_init() {
 #
 drupal_install() {
   header Install Drupal distribution
+  set -e
 
   time drush si "${OPTION}" \
     --sites-subdir=default \
@@ -60,6 +61,8 @@ drupal_install() {
     --site-name="Drupal Install Profile (${OPTION})" \
     install_configure_form.update_status_module='array(FALSE,FALSE)' \
     --yes
+
+  set +e
 }
 
 # drupal_migrate
