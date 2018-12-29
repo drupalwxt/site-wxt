@@ -1,0 +1,21 @@
+version: "2"
+
+syncs:
+  root-sync:
+    sync_excludes: [ '.git', '.idea', 'node_modules' ]
+    watch_excludes: [ '.git', '.idea', 'node_modules' ]
+    src: './'
+    host_disk_mount_mode: 'cached'
+    sync_userid: '1000'
+    sync_groupid: '82'
+    watch_in_container: true
+    max_inotify_watches: 100000
+  docroot-sync:
+    sync_excludes: [ '.git', '.idea', 'node_modules' ]
+    watch_excludes: [ '.git', '.idea', 'node_modules' ]
+    src: './html'
+    host_disk_mount_mode: 'cached'
+    sync_userid: '100'
+    sync_groupid: '101'
+    watch_in_container: true
+    max_inotify_watches: 100000

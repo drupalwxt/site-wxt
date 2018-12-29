@@ -1,0 +1,126 @@
+# Docker Compose (v2)
+
+version: "2"
+services:
+
+  web:
+    build:
+      context: docker/images/dev
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTP_PROXY}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTP_PROXY}
+    environment:
+      - DRUPAL_SETTINGS=development
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTP_PROXY}
+    volumes:
+      - root-sync:/var/www:nocopy
+    depends_on:
+      - db
+    ports:
+      - "9000"
+    container_name: sitewxt_web
+
+  db:
+    image: mysql:5.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=wxt
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    container_name: sitewxt_db
+    command: mysqld --max_allowed_packet=32M
+
+  nginx:
+    image: nginx:alpine
+    volumes:
+     - docroot-sync:/var/www/html:nocopy
+     - ./docker/conf/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - '80:80'
+    depends_on:
+      - web
+    restart: always
+    container_name: sitewxt_nginx
+
+  cron:
+    build:
+      context: docker/images/cron
+      args:
+        - http_proxy=${HTTP_PROXY}
+        - https_proxy=${HTTP_PROXY}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTP_PROXY}
+    environment:
+      - DRUPAL_SETTINGS=development
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTP_PROXY}
+    volumes:
+      - root-sync:/var/www:nocopy
+    depends_on:
+     - db
+     - web
+    container_name: sitewxt_cron
+
+  hub:
+    image: drupalcomposer/selenium:hub
+    ports:
+      - "4444:4444"
+    depends_on:
+     - db
+     - web
+    container_name: sitewxt_hub
+
+  firefox:
+    image: drupalcomposer/selenium:node-firefox
+    depends_on:
+     - db
+     - web
+     - hub
+    container_name: sitewxt_firefox
+
+  mailhog:
+    image: mailhog/mailhog
+    hostname: mailhog
+    ports:
+      - '1025:1025'
+      - '8025:8025'
+    container_name: sitewxt_mailhog
+
+  cli:
+    build:
+      context: docker/images/cli
+    environment:
+      - DRUPAL_SETTINGS=development
+      - http_proxy=${HTTP_PROXY}
+      - https_proxy=${HTTP_PROXY}
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_proxy=${HTTP_PROXY}
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - db
+      - web
+    container_name: sitewxt_cli
+
+#  solr:
+#    image: solr:6.1-alpine
+#    hostname: solr
+#    ports:
+#      - "8983:8983"
+#    container_name: sitewxt_solr
+
+volumes:
+  root-sync:
+    external: true
+  docroot-sync:
+    external: true
+  db_data:
