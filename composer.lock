@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4685fa535163ba44ea5d2c404284954d",
+    "content-hash": "1bb18e09e11b9aacc6fed04316d531ec",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -8397,16 +8397,16 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "dev-feat-update",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "45cddab4ce884b4bc475eb965029d464009a86ee"
+                "reference": "1c2eda5e119d1ce5d63e640875fa2649904b22bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/45cddab4ce884b4bc475eb965029d464009a86ee",
-                "reference": "45cddab4ce884b4bc475eb965029d464009a86ee",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/1c2eda5e119d1ce5d63e640875fa2649904b22bd",
+                "reference": "1c2eda5e119d1ce5d63e640875fa2649904b22bd",
                 "shasum": ""
             },
             "require": {
@@ -8593,7 +8593,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-01-10T21:32:58+00:00"
+            "time": "2019-01-10T21:38:14+00:00"
         },
         {
             "name": "drush/drush",
