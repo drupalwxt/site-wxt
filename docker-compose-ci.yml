@@ -80,7 +80,8 @@ services:
     command: mysqld --max_allowed_packet=32M
 
   nginx:
-    image: drupalwxt/site-wxt:nginx
+    build:
+      context: docker/images/nginx
     volumes:
      - files_data:/var/www/html/sites/default/files
      - ./docker/conf/nginx.conf:/etc/nginx/nginx.conf:ro
