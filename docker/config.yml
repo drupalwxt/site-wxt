@@ -1,5 +1,5 @@
 docker:
-    site: sitewxt_cli
+    site: site-wxt-upgrade_cli
     volume: sitewxt_web
-    network: sitewxt_default
+    network: site-wxt-upgrade_default
     behat_path: profiles/wxt/tests

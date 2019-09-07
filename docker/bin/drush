@@ -25,15 +25,17 @@ fi
 
 if [[ "${CI:-}" ]] ; then
   image="${site}_scripts"
+  options=""
 else
   image="${site}"
+  options="-it"
 fi
 
 if [ -z "${HTTP_PROXY-}" ]; then
   HTTP_PROXY=''
 fi
 
-docker run -it \
+docker run ${options} \
   --entrypoint=drush \
   -v "${PWD}":"${PWD}" \
   -v /tmp/:/tmp/ \

@@ -1,6 +1,9 @@
 FROM drupalcomposer/drupal:8.5-fpm-alpine
 MAINTAINER William Hearn <sylus1984@gmail.com>
 
+ARG GIT_USERNAME
+ARG GIT_PASSWORD
+
 # Allow Composer to be run as root.
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_VERSION 1.8.1
@@ -24,11 +27,12 @@ RUN rm -f /var/www/composer.lock && \
 
 COPY scripts/ScriptHandler.php /var/www/scripts/ScriptHandler.php
 COPY composer.json /var/www/composer.json
+COPY composer.lock /var/www/composer.lock
+
 WORKDIR /var/www
 RUN composer global require "hirak/prestissimo:^0.3" && \
     composer install --prefer-dist \
-                     --no-interaction \
-                     --no-dev
+                     --no-interaction
 
 # Permissions.
 WORKDIR /var/www/html

@@ -104,6 +104,10 @@
             "deployer/recipes": {
                 "Enter deployer/recipes patch #80 description here":
                 "https://patch-diff.githubusercontent.com/raw/deployphp/recipes/pull/80.patch"
+            },
+            "drupal/lightning_layout": {
+                "Enter deployer/recipes patch #3068975 description here":
+                "https://www.drupal.org/files/issues/2019-07-19/3068975-ctools-dependency.patch"
             }
         }
     },

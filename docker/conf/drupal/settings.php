@@ -376,9 +376,9 @@ $settings['update_free_access'] = FALSE;
 $settings['reverse_proxy'] = TRUE;
 
 /**
- * Specify every reverse proxy IP address in your environment.
- * This setting is required if $settings['reverse_proxy'] is TRUE.
- */
+* Specify every reverse proxy IP address in your environment.
+* This setting is required if $settings['reverse_proxy'] is TRUE.
+*/
 $settings['reverse_proxy_addresses'] = array('0.0.0.0/0');
 
 /**
@@ -714,11 +714,11 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 
 /**
- * Get environment settings.
- *
- * Production (default): normal production settings.
- * Development: Use development settings.
- */
+* Get environment settings.
+*
+* Production (default): normal production settings.
+* Development: Use development settings.
+*/
 $drupal_settings = 'production';
 if (isset($_ENV['DRUPAL_SETTINGS'])) {
   $drupal_settings = $_ENV['DRUPAL_SETTINGS'];
@@ -730,20 +730,20 @@ if ($drupal_settings !== 'production') {
 }
 
 /**
- * Set private file path directory.
- */
-$settings['file_private_path'] =  '/var/www/files_private';
+* Set private file path directory.
+*/
+// $settings['file_private_path'] =  '/var/www/files_private';
 
 /**
- * Load local development override configuration, if available.
- *
- * Use settings.local.php to override variables on secondary (staging,
- * development, etc) installations of this site. Typically used to disable
- * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
- * other things that should not happen on development and testing sites.
- *
- * Keep this code block at the end of this file to take full effect.
- */
+* Load local development override configuration, if available.
+*
+* Use settings.local.php to override variables on secondary (staging,
+* development, etc) installations of this site. Typically used to disable
+* caching, JavaScript/CSS compression, re-routing of outgoing emails, and
+* other things that should not happen on development and testing sites.
+*
+* Keep this code block at the end of this file to take full effect.
+*/
 if ($drupal_settings === 'development' && file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
