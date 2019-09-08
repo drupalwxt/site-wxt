@@ -9138,11 +9138,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "dev-1.x",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "0e5ea289e06aaa26552f88ef6ed109f7790b4d6e"
+                "reference": "8.x-1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "5bf500c07ffa71699b0af0e68899073f99b29675"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9156,11 +9162,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9+3-dev",
-                    "datestamp": "1554073086",
+                    "version": "8.x-1.10",
+                    "datestamp": "1567962187",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -9230,16 +9236,21 @@
             "homepage": "https://www.drupal.org/project/wxt_bootstrap",
             "support": {
                 "source": "https://git.drupalcode.org/project/wxt_bootstrap"
-            },
-            "time": "2019-09-07T17:42:35+00:00"
+            }
         },
         {
             "name": "drupal/wxt_library",
-            "version": "dev-1.x",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "98529436e0b9819115e5baa01b1c058877d42aed"
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "fe40f47e10203707136f38a386706e6ca4854ac8"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9260,11 +9271,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.6+3-dev",
-                    "datestamp": "1567878484",
+                    "version": "8.x-1.7",
+                    "datestamp": "1567961885",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -9334,8 +9345,7 @@
             "homepage": "https://www.drupal.org/project/wxt_library",
             "support": {
                 "source": "https://git.drupalcode.org/project/wxt_library"
-            },
-            "time": "2019-09-08T00:46:50+00:00"
+            }
         },
         {
             "name": "drupalwxt/wxt",
@@ -9343,12 +9353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "1439105fe3ceaac9729f137a5c6d7483889666d3"
+                "reference": "983d8159383d509334bd082448301c67ffdde245"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/1439105fe3ceaac9729f137a5c6d7483889666d3",
-                "reference": "1439105fe3ceaac9729f137a5c6d7483889666d3",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/983d8159383d509334bd082448301c67ffdde245",
+                "reference": "983d8159383d509334bd082448301c67ffdde245",
                 "shasum": ""
             },
             "require": {
@@ -9400,8 +9410,8 @@
                 "drupal/views_bootstrap": "3.1",
                 "drupal/webform": "^5.1",
                 "drupal/webform_migrate": "1.1",
-                "drupal/wxt_bootstrap": "1.x-dev",
-                "drupal/wxt_library": "1.x-dev",
+                "drupal/wxt_bootstrap": "1.10",
+                "drupal/wxt_library": "1.7",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
             },
@@ -9554,7 +9564,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-09-08T00:11:30+00:00"
+            "time": "2019-09-08T17:46:16+00:00"
         },
         {
             "name": "drush/drush",
@@ -10438,8 +10448,8 @@
             "authors": [
                 {
                     "name": "Luís Otávio Cobucci Oblonczyk",
-                    "role": "Developer",
-                    "email": "lcobucci@gmail.com"
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
                 }
             ],
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
