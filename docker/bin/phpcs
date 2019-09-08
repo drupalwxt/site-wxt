@@ -25,14 +25,16 @@ fi
 
 if [[ "${CI:-}" ]] ; then
   image="${site}_scripts"
+  vol="${PWD}/docker/conf/phpcs.xml:/var/www/html/core/phpcs.xml"
 else
   image="${site}"
+  vol="${PWD}:/var/www"
 fi
 
 if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
   docker run -i \
     --entrypoint=/var/www/vendor/bin/phpcs \
-    -v "${PWD}":"${PWD}" \
+    -v $vol \
     -v /tmp/:/tmp/ \
     -v "${HOME}/.phpstorm_helpers/":"${HOME}/.phpstorm_helpers/" \
     --sig-proxy=true \
@@ -43,11 +45,10 @@ if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
 else
   docker run -i \
     --entrypoint=/var/www/vendor/bin/phpcs \
-    -v "${PWD}":"${PWD}" \
+    -v $vol \
     -v /tmp/:/tmp/ \
     --sig-proxy=true \
     --pid=host \
-    --volumes-from "${volume}" \
     --rm \
     "${image}" "$@"
 fi

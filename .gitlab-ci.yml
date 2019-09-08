@@ -1,41 +1,42 @@
-stages:
-  - build
-  - deploy
+image: alpine:3.9
 
 variables:
+  # Software versions for command line tools
+  KUBERNETES_VERSION: 1.15.0
+  HELM_VERSION: 2.14.2
+
+  # Project information
   PROJECT_NAME: drupalwxt/site-wxt
 
-image: sylus/gitlab-ci
+  # Docker
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: 'tcp://localhost:2375'
+  DOCKER_TLS_CERTDIR: ''
 
-services:
-  - sylus/gitlab-ci:dind
+stages:
+  - build
+  - test
+  - deploy
+  - cleanup
 
 before_script:
-  - docker info
+  - command -v git && git config --global credential.helper store
+  # - echo https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.example.ca > ~/.git-credentials
+  - source .gitlab-ci/env.sh
+  - source .gitlab-ci/common.sh
 
-build_job:
+build:
   stage: build
+  image: sylus/gitlab-ci
+  services:
+     - docker:stable-dind
   script:
-   - echo "Building $PROJECT_NAME test runner"
-   - composer global require "hirak/prestissimo:^0.3"
-   - composer install --prefer-dist --no-interaction
-   - export COMPOSE_HTTP_TIMEOUT=200
-   - docker-compose --version
-   # Build out the Drupal infrastructure.
-   # make build can be avoided if leveraging Docker Hub.
-   # - make build
-   - docker-compose -f docker-compose-ci.yml up -d
-   - docker ps -a
-   - sleep 10
-   - make drupal_install
-   - make test
+    - .gitlab-ci/build.sh
 
-# deploy_release:
-#   stage: deploy
+# test:
+#   stage: test
+#   image: sylus/gitlab-ci
+#   services:
+#      - docker:stable-dind
 #   script:
-#     - composer install --prefer-dist --no-interaction
-#     - ./vendor/bin/dep --file=./docker/deploy.php develop
-#   dependencies:
-#     - build_job
-#   only:
-#     - /v[0-9].*$/
+#     - .gitlab-ci/test.sh

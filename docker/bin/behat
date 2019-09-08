@@ -31,21 +31,22 @@ fi
 
 if [[ "${CI:-}" ]] ; then
   image="${site}_scripts"
+  vol="${PWD}/docker/conf/drupal/settings.php:/var/www/html/sites/default/settings.php"
 else
   image="${site}"
+  vol="${PWD}:/var/www"
 fi
-
 docker run -i \
   -e "IDE_BEHAT_VERSION=3.2.2" \
   -e "IDE_BEHAT_DIR=/var/www/vendor/behat/behat/bin/behat" \
   --entrypoint=/var/www/vendor/bin/behat \
-  -v "${PWD}":"${PWD}" \
+  -v ${vol} \
+  -v ${PWD}/html/failures/behat/screenshots:/var/www/html/failures/behat/screenshots \
   -v /tmp/:/tmp/ \
   -w "${behat_path}" \
   -e BEHAT_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drupal":{"drupal_root":"/var/www/html"}, "drush":{"root":"/var/www/html"}}, "Behat\\MinkExtension":{"base_url" : "http://nginx", "selenium2":{"wd_host":"http://hub:4444/wd/hub"}}}}' \
   --sig-proxy=true \
   --pid=host \
-  --volumes-from "${volume}" \
   --net "${network}" \
   --rm \
   "${image}" "$@"

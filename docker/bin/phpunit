@@ -25,18 +25,19 @@ fi
 
 if [[ "${CI:-}" ]] ; then
   image="${site}_scripts"
+  vol="${PWD}/docker/conf/phpunit.xml:/var/www/html/core/phpunit.xml"
 else
   image="${site}"
+  vol="${PWD}:/var/www"
 fi
 
 docker run -i \
   --entrypoint=/var/www/vendor/bin/phpunit \
-  -v "${PWD}":"${PWD}" \
+  -v $vol \
   -v /tmp/:/tmp/ \
   -w "/var/www/html/core" \
   --sig-proxy=true \
   --pid=host \
-  --volumes-from "${volume}" \
   --net "${network}" \
   --rm \
   "${image}" "$@"
