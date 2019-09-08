@@ -3478,7 +3478,7 @@
                     "Enter drupal/core patch #2920637 description here": "https://www.drupal.org/files/issues/taxonomy-context-provider-2920637-3.patch",
                     "Enter drupal/core patch #2893407 description here": "https://www.drupal.org/files/issues/2018-06-05/2893407-34.patch",
                     "Enter drupal/core patch #2907413 description here": "https://www.drupal.org/files/issues/2019-06-21/2907413-11.patch",
-                    "Enter drupal/core patch #2938129 description here": "https://www.drupal.org/files/issues/2019-01-18/2938129-pagetitle-11.patch "
+                    "Enter drupal/core patch #2938129 description here": "https://www.drupal.org/files/issues/2019-01-18/2938129-pagetitle-11.patch"
                 }
             },
             "autoload": {
@@ -9343,12 +9343,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "f287cdda4888361f889573e041e0b883b6a3ca6e"
+                "reference": "1439105fe3ceaac9729f137a5c6d7483889666d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f287cdda4888361f889573e041e0b883b6a3ca6e",
-                "reference": "f287cdda4888361f889573e041e0b883b6a3ca6e",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/1439105fe3ceaac9729f137a5c6d7483889666d3",
+                "reference": "1439105fe3ceaac9729f137a5c6d7483889666d3",
                 "shasum": ""
             },
             "require": {
@@ -9490,8 +9490,7 @@
                         "Enter drupal/core patch #2920637 description here": "https://www.drupal.org/files/issues/taxonomy-context-provider-2920637-3.patch",
                         "Enter drupal/core patch #2893407 description here": "https://www.drupal.org/files/issues/2018-06-05/2893407-34.patch",
                         "Enter drupal/core patch #2907413 description here": "https://www.drupal.org/files/issues/2019-06-21/2907413-11.patch",
-                        "Enter drupal/core patch #2938129 description here": "https://www.drupal.org/files/issues/2019-01-18/2938129-pagetitle-11.patch ",
-                        "Enter drupal/core patch #3008924 description here": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch"
+                        "Enter drupal/core patch #2938129 description here": "https://www.drupal.org/files/issues/2019-01-18/2938129-pagetitle-11.patch"
                     },
                     "drupal/ctools": {
                         "Enter drupal/ctools patch #2667652 description here": "https://www.drupal.org/files/issues/ctools-option_to_expose-2667652-3.patch",
@@ -9555,7 +9554,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-09-07T19:12:16+00:00"
+            "time": "2019-09-08T00:11:30+00:00"
         },
         {
             "name": "drush/drush",
