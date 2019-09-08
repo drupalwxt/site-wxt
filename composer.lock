@@ -9239,7 +9239,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "a66b70f969244b294ef1b0aaa271549d6d41edc1"
+                "reference": "98529436e0b9819115e5baa01b1c058877d42aed"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9260,8 +9260,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5+1-dev",
-                    "datestamp": "1553727486",
+                    "version": "8.x-1.6+3-dev",
+                    "datestamp": "1567878484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9335,7 +9335,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/wxt_library"
             },
-            "time": "2019-09-07T17:45:12+00:00"
+            "time": "2019-09-08T00:46:50+00:00"
         },
         {
             "name": "drupalwxt/wxt",
