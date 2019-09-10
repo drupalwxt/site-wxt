@@ -3,20 +3,12 @@ Composer Project for Drupal WxT
 
 [![Build Status][ci-badge]][ci]
 
-Drupal WxT codebase for `Drupal WxT`.
+Drupal WxT codebase for [Drupal WxT][wxt].
 
 ## Requirements
 
 * [Composer][composer]
 * [Node][node]
-
-## Docker Support via `drupal-scaffold-docker`
-
-This project makes use of the `drupal-scaffold-docker` plugin for automatically
-downloading and instantiating a Docker based Drupal infrastructure.
-
-- [README.md][docker-scaffold-readme]
-- [template/docker/README.md][docker-readme]
 
 ## Maintenance
 
@@ -35,5 +27,4 @@ List of common commands are as follows:
 [ci-badge]:                 https://travis-ci.org/drupalwxt/site-wxt.svg?branch=8.x
 [composer]:                 https://getcomposer.org
 [node]:                     https://nodejs.org
-[docker-scaffold-readme]:   https://github.com/drupal-composer-ext/drupal-scaffold-docker/blob/master/README.md
-[docker-readme]:            https://github.com/drupal-composer-ext/drupal-scaffold-docker/blob/master/template/docker/README.md
+[wxt]:                      https://github.com/drupalwxt/wxt
