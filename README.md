@@ -3,7 +3,7 @@ Composer Project for Drupal WxT
 
 [![Build Status][ci-badge]][ci]
 
-Drupal WxT codebase for [Drupal WxT][wxt].
+Codebase for [Drupal WxT][wxt].
 
 ## Requirements
 
