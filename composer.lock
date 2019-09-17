@@ -140,16 +140,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.1",
+            "version": "3.112.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e2fc12e34732f61000f2592fc66807794d32fb7b"
+                "reference": "0d7a3ecb5dca10d1872ee5106cb154cbef52cf1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e2fc12e34732f61000f2592fc66807794d32fb7b",
-                "reference": "e2fc12e34732f61000f2592fc66807794d32fb7b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0d7a3ecb5dca10d1872ee5106cb154cbef52cf1c",
+                "reference": "0d7a3ecb5dca10d1872ee5106cb154cbef52cf1c",
                 "shasum": ""
             },
             "require": {
@@ -219,7 +219,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-09-16T18:09:39+00:00"
+            "time": "2019-09-17T18:07:57+00:00"
         },
         {
             "name": "bower-asset/cropper",
@@ -232,7 +232,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/fengyuanchen/cropper/zipball/30c58b29ee21010e17e58ebab165fbd84285c685",
-                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
+                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685",
+                "shasum": null
             },
             "type": "bower-asset",
             "license": [
@@ -250,7 +251,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/enyo/dropzone/zipball/08b9e0a763b54a685404dea523a9c54242fbe1b9",
-                "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
+                "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9",
+                "shasum": null
             },
             "type": "bower-asset"
         },
@@ -265,7 +267,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
-                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
+                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
+                "shasum": null
             },
             "type": "bower-asset",
             "license": [
@@ -283,7 +286,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/kenwheeler/slick/zipball/0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
-                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
+                "shasum": null
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
@@ -2778,17 +2782,17 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.16.0",
+            "version": "3.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.16"
+                "reference": "8.x-3.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.16.zip",
-                "reference": "8.x-3.16",
-                "shasum": "1ea4d9bbbaf6435e074ade3408f4baef94e5cbe3"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.20.zip",
+                "reference": "8.x-3.20",
+                "shasum": "dc8ecfca0b8e8e3598ba611e056f850f2ab497cb"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2799,8 +2803,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.16",
-                    "datestamp": "1548102180",
+                    "version": "8.x-3.20",
+                    "datestamp": "1561055630",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4773,17 +4777,17 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "1.0.0",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-3.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "e8aa3fae5c3c5dec84644bb577996938d638a611"
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0-rc1.zip",
+                "reference": "8.x-3.0-rc1",
+                "shasum": "e291b5468c834a344e9aa6cafd3a76171d473a22"
             },
             "require": {
                 "drupal/core": "*"
@@ -4791,14 +4795,14 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1510352885",
+                    "version": "8.x-3.0-rc1",
+                    "datestamp": "1558647185",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -7642,7 +7646,8 @@
                 },
                 "patches_applied": {
                     "Enter drupal/paragraphs patch #2878615 description here": "https://www.drupal.org/files/issues/comments_entity_uri-2878615-6.patch",
-                    "Update function 8018 caught in endless loop": "https://www.drupal.org/files/issues/2019-03-21/paragraphs-update-endless-loop-3041868-23.patch"
+                    "Update function 8018 caught in endless loop": "https://www.drupal.org/files/issues/2019-03-21/paragraphs-update-endless-loop-3041868-23.patch",
+                    "Enter drupal/paragraphs patch #2907094 description here": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8393,29 +8398,30 @@
         },
         {
             "name": "drupal/simple_sitemap",
-            "version": "2.12.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-                "reference": "8.x-2.12"
+                "reference": "8.x-3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.12.zip",
-                "reference": "8.x-2.12",
-                "shasum": "fe1c1a636adfba8358399a5a1ccdf20685066573"
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "690605c75cc75bc088d0506505c71d78f7d46c8c"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "~8.0",
+                "ext-xmlwriter": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.12",
-                    "datestamp": "1542505221",
+                    "version": "8.x-3.3",
+                    "datestamp": "1563488885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8439,12 +8445,11 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Sam Becker (Sam152)",
-                    "homepage": "https://www.drupal.org/u/sam152",
-                    "role": "Co-maintainer"
+                    "name": "gbyte.co",
+                    "homepage": "https://www.drupal.org/user/2381352"
                 }
             ],
-            "description": "Simple XML sitemap creates a standard conform XML sitemap of your content.",
+            "description": "Creates a standard conform hreflang XML sitemap of the site content and provides a framework for developing other sitemap types.",
             "homepage": "https://drupal.org/project/simple_sitemap",
             "support": {
                 "source": "https://cgit.drupalcode.org/simple_sitemap",
@@ -9259,22 +9264,16 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "1.10.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-1.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "5bf500c07ffa71699b0af0e68899073f99b29675"
+                "reference": "b48335a6b8decc5269972862dc5203f3cde78519"
             },
             "require": {
                 "composer/installers": "^1.2",
                 "cweagans/composer-patches": "^1.6.0",
-                "drupal/bootstrap": "3.16",
+                "drupal/bootstrap": "3.20",
                 "drupal/core": "8.*"
             },
             "type": "drupal-theme",
@@ -9283,11 +9282,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1567962187",
+                    "version": "8.x-1.10+3-dev",
+                    "datestamp": "1568675580",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "installer-paths": {
@@ -9357,21 +9356,22 @@
             "homepage": "https://www.drupal.org/project/wxt_bootstrap",
             "support": {
                 "source": "https://git.drupalcode.org/project/wxt_bootstrap"
-            }
+            },
+            "time": "2019-09-17T23:19:16+00:00"
         },
         {
             "name": "drupal/wxt_library",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "fe40f47e10203707136f38a386706e6ca4854ac8"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "e753b4141026ad350b8396e72dda9d78fcb152fa"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9392,8 +9392,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1567961885",
+                    "version": "8.x-1.8",
+                    "datestamp": "1568749384",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9474,12 +9474,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "77c841410d35b867b732b0d2ea93c4164f918755"
+                "reference": "4fa0d92941f065b7a836e94fa64b17b07fa2e02d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/77c841410d35b867b732b0d2ea93c4164f918755",
-                "reference": "77c841410d35b867b732b0d2ea93c4164f918755",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/4fa0d92941f065b7a836e94fa64b17b07fa2e02d",
+                "reference": "4fa0d92941f065b7a836e94fa64b17b07fa2e02d",
                 "shasum": ""
             },
             "require": {
@@ -9503,7 +9503,7 @@
                 "drupal/entityqueue": "^1.0-alpha8",
                 "drupal/features": "^3.0",
                 "drupal/field_formatter": "1.2",
-                "drupal/field_group": "1.0",
+                "drupal/field_group": "3.0-rc1",
                 "drupal/file_entity": "2.0-beta6",
                 "drupal/fontawesome": "^2.12",
                 "drupal/group": "1.0-rc4",
@@ -9524,15 +9524,15 @@
                 "drupal/password_policy": "3.0-alpha4",
                 "drupal/s3fs": "3.0-alpha13",
                 "drupal/scheduled_updates": "1.0.0-alpha7",
-                "drupal/simple_sitemap": "2.12",
+                "drupal/simple_sitemap": "3.3",
                 "drupal/token_filter": "1.1",
                 "drupal/url_embed": "1.0-alpha1",
                 "drupal/views_autocomplete_filters": "1.2",
                 "drupal/views_bootstrap": "3.1",
                 "drupal/webform": "^5.1",
                 "drupal/webform_migrate": "1.1",
-                "drupal/wxt_bootstrap": "1.10",
-                "drupal/wxt_library": "1.7",
+                "drupal/wxt_bootstrap": "1.x-dev",
+                "drupal/wxt_library": "1.8",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
             },
@@ -9661,7 +9661,8 @@
                     },
                     "drupal/paragraphs": {
                         "Enter drupal/paragraphs patch #2878615 description here": "https://www.drupal.org/files/issues/comments_entity_uri-2878615-6.patch",
-                        "Update function 8018 caught in endless loop": "https://www.drupal.org/files/issues/2019-03-21/paragraphs-update-endless-loop-3041868-23.patch"
+                        "Update function 8018 caught in endless loop": "https://www.drupal.org/files/issues/2019-03-21/paragraphs-update-endless-loop-3041868-23.patch",
+                        "Enter drupal/paragraphs patch #2907094 description here": "https://www.drupal.org/files/issues/2019-08-04/2907094_76.patch"
                     },
                     "drupal/panels": {
                         "Enter drupal/panels patch #2667755 description here": "https://www.drupal.org/files/issues/bandaid.patch",
@@ -9699,7 +9700,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-09-17T13:58:09+00:00"
+            "time": "2019-09-17T23:37:36+00:00"
         },
         {
             "name": "drush/drush",
@@ -13480,7 +13481,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz",
-                "reference": "1.16"
+                "reference": "1.16",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13631,7 +13633,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-base.tar.gz",
-                "reference": "v4.0.27-theme-base"
+                "reference": "v4.0.27-theme-base",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13646,7 +13649,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gc-intranet.tar.gz",
-                "reference": "v4.0.27-theme-gc-intranet"
+                "reference": "v4.0.27-theme-gc-intranet",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13661,7 +13665,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v5.0.1-gcweb.tar.gz",
-                "reference": "v5.0.1-gcweb"
+                "reference": "v5.0.1-gcweb",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13676,7 +13681,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-gcweb.tar.gz",
-                "reference": "v4.0.29-gcweb"
+                "reference": "v4.0.29-gcweb",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13691,7 +13697,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gcwu-fegc.tar.gz",
-                "reference": "v4.0.27-theme-gcwu-fegc"
+                "reference": "v4.0.27-theme-gcwu-fegc",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13706,7 +13713,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-ogpl.tar.gz",
-                "reference": "v4.0.27-theme-ogpl"
+                "reference": "v4.0.27-theme-ogpl",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13721,7 +13729,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-theme-wet-boew.tar.gz",
-                "reference": "v4.0.29-theme-wet-boew"
+                "reference": "v4.0.29-theme-wet-boew",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -13736,7 +13745,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.30.tar.gz",
-                "reference": "v4.0.30"
+                "reference": "v4.0.30",
+                "shasum": null
             },
             "type": "drupal-library"
         },
