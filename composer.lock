@@ -5163,20 +5163,20 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "1.0.0-rc1",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "8.x-1.0-rc1"
+                "reference": "8.x-1.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc1.zip",
-                "reference": "8.x-1.0-rc1",
-                "shasum": "898789fb6a0662fc2572b87f8d0654a0241473f9"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "f56c071ef499c20f0b1d63fa1ea30f06248ee0a4"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.5"
             },
             "require-dev": {
                 "drupal/entity_reference_revisions": "*"
@@ -5187,7 +5187,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc1",
+                    "version": "8.x-1.0-rc2",
                     "datestamp": "1568446684",
                     "security-coverage": {
                         "status": "not-covered",
@@ -6184,17 +6184,17 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "5.0.0-beta8",
+            "version": "5.0.0-beta9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "8.x-5.0-beta8"
+                "reference": "8.x-5.0-beta9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta8.zip",
-                "reference": "8.x-5.0-beta8",
-                "shasum": "677be19d6128f1d5c6d239132e98b1817ad91acb"
+                "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta9.zip",
+                "reference": "8.x-5.0-beta9",
+                "shasum": "150291dd87a4f65027492020c28635e2b5249d1a"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -6208,7 +6208,7 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta8",
+                    "version": "8.x-5.0-beta9",
                     "datestamp": "1562194985",
                     "security-coverage": {
                         "status": "not-covered",
@@ -9264,11 +9264,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "dev-1.x",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "b48335a6b8decc5269972862dc5203f3cde78519"
+                "reference": "8.x-1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "1b37b4386056265bcaf2063be4005733b73d64f9"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9282,11 +9288,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.10+3-dev",
-                    "datestamp": "1568675580",
+                    "version": "8.x-1.12",
+                    "datestamp": "1568770984",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -9356,8 +9362,7 @@
             "homepage": "https://www.drupal.org/project/wxt_bootstrap",
             "support": {
                 "source": "https://git.drupalcode.org/project/wxt_bootstrap"
-            },
-            "time": "2019-09-17T23:19:16+00:00"
+            }
         },
         {
             "name": "drupal/wxt_library",
@@ -9474,12 +9479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "4fa0d92941f065b7a836e94fa64b17b07fa2e02d"
+                "reference": "3cbf8b85e08c51059c2e71532f0d7d3903296a1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/4fa0d92941f065b7a836e94fa64b17b07fa2e02d",
-                "reference": "4fa0d92941f065b7a836e94fa64b17b07fa2e02d",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/3cbf8b85e08c51059c2e71532f0d7d3903296a1d",
+                "reference": "3cbf8b85e08c51059c2e71532f0d7d3903296a1d",
                 "shasum": ""
             },
             "require": {
@@ -9507,8 +9512,8 @@
                 "drupal/file_entity": "2.0-beta6",
                 "drupal/fontawesome": "^2.12",
                 "drupal/group": "1.0-rc4",
-                "drupal/inline_entity_form": "1.0-rc1",
-                "drupal/linkit": "5.0-beta8",
+                "drupal/inline_entity_form": "1.0-rc2",
+                "drupal/linkit": "5.0-beta9",
                 "drupal/media_entity": "2.0.0-beta3",
                 "drupal/media_entity_document": "1.x-dev",
                 "drupal/media_entity_image": "1.3",
@@ -9531,7 +9536,7 @@
                 "drupal/views_bootstrap": "3.1",
                 "drupal/webform": "^5.1",
                 "drupal/webform_migrate": "1.1",
-                "drupal/wxt_bootstrap": "1.x-dev",
+                "drupal/wxt_bootstrap": "1.12",
                 "drupal/wxt_library": "1.8",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
@@ -9700,7 +9705,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-09-17T23:37:36+00:00"
+            "time": "2019-09-18T01:42:21+00:00"
         },
         {
             "name": "drush/drush",
