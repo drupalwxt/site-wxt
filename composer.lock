@@ -3575,7 +3575,7 @@
                 "patches_applied": {
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
-                    "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch ",
+                    "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
                     "Enter drupal/core patch #1838234 description here": "https://www.drupal.org/files/issues/2018-09-06/1838234-52.patch",
                     "Enter drupal/core patch #2846485 description here": "https://www.drupal.org/files/issues/2018-04-03/views-multivalue_field_rendering_performance-2846485-23.patch",
                     "Enter drupal/core patch #2559833 description here": "https://www.drupal.org/files/issues/2018-11-01/comment-redirect-2559833-57.patch",
@@ -7850,12 +7850,16 @@
             "authors": [
                 {
                     "name": "Abhishek Anand",
-                    "homepage": "https://www.drupal.org/user/2655479",
+                    "homepage": "https://www.drupal.org/user/213194",
                     "email": "fly2abhishek@gmail.com"
                 },
                 {
                     "name": "Juanen Bernal",
                     "homepage": "https://www.drupal.org/u/jansete"
+                },
+                {
+                    "name": "coredumperror",
+                    "homepage": "https://www.drupal.org/user/1140544"
                 },
                 {
                     "name": "jansete",
@@ -9479,12 +9483,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "3cbf8b85e08c51059c2e71532f0d7d3903296a1d"
+                "reference": "f259d35e2cf4d4f7a1541fa67e585ce27417ff85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/3cbf8b85e08c51059c2e71532f0d7d3903296a1d",
-                "reference": "3cbf8b85e08c51059c2e71532f0d7d3903296a1d",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f259d35e2cf4d4f7a1541fa67e585ce27417ff85",
+                "reference": "f259d35e2cf4d4f7a1541fa67e585ce27417ff85",
                 "shasum": ""
             },
             "require": {
@@ -9606,7 +9610,7 @@
                         "Enter drupal/blog patch #2834732 description here": "https://www.drupal.org/files/issues/blog-no_results_text-2834732-2.patch"
                     },
                     "drupal/core": {
-                        "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch ",
+                        "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
                         "Enter drupal/core patch #1838234 description here": "https://www.drupal.org/files/issues/2018-09-06/1838234-52.patch",
                         "Enter drupal/core patch #2846485 description here": "https://www.drupal.org/files/issues/2018-04-03/views-multivalue_field_rendering_performance-2846485-23.patch",
                         "Enter drupal/core patch #2559833 description here": "https://www.drupal.org/files/issues/2018-11-01/comment-redirect-2559833-57.patch",
@@ -9705,7 +9709,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-09-18T01:42:21+00:00"
+            "time": "2019-09-18T16:51:23+00:00"
         },
         {
             "name": "drush/drush",
