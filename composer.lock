@@ -140,16 +140,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.112.2",
+            "version": "3.112.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0d7a3ecb5dca10d1872ee5106cb154cbef52cf1c"
+                "reference": "d744986383812c6a9e52134adabbb5683e6750fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0d7a3ecb5dca10d1872ee5106cb154cbef52cf1c",
-                "reference": "0d7a3ecb5dca10d1872ee5106cb154cbef52cf1c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d744986383812c6a9e52134adabbb5683e6750fe",
+                "reference": "d744986383812c6a9e52134adabbb5683e6750fe",
                 "shasum": ""
             },
             "require": {
@@ -219,7 +219,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-09-17T18:07:57+00:00"
+            "time": "2019-09-27T18:09:39+00:00"
         },
         {
             "name": "bower-asset/cropper",
@@ -3029,6 +3029,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Enter drupal/claro patch #3083089 description here": "https://www.drupal.org/files/issues/2019-09-24/undefined-index-type_3083089_6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3575,7 +3578,7 @@
                 "patches_applied": {
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
-                    "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
+                    "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch ",
                     "Enter drupal/core patch #1838234 description here": "https://www.drupal.org/files/issues/2018-09-06/1838234-52.patch",
                     "Enter drupal/core patch #2846485 description here": "https://www.drupal.org/files/issues/2018-04-03/views-multivalue_field_rendering_performance-2846485-23.patch",
                     "Enter drupal/core patch #2559833 description here": "https://www.drupal.org/files/issues/2018-11-01/comment-redirect-2559833-57.patch",
@@ -3629,17 +3632,17 @@
         },
         {
             "name": "drupal/core_context",
-            "version": "1.0.0-alpha1",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/core_context.git",
-                "reference": "8.x-1.0-alpha1"
+                "reference": "8.x-1.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/core_context-8.x-1.0-alpha1.zip",
-                "reference": "8.x-1.0-alpha1",
-                "shasum": "156c56814447eb29e541e765e4389c968b356295"
+                "url": "https://ftp.drupal.org/files/projects/core_context-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "50362ae28bfe1e3a2dc6745ffbe6a6d2687a50a9"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3651,12 +3654,15 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1567185785",
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1569433984",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Enter drupal/core_context patch #3084423 description here": "https://www.drupal.org/files/issues/2019-09-28/0001-feat-page_manager-Ignore-panelizer-routes.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5613,17 +5619,17 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "4.6.0",
+            "version": "4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_core.git",
-                "reference": "8.x-4.6"
+                "reference": "8.x-4.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-4.6.zip",
-                "reference": "8.x-4.6",
-                "shasum": "df476d5188081f004c7f7c6474c4a86a0e3feb1c"
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-4.7.zip",
+                "reference": "8.x-4.7",
+                "shasum": "1e373ff4381ba162517fd6a8d895dcd1d4f5c92d"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
@@ -5633,6 +5639,7 @@
                 "drupal/core": "~8.7.5 || 8.7.x-dev",
                 "drupal/metatag": "^1.9",
                 "drupal/pathauto": "^1.3",
+                "drupal/redirect": "^1.4",
                 "drupal/search_api": "^1.0",
                 "drupal/token": "^1.0",
                 "oomphinc/composer-installers-extender": "^1.1",
@@ -5657,8 +5664,8 @@
                     "dev-8.x-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.6",
-                    "datestamp": "1568318589",
+                    "version": "8.x-4.7",
+                    "datestamp": "1569615488",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6482,7 +6489,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha2",
-                    "datestamp": "1537264380",
+                    "datestamp": "1569420787",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -6597,7 +6604,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha3",
-                    "datestamp": "1552577885",
+                    "datestamp": "1569489784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -7808,6 +7815,61 @@
             }
         },
         {
+            "name": "drupal/redirect",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/redirect.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "4c7e0dc0ab0cbcc7d66e16cc684882c0eaa71c1c"
+            },
+            "require": {
+                "drupal/core": "~8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1561757585",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                }
+            ],
+            "description": "Allows users to redirect from old URLs to new URLs.",
+            "homepage": "https://www.drupal.org/project/redirect",
+            "support": {
+                "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
             "name": "drupal/s3fs",
             "version": "3.0.0-alpha13",
             "source": {
@@ -7832,7 +7894,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-alpha13",
-                    "datestamp": "1531121921",
+                    "datestamp": "1568890385",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9268,17 +9330,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "1b37b4386056265bcaf2063be4005733b73d64f9"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "f55d6950ec13c55915824bd6536bd5aed1ba1c4f"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9292,8 +9354,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1568770984",
+                    "version": "8.x-1.13",
+                    "datestamp": "1569691386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9370,17 +9432,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "e753b4141026ad350b8396e72dda9d78fcb152fa"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "c31bb4bb1f4af71375411c286ae332d66930b362"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9401,8 +9463,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1568749384",
+                    "version": "8.x-1.9",
+                    "datestamp": "1569691093",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9483,12 +9545,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "f259d35e2cf4d4f7a1541fa67e585ce27417ff85"
+                "reference": "789fbcfe5ce2318733964107b1a1eff1f13fa151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f259d35e2cf4d4f7a1541fa67e585ce27417ff85",
-                "reference": "f259d35e2cf4d4f7a1541fa67e585ce27417ff85",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/789fbcfe5ce2318733964107b1a1eff1f13fa151",
+                "reference": "789fbcfe5ce2318733964107b1a1eff1f13fa151",
                 "shasum": ""
             },
             "require": {
@@ -9505,7 +9567,7 @@
                 "drupal/config_rewrite": "1.1",
                 "drupal/config_update": "1.6",
                 "drupal/core": "8.7.5",
-                "drupal/core_context": "1.0-alpha1",
+                "drupal/core_context": "1.0-alpha2",
                 "drupal/ctools": "3.0.0",
                 "drupal/diff": "1.0-rc2",
                 "drupal/entity_reference_revisions": "1.6",
@@ -9540,8 +9602,8 @@
                 "drupal/views_bootstrap": "3.1",
                 "drupal/webform": "^5.1",
                 "drupal/webform_migrate": "1.1",
-                "drupal/wxt_bootstrap": "1.12",
-                "drupal/wxt_library": "1.8",
+                "drupal/wxt_bootstrap": "1.13",
+                "drupal/wxt_library": "1.9",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
             },
@@ -9609,8 +9671,11 @@
                     "drupal/blog": {
                         "Enter drupal/blog patch #2834732 description here": "https://www.drupal.org/files/issues/blog-no_results_text-2834732-2.patch"
                     },
+                    "drupal/claro": {
+                        "Enter drupal/claro patch #3083089 description here": "https://www.drupal.org/files/issues/2019-09-24/undefined-index-type_3083089_6.patch"
+                    },
                     "drupal/core": {
-                        "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
+                        "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch ",
                         "Enter drupal/core patch #1838234 description here": "https://www.drupal.org/files/issues/2018-09-06/1838234-52.patch",
                         "Enter drupal/core patch #2846485 description here": "https://www.drupal.org/files/issues/2018-04-03/views-multivalue_field_rendering_performance-2846485-23.patch",
                         "Enter drupal/core patch #2559833 description here": "https://www.drupal.org/files/issues/2018-11-01/comment-redirect-2559833-57.patch",
@@ -9637,6 +9702,9 @@
                         "Enter drupal/core patch #2981889 description here": "https://www.drupal.org/files/issues/2019-08-21/d8_entity_validation.patch",
                         "Enter drupal/core patch #3017710 description here": "https://www.drupal.org/files/issues/2018-12-05/3017710-20.patch",
                         "Enter drupal/core patch #3081656 description here": "https://www.drupal.org/files/issues/2019-09-16/0001-Issue-2488350-by-alexpott-Wim-Leers-Dimiter-catch-da.patch"
+                    },
+                    "drupal/core_context": {
+                        "Enter drupal/core_context patch #3084423 description here": "https://www.drupal.org/files/issues/2019-09-28/0001-feat-page_manager-Ignore-panelizer-routes.patch"
                     },
                     "drupal/ctools": {
                         "Enter drupal/ctools patch #2667652 description here": "https://www.drupal.org/files/issues/ctools-option_to_expose-2667652-3.patch",
@@ -9709,7 +9777,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-09-18T16:51:23+00:00"
+            "time": "2019-09-28T17:48:23+00:00"
         },
         {
             "name": "drush/drush",
@@ -9900,14 +9968,14 @@
             "authors": [
                 {
                     "name": "Nicholas Humfrey",
-                    "role": "Developer",
                     "email": "njh@aelius.com",
-                    "homepage": "http://www.aelius.com/njh/"
+                    "homepage": "http://www.aelius.com/njh/",
+                    "role": "Developer"
                 },
                 {
                     "name": "Alexey Zakhlestin",
-                    "role": "Developer",
-                    "email": "indeyets@gmail.com"
+                    "email": "indeyets@gmail.com",
+                    "role": "Developer"
                 }
             ],
             "description": "EasyRdf is a PHP library designed to make it easy to consume and produce RDF.",
@@ -11189,18 +11257,18 @@
             "authors": [
                 {
                     "name": "Greg Beaver",
-                    "role": "Helper",
-                    "email": "cellog@php.net"
+                    "email": "cellog@php.net",
+                    "role": "Helper"
                 },
                 {
                     "name": "Andrei Zmievski",
-                    "role": "Lead",
-                    "email": "andrei@php.net"
+                    "email": "andrei@php.net",
+                    "role": "Lead"
                 },
                 {
                     "name": "Stig Bakken",
-                    "role": "Developer",
-                    "email": "stig@php.net"
+                    "email": "stig@php.net",
+                    "role": "Developer"
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
@@ -11824,16 +11892,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v3.23.10",
+            "version": "v3.23.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "c8ad396301ca55075234009e8384ca968b950aab"
+                "reference": "77f4651cbf5b3767f0d79c91fd337de82b6ddee6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/c8ad396301ca55075234009e8384ca968b950aab",
-                "reference": "c8ad396301ca55075234009e8384ca968b950aab",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/77f4651cbf5b3767f0d79c91fd337de82b6ddee6",
+                "reference": "77f4651cbf5b3767f0d79c91fd337de82b6ddee6",
                 "shasum": ""
             },
             "type": "library",
@@ -11877,7 +11945,7 @@
                 "swagger",
                 "ui"
             ],
-            "time": "2019-09-15T20:39:36+00:00"
+            "time": "2019-09-20T20:34:23+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -15279,16 +15347,16 @@
         },
         {
             "name": "drupal/console-dotenv",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weknowinc/drupal-console-dotenv.git",
-                "reference": "94e88646801c2f80ec2e5e66d3d8f21b0b467405"
+                "reference": "367c5920a9411c3049793f2149fe337c93b4cb9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weknowinc/drupal-console-dotenv/zipball/94e88646801c2f80ec2e5e66d3d8f21b0b467405",
-                "reference": "94e88646801c2f80ec2e5e66d3d8f21b0b467405",
+                "url": "https://api.github.com/repos/weknowinc/drupal-console-dotenv/zipball/367c5920a9411c3049793f2149fe337c93b4cb9b",
+                "reference": "367c5920a9411c3049793f2149fe337c93b4cb9b",
                 "shasum": ""
             },
             "require": {
@@ -15297,7 +15365,7 @@
             "require-dev": {
                 "drupal/console-core": "~1.0"
             },
-            "type": "drupal-console-library",
+            "type": "library",
             "autoload": {
                 "psr-4": {
                     "Drupal\\Console\\Dotenv\\": "src"
@@ -15314,7 +15382,7 @@
                 }
             ],
             "description": "Drupal Console Dotenv",
-            "time": "2017-07-04T01:14:02+00:00"
+            "time": "2019-09-08T23:45:57+00:00"
         },
         {
             "name": "drupal/console-en",
@@ -15733,16 +15801,16 @@
         },
         {
             "name": "instaclick/php-webdriver",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "6fa959452e774dcaed543faad3a9d1a37d803327"
+                "reference": "bd9405077ca04129a73059a06873bedb5e138402"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/6fa959452e774dcaed543faad3a9d1a37d803327",
-                "reference": "6fa959452e774dcaed543faad3a9d1a37d803327",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/bd9405077ca04129a73059a06873bedb5e138402",
+                "reference": "bd9405077ca04129a73059a06873bedb5e138402",
                 "shasum": ""
             },
             "require": {
@@ -15788,7 +15856,7 @@
                 "webdriver",
                 "webtest"
             ],
-            "time": "2017-06-30T04:02:48+00:00"
+            "time": "2019-09-23T15:50:44+00:00"
         },
         {
             "name": "jcalderonzumba/gastonjs",
@@ -19080,8 +19148,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "lead",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "lead"
                 }
             ],
             "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convenience and to simplify the usage of DOM.",
