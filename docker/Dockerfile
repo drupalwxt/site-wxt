@@ -21,7 +21,7 @@ RUN apk add --update --no-cache icu=64.2-r0 \
                                 icu-libs=64.2-r0 \
                                 libzip-dev=1.5.2-r0; \
     \
-    apk add --no-cache --virtual .build-deps icu-dev; \
+    apk add --no-cache --virtual .build-deps icu-dev=64.2-r0; \
     \
     docker-php-ext-configure zip \
         --with-zlib-dir=/usr; \

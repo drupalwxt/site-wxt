@@ -12,4 +12,4 @@ find . -type f \
                     docker run \
                                -v ${PWD}/{}:/Dockerfile:ro \
                                --rm \
-                               redcoolbeans/dockerlint' \;
+                               hadolint/hadolint hadolint --ignore DL3006 Dockerfile' \;
