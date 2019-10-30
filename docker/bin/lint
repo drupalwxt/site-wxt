@@ -5,7 +5,7 @@ IFS=$'\n\t'
 
 echo "Linting Drupal Dockerfile(s) ..."
 
-find . -type f \
+find docker -type f \
        -name Dockerfile \
        -exec sh -c 'ls {} && \
                     printf "\n" && \
