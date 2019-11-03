@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e509f2ee5c6b32dbab0412ea63cb59d7",
+    "content-hash": "27e11dd09fb44a6d539fae3f72a030d0",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -245,7 +245,7 @@
             "version": "v5.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/enyo/dropzone.git",
+                "url": "git@github.com:enyo/dropzone.git",
                 "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "dist": {
@@ -261,7 +261,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -7374,11 +7374,17 @@
         },
         {
             "name": "drupal/panelizer",
-            "version": "dev-5.x",
+            "version": "5.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/panelizer.git",
-                "reference": "5e671cb5"
+                "reference": "8.x-5.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-5.0-alpha3.zip",
+                "reference": "8.x-5.0-alpha3",
+                "shasum": "b16368baa88a3b750589c286a5d6f28ecea2fc94"
             },
             "require": {
                 "drupal/core": "*",
@@ -7395,11 +7401,11 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-alpha3+0-dev",
+                    "version": "8.x-5.0-alpha3",
                     "datestamp": "1572633784",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches_applied": {
@@ -7451,8 +7457,7 @@
                 "source": "http://git.drupal.org/project/panelizer.git",
                 "issues": "https://www.drupal.org/project/issues/panelizer",
                 "irc": "irc://irc.freenode.org/drupal-scotch"
-            },
-            "time": "2019-08-28T17:09:02+00:00"
+            }
         },
         {
             "name": "drupal/panels",
@@ -9344,17 +9349,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-1.15"
+                "reference": "8.x-1.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.15.zip",
-                "reference": "8.x-1.15",
-                "shasum": "9214a3a5db0ee10bc0977e54c941b8243aedf870"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.16.zip",
+                "reference": "8.x-1.16",
+                "shasum": "7308b22e6f3f81abe2ba033869a7cf33dfcc7e18"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9368,8 +9373,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.15",
-                    "datestamp": "1571368084",
+                    "version": "8.x-1.16",
+                    "datestamp": "1572801783",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9559,12 +9564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "2ba33ed07a5f44c805b5d9abf8b24c7e5f082da6"
+                "reference": "e05828d85676b4e8522e9294ff0a9532750067ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/2ba33ed07a5f44c805b5d9abf8b24c7e5f082da6",
-                "reference": "2ba33ed07a5f44c805b5d9abf8b24c7e5f082da6",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/e05828d85676b4e8522e9294ff0a9532750067ad",
+                "reference": "e05828d85676b4e8522e9294ff0a9532750067ad",
                 "shasum": ""
             },
             "require": {
@@ -9616,7 +9621,7 @@
                 "drupal/views_bootstrap": "3.1",
                 "drupal/webform": "^5.1",
                 "drupal/webform_migrate": "1.1",
-                "drupal/wxt_bootstrap": "1.15",
+                "drupal/wxt_bootstrap": "1.16",
                 "drupal/wxt_library": "1.10",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
@@ -9790,7 +9795,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-11-01T22:21:31+00:00"
+            "time": "2019-11-03T18:03:09+00:00"
         },
         {
             "name": "drush/drush",
@@ -17759,14 +17764,13 @@
         {
             "alias": "4.2",
             "alias_normalized": "4.2.0.0",
-            "version": "dev-5.x",
+            "version": "5.0.0.0-alpha3",
             "package": "drupal/panelizer"
         }
     ],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupalwxt/wxt": 20,
-        "drupal/panelizer": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": true,
