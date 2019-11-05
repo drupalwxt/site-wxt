@@ -1,6 +1,13 @@
 # https://github.com/docker-library/drupal/blob/master/8.7/fpm-alpine/Dockerfile
 FROM drupal:8.7-fpm-alpine
 
+RUN apk --update add fcgi \
+    && wget -O /usr/local/bin/php-fpm-healthcheck https://raw.githubusercontent.com/renatomefi/php-fpm-healthcheck/master/php-fpm-healthcheck \
+    && chmod +x /usr/local/bin/php-fpm-healthcheck
+COPY docker/conf/php-fpm/status.conf /usr/local/etc/php-fpm.d/
+
+HEALTHCHECK --interval=5s --timeout=10s --start-period=5s --retries=3 CMD [ "php-fpm-healthcheck" ]
+
 # Install additional extensions
 RUN apk --update add --no-cache bash=5.0.0-r0 \
                                 git=2.22.0-r0 \
