@@ -111,7 +111,10 @@ drupal_import() {
 drupal_migrate() {
   header Initialize migrate and default content
 
-  drush mim --group="${OPTION}"
+  cd /var/www/html/sites/default
+  drush migrate:import --group wxt --tag 'Core'
+  drush migrate:import --group gcweb --tag 'Core'
+  drush migrate:import --group gcweb --tag 'Menu'
 }
 
 # drupal_perm

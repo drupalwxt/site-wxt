@@ -1,5 +1,8 @@
 version: "2"
 
+options:
+  unison_image: 'eugenmayer/unison:2.51.2.2'
+
 syncs:
   # Template for Stateless
   # files_data:

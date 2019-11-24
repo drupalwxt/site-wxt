@@ -48,7 +48,7 @@ drupal_import:
 	docker-compose exec -T cli bash /var/www/docker/bin/cli drupal-import wxt "${DATABASE_BACKUP}"
 
 drupal_migrate:
-	docker-compose exec -T cli bash /var/www/docker/bin/cli drupal-migrate wxt
+	docker-compose exec -T cli bash /var/www/docker/bin/cli drupal-migrate
 
 drupal_perm:
 	docker-compose exec -T cli bash /var/www/docker/bin/cli drupal-perm wxt
