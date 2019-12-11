@@ -10,7 +10,7 @@ HEALTHCHECK --interval=5s --timeout=10s --start-period=5s --retries=3 CMD [ "php
 
 # Install additional extensions
 RUN apk --update add --no-cache bash=5.0.0-r0 \
-                                git=2.22.0-r0 \
+                                git=2.22.2-r0 \
                                 gzip=1.10-r0 \
                                 mysql-client=10.3.20-r0 \
                                 patch=2.7.6-r6 \
