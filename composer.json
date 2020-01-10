@@ -124,7 +124,7 @@
         "drush/drush": "^9.0",
         "drupalwxt/wxt": "dev-8.x-3.x",
         "drupal/panelizer": "5.0-alpha3 as 4.2",
-        "acquia/lightning": "4.0.5"
+        "acquia/lightning": "4.1.1"
     },
     "autoload": {
         "classmap": [
