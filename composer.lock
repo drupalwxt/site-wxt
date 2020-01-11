@@ -242,8 +242,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/fengyuanchen/cropper/zipball/30c58b29ee21010e17e58ebab165fbd84285c685",
-                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685",
-                "shasum": null
+                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "type": "bower-asset",
             "license": [
@@ -261,8 +260,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/enyo/dropzone/zipball/08b9e0a763b54a685404dea523a9c54242fbe1b9",
-                "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9",
-                "shasum": null
+                "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "type": "bower-asset"
         },
@@ -277,8 +275,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
-                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
-                "shasum": null
+                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "type": "bower-asset",
             "license": [
@@ -296,8 +293,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/kenwheeler/slick/zipball/0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
-                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
-                "shasum": null
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
@@ -9660,12 +9656,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "742f449c8ebe68609f84ba087fa56442fced8786"
+                "reference": "4f2d3aaabe108bc3831c7537da98e484de3fcc0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/742f449c8ebe68609f84ba087fa56442fced8786",
-                "reference": "742f449c8ebe68609f84ba087fa56442fced8786",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/4f2d3aaabe108bc3831c7537da98e484de3fcc0a",
+                "reference": "4f2d3aaabe108bc3831c7537da98e484de3fcc0a",
                 "shasum": ""
             },
             "require": {
@@ -9877,14 +9873,17 @@
             "autoload": {
                 "psr-4": {
                     "Drupal\\wxt\\": "src"
-                }
+                },
+                "classmap": [
+                    "src/Composer/ConfigureLegacyProject.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2020-01-11T21:14:02+00:00"
+            "time": "2020-01-11T22:42:11+00:00"
         },
         {
             "name": "drush/drush",
@@ -14191,8 +14190,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz",
-                "reference": "1.16",
-                "shasum": null
+                "reference": "1.16"
             },
             "type": "drupal-library"
         },
@@ -14341,8 +14339,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-base.tar.gz",
-                "reference": "v4.0.27-theme-base",
-                "shasum": null
+                "reference": "v4.0.27-theme-base"
             },
             "type": "drupal-library"
         },
@@ -14357,8 +14354,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gc-intranet.tar.gz",
-                "reference": "v4.0.27-theme-gc-intranet",
-                "shasum": null
+                "reference": "v4.0.27-theme-gc-intranet"
             },
             "type": "drupal-library"
         },
@@ -14373,8 +14369,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v6.0-gcweb.tar.gz",
-                "reference": "v6.0-gcweb",
-                "shasum": null
+                "reference": "v6.0-gcweb"
             },
             "type": "drupal-library"
         },
@@ -14389,8 +14384,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-gcweb.tar.gz",
-                "reference": "v4.0.29-gcweb",
-                "shasum": null
+                "reference": "v4.0.29-gcweb"
             },
             "type": "drupal-library"
         },
@@ -14405,8 +14399,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gcwu-fegc.tar.gz",
-                "reference": "v4.0.27-theme-gcwu-fegc",
-                "shasum": null
+                "reference": "v4.0.27-theme-gcwu-fegc"
             },
             "type": "drupal-library"
         },
@@ -14421,8 +14414,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-ogpl.tar.gz",
-                "reference": "v4.0.27-theme-ogpl",
-                "shasum": null
+                "reference": "v4.0.27-theme-ogpl"
             },
             "type": "drupal-library"
         },
@@ -14437,8 +14429,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.32-theme-wet-boew.tar.gz",
-                "reference": "v4.0.32-theme-wet-boew",
-                "shasum": null
+                "reference": "v4.0.32-theme-wet-boew"
             },
             "type": "drupal-library"
         },
@@ -14453,8 +14444,7 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.32.tar.gz",
-                "reference": "v4.0.32",
-                "shasum": null
+                "reference": "v4.0.32"
             },
             "type": "drupal-library"
         },
