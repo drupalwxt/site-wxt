@@ -1,5 +1,5 @@
 # https://github.com/docker-library/drupal/blob/master/8.7/fpm-alpine/Dockerfile
-FROM drupal:8.7-fpm-alpine
+FROM drupal:8.8-fpm-alpine
 
 RUN apk --update add fcgi \
     && wget -O /usr/local/bin/php-fpm-healthcheck https://raw.githubusercontent.com/renatomefi/php-fpm-healthcheck/master/php-fpm-healthcheck \
