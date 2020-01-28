@@ -1,32 +1,21 @@
 #!/bin/bash
 # strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
 set -euo pipefail
-IFS=$'\n\t'
 
+# Source all the configuration environment variables from the docker-compose
+# .env file.
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. ${dir}/source_config
 
 if ! type docker > /dev/null; then
   echo "Docker is required to be present on $PATH"
   exit 0
 fi
 
-. "${dir}/parse_yml"
-
-if [ -f "${dir}/../config.yml" ]; then
-  eval $(parse_yml ${dir}/../config.yml "config_")
-  site="${config_docker_site}"
-  volume="${config_docker_volume}"
-  network="${config_docker_network}"
-else
-  site="drupal_cli"
-  volume="drupal_web"
-  network="drupal_default"
-fi
-
 if [[ "${CI:-}" ]] ; then
-  image="${site}_scripts"
+  image="${DOCKER_IMAGE}_cli"
 else
-  image="${site}"
+  image="${DOCKER_IMAGE}_cli"
 fi
 
 if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
@@ -41,8 +30,8 @@ if [[ "${JETBRAINS_REMOTE_RUN:-}" ]] ; then
     -w "/var/www/html/profiles/wxt/modules/custom/wxt_test/tests/" \
     --sig-proxy=true \
     --pid=host \
-    --volumes-from "${volume}" \
-    --net "${network}" \
+    --volumes-from "${DOCKER_NAME}_web" \
+    --net "${DOCKER_IMAGE}_default" \
     --rm \
     "${image}" "$@"
 else
@@ -53,8 +42,8 @@ else
     -w "/var/www/html" \
     --sig-proxy=true \
     --pid=host \
-    --volumes-from "${volume}" \
-    --net "${network}" \
+    --volumes-from "${DOCKER_NAME}_web" \
+    --net "${DOCKER_IMAGE}_default" \
     --rm \
     "${image}" "$@"
 fi

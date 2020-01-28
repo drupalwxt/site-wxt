@@ -86,16 +86,7 @@
  * );
  * @endcode
  */
-$databases['default']['default'] = array (
-  'database' => 'wxt',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'db',
-  'port' => '3306',
-  'namespace' => 'Drupal\Core\Database\Driver\mysql',
-  'driver' => 'mysql',
-);
+$databases = array();
 
 /**
  * Customizing database settings.
@@ -337,7 +328,7 @@ $settings['update_free_access'] = FALSE;
  *
  * If these settings are not configured, the system environment variables
  * HTTP_PROXY, HTTPS_PROXY, and NO_PROXY on the web server will be used instead.
-*/
+ */
 # $settings['http_client_config']['proxy']['http'] = 'http://proxy_user:proxy_pass@example.com:8080';
 # $settings['http_client_config']['proxy']['https'] = 'http://proxy_user:proxy_pass@example.com:8080';
 # $settings['http_client_config']['proxy']['no'] = ['127.0.0.1', 'localhost'];

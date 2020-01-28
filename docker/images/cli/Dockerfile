@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=drupalwxt/site-wxt:latest
+ARG BASE_IMAGE
 FROM $BASE_IMAGE
 
 RUN ln -s /var/www/vendor/bin/behat /usr/local/bin/behat; \
