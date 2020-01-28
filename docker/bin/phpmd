@@ -13,7 +13,7 @@ if ! type docker > /dev/null; then
 fi
 
 if [[ "${CI:-}" ]] ; then
-  image="${DOCKER_NAME}_cli"
+  image="${DOCKER_IMAGE}_cli"
 else
   image="${DOCKER_IMAGE}_cli"
 fi

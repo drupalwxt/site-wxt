@@ -13,7 +13,7 @@ if ! type docker > /dev/null; then
 fi
 
 if [[ "${CI:-}" ]] ; then
-  image="${DOCKER_NAME}_cli"
+  image="${DOCKER_IMAGE}_cli"
   vol="${PWD}/docker/conf/phpunit.xml:/var/www/html/core/phpunit.xml"
 else
   image="${DOCKER_IMAGE}_cli"

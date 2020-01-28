@@ -18,7 +18,7 @@ if [ -z "${BEHAT_PATH-}" ]; then
 fi
 
 if [[ "${CI:-}" ]] ; then
-  image="${DOCKER_NAME}_cli"
+  image="${DOCKER_IMAGE}_cli"
   vol="${PWD}/docker/conf/drupal/settings.php:/var/www/html/sites/default/settings.php"
 else
   image="${DOCKER_IMAGE}_cli"
