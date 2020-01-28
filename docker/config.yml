@@ -1,5 +1,0 @@
-docker:
-    site: site-wxt_cli
-    volume: sitewxt_web
-    network: site-wxt_default
-    behat_path: profiles/wxt/tests
