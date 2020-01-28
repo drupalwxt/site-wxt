@@ -1,33 +1,22 @@
 #!/bin/bash
 # strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
 set -euo pipefail
-IFS=$'\n\t'
 
+# Source all the configuration environment variables from the docker-compose
+# .env file.
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. ${dir}/source_config
 
 if ! type docker > /dev/null; then
   echo "Docker is required to be present on $PATH"
   exit 0
 fi
 
-. "${dir}/parse_yml"
-
-if [ -f "${dir}/../config.yml" ]; then
-  eval $(parse_yml ${dir}/../config.yml "config_")
-  site="${config_docker_site}"
-  volume="${config_docker_volume}"
-  network="${config_docker_network}"
-else
-  site="drupal_cli"
-  volume="drupal_web"
-  network="drupal_default"
-fi
-
 if [[ "${CI:-}" ]] ; then
-  image="${site}_scripts"
+  image="${DOCKER_NAME}_cli"
   vol="${PWD}/docker/conf/phpunit.xml:/var/www/html/core/phpunit.xml"
 else
-  image="${site}"
+  image="${DOCKER_IMAGE}_cli"
   vol="${PWD}:/var/www"
 fi
 
@@ -36,8 +25,9 @@ docker run -i \
   -v $vol \
   -v /tmp/:/tmp/ \
   -w "/var/www/html/core" \
+  -e "SIMPLETEST_DB=mysql://root:root@db:3306/${DB_NAME}" \
   --sig-proxy=true \
   --pid=host \
-  --net "${network}" \
+  --net "${DOCKER_IMAGE}_default" \
   --rm \
   "${image}" "$@"

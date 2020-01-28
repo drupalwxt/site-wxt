@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=drupalwxt/site-wxt:latest
+ARG BASE_IMAGE
 FROM $BASE_IMAGE
 
 COPY php.ini /usr/local/etc/php/php.ini
@@ -8,7 +8,8 @@ COPY php.ini /usr/local/etc/php/php.ini
 WORKDIR /var/www
 
 # Install composer dependencies
-RUN composer install --prefer-dist --no-interaction
+# TODO: Determine if this is really needed
+# RUN composer install --prefer-dist --no-interaction
 
 RUN ln -s /var/www/vendor/bin/behat /usr/local/bin/behat; \
     ln -s /var/www/vendor/bin/phpcs /usr/local/bin/phpcs; \

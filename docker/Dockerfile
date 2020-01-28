@@ -1,8 +1,11 @@
-# https://github.com/docker-library/drupal/blob/master/8.7/fpm-alpine/Dockerfile
+# https://github.com/docker-library/drupal/blob/master/8.8/fpm-alpine/Dockerfile
 FROM drupal:8.8-fpm-alpine
 
+ARG GIT_USERNAME
+ARG GIT_PASSWORD
+
 RUN apk --update add fcgi \
-    && wget -O /usr/local/bin/php-fpm-healthcheck https://raw.githubusercontent.com/renatomefi/php-fpm-healthcheck/master/php-fpm-healthcheck \
+    && curl -o /usr/local/bin/php-fpm-healthcheck https://raw.githubusercontent.com/renatomefi/php-fpm-healthcheck/master/php-fpm-healthcheck \
     && chmod +x /usr/local/bin/php-fpm-healthcheck
 COPY docker/conf/php-fpm/status.conf /usr/local/etc/php-fpm.d/
 
@@ -42,7 +45,7 @@ RUN apk add --update --no-cache icu=64.2-r0 \
 
 # Composer recommended settings
 ENV COMPOSER_ALLOW_SUPERUSER 1
-ENV COMPOSER_VERSION 1.8.1
+ENV COMPOSER_VERSION 1.9.1
 ENV COMPOSER_MEMORY_LIMIT -1
 ENV COMPOSER_EXIT_ON_PATCH_FAILURE 1
 

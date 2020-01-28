@@ -1,41 +1,38 @@
 #!/bin/bash
 # strict mode http://redsymbol.net/articles/unofficial-bash-strict-mode/
 set -euo pipefail
-IFS=$'\n\t'
 
+# Source all the configuration environment variables from the docker-compose
+# .env file.
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. ${dir}/source_config
 
 if ! type docker > /dev/null; then
   echo "Docker is required to be present on $PATH"
   exit 0
 fi
 
-. "${dir}/parse_yml"
-
-if [ -f "${dir}/../config.yml" ]; then
-  eval $(parse_yml ${dir}/../config.yml "config_")
-  site="${config_docker_site}"
-  volume="${config_docker_volume}"
-  network="${config_docker_network}"
-  if [ -z "${config_docker_behat_path-}" ]; then
-    echo "No behat configuration detected exiting..."
-    exit
-  fi
-  behat_path="/var/www/html/${config_docker_behat_path}"
-else
-  site="drupal_cli"
-  volume="drupal_web"
-  network="drupal_default"
-  behat_path="/var/www/html"
+if [ -z "${BEHAT_PATH-}" ]; then
+  echo "No behat configuration detected exiting..."
+  exit
 fi
 
 if [[ "${CI:-}" ]] ; then
-  image="${site}_scripts"
+  image="${DOCKER_NAME}_cli"
   vol="${PWD}/docker/conf/drupal/settings.php:/var/www/html/sites/default/settings.php"
 else
-  image="${site}"
+  image="${DOCKER_IMAGE}_cli"
   vol="${PWD}:/var/www"
 fi
+
+if [ -z "${HTTP_PROXY-}" ]; then
+  HTTP_PROXY=''
+fi
+
+if [ -z "${NO_PROXY-}" ]; then
+  NO_PROXY=''
+fi
+
 docker run -i \
   -e "IDE_BEHAT_VERSION=3.2.2" \
   -e "IDE_BEHAT_DIR=/var/www/vendor/behat/behat/bin/behat" \
@@ -43,10 +40,16 @@ docker run -i \
   -v ${vol} \
   -v ${PWD}/html/failures/behat/screenshots:/var/www/html/failures/behat/screenshots \
   -v /tmp/:/tmp/ \
-  -w "${behat_path}" \
+  -w "/var/www/html/${BEHAT_PATH}" \
+  -e HTTP_PROXY=$HTTP_PROXY \
+  -e HTTPS_PROXY=$HTTP_PROXY \
+  -e http_proxy=$HTTP_PROXY \
+  -e https_proxy=$HTTP_PROXY \
+  -e NO_PROXY=hub,$NO_PROXY \
+  -e no_proxy=hub,$NO_PROXY \
   -e BEHAT_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drupal":{"drupal_root":"/var/www/html"}, "drush":{"root":"/var/www/html"}}, "Behat\\MinkExtension":{"base_url" : "http://nginx", "selenium2":{"wd_host":"http://hub:4444/wd/hub"}}}}' \
   --sig-proxy=true \
   --pid=host \
-  --net "${network}" \
+  --net "${DOCKER_IMAGE}_default" \
   --rm \
   "${image}" "$@"

@@ -714,39 +714,9 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 
 /**
-* Get environment settings.
-*
-* Production (default): normal production settings.
-* Development: Use development settings.
-*/
-$drupal_settings = 'production';
-if (isset($_ENV['DRUPAL_SETTINGS'])) {
-  $drupal_settings = $_ENV['DRUPAL_SETTINGS'];
-}
-
-/** Todo: create better patterns on production sites */
-if ($drupal_settings !== 'production') {
-  $settings['trusted_host_patterns'] = array('[\s\S]*');
-}
-
-/**
 * Set private file path directory.
 */
 // $settings['file_private_path'] =  '/var/www/files_private';
-
-/**
-* Load local development override configuration, if available.
-*
-* Use settings.local.php to override variables on secondary (staging,
-* development, etc) installations of this site. Typically used to disable
-* caching, JavaScript/CSS compression, re-routing of outgoing emails, and
-* other things that should not happen on development and testing sites.
-*
-* Keep this code block at the end of this file to take full effect.
-*/
-if ($drupal_settings === 'development' && file_exists(__DIR__ . '/settings.local.php')) {
-  include __DIR__ . '/settings.local.php';
-}
 
 /** Everything after here is added by the installation process.
  *
