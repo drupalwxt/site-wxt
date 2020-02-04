@@ -122,8 +122,7 @@
         "oomphinc/composer-installers-extender": "^1.1",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "drush/drush": "^9.0",
-        "drupalwxt/wxt": "dev-8.x-3.x",
-        "acquia/lightning": "4.1.1"
+        "drupalwxt/wxt": "dev-8.x-3.x"
     },
     "autoload": {
         "classmap": [
