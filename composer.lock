@@ -3451,6 +3451,7 @@
                     }
                 },
                 "patches_applied": {
+                    "Enter drupal/core patch #2752443 description here": "https://www.drupal.org/files/issues/in_correct_order_and-2752443-1.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch",
                     "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2019-12-27/1356276-88x-603.patch",
@@ -3462,7 +3463,6 @@
                     "Enter drupal/core patch #2698057 description here": "https://www.drupal.org/files/issues/2698057_2.patch",
                     "2699157 - Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/2699157-23.drupal.Plugin-Lazy-loading-can-cause-usort-warning.patch",
                     "Enter drupal/core patch #2715483 description here": "https://www.drupal.org/files/issues/2020-01-09/regression-2715483-22.patch",
-                    "Enter drupal/core patch #2752443 description here": "https://www.drupal.org/files/issues/in_correct_order_and-2752443-1.patch",
                     "2759397 - Patch EntityReferenceItemNormalizer to prevent recursion": "https://www.drupal.org/files/issues/2759397-1-entity_reference_recursion.patch",
                     "Enter drupal/core patch #2765297 description here": "https://www.drupal.org/files/issues/2019-06-28/taxonomy_translation_2765297_0.patch",
                     "Enter drupal/core patch #2816921 description here": "https://www.drupal.org/files/issues/user_password-2816921-2.patch",
@@ -9435,17 +9435,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "fdaf5dffa181ee86267a9682caecc3c1c71143ba"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "5a4bd169821087abada28f9dc28d8996fe7e402c"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9459,8 +9459,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1575221284",
+                    "version": "8.x-1.19",
+                    "datestamp": "1580866645",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9493,7 +9493,11 @@
                     ]
                 },
                 "enable-patching": true,
-                "patches": []
+                "patches": {
+                    "drupal/core": {
+                        "Enter drupal/core patch #2752443 description here": "https://www.drupal.org/files/issues/in_correct_order_and-2752443-1.patch"
+                    }
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -9545,17 +9549,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "d209291d64224d25d0eb17b551061500788cd000"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "3e14dc6f0fd6f537a7e6e231693171ef3bf7e558"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9576,8 +9580,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1575231784",
+                    "version": "8.x-1.13",
+                    "datestamp": "1580866508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9666,12 +9670,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "19115b4564d9cf68b912c4ecab9b0b62c99234f5"
+                "reference": "58d457978e85c5a9289efd4103f232bb7c31d044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/19115b4564d9cf68b912c4ecab9b0b62c99234f5",
-                "reference": "19115b4564d9cf68b912c4ecab9b0b62c99234f5",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/58d457978e85c5a9289efd4103f232bb7c31d044",
+                "reference": "58d457978e85c5a9289efd4103f232bb7c31d044",
                 "shasum": ""
             },
             "require": {
@@ -9723,8 +9727,8 @@
                 "drupal/views_bootstrap": "3.1",
                 "drupal/webform": "^5.1",
                 "drupal/webform_migrate": "1.1",
-                "drupal/wxt_bootstrap": "1.18",
-                "drupal/wxt_library": "1.12",
+                "drupal/wxt_bootstrap": "1.19",
+                "drupal/wxt_library": "1.13",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
             },
@@ -9895,7 +9899,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2020-02-04T22:45:30+00:00"
+            "time": "2020-02-05T01:42:29+00:00"
         },
         {
             "name": "drush/drush",
