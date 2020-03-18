@@ -97,12 +97,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-            "deployer/recipes": {
-                "Enter deployer/recipes patch #80 description here":
-                "https://patch-diff.githubusercontent.com/raw/deployphp/recipes/pull/80.patch"
-            }
-        },
+        "patches": { },
         "patches-ignore": {
             "drupal/lightning_core": {
                 "drupal/core": {
