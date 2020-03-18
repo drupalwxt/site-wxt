@@ -46,7 +46,7 @@ For production releases you should only ever use a stable tag.
 ### New Project (stable tag)
 
 ```sh
-composer create-project drupalwxt/site-wxt:3.0.6 site-name
+composer create-project drupalwxt/site-wxt:3.0.7 site-name
 ```
 
 ### New Project (dev)
