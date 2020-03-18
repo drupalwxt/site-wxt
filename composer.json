@@ -63,14 +63,12 @@
           "bower-asset",
           "npm-asset"
         ],
-        "patchLevel": {
-            "drupal/core": "-p2"
-        },
         "installer-paths": {
             "html/core": [
                 "type:drupal-core"
             ],
             "html/libraries/{$name}" : [
+                "type:drupal-console-library",
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset"
@@ -96,6 +94,9 @@
         },
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
         "patches": {
             "deployer/recipes": {
                 "Enter deployer/recipes patch #80 description here":
