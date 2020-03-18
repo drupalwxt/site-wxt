@@ -6,24 +6,24 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "jcalderonzumba/gastonjs": "~1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsstream": "~1.2",
-        "symfony/css-selector": "~2.8|~3.0",
         "behat/behat": "^3.0",
         "behat/mink": "~1.7",
         "behat/mink-extension": "*",
         "behat/mink-goutte-driver": "*",
         "behat/mink-selenium2-driver": "*",
         "composer/composer": "^1.4",
+        "drupal/coder": "^8.3.7",
         "drupal/console": "~1.9.0",
         "drupal/drupal-extension": "~3.4.0",
-        "squizlabs/php_codesniffer": "3.*",
-        "drupal/coder": "^8.3.7",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsstream": "~1.2",
         "phpmd/phpmd": "@stable",
         "pdepend/pdepend": "2.1.0",
-        "sebastian/phpcpd": "*",
         "phpunit/phpunit": "^4.8.35 || ^6.1",
+        "sebastian/phpcpd": "*",
+        "squizlabs/php_codesniffer": "3.*",
+        "symfony/css-selector": "~2.8|~3.0",
         "symfony/phpunit-bridge": "^3.4.3"
     },
     "config": {
@@ -48,24 +48,24 @@
         }
     ],
     "scripts": {
-      "pre-install-cmd": [
-          "DrupalWxT\\WxT\\ScriptHandler::checkComposerVersion"
-      ],
-      "pre-update-cmd": [
-          "DrupalWxT\\WxT\\ScriptHandler::checkComposerVersion"
-      ],
-      "post-install-cmd": [
-          "DrupalWxT\\WxT\\ScriptHandler::deployLibraries"
-      ],
-      "post-update-cmd": [
-          "DrupalWxT\\WxT\\ScriptHandler::deployLibraries"
-      ]
+        "post-create-project-cmd": "rm -r -f .travis.yml behat.yml .travis-ci",
+        "quick-start": [
+            "composer install"
+        ]
     },
     "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        },
         "installer-types": [
-           "bower-asset",
-           "npm-asset"
+          "bower-asset",
+          "npm-asset"
         ],
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
         "installer-paths": {
             "html/core": [
                 "type:drupal-core"
@@ -73,8 +73,7 @@
             "html/libraries/{$name}" : [
                 "type:drupal-library",
                 "type:bower-asset",
-                "type:npm-asset",
-                "type:drupal-console-library"
+                "type:npm-asset"
             ],
             "html/modules/custom/{$name}": [
                 "drupal/wxt_library"
@@ -96,11 +95,6 @@
             ]
         },
         "composer-exit-on-patch-failure": true,
-        "drupal-scaffold": {
-            "locations": {
-                "web-root": "html/"
-            }
-        },
         "enable-patching": true,
         "patches": {
             "deployer/recipes": {
