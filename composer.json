@@ -43,7 +43,7 @@
             "url": "https://asset-packagist.org"
         },
         {
-            "type" : "composer",
+            "type": "composer",
             "url": "https://drupalwxt.github.io/composer-extdeps/"
         }
     ],
