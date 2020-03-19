@@ -4464,23 +4464,23 @@
         },
         {
             "name": "drupal/entity_reference_revisions",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_reference_revisions.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "4e3b849b0d984cd3c0a4330c9aa4cb16bf1f79f6"
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "c1279e6c683edc2dbccedba8de1505340c8a62b6"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "require-dev": {
-                "drupal/diff": "*"
+                "drupal/diff": "1.x-dev"
             },
             "type": "drupal-module",
             "extra": {
@@ -4488,8 +4488,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1570284187",
+                    "version": "8.x-1.8",
+                    "datestamp": "1583961846",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4498,7 +4498,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0"
             ],
             "authors": [
                 {
@@ -4518,7 +4518,7 @@
                     "homepage": "https://www.drupal.org/user/227761"
                 }
             ],
-            "description": "Adds a Entity Reference field type with revision support.",
+            "description": "Entity Reference Revisions",
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
@@ -5130,20 +5130,20 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "1.0.0-rc2",
+            "version": "1.0.0-rc3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "8.x-1.0-rc2"
+                "reference": "8.x-1.0-rc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "f56c071ef499c20f0b1d63fa1ea30f06248ee0a4"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "f0508db2d64133e2df0af24e7fc914cbb5492211"
             },
             "require": {
-                "drupal/core": "^8.5"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "require-dev": {
                 "drupal/entity_reference_revisions": "*"
@@ -5154,15 +5154,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc2",
+                    "version": "8.x-1.0-rc3",
                     "datestamp": "1581640483",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "Enter drupal/inline_entity_form patch #2367235 description here": "https://www.drupal.org/files/issues/support_entity_revision-2367235-92.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7828,20 +7825,20 @@
         },
         {
             "name": "drupal/paragraphs",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/paragraphs.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "12f96d90940df1c870bbe4cb97a8260169045911"
+                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "4fa849a249fbc689ca0c83523a967c08767e91af"
             },
             "require": {
-                "drupal/core": "~8",
+                "drupal/core": "^8.7.7 || ^9",
                 "drupal/entity_reference_revisions": "~1.3"
             },
             "require-dev": {
@@ -7866,7 +7863,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.10",
+                    "version": "8.x-1.11",
                     "datestamp": "1581850829",
                     "security-coverage": {
                         "status": "covered",
@@ -9777,12 +9774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "5abc18d5e8691ef88f147ec9681e17d4838516ba"
+                "reference": "b76d662774e025e7d501628a0861a08252838c25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/5abc18d5e8691ef88f147ec9681e17d4838516ba",
-                "reference": "5abc18d5e8691ef88f147ec9681e17d4838516ba",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/b76d662774e025e7d501628a0861a08252838c25",
+                "reference": "b76d662774e025e7d501628a0861a08252838c25",
                 "shasum": ""
             },
             "require": {
@@ -9801,7 +9798,7 @@
                 "drupal/core_context": "1.0-beta2",
                 "drupal/ctools": "3.2.0",
                 "drupal/diff": "1.0",
-                "drupal/entity_reference_revisions": "1.7",
+                "drupal/entity_reference_revisions": "1.8",
                 "drupal/entityqueue": "^1.0-alpha8",
                 "drupal/features": "^3.0",
                 "drupal/field_formatter": "1.2",
@@ -9809,7 +9806,7 @@
                 "drupal/file_entity": "2.0-beta6",
                 "drupal/fontawesome": "^2.12",
                 "drupal/group": "1.0-rc5",
-                "drupal/inline_entity_form": "1.0-rc2",
+                "drupal/inline_entity_form": "1.0-rc3",
                 "drupal/linkit": "5.0-beta10",
                 "drupal/media_entity": "2.0.0-beta3",
                 "drupal/media_entity_document": "1.x-dev",
@@ -9822,7 +9819,7 @@
                 "drupal/migrate_tools": "4.5",
                 "drupal/page_manager": "4.0-beta4",
                 "drupal/panelizer": "5.0-beta2",
-                "drupal/paragraphs": "1.10",
+                "drupal/paragraphs": "1.11",
                 "drupal/password_policy": "3.0-alpha5",
                 "drupal/s3fs": "3.0-alpha13",
                 "drupal/scheduled_updates": "1.0.0-alpha7",
@@ -9955,9 +9952,6 @@
                     "drupal/field_group": {
                         "Enter drupal/field_group patch #3111107 description here": "https://www.drupal.org/files/issues/2020-02-04/3111107-2--fix-translations.patch"
                     },
-                    "drupal/inline_entity_form": {
-                        "Enter drupal/inline_entity_form patch #2367235 description here": "https://www.drupal.org/files/issues/support_entity_revision-2367235-92.patch"
-                    },
                     "drupal/group": {
                         "Enter drupal/group patch #2817109 description here": "https://www.drupal.org/files/issues/2817109-by-rachel_norfolk-ericras-How-to-redir.patch",
                         "Enter drupal/group patch #2864721 description here": "https://www.drupal.org/files/issues/2020-01-13/group-translate_content_permission-2864721-19.patch",
@@ -10027,7 +10021,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2020-03-19T01:08:34+00:00"
+            "time": "2020-03-19T03:15:35+00:00"
         },
         {
             "name": "drush/drush",
