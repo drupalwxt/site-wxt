@@ -3480,9 +3480,9 @@
                     }
                 },
                 "patches_applied": {
+                    "Enter drupal/core patch #2752443 description here": "https://www.drupal.org/files/issues/in_correct_order_and-2752443-1.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-11-27/2815221-125.patch",
-                    "Enter drupal/core patch #2752443 description here": "https://www.drupal.org/files/issues/in_correct_order_and-2752443-1.patch",
                     "Enter drupal/core patch #1356276 description here": "https://www.drupal.org/files/issues/2019-12-27/1356276-88x-603.patch",
                     "Enter drupal/core patch #1838234 description here": "https://www.drupal.org/files/issues/2018-09-06/1838234-52.patch",
                     "Enter drupal/core patch #2846485 description here": "https://www.drupal.org/files/issues/2018-04-03/views-multivalue_field_rendering_performance-2846485-23.patch",
@@ -9542,17 +9542,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "1.19.0",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-1.19"
+                "reference": "8.x-1.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.19.zip",
-                "reference": "8.x-1.19",
-                "shasum": "5a4bd169821087abada28f9dc28d8996fe7e402c"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-1.20.zip",
+                "reference": "8.x-1.20",
+                "shasum": "dd52e0313eea3c49d8c2185786fe76cfcc082083"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9566,8 +9566,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.19",
-                    "datestamp": "1580866645",
+                    "version": "8.x-1.20",
+                    "datestamp": "1584579996",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9777,12 +9777,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "d324f8302dccb8ace49bfaf81dbb8eed5138df93"
+                "reference": "5abc18d5e8691ef88f147ec9681e17d4838516ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/d324f8302dccb8ace49bfaf81dbb8eed5138df93",
-                "reference": "d324f8302dccb8ace49bfaf81dbb8eed5138df93",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/5abc18d5e8691ef88f147ec9681e17d4838516ba",
+                "reference": "5abc18d5e8691ef88f147ec9681e17d4838516ba",
                 "shasum": ""
             },
             "require": {
@@ -9834,7 +9834,7 @@
                 "drupal/views_bootstrap": "3.1",
                 "drupal/webform": "^5.1",
                 "drupal/webform_migrate": "1.1",
-                "drupal/wxt_bootstrap": "1.19",
+                "drupal/wxt_bootstrap": "1.20",
                 "drupal/wxt_library": "1.13",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
@@ -10027,7 +10027,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2020-03-18T23:18:38+00:00"
+            "time": "2020-03-19T01:08:34+00:00"
         },
         {
             "name": "drush/drush",
