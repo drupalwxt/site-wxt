@@ -9774,12 +9774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "4cea41415c421ade917ae3df9dbf43e679574b87"
+                "reference": "abdcbdd3710280da7b3d595462f9be030f71a580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/4cea41415c421ade917ae3df9dbf43e679574b87",
-                "reference": "4cea41415c421ade917ae3df9dbf43e679574b87",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/abdcbdd3710280da7b3d595462f9be030f71a580",
+                "reference": "abdcbdd3710280da7b3d595462f9be030f71a580",
                 "shasum": ""
             },
             "require": {
@@ -10021,7 +10021,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2020-03-20T18:47:18+00:00"
+            "time": "2020-03-21T01:07:05+00:00"
         },
         {
             "name": "drush/drush",
