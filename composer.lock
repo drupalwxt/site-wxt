@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "996f530c27be9392973489ef79b4a2a3",
+    "content-hash": "9a41937cdeb9c3996450a7138145d8fe",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -9770,7 +9770,7 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "3.0.8",
+            "version": "dev-8.x-3.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
@@ -18558,6 +18558,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupalwxt/wxt": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": true,
