@@ -36,4 +36,4 @@ bower_components/
 **/sass/*.css
 
 # Custom
-docker/conf/console
+docker
