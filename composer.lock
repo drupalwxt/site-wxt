@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "186e1eb4e830801a91bb318eedc807e7",
+    "content-hash": "32de3ec8ba63370baee92345259baa0e",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -9226,17 +9226,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "1.13.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-1.13"
+                "reference": "8.x-1.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.13.zip",
-                "reference": "8.x-1.13",
-                "shasum": "3e14dc6f0fd6f537a7e6e231693171ef3bf7e558"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "959459eaf21cab60e82d9e18e3ebe4c4fa02ca9b"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9244,21 +9244,18 @@
                 "drupal/core": "8.*",
                 "wet-boew/theme-base": "4.0.27",
                 "wet-boew/theme-gc-intranet": "4.0.27",
-                "wet-boew/theme-gcweb": "6.0.0",
+                "wet-boew/theme-gcweb": "6.1.0",
                 "wet-boew/theme-gcweb-legacy": "4.0.29",
                 "wet-boew/theme-gcwu-fegc": "4.0.27",
                 "wet-boew/theme-ogpl": "4.0.27",
-                "wet-boew/theme-wet-boew": "4.0.32",
-                "wet-boew/wet-boew": "4.0.32"
+                "wet-boew/theme-wet-boew": "4.0.35",
+                "wet-boew/wet-boew": "4.0.35"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.13",
-                    "datestamp": "1580866508",
+                    "version": "8.x-1.15",
+                    "datestamp": "1588989436",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9270,9 +9267,6 @@
                     ],
                     "html/libraries/{$name}": [
                         "type:drupal-library"
-                    ],
-                    "html/modules/custom/{$name}": [
-                        "drupal/wxt_library"
                     ],
                     "html/modules/contrib/{$name}": [
                         "type:drupal-module"
@@ -9319,6 +9313,10 @@
                     "homepage": "https://www.drupal.org/user/1972814"
                 },
                 {
+                    "name": "rikarux",
+                    "homepage": "https://www.drupal.org/user/3579510"
+                },
+                {
                     "name": "sjpeters79",
                     "homepage": "https://www.drupal.org/user/2897533"
                 },
@@ -9347,12 +9345,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "72c0661a234c916a7981ddd5731de0a6341a1130"
+                "reference": "0383f1de2da5d0b1a046d7edfed60c21b69e78a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/72c0661a234c916a7981ddd5731de0a6341a1130",
-                "reference": "72c0661a234c916a7981ddd5731de0a6341a1130",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/0383f1de2da5d0b1a046d7edfed60c21b69e78a4",
+                "reference": "0383f1de2da5d0b1a046d7edfed60c21b69e78a4",
                 "shasum": ""
             },
             "require": {
@@ -9399,7 +9397,7 @@
                 "drupal/webform": "^5.11",
                 "drupal/webform_migrate": "1.1",
                 "drupal/wxt_bootstrap": "1.21",
-                "drupal/wxt_library": "1.13",
+                "drupal/wxt_library": "1.15.0",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
             },
@@ -9450,17 +9448,11 @@
                         "type:bower-asset",
                         "type:npm-asset"
                     ],
-                    "html/modules/custom/{$name}": [
-                        "drupal/wxt_library"
-                    ],
                     "html/modules/contrib/{$name}": [
                         "type:drupal-module"
                     ],
                     "html/profiles/{$name}": [
                         "type:drupal-profile"
-                    ],
-                    "html/themes/custom/{$name}": [
-                        "drupal/wxt_bootstrap"
                     ],
                     "html/themes/contrib/{$name}": [
                         "type:drupal-theme"
@@ -9582,7 +9574,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2020-05-08T18:34:45+00:00"
+            "time": "2020-05-09T02:02:33+00:00"
         },
         {
             "name": "drush/drush",
@@ -14351,16 +14343,16 @@
         },
         {
             "name": "wet-boew/theme-gcweb",
-            "version": "v6.0.0",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wet-boew/themes-cdn.git",
-                "reference": "v6.0-gcweb"
+                "reference": "v6.1-gcweb"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v6.0-gcweb.tar.gz",
-                "reference": "v6.0-gcweb"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v6.1-gcweb.tar.gz",
+                "reference": "v6.1-gcweb"
             },
             "type": "drupal-library"
         },
@@ -14411,31 +14403,31 @@
         },
         {
             "name": "wet-boew/theme-wet-boew",
-            "version": "v4.0.32",
+            "version": "v4.0.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wet-boew/themes-cdn.git",
-                "reference": "v4.0.32-theme-wet-boew"
+                "reference": "v4.0.35-theme-wet-boew"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.32-theme-wet-boew.tar.gz",
-                "reference": "v4.0.32-theme-wet-boew"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.35-theme-wet-boew.tar.gz",
+                "reference": "v4.0.35-theme-wet-boew"
             },
             "type": "drupal-library"
         },
         {
             "name": "wet-boew/wet-boew",
-            "version": "v4.0.32",
+            "version": "v4.0.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wet-boew/wet-boew-cdn.git",
-                "reference": "v4.0.32"
+                "reference": "v4.0.35"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.32.tar.gz",
-                "reference": "v4.0.32"
+                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.35.tar.gz",
+                "reference": "v4.0.35"
             },
             "type": "drupal-library"
         },
