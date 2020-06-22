@@ -1,7 +1,7 @@
 Composer Project template for Drupal WxT
 ========================================
 
-[![Build Status][ci-badge]][ci]
+[![Build Status][githubci-badge]][githubci]
 
 [Drupal WxT][wxt] codebase for `site-wxt`.
 
@@ -25,7 +25,7 @@ The `composer.json` file calls the following dependencies:
 * [Lightning][lightning]
 * [WxT][wxt]
 
-> Note: The [docker-scaffold][docker-scaffold] has now been moved to its own repository though symlinks are still present. Should you wish to use the docker workflow you simple need to run the following command in this repositories working directory. The `.travis.yml` file does this as well to ensure proper functioning of the CI builds.
+> Note: The [docker-scaffold][docker-scaffold] has now been moved to its own repository though symlinks are still present. Should you wish to use the docker workflow you simple need to run the following command in this repositories working directory.
 
 ```sh
 git clone https://github.com/drupalwxt/docker-scaffold.git docker
@@ -46,7 +46,7 @@ For production releases you should only ever use a stable tag.
 ### New Project (stable tag)
 
 ```sh
-composer create-project drupalwxt/site-wxt:3.0.7 site-name
+composer create-project drupalwxt/site-wxt:3.0.12 site-name
 ```
 
 ### New Project (dev)
@@ -68,10 +68,10 @@ List of common commands are as follows:
 | Updating Drupal Core exclusively                | ```composer update drupal/core```                      |
 
 
-[ci]:                           https://travis-ci.org/drupalwxt/site-wxt
-[ci-badge]:                     https://travis-ci.org/drupalwxt/site-wxt.svg?branch=8.x
 [composer]:                     https://getcomposer.org
 [docker-scaffold]:              https://github.com/drupalwxt/docker-scaffold.git
+[githubci]:                     https://github.com/drupalwxt/site-wxt/actions
+[githubci-badge]:               https://github.com/drupalwxt/site-wxt/workflows/build/badge.svg
 [node]:                         https://nodejs.org
 [lightning]:                    https://github.com/acquia/lightning
 [wxt]:                          https://github.com/drupalwxt/wxt
