@@ -1,0 +1,34 @@
+name: build
+on:
+  schedule:
+    - cron:  '0 17 * * *'
+
+# Environment variables available to all jobs and steps in this workflow
+env:
+  COMPOSER_MEMORY_LIMIT: -1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - uses: statcan/actions/composer@master
+      with:
+        args: install --prefer-dist --no-interaction
+
+    - name: Build out the Drupal infrastructure.
+      run: |
+        git clone https://github.com/drupalwxt/docker-scaffold.git docker
+        make build
+        docker-compose -f docker-compose-ci.yml up -d
+        docker ps -a
+        sleep 10
+
+    - name: Run integration and BDD tests
+      run: |
+        make drupal_install
+        make drupal_migrate
+        # Change ownership on html/core to allow files to be copied (see drupal_cs in Makefile)
+        sudo chown -R $(id -u) html/core
+        make test
