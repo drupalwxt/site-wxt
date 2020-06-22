@@ -1,0 +1,71 @@
+name: tag
+on:
+  push:
+    tags:
+    - '*'
+
+# Environment variables available to all jobs and steps in this workflow
+env:
+  COMPOSER_MEMORY_LIMIT: -1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    # Connect to container registry
+    - uses: azure/docker-login@v1
+      with:
+        login-server: index.docker.io
+        username: ${{ secrets.REGISTRY_USERNAME }}
+        password: ${{ secrets.REGISTRY_PASSWORD }}
+
+    - name: Setup dependencies
+      run: |
+        git clone --branch 8.x https://github.com/drupalwxt/site-wxt.git
+        cd site-wxt
+        rm composer.lock
+
+    - uses: statcan/actions/composer@master
+      with:
+        args: require drupalwxt/wxt:${GITHUB_REF#refs/tags/} --working-dir=./site-wxt
+
+    - name: Build out the Drupal infrastructure
+      run: |
+        cd site-wxt
+        git clone https://github.com/drupalwxt/docker-scaffold.git docker
+        make build
+        docker-compose -f docker-compose-ci.yml up -d
+        docker ps -a
+        sleep 10
+
+    - name: Run installation and tests
+      run: |
+        cd site-wxt
+        make drupal_install
+        make drupal_migrate
+        # Change ownership on html/core to allow files to be copied (see drupal_cs in Makefile)
+        sudo chown -R $(id -u) html/core
+        make test
+
+    # Container build and push to a container registry
+    - run: |
+        docker tag site-wxt_web index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}
+        docker push index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}
+        docker tag site-wxt_nginx index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}-nginx
+        docker push index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}-nginx
+
+    # Scan image for vulnerabilities
+    - uses: Azure/container-scan@v0
+      with:
+        image-name: index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}
+        severity-threshold: CRITICAL
+        run-quality-checks: false
+
+    # Scan image for vulnerabilities
+    - uses: Azure/container-scan@v0
+      with:
+        image-name: index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}-nginx
+        severity-threshold: CRITICAL
+        run-quality-checks: false
