@@ -5,6 +5,8 @@ Composer Project template for Drupal WxT
 
 [Drupal WxT][wxt] codebase for `site-wxt`.
 
+> **Note**: You may find the [README.md][wxt] file in the WxT repository more beneficial then this composer project template.
+
 ## Requirements
 
 * [Composer][composer]

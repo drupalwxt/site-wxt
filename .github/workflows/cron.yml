@@ -1,7 +1,7 @@
-name: build
+name: cron
 on:
   schedule:
-    - cron:  '0 17 * * *'
+    - cron: '0 17 * * *'
 
 # Environment variables available to all jobs and steps in this workflow
 env:
