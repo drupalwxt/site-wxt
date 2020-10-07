@@ -291,7 +291,7 @@
             "version": "v5.7.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:enyo/dropzone.git",
+                "url": "https://github.com/enyo/dropzone.git",
                 "reference": "78424e9c97b569e698cc9175e9bc424168219162"
             },
             "dist": {
@@ -9471,17 +9471,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "1.19.0",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-1.19"
+                "reference": "8.x-1.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.19.zip",
-                "reference": "8.x-1.19",
-                "shasum": "0fe227e56343a6054370630a5c61eb9879f9d043"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-1.20.zip",
+                "reference": "8.x-1.20",
+                "shasum": "18d26657eade571da73a220328c6f45be378ee3e"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -9493,14 +9493,14 @@
                 "wet-boew/theme-gcweb-legacy": "4.0.29",
                 "wet-boew/theme-gcwu-fegc": "4.0.27",
                 "wet-boew/theme-ogpl": "4.0.27",
-                "wet-boew/theme-wet-boew": "4.0.35",
-                "wet-boew/wet-boew": "4.0.35"
+                "wet-boew/theme-wet-boew": "4.0.38",
+                "wet-boew/wet-boew": "4.0.38"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.19",
-                    "datestamp": "1602004903",
+                    "version": "8.x-1.20",
+                    "datestamp": "1602070780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9587,12 +9587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "369ac17b4fdc4de14fa1de69a5aef6488c030257"
+                "reference": "31f385695508f3c3bcf0f2cdc1f87846968061bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/369ac17b4fdc4de14fa1de69a5aef6488c030257",
-                "reference": "369ac17b4fdc4de14fa1de69a5aef6488c030257",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/31f385695508f3c3bcf0f2cdc1f87846968061bd",
+                "reference": "31f385695508f3c3bcf0f2cdc1f87846968061bd",
                 "shasum": ""
             },
             "require": {
@@ -9641,7 +9641,7 @@
                 "drupal/webform": "^5.11",
                 "drupal/webform_migrate": "1.1",
                 "drupal/wxt_bootstrap": "1.25",
-                "drupal/wxt_library": "1.19",
+                "drupal/wxt_library": "1.20",
                 "w8tcha/ckeditor-codemirror": "1.16",
                 "zaporylie/composer-drupal-optimizations": "^1.1"
             },
@@ -9813,7 +9813,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2020-10-06T18:00:28+00:00"
+            "time": "2020-10-07T11:43:14+00:00"
         },
         {
             "name": "drush/drush",
@@ -14501,31 +14501,31 @@
         },
         {
             "name": "wet-boew/theme-wet-boew",
-            "version": "v4.0.35",
+            "version": "v4.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wet-boew/themes-cdn.git",
-                "reference": "v4.0.35-theme-wet-boew"
+                "reference": "v4.0.38-theme-wet-boew"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.35-theme-wet-boew.tar.gz",
-                "reference": "v4.0.35-theme-wet-boew"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.38-theme-wet-boew.tar.gz",
+                "reference": "v4.0.38-theme-wet-boew"
             },
             "type": "drupal-library"
         },
         {
             "name": "wet-boew/wet-boew",
-            "version": "v4.0.35",
+            "version": "v4.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wet-boew/wet-boew-cdn.git",
-                "reference": "v4.0.35"
+                "reference": "v4.0.38"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.35.tar.gz",
-                "reference": "v4.0.35"
+                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.38.tar.gz",
+                "reference": "v4.0.38"
             },
             "type": "drupal-library"
         },
