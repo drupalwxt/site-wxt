@@ -6,10 +6,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "drupalwxt/wxt": "dev-8.x-3.x",
-        "drush/drush": "^9.0",
         "cweagans/composer-patches": "^1.6.0",
         "drupal/core-composer-scaffold": "*",
+        "drupalwxt/wxt": "dev-8.x-3.x",
+        "drush/drush": "^9.0",
         "oomphinc/composer-installers-extender": "^1.1 || ^2"
     },
     "require-dev": {
