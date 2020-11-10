@@ -2,7 +2,7 @@ name: build
 on:
   push:
     branches:
-      - 8.x
+      - 9.x
 
 # Environment variables available to all jobs and steps in this workflow
 env:
@@ -20,7 +20,7 @@ jobs:
 
     - name: Build out the Drupal infrastructure
       run: |
-        git clone https://github.com/drupalwxt/docker-scaffold.git docker
+        git clone --branch 9.x https://github.com/drupalwxt/docker-scaffold.git docker
         make build
         docker-compose -f docker-compose-ci.yml up -d
         docker ps -a
