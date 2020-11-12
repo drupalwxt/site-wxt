@@ -7,134 +7,6 @@
     "content-hash": "7ececc7cb27e698f49974f09798d006c",
     "packages": [
         {
-            "name": "acquia/lightning",
-            "version": "5.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/acquia/lightning.git",
-                "reference": "6cb19bae846ef300d8b0017b69477cf121251fc1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/6cb19bae846ef300d8b0017b69477cf121251fc1",
-                "reference": "6cb19bae846ef300d8b0017b69477cf121251fc1",
-                "shasum": ""
-            },
-            "require": {
-                "cweagans/composer-patches": "^1.6",
-                "drupal/acquia_connector": "^2.0-rc1",
-                "drupal/core": "~9.0.6",
-                "drupal/inline_entity_form": "^1.0-rc7",
-                "drupal/lightning_api": "^4.6",
-                "drupal/lightning_core": "^5",
-                "drupal/lightning_layout": "^2.7",
-                "drupal/lightning_media": "^4.1",
-                "drupal/lightning_workflow": "^3.14",
-                "drupal/page_manager": "^4.0-beta6",
-                "drupal/panelizer": "^5.0-beta3",
-                "drupal/pendo": "^1@alpha",
-                "drupal/search_api": "^1.17",
-                "ext-dom": "*"
-            },
-            "require-dev": {
-                "drupal/core-composer-scaffold": "*",
-                "drupal/core-dev": "*",
-                "drush/drush": ">=9.7",
-                "oomphinc/composer-installers-extender": "^1.1",
-                "vijaycs85/drupal-quality-checker": "^1.2",
-                "weitzman/drupal-test-traits": "dev-master",
-                "zaporylie/composer-drupal-optimizations": "^1.1"
-            },
-            "type": "drupal-profile",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-4.x": "4.x-dev"
-                },
-                "composer-exit-on-patch-failure": "true",
-                "drupal-scaffold": {
-                    "locations": {
-                        "web-root": "docroot/"
-                    },
-                    "file-mapping": {
-                        "[project-root]/.gitattributes": false,
-                        "[project-root]/.editorconfig": false,
-                        "[web-root]/example.gitignore": false,
-                        "[web-root]/.csslintrc": false,
-                        "[web-root]/modules/README.txt": false,
-                        "[web-root]/profiles/README.txt": false,
-                        "[web-root]/sites/README.txt": false,
-                        "[web-root]/themes/README.txt": false,
-                        "[web-root]/INSTALL.txt": false,
-                        "[web-root]/robots.txt": false,
-                        "[web-root]/web.config": false
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                },
-                "enable-patching": true,
-                "installer-paths": {
-                    "docroot/core": [
-                        "type:drupal-core"
-                    ],
-                    "docroot/libraries/{$name}": [
-                        "type:drupal-library",
-                        "type:bower-asset",
-                        "type:npm-asset"
-                    ],
-                    "docroot/modules/contrib/{$name}": [
-                        "type:drupal-module"
-                    ],
-                    "docroot/profiles/contrib/{$name}": [
-                        "type:drupal-profile"
-                    ],
-                    "docroot/themes/contrib/{$name}": [
-                        "type:drupal-theme"
-                    ]
-                },
-                "installer-types": [
-                    "bower-asset",
-                    "npm-asset"
-                ],
-                "patchLevel": {
-                    "drupal/core": "-p2"
-                },
-                "patches": {
-                    "drupal/core": {
-                        "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
-                        "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-03-24/1356276-531-9.0.x-9.patch",
-                        "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
-                    }
-                },
-                "patches-ignore": {
-                    "drupal/lightning_core": {
-                        "drupal/core": {
-                            "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch"
-                        }
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Acquia\\Lightning\\": "src"
-                },
-                "classmap": [
-                    "src/Composer/ConfigureLegacyProject.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "The best of Drupal, curated by Acquia",
-            "support": {
-                "source": "https://github.com/acquia/lightning/tree/5.0.1"
-            },
-            "time": "2020-09-16T20:04:19+00:00"
-        },
-        {
             "name": "asm89/stack-cors",
             "version": "1.3.0",
             "source": {
@@ -1824,47 +1696,32 @@
             "time": "2020-10-27T21:46:55+00:00"
         },
         {
-            "name": "drupal/acquia_connector",
-            "version": "2.0.0-rc1",
+            "name": "drupal/acquia_telemetry-acquia_telemetry",
+            "version": "1.0.0-alpha4",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/acquia_connector.git",
-                "reference": "8.x-2.0-rc1"
+                "url": "https://git.drupalcode.org/project/acquia_telemetry.git",
+                "reference": "1.0.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-2.0-rc1.zip",
-                "reference": "8.x-2.0-rc1",
-                "shasum": "a8b2a54e06e6f214264412267e372aba796b87e7"
+                "url": "https://ftp.drupal.org/files/projects/acquia_telemetry-1.0.0-alpha4.zip",
+                "reference": "1.0.0-alpha4",
+                "shasum": "8a0e6c3bf7f10092a20a0de59c77ec48fbb1023e"
             },
             "require": {
-                "drupal/core": "^8.7 || ^9.0.0-alpha1",
-                "ext-json": "*",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "acquia/coding-standards": "^0.4.1",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-rc1",
-                    "datestamp": "1584565461",
+                    "version": "1.0.0-alpha4",
+                    "datestamp": "1602174516",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "branch-alias": {
-                    "dev-8.x-2.x": "2.x-dev"
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                },
-                "phpcodesniffer-search-depth": 4
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -1872,62 +1729,17 @@
             ],
             "authors": [
                 {
-                    "name": "Dane Powell",
-                    "homepage": "https://www.drupal.org/user/339326"
-                },
-                {
-                    "name": "Mark Trapp",
-                    "homepage": "https://www.drupal.org/user/212019"
-                },
-                {
-                    "name": "Stanislav Mixnovich",
-                    "homepage": "https://www.drupal.org/user/2859977"
-                },
-                {
-                    "name": "acquia",
-                    "homepage": "https://www.drupal.org/user/1231722"
-                },
-                {
-                    "name": "ayang",
-                    "homepage": "https://www.drupal.org/user/1777884"
-                },
-                {
-                    "name": "blueminds",
-                    "homepage": "https://www.drupal.org/user/128652"
-                },
-                {
                     "name": "grasmash",
                     "homepage": "https://www.drupal.org/user/455714"
                 },
                 {
-                    "name": "irek02",
-                    "homepage": "https://www.drupal.org/user/736644"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "jmoreira",
-                    "homepage": "https://www.drupal.org/user/2374486"
-                },
-                {
-                    "name": "kolafson",
-                    "homepage": "https://www.drupal.org/user/822402"
-                },
-                {
-                    "name": "nerdstein",
-                    "homepage": "https://www.drupal.org/user/1557710"
-                },
-                {
-                    "name": "vlad.pavlovic",
-                    "homepage": "https://www.drupal.org/user/92673"
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 }
             ],
-            "description": "Allows Drupal websites to connect with Acquia.",
-            "homepage": "https://www.drupal.org/project/acquia_connector",
+            "homepage": "https://www.drupal.org/project/acquia_telemetry",
             "support": {
-                "source": "https://git.drupalcode.org/project/acquia_connector"
+                "source": "https://git.drupalcode.org/project/acquia_telemetry"
             }
         },
         {
@@ -5136,47 +4948,49 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "5.2.0",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_core.git",
-                "reference": "8.x-5.2"
+                "reference": "8.x-5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-5.2.zip",
-                "reference": "8.x-5.2",
-                "shasum": "82fdb941d87a3b3154b531a4581fa4a235e79fcd"
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-5.4.zip",
+                "reference": "8.x-5.4",
+                "shasum": "bca386c084568894f5e913aedd51840af53ae03d"
             },
             "require": {
+                "drupal/acquia_telemetry-acquia_telemetry": "^1.0-alpha3",
                 "drupal/contact_storage": "^1.0",
-                "drupal/core": "^8.8.6 || ~9.0.0-beta3",
+                "drupal/core": "^8.8.6 || ^9.0.1",
                 "drupal/metatag": "^1.13",
                 "drupal/pathauto": "^1.8",
                 "drupal/redirect": "^1.5",
                 "drupal/search_api": "^1.16",
                 "drupal/token": "^1.7",
-                "phpdocumentor/reflection-docblock": ">=3"
+                "phpdocumentor/reflection-docblock": "^4"
             },
             "conflict": {
                 "drupal/drupal-extension": "<3.4.0"
             },
             "require-dev": {
                 "acquia/coding-standards": "^0.4.1",
+                "composer/installers": "^1.9",
                 "cweagans/composer-patches": "^1.6",
                 "drupal/contact_storage": "*",
                 "drupal/core-composer-scaffold": "*",
                 "drupal/core-dev": "*",
                 "drupal/search_api": "*",
                 "drush/drush": ">=9.7",
-                "oomphinc/composer-installers-extender": "^1.1",
+                "symfony/options-resolver": ">=4",
                 "vijaycs85/drupal-quality-checker": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.2",
-                    "datestamp": "1589997189",
+                    "version": "8.x-5.4",
+                    "datestamp": "1605048237",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5214,9 +5028,7 @@
                         "type:drupal-core"
                     ],
                     "docroot/libraries/{$name}": [
-                        "type:drupal-library",
-                        "type:bower-asset",
-                        "type:npm-asset"
+                        "type:drupal-library"
                     ],
                     "docroot/modules/contrib/{$name}": [
                         "type:drupal-module"
@@ -5228,10 +5040,6 @@
                         "type:drupal-theme"
                     ]
                 },
-                "installer-types": [
-                    "bower-asset",
-                    "npm-asset"
-                ],
                 "patches": {
                     "drupal/core": {
                         "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
@@ -5249,27 +5057,24 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "scripts": {
-                "post-install-cmd": [
-                    "@push"
-                ],
                 "post-update-cmd": [
-                    "@push"
+                    "@putenv DIR=./docroot/modules/lightning_core",
+                    "mkdir -p $DIR",
+                    "ln -s -f $PWD/config $DIR",
+                    "ln -s -f $PWD/css $DIR",
+                    "ln -s -f $PWD/drush.services.yml $DIR",
+                    "ln -s -f $PWD/images $DIR",
+                    "ln -s -f $PWD/modules $DIR",
+                    "ln -s -f $PWD/src $DIR",
+                    "ln -s -f $PWD/tests $DIR",
+                    "find $PWD -name 'lightning_core.*' -depth 1 -exec ln -s -f {} $DIR ';'",
+                    "cp -f phpunit.xml ./docroot/core"
                 ],
                 "log": [
                     "ls -t ./logs/*.md | xargs -I{} sh -c \"cat {}; echo ''\" > CHANGELOG.md"
                 ],
                 "nuke": [
                     "rm -r -f docroot vendor"
-                ],
-                "pull": [
-                    "cp -R -f ./docroot/modules/contrib/lightning_core/* ."
-                ],
-                "push": [
-                    "rm -r -f ./docroot/modules/contrib/lightning_core",
-                    "mkdir -p ./docroot/modules/contrib/lightning_core",
-                    "@composer archive --file lightning_core",
-                    "tar -x -f lightning_core.tar -C ./docroot/modules/contrib/lightning_core",
-                    "rm lightning_core.tar"
                 ]
             },
             "license": [
@@ -7213,63 +7018,6 @@
             }
         },
         {
-            "name": "drupal/pendo",
-            "version": "1.0.0-alpha4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/pendo.git",
-                "reference": "8.x-1.0-alpha4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pendo-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "4b45c8c621b90e0d43e4684e38f2b3045d84c5c8"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1585570339",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "balsama",
-                    "homepage": "https://www.drupal.org/user/223087"
-                },
-                {
-                    "name": "grasmash",
-                    "homepage": "https://www.drupal.org/user/455714"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
-                }
-            ],
-            "description": "Provides integration with Pendo software.",
-            "homepage": "https://www.drupal.org/project/pendo",
-            "support": {
-                "source": "http://cgit.drupalcode.org/pendo",
-                "issues": "https://www.drupal.org/project/issues/pendo"
-            }
-        },
-        {
             "name": "drupal/redirect",
             "version": "1.6.0",
             "source": {
@@ -8746,16 +8494,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "4436b30820486a2ae4ff951f90d16b2f4aebdf56"
+                "reference": "66b30385e0b947aa21b59c6dca343847f597b850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/4436b30820486a2ae4ff951f90d16b2f4aebdf56",
-                "reference": "4436b30820486a2ae4ff951f90d16b2f4aebdf56",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/66b30385e0b947aa21b59c6dca343847f597b850",
+                "reference": "66b30385e0b947aa21b59c6dca343847f597b850",
                 "shasum": ""
             },
             "require": {
-                "acquia/lightning": "5.0.1",
                 "cweagans/composer-patches": "^1.6.0",
                 "drupal/admin_toolbar": "^2.0",
                 "drupal/block_class": "^1.2",
@@ -8776,7 +8523,11 @@
                 "drupal/fontawesome": "^2.12",
                 "drupal/group": "1.3",
                 "drupal/inline_entity_form": "1.0-rc8",
-                "drupal/lightning_media": "^4.1",
+                "drupal/lightning_api": "^4.6",
+                "drupal/lightning_core": "^5.4",
+                "drupal/lightning_layout": "^2.9",
+                "drupal/lightning_media": "^4.4",
+                "drupal/lightning_workflow": "^3.16",
                 "drupal/linkit": "5.0-beta11",
                 "drupal/media_entity_slideshow": "2.0",
                 "drupal/menu_block": "1.6.0",
@@ -8929,12 +8680,6 @@
                     }
                 },
                 "patches-ignore": {
-                    "acquia/lightning": {
-                        "drupal/core": {
-                            "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-03-24/1356276-531-9.0.x-9.patch",
-                            "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
-                        }
-                    },
                     "drupal/lightning_core": {
                         "drupal/core": {
                             "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-03-24/1356276-531-9.0.x-9.patch",
@@ -8947,9 +8692,7 @@
                 "psr-4": {
                     "Drupal\\wxt\\": "src"
                 },
-                "classmap": [
-                    "src/Composer/ConfigureLegacyProject.php"
-                ]
+                "classmap": []
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8960,7 +8703,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2020-11-12T13:09:50+00:00"
+            "time": "2020-11-12T18:33:29+00:00"
         },
         {
             "name": "drush/drush",
@@ -10875,37 +10618,41 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.2",
+            "version": "4.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
+                "reference": "da3fd972d6bafd628114f7e7e036f45944b62e9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
-                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/da3fd972d6bafd628114f7e7e036f45944b62e9c",
+                "reference": "da3fd972d6bafd628114f7e7e036f45944b62e9c",
                 "shasum": ""
             },
             "require": {
-                "ext-filter": "*",
-                "php": "^7.2 || ^8.0",
-                "phpdocumentor/reflection-common": "^2.2",
-                "phpdocumentor/type-resolver": "^1.3",
-                "webmozart/assert": "^1.9.1"
+                "php": "^7.0",
+                "phpdocumentor/reflection-common": "^1.0.0 || ^2.0.0",
+                "phpdocumentor/type-resolver": "~0.4 || ^1.0.0",
+                "webmozart/assert": "^1.0"
             },
             "require-dev": {
-                "mockery/mockery": "~1.3.2"
+                "doctrine/instantiator": "^1.0.5",
+                "mockery/mockery": "^1.0",
+                "phpdocumentor/type-resolver": "0.4.*",
+                "phpunit/phpunit": "^6.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.x-dev"
+                    "dev-master": "4.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": "src"
+                    "phpDocumentor\\Reflection\\": [
+                        "src/"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -10916,18 +10663,14 @@
                 {
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
-                },
-                {
-                    "name": "Jaap van Otterdijk",
-                    "email": "account@ijaap.nl"
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/release/4.x"
             },
-            "time": "2020-09-03T19:13:55+00:00"
+            "time": "2019-12-28T18:55:12+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -15841,33 +15584,33 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.12.1",
+            "version": "v1.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "8ce87516be71aae9b956f81906aaf0338e0d8a2d"
+                "reference": "451c3cd1418cf640de218914901e51b064abb093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/8ce87516be71aae9b956f81906aaf0338e0d8a2d",
-                "reference": "8ce87516be71aae9b956f81906aaf0338e0d8a2d",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/451c3cd1418cf640de218914901e51b064abb093",
+                "reference": "451c3cd1418cf640de218914901e51b064abb093",
                 "shasum": ""
             },
             "require": {
-                "doctrine/instantiator": "^1.2",
-                "php": "^7.2 || ~8.0, <8.1",
-                "phpdocumentor/reflection-docblock": "^5.2",
-                "sebastian/comparator": "^3.0 || ^4.0",
-                "sebastian/recursion-context": "^3.0 || ^4.0"
+                "doctrine/instantiator": "^1.0.2",
+                "php": "^5.3|^7.0",
+                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0|^5.0",
+                "sebastian/comparator": "^1.2.3|^2.0|^3.0|^4.0",
+                "sebastian/recursion-context": "^1.0|^2.0|^3.0|^4.0"
             },
             "require-dev": {
-                "phpspec/phpspec": "^6.0",
-                "phpunit/phpunit": "^8.0 || ^9.0 <9.3"
+                "phpspec/phpspec": "^2.5 || ^3.2",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.11.x-dev"
+                    "dev-master": "1.10.x-dev"
                 }
             },
             "autoload": {
@@ -15902,9 +15645,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpspec/prophecy/issues",
-                "source": "https://github.com/phpspec/prophecy/tree/1.12.1"
+                "source": "https://github.com/phpspec/prophecy/tree/v1.10.3"
             },
-            "time": "2020-09-29T09:10:42+00:00"
+            "time": "2020-03-05T15:02:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
