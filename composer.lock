@@ -8494,12 +8494,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "6da0815efde72b82eac2d6b905da2015eaf50c09"
+                "reference": "ea7cb8740b38bc8549a540472822ade0edd00a75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/6da0815efde72b82eac2d6b905da2015eaf50c09",
-                "reference": "6da0815efde72b82eac2d6b905da2015eaf50c09",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ea7cb8740b38bc8549a540472822ade0edd00a75",
+                "reference": "ea7cb8740b38bc8549a540472822ade0edd00a75",
                 "shasum": ""
             },
             "require": {
@@ -8559,6 +8559,7 @@
                 "oomphinc/composer-installers-extender": "^1.1 || ^2",
                 "squizlabs/php_codesniffer": "3.*"
             },
+            "default-branch": true,
             "type": "drupal-profile",
             "extra": {
                 "drupal-scaffold": {
@@ -8703,7 +8704,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2020-11-15T17:55:57+00:00"
+            "time": "2020-11-15T20:01:07+00:00"
         },
         {
             "name": "drush/drush",
