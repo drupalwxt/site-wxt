@@ -8623,12 +8623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "510e8e75d2626e4fdaee6c114b73b22977de73d5"
+                "reference": "901f96be098c18e89a259411c200bcfa0f55b142"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/510e8e75d2626e4fdaee6c114b73b22977de73d5",
-                "reference": "510e8e75d2626e4fdaee6c114b73b22977de73d5",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/901f96be098c18e89a259411c200bcfa0f55b142",
+                "reference": "901f96be098c18e89a259411c200bcfa0f55b142",
                 "shasum": ""
             },
             "require": {
@@ -8837,7 +8837,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2020-11-20T04:09:57+00:00"
+            "time": "2020-11-20T05:39:46+00:00"
         },
         {
             "name": "drush/drush",
