@@ -8623,12 +8623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "e7509b0c535e4d1c7cde3f2a7f0b9fa53970de9a"
+                "reference": "6990f63a8e463c37dc81ed0a2d54b25adc8e973f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/e7509b0c535e4d1c7cde3f2a7f0b9fa53970de9a",
-                "reference": "e7509b0c535e4d1c7cde3f2a7f0b9fa53970de9a",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/6990f63a8e463c37dc81ed0a2d54b25adc8e973f",
+                "reference": "6990f63a8e463c37dc81ed0a2d54b25adc8e973f",
                 "shasum": ""
             },
             "require": {
@@ -8676,8 +8676,8 @@
                 "drupal/views_bootstrap": "3.4",
                 "drupal/webform": "6.0.0-alpha21",
                 "drupal/webform_migrate": "1.x-dev",
-                "drupal/wxt_bootstrap": "4.x-dev",
-                "drupal/wxt_library": "4.x-dev",
+                "drupal/wxt_bootstrap": "^4.1",
+                "drupal/wxt_library": "^4.1",
                 "ext-dom": "*",
                 "w8tcha/ckeditor-codemirror": "1.16"
             },
@@ -8837,7 +8837,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2020-11-20T14:50:58+00:00"
+            "time": "2020-11-20T20:46:14+00:00"
         },
         {
             "name": "drush/drush",
