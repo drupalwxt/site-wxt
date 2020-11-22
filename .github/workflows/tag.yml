@@ -49,12 +49,12 @@ jobs:
         sudo chown -R $(id -u) html/core
         make test
 
-    # Container build and push to a container registry
-    - run: |
-        docker tag site-wxt_web index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}
-        docker push index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}
-        docker tag site-wxt_nginx index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}-nginx
-        docker push index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}-nginx
+    # # Container build and push to a container registry
+    # - run: |
+    #     docker tag site-wxt_web index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}
+    #     docker push index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}
+    #     docker tag site-wxt_nginx index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}-nginx
+    #     docker push index.docker.io/drupalwxt/site-wxt:${GITHUB_REF#refs/tags/}-nginx
 
     # Scan image for vulnerabilities
     - uses: Azure/container-scan@v0
