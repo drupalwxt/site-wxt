@@ -2589,16 +2589,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.0.8",
+            "version": "9.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "67ec8d625bb29c4323bc34c680887bf4af0187e1"
+                "reference": "03d815cf785654d03cf39dd911c8ae53b2fdd6cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/67ec8d625bb29c4323bc34c680887bf4af0187e1",
-                "reference": "67ec8d625bb29c4323bc34c680887bf4af0187e1",
+                "url": "https://api.github.com/repos/drupal/core/zipball/03d815cf785654d03cf39dd911c8ae53b2fdd6cd",
+                "reference": "03d815cf785654d03cf39dd911c8ae53b2fdd6cd",
                 "shasum": ""
             },
             "require": {
@@ -2624,7 +2624,7 @@
                 "laminas/laminas-diactoros": "^2.1",
                 "laminas/laminas-feed": "^2.12",
                 "masterminds/html5": "^2.1",
-                "pear/archive_tar": "^1.4.9",
+                "pear/archive_tar": "^1.4.11",
                 "php": ">=7.3",
                 "psr/log": "^1.0",
                 "stack/builder": "^1.0",
@@ -2830,13 +2830,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.0.8"
+                "source": "https://github.com/drupal/core/tree/9.0.9"
             },
-            "time": "2020-11-17T22:05:11+00:00"
+            "time": "2020-11-26T00:53:25+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.0.8",
+            "version": "9.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -8520,17 +8520,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "4.1.0",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-4.1"
+                "reference": "8.x-4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-4.1.zip",
-                "reference": "8.x-4.1",
-                "shasum": "3e449eba6fff3ae38bfb9683dbaecb65a7cd12f8"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "bffcc217b3bb5cfc5a781bbbf0c6c2358b472ee5"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -8549,8 +8549,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.1",
-                    "datestamp": "1605904002",
+                    "version": "8.x-4.2",
+                    "datestamp": "1606367360",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8641,12 +8641,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "f59e7d091cc6849f195ce77d144a271aa89bc6af"
+                "reference": "f431a4ed1999e072eec26b9ea6f34eb0dd7f299d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f59e7d091cc6849f195ce77d144a271aa89bc6af",
-                "reference": "f59e7d091cc6849f195ce77d144a271aa89bc6af",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f431a4ed1999e072eec26b9ea6f34eb0dd7f299d",
+                "reference": "f431a4ed1999e072eec26b9ea6f34eb0dd7f299d",
                 "shasum": ""
             },
             "require": {
@@ -8658,7 +8658,7 @@
                 "drupal/button_link": "1.2",
                 "drupal/ckeditor_codemirror": "2.3",
                 "drupal/config_rewrite": "1.3",
-                "drupal/core": "^9",
+                "drupal/core": "9.0.9",
                 "drupal/core_context": "1.0-beta4",
                 "drupal/ctools": "3.4.0",
                 "drupal/diff": "1.0",
@@ -8696,7 +8696,7 @@
                 "drupal/webform": "6.0.0-alpha21",
                 "drupal/webform_migrate": "1.x-dev",
                 "drupal/wxt_bootstrap": "^4.1",
-                "drupal/wxt_library": "^4.1",
+                "drupal/wxt_library": "^4.2",
                 "ext-dom": "*",
                 "w8tcha/ckeditor-codemirror": "1.16"
             },
@@ -8857,7 +8857,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2020-11-26T01:23:08+00:00"
+            "time": "2020-11-26T05:30:44+00:00"
         },
         {
             "name": "drush/drush",
@@ -15097,7 +15097,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.0.8",
+            "version": "9.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
