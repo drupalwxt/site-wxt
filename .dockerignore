@@ -4,5 +4,11 @@ VERSION
 README.md
 Changelog.md
 Makefile
-html
+html/*
+!html/modules/
+!html/themes/
+html/modules/*
+html/themes/*
+!html/modules/custom/
+!html/themes/custom/
 vendor
