@@ -100,7 +100,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -8376,7 +8376,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "c9de73c1e97ca76c8eb5dfad0296c135e3a24c5f"
+                "reference": "a40775fbaff25815e89190a2b328e8a882d38b49"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -8390,8 +8390,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.2+5-dev",
-                    "datestamp": "1609247063",
+                    "version": "8.x-4.2+6-dev",
+                    "datestamp": "1609793000",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8492,7 +8492,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "4af03f6fac2c2c7b1f6d388b612a6c654794908a"
+                "reference": "50d448a650ae017ba84aa2eb215c4e2161e4560a"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -8606,12 +8606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "66a18a2b773671f5d65fba8413a07e180e9ea822"
+                "reference": "8ca16e1478868c7a5e707aee8c0617c925ae9679"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/66a18a2b773671f5d65fba8413a07e180e9ea822",
-                "reference": "66a18a2b773671f5d65fba8413a07e180e9ea822",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/8ca16e1478868c7a5e707aee8c0617c925ae9679",
+                "reference": "8ca16e1478868c7a5e707aee8c0617c925ae9679",
                 "shasum": ""
             },
             "require": {
@@ -8750,6 +8750,7 @@
                         "Enter drupal/core patch #2998826 description here": "https://www.drupal.org/files/issues/2020-11-25/2998826-by-hctom-evilehk-paulocs-5n00py-chipwa.patch",
                         "Enter drupal/core patch #3017710 description here": "https://www.drupal.org/files/issues/2018-12-05/3017710-20.patch",
                         "Enter drupal/core patch #3081656 description here": "https://www.drupal.org/files/issues/2020-11-17/2488350-3-100.patch",
+                        "Enter drupal/core patch #3089902 description here": "https://www.drupal.org/files/issues/2020-11-27/3089902-74.patch",
                         "Enter drupal/core patch #3164210 description here": "https://www.drupal.org/files/issues/2020-08-09/3164210-3.patch",
                         "Enter drupal/core patch #3183425 description here": "https://www.drupal.org/files/issues/2020-11-25/3183425-claro-styling-64.patch"
                     },
@@ -8841,7 +8842,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-01-24T15:59:12+00:00"
+            "time": "2021-01-25T20:20:12+00:00"
         },
         {
             "name": "drush/drush",
