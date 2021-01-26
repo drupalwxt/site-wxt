@@ -8372,11 +8372,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "dev-4.x",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "a40775fbaff25815e89190a2b328e8a882d38b49"
+                "reference": "8.x-4.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-4.3.zip",
+                "reference": "8.x-4.3",
+                "shasum": "4e8645e10dda7684175eaca4d434af4bf93efc77"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -8386,15 +8392,12 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-4.2+6-dev",
-                    "datestamp": "1609793000",
+                    "version": "8.x-4.3",
+                    "datestamp": "1611622000",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -8488,11 +8491,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "dev-4.x",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "50d448a650ae017ba84aa2eb215c4e2161e4560a"
+                "reference": "8.x-4.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-4.3.zip",
+                "reference": "8.x-4.3",
+                "shasum": "e7c942e310937831379a8ef90c91815f6627860c"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -8510,15 +8519,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-4.2+0-dev",
-                    "datestamp": "1606367336",
+                    "version": "8.x-4.3",
+                    "datestamp": "1611622109",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -8606,12 +8612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "8ca16e1478868c7a5e707aee8c0617c925ae9679"
+                "reference": "707530885db9ac7304519aea0dbadc28c9fcd3d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/8ca16e1478868c7a5e707aee8c0617c925ae9679",
-                "reference": "8ca16e1478868c7a5e707aee8c0617c925ae9679",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/707530885db9ac7304519aea0dbadc28c9fcd3d8",
+                "reference": "707530885db9ac7304519aea0dbadc28c9fcd3d8",
                 "shasum": ""
             },
             "require": {
@@ -8660,8 +8666,8 @@
                 "drupal/views_bootstrap": "3.4",
                 "drupal/webform": "6.0.0-beta2",
                 "drupal/webform_migrate": "1.x-dev",
-                "drupal/wxt_bootstrap": "4.x-dev",
-                "drupal/wxt_library": "4.x-dev",
+                "drupal/wxt_bootstrap": "4.3",
+                "drupal/wxt_library": "4.3",
                 "ext-dom": "*",
                 "w8tcha/ckeditor-codemirror": "1.16"
             },
@@ -8777,7 +8783,7 @@
                         "Enter drupal/lightning_workflow patch #3126343 description here": "https://www.drupal.org/files/issues/2020-07-08/3126343-11.patch"
                     },
                     "drupal/linkit": {
-                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-14/3078075-22.patch"
+                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-25/3078075-24_0.patch"
                     },
                     "drupal/metatag": {
                         "Enter drupal/metatag patch #2955407 description here": "https://www.drupal.org/files/issues/2020-12-18/Issue-2955407-Static-caching-for-token-processing-ic.patch"
@@ -8842,7 +8848,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-01-25T20:20:12+00:00"
+            "time": "2021-01-26T00:49:25+00:00"
         },
         {
             "name": "drush/drush",
