@@ -8612,12 +8612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "62adeb4a1584b1091f6ca2a593e410d88fecd34c"
+                "reference": "c7f50928e2f52771bc40b4828b58a8fb706b99fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/62adeb4a1584b1091f6ca2a593e410d88fecd34c",
-                "reference": "62adeb4a1584b1091f6ca2a593e410d88fecd34c",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/c7f50928e2f52771bc40b4828b58a8fb706b99fb",
+                "reference": "c7f50928e2f52771bc40b4828b58a8fb706b99fb",
                 "shasum": ""
             },
             "require": {
@@ -8760,6 +8760,9 @@
                         "Enter drupal/core patch #3164210 description here": "https://www.drupal.org/files/issues/2020-08-09/3164210-3.patch",
                         "Enter drupal/core patch #3183425 description here": "https://www.drupal.org/files/issues/2020-11-25/3183425-claro-styling-64.patch"
                     },
+                    "drupal/config_rewrite": {
+                        "Enter drupal/config_rewrite patch #3186484 description here": "https://www.drupal.org/files/issues/2020-12-04/3186484-2.patch"
+                    },
                     "drupal/ctools": {
                         "Enter drupal/ctools patch #2667652 description here": "https://www.drupal.org/files/issues/ctools-option_to_expose-2667652-3.patch",
                         "Enter drupal/ctools patch #2874176 description here": "https://www.drupal.org/files/issues/entityview-cache-metadata-2874176-2.patch",
@@ -8848,7 +8851,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-01-26T03:19:35+00:00"
+            "time": "2021-01-26T05:20:25+00:00"
         },
         {
             "name": "drush/drush",
