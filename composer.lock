@@ -2332,27 +2332,27 @@
         },
         {
             "name": "drupal/config_rewrite",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_rewrite.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "256a4223b495d2a965bedd5782c72f94a84fba77"
+                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "558ae849dffef68aa304c7907f5f4ffa4a4d1a81"
             },
             "require": {
                 "drupal/core": "^8.6 || ^9",
-                "php": "^7.1"
+                "php": ">=7.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1590160270",
+                    "version": "8.x-1.4",
+                    "datestamp": "1611769139",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8376,7 +8376,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "0dd8012712280b29c0d23d9ce159375a6b850c71"
+                "reference": "8ba4ac120a3323dfb0775012cc3d2c0687b11ce8"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -8390,8 +8390,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.2+11-dev",
-                    "datestamp": "1611604467",
+                    "version": "8.x-4.3+1-dev",
+                    "datestamp": "1611765107",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8606,12 +8606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "bef654b0b664371f90129f783930ad571e795c54"
+                "reference": "064e77266adff27827ce8f76cd027977ffad9de0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/bef654b0b664371f90129f783930ad571e795c54",
-                "reference": "bef654b0b664371f90129f783930ad571e795c54",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/064e77266adff27827ce8f76cd027977ffad9de0",
+                "reference": "064e77266adff27827ce8f76cd027977ffad9de0",
                 "shasum": ""
             },
             "require": {
@@ -8622,7 +8622,7 @@
                 "drupal/bootstrap_layouts": "5.2",
                 "drupal/button_link": "1.2",
                 "drupal/ckeditor_codemirror": "2.3",
-                "drupal/config_rewrite": "1.3",
+                "drupal/config_rewrite": "1.4",
                 "drupal/core": "9.0.11",
                 "drupal/core_context": "1.0-beta4",
                 "drupal/ctools": "3.4.0",
@@ -8840,7 +8840,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-01-28T15:14:03+00:00"
+            "time": "2021-01-30T20:02:59+00:00"
         },
         {
             "name": "drush/drush",
@@ -11269,16 +11269,16 @@
         },
         {
             "name": "swagger-api/swagger-ui",
-            "version": "v3.40.0",
+            "version": "v3.41.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swagger-api/swagger-ui.git",
-                "reference": "8264f72af350eff0a564a3ca6f6292c8818f8466"
+                "reference": "4be20654c612b09863e7952ad9a572583e55d0b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/8264f72af350eff0a564a3ca6f6292c8818f8466",
-                "reference": "8264f72af350eff0a564a3ca6f6292c8818f8466",
+                "url": "https://api.github.com/repos/swagger-api/swagger-ui/zipball/4be20654c612b09863e7952ad9a572583e55d0b7",
+                "reference": "4be20654c612b09863e7952ad9a572583e55d0b7",
                 "shasum": ""
             },
             "type": "library",
@@ -11324,9 +11324,9 @@
             ],
             "support": {
                 "issues": "https://github.com/swagger-api/swagger-ui/issues",
-                "source": "https://github.com/swagger-api/swagger-ui/tree/v3.40.0"
+                "source": "https://github.com/swagger-api/swagger-ui/tree/v3.41.1"
             },
-            "time": "2021-01-14T20:20:17+00:00"
+            "time": "2021-01-28T19:56:37+00:00"
         },
         {
             "name": "symfony-cmf/routing",
