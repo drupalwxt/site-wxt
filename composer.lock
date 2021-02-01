@@ -8376,11 +8376,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "dev-4.x",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "f8c5355d06fec8254aeeb6e7c5203eb3baedeb18"
+                "reference": "8.x-4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-4.4.zip",
+                "reference": "8.x-4.4",
+                "shasum": "2d295e74658d87c81560cbd180c0fb98a11c5667"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -8390,15 +8396,12 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-4.3+5-dev",
-                    "datestamp": "1612143523",
+                    "version": "8.x-4.4",
+                    "datestamp": "1612143624",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -8492,11 +8495,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "dev-4.x",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "9daff419dd738cae9f56836ad67efeb912761445"
+                "reference": "8.x-4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-4.4.zip",
+                "reference": "8.x-4.4",
+                "shasum": "ab6dfedc6295c80c890ea7e8eb23b7ccc007b24a"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -8514,15 +8523,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-4.3+1-dev",
-                    "datestamp": "1612143144",
+                    "version": "8.x-4.4",
+                    "datestamp": "1612143284",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -8610,12 +8616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "8da902f2adc530d7ce214d6c1a35a4ec31d2bc2a"
+                "reference": "b436a4e0fc9e878badfd179fdcab25e9b4424e0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/8da902f2adc530d7ce214d6c1a35a4ec31d2bc2a",
-                "reference": "8da902f2adc530d7ce214d6c1a35a4ec31d2bc2a",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/b436a4e0fc9e878badfd179fdcab25e9b4424e0b",
+                "reference": "b436a4e0fc9e878badfd179fdcab25e9b4424e0b",
                 "shasum": ""
             },
             "require": {
@@ -8664,8 +8670,8 @@
                 "drupal/views_bootstrap": "3.4",
                 "drupal/webform": "6.0.0-beta2",
                 "drupal/webform_migrate": "1.x-dev",
-                "drupal/wxt_bootstrap": "4.x-dev",
-                "drupal/wxt_library": "4.x-dev",
+                "drupal/wxt_bootstrap": "4.4",
+                "drupal/wxt_library": "4.4",
                 "ext-dom": "*",
                 "w8tcha/ckeditor-codemirror": "1.16"
             },
@@ -8842,9 +8848,9 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.0.1"
             },
-            "time": "2021-01-31T23:11:31+00:00"
+            "time": "2021-02-01T01:43:11+00:00"
         },
         {
             "name": "drush/drush",
