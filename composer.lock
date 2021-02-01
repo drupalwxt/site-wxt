@@ -5777,6 +5777,10 @@
                     "homepage": "https://www.drupal.org/user/32095"
                 },
                 {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
                     "name": "joelpittet",
                     "homepage": "https://www.drupal.org/user/160302"
                 },
@@ -8376,7 +8380,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8ba4ac120a3323dfb0775012cc3d2c0687b11ce8"
+                "reference": "f8c5355d06fec8254aeeb6e7c5203eb3baedeb18"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -8390,8 +8394,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.3+1-dev",
-                    "datestamp": "1611765107",
+                    "version": "8.x-4.3+5-dev",
+                    "datestamp": "1612143523",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8492,7 +8496,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "50d448a650ae017ba84aa2eb215c4e2161e4560a"
+                "reference": "9daff419dd738cae9f56836ad67efeb912761445"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -8514,8 +8518,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.2+1-dev",
-                    "datestamp": "1611604447",
+                    "version": "8.x-4.3+1-dev",
+                    "datestamp": "1612143144",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8606,12 +8610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "064e77266adff27827ce8f76cd027977ffad9de0"
+                "reference": "8da902f2adc530d7ce214d6c1a35a4ec31d2bc2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/064e77266adff27827ce8f76cd027977ffad9de0",
-                "reference": "064e77266adff27827ce8f76cd027977ffad9de0",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/8da902f2adc530d7ce214d6c1a35a4ec31d2bc2a",
+                "reference": "8da902f2adc530d7ce214d6c1a35a4ec31d2bc2a",
                 "shasum": ""
             },
             "require": {
@@ -8840,7 +8844,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-01-30T20:02:59+00:00"
+            "time": "2021-01-31T23:11:31+00:00"
         },
         {
             "name": "drush/drush",
