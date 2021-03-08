@@ -8438,17 +8438,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "4.4.0",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-4.4"
+                "reference": "8.x-4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-4.4.zip",
-                "reference": "8.x-4.4",
-                "shasum": "ab6dfedc6295c80c890ea7e8eb23b7ccc007b24a"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-4.5.zip",
+                "reference": "8.x-4.5",
+                "shasum": "1df8e66f85869c5a4f33afbb41acc754cc5e329f"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -8467,8 +8467,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.4",
-                    "datestamp": "1612143284",
+                    "version": "8.x-4.5",
+                    "datestamp": "1615234268",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8559,12 +8559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "9b4357abedd1503b889f8f907cba2ce92dd9ef0a"
+                "reference": "36a8646d61d78d1df593faf096e6383f84fe75c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/9b4357abedd1503b889f8f907cba2ce92dd9ef0a",
-                "reference": "9b4357abedd1503b889f8f907cba2ce92dd9ef0a",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/36a8646d61d78d1df593faf096e6383f84fe75c5",
+                "reference": "36a8646d61d78d1df593faf096e6383f84fe75c5",
                 "shasum": ""
             },
             "require": {
@@ -8614,7 +8614,7 @@
                 "drupal/webform": "^6.0",
                 "drupal/webform_migrate": "1.x-dev",
                 "drupal/wxt_bootstrap": "4.5",
-                "drupal/wxt_library": "4.4",
+                "drupal/wxt_library": "4.5",
                 "ext-dom": "*",
                 "w8tcha/ckeditor-codemirror": "1.16"
             },
@@ -8799,7 +8799,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-03-08T19:25:16+00:00"
+            "time": "2021-03-08T20:11:51+00:00"
         },
         {
             "name": "drush/drush",
