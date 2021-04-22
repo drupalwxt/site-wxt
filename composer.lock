@@ -2879,35 +2879,38 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "8.x-3.4"
+                "reference": "8.x-3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.4.zip",
-                "reference": "8.x-3.4",
-                "shasum": "016ca5abb7ac4ca720352a72e8989f3ef0e20539"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.5.zip",
+                "reference": "8.x-3.5",
+                "shasum": "0113cd1e787ff3bde088c836c2d79d14136b0013"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.4",
-                    "datestamp": "1585763383",
+                    "version": "8.x-3.5",
+                    "datestamp": "1618592931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "branch-alias": {
+                    "dev-8.x-3.x": "3.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4168,20 +4171,21 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "1.0.0-rc8",
+            "version": "1.0.0-rc9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "8.x-1.0-rc8"
+                "reference": "8.x-1.0-rc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc8.zip",
-                "reference": "8.x-1.0-rc8",
-                "shasum": "103de382dd07b4acdd6bacd5ad76628fdf0eefda"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc9.zip",
+                "reference": "8.x-1.0-rc9",
+                "shasum": "78953103a9c6e4e44bc877820a35f39913ea4559"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9",
+                "php": ">=7.1"
             },
             "require-dev": {
                 "drupal/entity_reference_revisions": "^1.0"
@@ -4189,8 +4193,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc8",
-                    "datestamp": "1602172716",
+                    "version": "8.x-1.0-rc9",
+                    "datestamp": "1618174486",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -8482,12 +8486,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "92cd41751d61abd6f240850cc67b21835638b351"
+                "reference": "86fa2bab17c3cf759c3b2423a49c0e9d0d49a038"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/92cd41751d61abd6f240850cc67b21835638b351",
-                "reference": "92cd41751d61abd6f240850cc67b21835638b351",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/86fa2bab17c3cf759c3b2423a49c0e9d0d49a038",
+                "reference": "86fa2bab17c3cf759c3b2423a49c0e9d0d49a038",
                 "shasum": ""
             },
             "require": {
@@ -8501,7 +8505,7 @@
                 "drupal/config_rewrite": "1.4",
                 "drupal/core": "9.0.12",
                 "drupal/core_context": "1.0-beta4",
-                "drupal/ctools": "3.4.0",
+                "drupal/ctools": "3.5.0",
                 "drupal/diff": "1.0",
                 "drupal/entity_reference_revisions": "^1.8",
                 "drupal/entityqueue": "^1.0-alpha8",
@@ -8510,7 +8514,7 @@
                 "drupal/file_entity": "2.0-beta8",
                 "drupal/fontawesome": "^2.12",
                 "drupal/group": "1.3",
-                "drupal/inline_entity_form": "1.0-rc8",
+                "drupal/inline_entity_form": "^1.0-rc9",
                 "drupal/lightning_api": "^4.6",
                 "drupal/lightning_core": "^5.4",
                 "drupal/lightning_layout": "^2.9",
@@ -8633,9 +8637,7 @@
                     },
                     "drupal/ctools": {
                         "Enter drupal/ctools patch #2667652 description here": "https://www.drupal.org/files/issues/ctools-option_to_expose-2667652-3.patch",
-                        "Enter drupal/ctools patch #2874176 description here": "https://www.drupal.org/files/issues/entityview-cache-metadata-2874176-2.patch",
-                        "Enter drupal/ctools patch #2924356 description here": "https://www.drupal.org/files/issues/ctools-entity_field_rendered_twice-2924356-2.patch",
-                        "Enter drupal/ctools patch #3108785 description here": "https://www.drupal.org/files/issues/2020-04-28/3108785-8.patch"
+                        "Enter drupal/ctools patch #2924356 description here": "https://www.drupal.org/files/issues/ctools-entity_field_rendered_twice-2924356-2.patch"
                     },
                     "drupal/diff": {
                         "The getModerationState() function fails to take translations into consideration": "https://www.drupal.org/files/issues/2018-12-03/ModerationState-error-of-translated-node-in-revision-overview-page-3004705-4.patch"
@@ -8726,7 +8728,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-04-22T14:48:46+00:00"
+            "time": "2021-04-22T17:30:03+00:00"
         },
         {
             "name": "drush/drush",
