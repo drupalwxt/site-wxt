@@ -2468,16 +2468,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.0.11",
+            "version": "9.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "41697df079ae8aa64fa45b61976f50e7a2998d7f"
+                "reference": "b0920993ac29b35dc1a18e4b2feb4e74a40d537d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/41697df079ae8aa64fa45b61976f50e7a2998d7f",
-                "reference": "41697df079ae8aa64fa45b61976f50e7a2998d7f",
+                "url": "https://api.github.com/repos/drupal/core/zipball/b0920993ac29b35dc1a18e4b2feb4e74a40d537d",
+                "reference": "b0920993ac29b35dc1a18e4b2feb4e74a40d537d",
                 "shasum": ""
             },
             "require": {
@@ -2709,13 +2709,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.0.11"
+                "source": "https://github.com/drupal/core/tree/9.0.12"
             },
-            "time": "2021-01-19T23:10:53+00:00"
+            "time": "2021-04-20T23:05:31+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.1.6",
+            "version": "9.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2759,7 +2759,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.6"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.7"
             },
             "time": "2020-08-07T22:30:13+00:00"
         },
@@ -8482,12 +8482,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "f9516e39d65a53b5812eb9e40562f911e40d478a"
+                "reference": "92cd41751d61abd6f240850cc67b21835638b351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f9516e39d65a53b5812eb9e40562f911e40d478a",
-                "reference": "f9516e39d65a53b5812eb9e40562f911e40d478a",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/92cd41751d61abd6f240850cc67b21835638b351",
+                "reference": "92cd41751d61abd6f240850cc67b21835638b351",
                 "shasum": ""
             },
             "require": {
@@ -8499,7 +8499,7 @@
                 "drupal/button_link": "1.2",
                 "drupal/ckeditor_codemirror": "2.3",
                 "drupal/config_rewrite": "1.4",
-                "drupal/core": "9.0.11",
+                "drupal/core": "9.0.12",
                 "drupal/core_context": "1.0-beta4",
                 "drupal/ctools": "3.4.0",
                 "drupal/diff": "1.0",
@@ -8724,9 +8724,9 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.0.3"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.0.x"
             },
-            "time": "2021-04-16T14:39:38+00:00"
+            "time": "2021-04-22T14:48:46+00:00"
         },
         {
             "name": "drush/drush",
@@ -15102,7 +15102,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.0.11",
+            "version": "9.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -15144,7 +15144,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.0.3"
+                "source": "https://github.com/drupal/core-dev/tree/9.0.4"
             },
             "time": "2020-04-21T12:07:33+00:00"
         },
