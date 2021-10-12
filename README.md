@@ -1,5 +1,4 @@
-Composer Project template for Drupal WxT
-========================================
+# Composer Project template for Drupal WxT
 
 [![Build Status][githubci-badge]][githubci]
 
@@ -9,8 +8,8 @@ Composer Project template for Drupal WxT
 
 ## Requirements
 
-* [Composer][composer]
-* [Node][node]
+- [Composer][composer]
+- [Node][node]
 
 ## Setup
 
@@ -24,22 +23,13 @@ export COMPOSER_MEMORY_LIMIT=-1 && composer install
 
 The `composer.json` file calls the following dependencies:
 
-* [Lightning][lightning]
-* [WxT][wxt]
-
-> Note: The [docker-scaffold][docker-scaffold] has now been moved to its own repository though symlinks are still present. Should you wish to use the docker workflow you simple need to run the following command in this repositories working directory.
-
-```sh
-git clone https://github.com/drupalwxt/docker-scaffold.git docker
-```
-
-### Lightning
-
-The intent of [Lightning][lightning] is to enable developers to create great authoring experiences and empower editorial teams. This is done by providing a lightweight framework, documentation and best practice examples for building working solutions in Drupal.
+- [WxT][wxt]
 
 ### WxT
 
-The [Drupal WxT][wxt] distribution is a web content management system which assists in building and maintaining innovative Web sites that are accessible, usable, and interoperable. This distribution is open source software and free for use by departments and external Web communities. This distribution extends on Lightning and integrates extensively with the WET-BOEW jQuery Framework for improved accessible markup.
+The [Drupal WxT][wxt] distribution is a web content management system which assists in building and maintaining innovative Web sites that are accessible, usable, and interoperable.
+
+This distribution is open source software and free for use by departments and external Web communities. This distribution integrates extensively with the WET-BOEW jQuery Framework for improved accessible markup.
 
 ## Project
 
@@ -61,13 +51,13 @@ composer create-project drupalwxt/site-wxt:4.1.x-dev site-name
 
 List of common commands are as follows:
 
-| Task                                            | Composer                                               |
-|-------------------------------------------------|--------------------------------------------------------|
-| Latest version of a contributed project         | ```composer require drupal/PROJECT_NAME:1.*```         |
-| Specific version of a contributed project       | ```composer require drupal/PROJECT_NAME:1.0-beta5``` |
-| Updating all projects including Drupal Core     | ```composer update```                                  |
-| Updating a single contributed project           | ```composer update drupal/PROJECT_NAME```              |
-| Updating Drupal Core exclusively                | ```composer update drupal/core```                      |
+| Task                                        | Composer                                         |
+| ------------------------------------------- | ------------------------------------------------ |
+| Latest version of a contributed project     | `composer require drupal/PROJECT_NAME:1.*`       |
+| Specific version of a contributed project   | `composer require drupal/PROJECT_NAME:1.0-beta5` |
+| Updating all projects including Drupal Core | `composer update`                                |
+| Updating a single contributed project       | `composer update drupal/PROJECT_NAME`            |
+| Updating Drupal Core exclusively            | `composer update drupal/core`                    |
 
 ## Acknowledgements
 
@@ -75,10 +65,9 @@ Extended with code and lessons learned by the [Acquia Team](https://acquia.com) 
 
 <!-- Links Referenced -->
 
-[composer]:                     https://getcomposer.org
-[docker-scaffold]:              https://github.com/drupalwxt/docker-scaffold.git
-[githubci]:                     https://github.com/drupalwxt/site-wxt/actions
-[githubci-badge]:               https://github.com/drupalwxt/site-wxt/workflows/build/badge.svg
-[node]:                         https://nodejs.org
-[lightning]:                    https://github.com/acquia/lightning
-[wxt]:                          https://github.com/drupalwxt/wxt
+[composer]: https://getcomposer.org
+[docker-scaffold]: https://github.com/drupalwxt/docker-scaffold.git
+[githubci]: https://github.com/drupalwxt/site-wxt/actions
+[githubci-badge]: https://github.com/drupalwxt/site-wxt/workflows/build/badge.svg
+[node]: https://nodejs.org
+[wxt]: https://github.com/drupalwxt/wxt
