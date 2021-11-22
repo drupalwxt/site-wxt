@@ -8749,7 +8749,7 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.1.x"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.1.2"
             },
             "time": "2021-11-22T01:52:44+00:00"
         },
@@ -18300,5 +18300,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
