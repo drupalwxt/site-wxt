@@ -2,9 +2,9 @@
 
 [![Build Status][githubci-badge]][githubci]
 
-[Drupal WxT][wxt] codebase for `site-wxt`.
+An example composer project for the [Drupal WxT][wxt] distribution.
 
-> **Note**: You may find the [README.md][wxt] file in the WxT repository more beneficial then this composer project template.
+> **Note**: You should consult the [README.md][wxt] file in the WxT repository for up-to-date information.
 
 ## Requirements
 
@@ -25,27 +25,23 @@ The `composer.json` file calls the following dependencies:
 
 - [WxT][wxt]
 
-### WxT
-
 The [Drupal WxT][wxt] distribution is a web content management system which assists in building and maintaining innovative Web sites that are accessible, usable, and interoperable.
 
 This distribution is open source software and free for use by departments and external Web communities. This distribution integrates extensively with the WET-BOEW jQuery Framework for improved accessible markup.
 
 ## Project
 
-For production releases you should only ever use a stable tag.
+This composer-project was initially created by our Composer Project Template for Drupal:
 
-### New Project (stable tag)
+- [Composer Project Template][wxt-project]
 
-```sh
-composer create-project drupalwxt/site-wxt:4.1.0 site-name
-```
-
-### New Project (dev)
+The following is the command that was used for initial generation:
 
 ```sh
-composer create-project drupalwxt/site-wxt:4.1.x-dev site-name
+composer create-project drupalwxt/site-wxt:4.2.x-dev site-wxt
 ```
+
+> **Note**: Normally you might want to use a stable tag such as `drupalwxt/site-wxt:4.2.x-dev`.
 
 ## Maintenance
 
@@ -65,9 +61,10 @@ Extended with code and lessons learned by the [Acquia Team](https://acquia.com) 
 
 <!-- Links Referenced -->
 
-[composer]: https://getcomposer.org
+[composer]:        https://getcomposer.org
 [docker-scaffold]: https://github.com/drupalwxt/docker-scaffold.git
-[githubci]: https://github.com/drupalwxt/site-wxt/actions
-[githubci-badge]: https://github.com/drupalwxt/site-wxt/workflows/build/badge.svg
-[node]: https://nodejs.org
-[wxt]: https://github.com/drupalwxt/wxt
+[githubci]:        https://github.com/drupalwxt/site-wxt/actions
+[githubci-badge]:  https://github.com/drupalwxt/site-wxt/workflows/build/badge.svg
+[node]:            https://nodejs.org
+[wxt]:             https://github.com/drupalwxt/wxt
+[wxt-project]:     https://github.com/drupalwxt/wxt-project
