@@ -551,16 +551,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.5.0",
+            "version": "4.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "df01c1f1449c6b46bf87051e0b418bd5d5e44a7a"
+                "reference": "701a7abe8505abe89520837be798e15a3953a367"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/df01c1f1449c6b46bf87051e0b418bd5d5e44a7a",
-                "reference": "df01c1f1449c6b46bf87051e0b418bd5d5e44a7a",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/701a7abe8505abe89520837be798e15a3953a367",
+                "reference": "701a7abe8505abe89520837be798e15a3953a367",
                 "shasum": ""
             },
             "require": {
@@ -601,9 +601,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.5.0"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.1"
             },
-            "time": "2021-12-27T19:34:17+00:00"
+            "time": "2021-12-30T04:00:37+00:00"
         },
         {
             "name": "consolidation/config",
@@ -762,22 +762,22 @@
         },
         {
             "name": "consolidation/log",
-            "version": "2.0.2",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/log.git",
-                "reference": "82a2aaaa621a7b976e50a745a8d249d5085ee2b1"
+                "reference": "fc9ec5476ba13a31778695bd2d4f2fa0b0684356"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/log/zipball/82a2aaaa621a7b976e50a745a8d249d5085ee2b1",
-                "reference": "82a2aaaa621a7b976e50a745a8d249d5085ee2b1",
+                "url": "https://api.github.com/repos/consolidation/log/zipball/fc9ec5476ba13a31778695bd2d4f2fa0b0684356",
+                "reference": "fc9ec5476ba13a31778695bd2d4f2fa0b0684356",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3",
                 "psr/log": "^1.0",
-                "symfony/console": "^4|^5"
+                "symfony/console": "^4 || ^5 || ^6"
             },
             "require-dev": {
                 "phpunit/phpunit": ">=7.5.20",
@@ -808,22 +808,22 @@
             "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
             "support": {
                 "issues": "https://github.com/consolidation/log/issues",
-                "source": "https://github.com/consolidation/log/tree/2.0.2"
+                "source": "https://github.com/consolidation/log/tree/2.0.4"
             },
-            "time": "2020-12-10T16:26:23+00:00"
+            "time": "2021-12-30T19:05:18+00:00"
         },
         {
             "name": "consolidation/output-formatters",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/output-formatters.git",
-                "reference": "27cf221f6e59b1debed0c6c94015e78cd5f10e24"
+                "reference": "4413d7c732afb5d7bdac565c41aa9c8c49c48888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/27cf221f6e59b1debed0c6c94015e78cd5f10e24",
-                "reference": "27cf221f6e59b1debed0c6c94015e78cd5f10e24",
+                "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/4413d7c732afb5d7bdac565c41aa9c8c49c48888",
+                "reference": "4413d7c732afb5d7bdac565c41aa9c8c49c48888",
                 "shasum": ""
             },
             "require": {
@@ -867,38 +867,38 @@
             "description": "Format text by applying transformations provided by plug-in formatters.",
             "support": {
                 "issues": "https://github.com/consolidation/output-formatters/issues",
-                "source": "https://github.com/consolidation/output-formatters/tree/4.2.0"
+                "source": "https://github.com/consolidation/output-formatters/tree/4.2.1"
             },
-            "time": "2021-12-27T14:30:41+00:00"
+            "time": "2021-12-30T03:58:00+00:00"
         },
         {
             "name": "consolidation/robo",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/consolidation/Robo.git",
-                "reference": "36dce2965a67abe5cf91f2bc36d2582a64a11258"
+                "url": "https://github.com/consolidation/robo.git",
+                "reference": "57012db2a93c904ed0a7b9d8676c0325c0366bc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/Robo/zipball/36dce2965a67abe5cf91f2bc36d2582a64a11258",
-                "reference": "36dce2965a67abe5cf91f2bc36d2582a64a11258",
+                "url": "https://api.github.com/repos/consolidation/robo/zipball/57012db2a93c904ed0a7b9d8676c0325c0366bc8",
+                "reference": "57012db2a93c904ed0a7b9d8676c0325c0366bc8",
                 "shasum": ""
             },
             "require": {
                 "consolidation/annotated-command": "^4.3",
-                "consolidation/config": "^1.2.1|^2.0.1",
-                "consolidation/log": "^1.1.1|^2.0.2",
+                "consolidation/config": "^1.2.1 || ^2.0.1",
+                "consolidation/log": "^1.1.1 || ^2.0.2",
                 "consolidation/output-formatters": "^4.1.2",
                 "consolidation/self-update": "^2.0",
                 "league/container": "^3.3.1",
                 "php": ">=7.1.3",
-                "symfony/console": "^4.4.19 || ^5",
-                "symfony/event-dispatcher": "^4.4.19 || ^5",
-                "symfony/filesystem": "^4.4.9 || ^5",
-                "symfony/finder": "^4.4.9 || ^5",
+                "symfony/console": "^4.4.19 || ^5 || ^6",
+                "symfony/event-dispatcher": "^4.4.19 || ^5 || ^6",
+                "symfony/filesystem": "^4.4.9 || ^5 || ^6",
+                "symfony/finder": "^4.4.9 || ^5 || ^6",
                 "symfony/process": "^4.4.9 || ^5",
-                "symfony/yaml": "^4.4 || ^5"
+                "symfony/yaml": "^4.4 || ^5 || ^6"
             },
             "conflict": {
                 "codegyre/robo": "*"
@@ -907,7 +907,7 @@
                 "natxet/cssmin": "3.0.4",
                 "patchwork/jsqueeze": "^2",
                 "pear/archive_tar": "^1.4.4",
-                "phpunit/phpunit": "^7.5.20 | ^8",
+                "phpunit/phpunit": "^7.5.20 || ^8",
                 "squizlabs/php_codesniffer": "^3.6",
                 "yoast/phpunit-polyfills": "^0.2.0"
             },
@@ -965,30 +965,30 @@
             ],
             "description": "Modern task runner",
             "support": {
-                "issues": "https://github.com/consolidation/Robo/issues",
-                "source": "https://github.com/consolidation/Robo/tree/3.0.6"
+                "issues": "https://github.com/consolidation/robo/issues",
+                "source": "https://github.com/consolidation/robo/tree/3.0.7"
             },
-            "time": "2021-10-05T23:56:45+00:00"
+            "time": "2021-12-31T01:01:31+00:00"
         },
         {
             "name": "consolidation/self-update",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/self-update.git",
-                "reference": "74289cf9b37d5cf84321ebea47deeea21678b940"
+                "reference": "117dcc9494dc970a6ae307103c41d654e6253bc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/self-update/zipball/74289cf9b37d5cf84321ebea47deeea21678b940",
-                "reference": "74289cf9b37d5cf84321ebea47deeea21678b940",
+                "url": "https://api.github.com/repos/consolidation/self-update/zipball/117dcc9494dc970a6ae307103c41d654e6253bc4",
+                "reference": "117dcc9494dc970a6ae307103c41d654e6253bc4",
                 "shasum": ""
             },
             "require": {
                 "composer/semver": "^3.2",
                 "php": ">=5.5.0",
-                "symfony/console": "^2.8|^3|^4|^5",
-                "symfony/filesystem": "^2.5|^3|^4|^5"
+                "symfony/console": "^2.8 || ^3 || ^4 || ^5 || ^6",
+                "symfony/filesystem": "^2.5 || ^3 || ^4 || ^5 || ^6"
             },
             "bin": [
                 "scripts/release"
@@ -1021,22 +1021,22 @@
             "description": "Provides a self:update command for Symfony Console applications.",
             "support": {
                 "issues": "https://github.com/consolidation/self-update/issues",
-                "source": "https://github.com/consolidation/self-update/tree/2.0.2"
+                "source": "https://github.com/consolidation/self-update/tree/2.0.3"
             },
-            "time": "2021-12-17T16:45:58+00:00"
+            "time": "2021-12-30T19:08:32+00:00"
         },
         {
             "name": "consolidation/site-alias",
-            "version": "3.1.2",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "2d514a1b278a1c5f28df20df317631f9829a88f2"
+                "reference": "e2784362e98f315c996fb2b9ed80a9118a0ba8b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/2d514a1b278a1c5f28df20df317631f9829a88f2",
-                "reference": "2d514a1b278a1c5f28df20df317631f9829a88f2",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/e2784362e98f315c996fb2b9ed80a9118a0ba8b7",
+                "reference": "e2784362e98f315c996fb2b9ed80a9118a0ba8b7",
                 "shasum": ""
             },
             "require": {
@@ -1079,22 +1079,22 @@
             "description": "Manage alias records for local and remote sites.",
             "support": {
                 "issues": "https://github.com/consolidation/site-alias/issues",
-                "source": "https://github.com/consolidation/site-alias/tree/3.1.2"
+                "source": "https://github.com/consolidation/site-alias/tree/3.1.3"
             },
-            "time": "2021-10-29T17:58:54+00:00"
+            "time": "2022-01-03T19:00:28+00:00"
         },
         {
             "name": "consolidation/site-process",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-process.git",
-                "reference": "ef57711d7049f7606ce936ded16ad93f1ad7f02c"
+                "reference": "4817b35b2f98a2e3ad82956a968b49f7b257d26c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-process/zipball/ef57711d7049f7606ce936ded16ad93f1ad7f02c",
-                "reference": "ef57711d7049f7606ce936ded16ad93f1ad7f02c",
+                "url": "https://api.github.com/repos/consolidation/site-process/zipball/4817b35b2f98a2e3ad82956a968b49f7b257d26c",
+                "reference": "4817b35b2f98a2e3ad82956a968b49f7b257d26c",
                 "shasum": ""
             },
             "require": {
@@ -1137,9 +1137,9 @@
             "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call.",
             "support": {
                 "issues": "https://github.com/consolidation/site-process/issues",
-                "source": "https://github.com/consolidation/site-process/tree/4.1.0"
+                "source": "https://github.com/consolidation/site-process/tree/4.1.1"
             },
-            "time": "2021-02-21T02:53:33+00:00"
+            "time": "2022-01-03T18:57:42+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -2428,16 +2428,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.2.9",
+            "version": "9.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "2e2f015e881abccc32efcd264128e8a8444b2ec1"
+                "reference": "61248f85f78c02e7e0afde2b8a5113d3914bb50f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/2e2f015e881abccc32efcd264128e8a8444b2ec1",
-                "reference": "2e2f015e881abccc32efcd264128e8a8444b2ec1",
+                "url": "https://api.github.com/repos/drupal/core/zipball/61248f85f78c02e7e0afde2b8a5113d3914bb50f",
+                "reference": "61248f85f78c02e7e0afde2b8a5113d3914bb50f",
                 "shasum": ""
             },
             "require": {
@@ -2676,9 +2676,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.2.9"
+                "source": "https://github.com/drupal/core/tree/9.2.10"
             },
-            "time": "2021-11-17T21:05:58+00:00"
+            "time": "2021-11-24T14:27:27+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -3761,17 +3761,17 @@
         },
         {
             "name": "drupal/field_formatter",
-            "version": "3.0.0-alpha3",
+            "version": "3.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_formatter.git",
-                "reference": "3.0.0-alpha3"
+                "reference": "3.0.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_formatter-3.0.0-alpha3.zip",
-                "reference": "3.0.0-alpha3",
-                "shasum": "c11bb6ac0470ae870e454c01feea37dd19f3e3ec"
+                "url": "https://ftp.drupal.org/files/projects/field_formatter-3.0.0-alpha4.zip",
+                "reference": "3.0.0-alpha4",
+                "shasum": "336fbd3ffaf1297736789de27a9fc7323b268cac"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -3779,8 +3779,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-alpha3",
-                    "datestamp": "1636820392",
+                    "version": "3.0.0-alpha4",
+                    "datestamp": "1641215669",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -7728,11 +7728,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "dev-6.x",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "3f315935e90e4d3ee60ce1d522c7dbeedb7c5f6f"
+                "reference": "8.x-6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-6.0.zip",
+                "reference": "8.x-6.0",
+                "shasum": "f9d689ea844599d62d27b1fb676c2e5b48c87912"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -7742,15 +7748,12 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-6.x": "6.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-6.x-dev",
-                    "datestamp": "1640292047",
+                    "version": "8.x-6.0",
+                    "datestamp": "1641089895",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -7840,11 +7843,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "dev-6.x",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "99dfb02b619f360db70c2b7eaa44d46f01f73fac"
+                "reference": "8.x-6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-6.0.zip",
+                "reference": "8.x-6.0",
+                "shasum": "3418eb5b89419bbabde9e8e4a6be0a3ac50a969d"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -7863,15 +7872,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-6.x": "6.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-6.x-dev",
-                    "datestamp": "1640280926",
+                    "version": "8.x-6.0",
+                    "datestamp": "1641089959",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -7955,12 +7961,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "c2dd75e815da6f8d5244628903c199fcedeff7c6"
+                "reference": "6d5829b9c49bdcca40b87ba8ac34cd93a066ba50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/c2dd75e815da6f8d5244628903c199fcedeff7c6",
-                "reference": "c2dd75e815da6f8d5244628903c199fcedeff7c6",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/6d5829b9c49bdcca40b87ba8ac34cd93a066ba50",
+                "reference": "6d5829b9c49bdcca40b87ba8ac34cd93a066ba50",
                 "shasum": ""
             },
             "require": {
@@ -7975,7 +7981,7 @@
                 "drupal/ckeditor_codemirror": "2.3",
                 "drupal/ckeditor_details": "^2.0.2",
                 "drupal/config_rewrite": "1.4",
-                "drupal/core": "9.2.9",
+                "drupal/core": "9.2.10",
                 "drupal/core_context": "1.0-beta5",
                 "drupal/ctools": "^3.7",
                 "drupal/diff": "1.0",
@@ -8013,8 +8019,8 @@
                 "drupal/views_bootstrap": "^3.4",
                 "drupal/webform": "^6.0",
                 "drupal/webform_migrate": "1.x-dev",
-                "drupal/wxt_bootstrap": "6.x-dev",
-                "drupal/wxt_library": "6.x-dev",
+                "drupal/wxt_bootstrap": "6.0",
+                "drupal/wxt_library": "6.0",
                 "ext-dom": "*",
                 "w8tcha/ckeditor-codemirror": "1.16"
             },
@@ -8198,9 +8204,9 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.2.x"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.2.0"
             },
-            "time": "2021-12-28T17:17:19+00:00"
+            "time": "2022-01-04T03:28:57+00:00"
         },
         {
             "name": "drush/drush",
@@ -13012,22 +13018,23 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.14.8",
+            "version": "v2.14.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "06b450a2326aa879faa2061ff72fe1588b3ab043"
+                "reference": "95fb194cd4dd6ac373a27af2bde2bad5d3f27aba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/06b450a2326aa879faa2061ff72fe1588b3ab043",
-                "reference": "06b450a2326aa879faa2061ff72fe1588b3ab043",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/95fb194cd4dd6ac373a27af2bde2bad5d3f27aba",
+                "reference": "95fb194cd4dd6ac373a27af2bde2bad5d3f27aba",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5",
+                "php": ">=7.1.3",
                 "symfony/polyfill-ctype": "^1.8",
-                "symfony/polyfill-mbstring": "^1.3"
+                "symfony/polyfill-mbstring": "^1.3",
+                "symfony/polyfill-php72": "^1.8"
             },
             "require-dev": {
                 "psr/container": "^1.0",
@@ -13075,7 +13082,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.14.8"
+                "source": "https://github.com/twigphp/Twig/tree/v2.14.10"
             },
             "funding": [
                 {
@@ -13087,7 +13094,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-25T13:38:06+00:00"
+            "time": "2022-01-03T21:13:26+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
@@ -13914,16 +13921,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "2c1887d4f296d027e383bd2b39e2bff0210bc14f"
+                "reference": "3c92ba5cdc7d48b7db2dcd197e6fa0e8fa6d9f4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/2c1887d4f296d027e383bd2b39e2bff0210bc14f",
-                "reference": "2c1887d4f296d027e383bd2b39e2bff0210bc14f",
+                "url": "https://api.github.com/repos/composer/composer/zipball/3c92ba5cdc7d48b7db2dcd197e6fa0e8fa6d9f4a",
+                "reference": "3c92ba5cdc7d48b7db2dcd197e6fa0e8fa6d9f4a",
                 "shasum": ""
             },
             "require": {
@@ -13993,7 +14000,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.2"
+                "source": "https://github.com/composer/composer/tree/2.2.3"
             },
             "funding": [
                 {
@@ -14009,7 +14016,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-29T13:15:27+00:00"
+            "time": "2021-12-31T11:18:53+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -17500,5 +17507,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
