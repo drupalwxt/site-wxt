@@ -2655,7 +2655,7 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.3.12",
+            "version": "9.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2699,7 +2699,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.12"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.13"
             },
             "time": "2022-02-24T17:40:56+00:00"
         },
@@ -6754,17 +6754,17 @@
         },
         {
             "name": "drupal/toc_api",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/toc_api.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/toc_api-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "2a610f4bd29c89084bc68a48ff209db35ec83595"
+                "url": "https://ftp.drupal.org/files/projects/toc_api-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "6cc89d5a95ec65a665edd8f49cf7a5eba4cd8b4b"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9"
@@ -6772,8 +6772,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1628378264",
+                    "version": "8.x-1.2",
+                    "datestamp": "1652324826",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7804,12 +7804,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "435ce42e8ea37226ae3bc596beda306099eb0ee7"
+                "reference": "16568faf845d063834d523869cda6a95bc467e82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/435ce42e8ea37226ae3bc596beda306099eb0ee7",
-                "reference": "435ce42e8ea37226ae3bc596beda306099eb0ee7",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/16568faf845d063834d523869cda6a95bc467e82",
+                "reference": "16568faf845d063834d523869cda6a95bc467e82",
                 "shasum": ""
             },
             "require": {
@@ -8033,9 +8033,6 @@
                         "Enter drupal/s3fs patch #2986407 description here": "https://www.drupal.org/files/issues/2018-07-17/s3fs-2986407-save-memory-2.patch",
                         "Enter drupal/s3fs patch #3038992 description here": "https://www.drupal.org/files/issues/2019-03-10/0001-feat-s3fs-Compatibility-with-Minio.patch"
                     },
-                    "drupal/toc_api": {
-                        "3118516 - Add an 'exclude' xpath option": "https://www.drupal.org/files/issues/2021-08-04/toc_api-add_exclude_xpath_option-6.patch"
-                    },
                     "toc_filter": {
                         "3262302 - Exclude text above [toc] token when building TOC": "https://www.drupal.org/files/issues/2022-02-03/toc-filter-exclude-text-above-token-3262302-2.patch"
                     },
@@ -8057,9 +8054,9 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.2.4"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.2.x"
             },
-            "time": "2022-05-09T01:57:15+00:00"
+            "time": "2022-05-15T16:03:31+00:00"
         },
         {
             "name": "drush/drush",
@@ -12999,16 +12996,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.14.13",
+            "version": "v2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "66856cd0459df3dc97d32077a98454dc2a0ee75a"
+                "reference": "2fcc95728fbe9278773edcb605c7cf8bdc426c22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/66856cd0459df3dc97d32077a98454dc2a0ee75a",
-                "reference": "66856cd0459df3dc97d32077a98454dc2a0ee75a",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/2fcc95728fbe9278773edcb605c7cf8bdc426c22",
+                "reference": "2fcc95728fbe9278773edcb605c7cf8bdc426c22",
                 "shasum": ""
             },
             "require": {
@@ -13024,7 +13021,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.14-dev"
+                    "dev-master": "2.15-dev"
                 }
             },
             "autoload": {
@@ -13063,7 +13060,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.14.13"
+                "source": "https://github.com/twigphp/Twig/tree/v2.15.0"
             },
             "funding": [
                 {
@@ -13075,7 +13072,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-06T06:45:17+00:00"
+            "time": "2022-05-15T06:21:48+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
@@ -14415,7 +14412,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.3.12",
+            "version": "9.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -14459,7 +14456,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.3.12"
+                "source": "https://github.com/drupal/core-dev/tree/9.3.13"
             },
             "time": "2021-11-30T05:41:29+00:00"
         },
