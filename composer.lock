@@ -7538,12 +7538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "6431f7715c2693664dffe7d3fc96e0ae26049deb"
+                "reference": "30adcf02806c1b2c1222b8dd46ca90439beb68af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/6431f7715c2693664dffe7d3fc96e0ae26049deb",
-                "reference": "6431f7715c2693664dffe7d3fc96e0ae26049deb",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/30adcf02806c1b2c1222b8dd46ca90439beb68af",
+                "reference": "30adcf02806c1b2c1222b8dd46ca90439beb68af",
                 "shasum": ""
             },
             "require": {
@@ -7752,7 +7752,6 @@
                     },
                     "drupal/redis": {
                         "3004561 - Enable ssl scheme": "https://www.drupal.org/files/issues/2021-11-19/redis-support_tls_on_predis-3004561-37.patch",
-                        "Enter drupal/redis patch #3166814 description here": "https://www.drupal.org/files/issues/2020-08-23/redis_test_lock_setup.patch",
                         "Enter drupal/redis patch #3179757 description here": "https://www.drupal.org/files/issues/2020-10-30/3179757-4.patch",
                         "3175412 - Use item_id instead of qid for Queue item": "https://www.drupal.org/files/issues/2020-10-07/redis-queue-item-id-3175412-2.patch"
                     },
@@ -7783,7 +7782,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/4.3.x"
             },
-            "time": "2022-07-15T12:32:36+00:00"
+            "time": "2022-07-15T12:51:44+00:00"
         },
         {
             "name": "drush/drush",
