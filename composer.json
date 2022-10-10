@@ -8,11 +8,9 @@
     "require": {
         "cweagans/composer-patches": "^1.6.0",
         "drupal/core-composer-scaffold": "*",
-        "drupalwxt/wxt": "4.3.x-dev",
+        "drupalwxt/wxt": "4.4.x-dev",
         "drush/drush": ">=9.7",
-        "oomphinc/composer-installers-extender": "^1.1 || ^2",
-        "symfony/deprecation-contracts": "3.0.2",
-        "symfony/string": "6.0.12"
+        "oomphinc/composer-installers-extender": "^1.1 || ^2"
     },
     "require-dev": {
         "drupal/core-dev": "^9",
