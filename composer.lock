@@ -6957,12 +6957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "599747fb57adb96929e03cbeb084047d8e39a92f"
+                "reference": "57ab01a9cda0cc60799912008871f059af0fd96d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/599747fb57adb96929e03cbeb084047d8e39a92f",
-                "reference": "599747fb57adb96929e03cbeb084047d8e39a92f",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/57ab01a9cda0cc60799912008871f059af0fd96d",
+                "reference": "57ab01a9cda0cc60799912008871f059af0fd96d",
                 "shasum": ""
             },
             "require": {
@@ -7213,9 +7213,9 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.4.1"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.4.2"
             },
-            "time": "2023-02-06T16:19:49+00:00"
+            "time": "2023-02-08T01:36:54+00:00"
         },
         {
             "name": "drush/drush",
