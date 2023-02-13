@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2753d2fd5f319b1ecb78b009caed66ea",
+    "content-hash": "c0333df755afb86246b1fa5e196c8d98",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6953,16 +6953,16 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "4.4.x-dev",
+            "version": "4.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "57ab01a9cda0cc60799912008871f059af0fd96d"
+                "reference": "5daefbacccb8af7373ded8c93b2cf5f0d5f64b9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/57ab01a9cda0cc60799912008871f059af0fd96d",
-                "reference": "57ab01a9cda0cc60799912008871f059af0fd96d",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/5daefbacccb8af7373ded8c93b2cf5f0d5f64b9e",
+                "reference": "5daefbacccb8af7373ded8c93b2cf5f0d5f64b9e",
                 "shasum": ""
             },
             "require": {
@@ -7213,9 +7213,9 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.4.2"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.5.x"
             },
-            "time": "2023-02-08T01:36:54+00:00"
+            "time": "2023-02-13T00:51:50+00:00"
         },
         {
             "name": "drush/drush",
@@ -13160,16 +13160,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.19",
+            "version": "2.2.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "30ff21a9af9a10845436abaeeb0bb7276e996d24"
+                "reference": "b4850827d87688465fc3b775c71b2836187538ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/30ff21a9af9a10845436abaeeb0bb7276e996d24",
-                "reference": "30ff21a9af9a10845436abaeeb0bb7276e996d24",
+                "url": "https://api.github.com/repos/composer/composer/zipball/b4850827d87688465fc3b775c71b2836187538ac",
+                "reference": "b4850827d87688465fc3b775c71b2836187538ac",
                 "shasum": ""
             },
             "require": {
@@ -13239,7 +13239,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.19"
+                "source": "https://github.com/composer/composer/tree/2.2.20"
             },
             "funding": [
                 {
@@ -13255,7 +13255,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-04T13:54:48+00:00"
+            "time": "2023-02-10T13:11:10+00:00"
         },
         {
             "name": "composer/metadata-minifier",

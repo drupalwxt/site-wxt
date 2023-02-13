@@ -38,10 +38,10 @@ This composer-project was initially created by our Composer Project Template for
 The following is the command that was used for initial generation:
 
 ```sh
-composer create-project drupalwxt/site-wxt:4.4.x-dev site-wxt
+composer create-project drupalwxt/site-wxt:4.5.x-dev site-wxt
 ```
 
-> **Note**: Normally you might want to use a stable tag such as `drupalwxt/site-wxt:4.4.x-dev`.
+> **Note**: Normally you might want to use a stable tag such as `drupalwxt/site-wxt:4.5.x-dev`.
 
 ## Maintenance
 
