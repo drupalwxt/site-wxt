@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb2db5d61aff322df4da8b9eba4dfc46",
+    "content-hash": "c0333df755afb86246b1fa5e196c8d98",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6966,7 +6966,7 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "4.5.0",
+            "version": "4.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
@@ -7068,6 +7068,7 @@
                 "phpspec/prophecy-phpunit": "^2",
                 "squizlabs/php_codesniffer": "3.*"
             },
+            "default-branch": true,
             "type": "drupal-profile",
             "extra": {
                 "drupal-scaffold": {
@@ -16337,16 +16338,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.11",
+            "version": "v2.11.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "241ddec6e9d263f1844b9d679c84fa8f0647d84c"
+                "reference": "d8a00fb972b9317ef4decf66725a25e712cc4cbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/241ddec6e9d263f1844b9d679c84fa8f0647d84c",
-                "reference": "241ddec6e9d263f1844b9d679c84fa8f0647d84c",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/d8a00fb972b9317ef4decf66725a25e712cc4cbe",
+                "reference": "d8a00fb972b9317ef4decf66725a25e712cc4cbe",
                 "shasum": ""
             },
             "require": {
@@ -16391,7 +16392,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2023-03-12T03:11:54+00:00"
+            "time": "2023-03-13T14:54:42+00:00"
         },
         {
             "name": "slevomat/coding-standard",
@@ -17098,7 +17099,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupalwxt/wxt": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
