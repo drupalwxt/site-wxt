@@ -81,6 +81,18 @@
                     "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwebform_migrate/repository/archive.zip?sha=c5e4d9c3"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/footnotes",
+                "version": "dev-389813a1",
+                "type": "drupal-module",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Ffootnotes/repository/archive.zip?sha=389813a1"
+                }
+            }
         }
     ],
     "scripts": {

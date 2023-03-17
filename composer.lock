@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1e2fd6c0e781608b7514908010cca88",
+    "content-hash": "ab39f11fa7db5a029b9366119ccdac61",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -85,7 +85,7 @@
             "version": "3.6.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
             },
             "dist": {
@@ -1798,26 +1798,27 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.25.0",
+            "version": "3.27.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.25"
+                "reference": "8.x-3.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.25.zip",
-                "reference": "8.x-3.25",
-                "shasum": "1334aad091973f53ddc4d7b426ee85e7428a3684"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.27.zip",
+                "reference": "8.x-3.27",
+                "shasum": "3994dbbfe4b39126a324fd2e450b9f67ace23a1c"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^9.5 || ^10",
+                "php": ">=8.1.0"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.25",
-                    "datestamp": "1654873483",
+                    "version": "8.x-3.27",
+                    "datestamp": "1677031723",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2365,16 +2366,16 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.0.4",
+            "version": "10.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "e3f17745ab88a919f5179e6d9c1ac8ce77d3845f"
+                "reference": "5ff3916feeeecd15f982803fc2203559623e5ae0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/e3f17745ab88a919f5179e6d9c1ac8ce77d3845f",
-                "reference": "e3f17745ab88a919f5179e6d9c1ac8ce77d3845f",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/5ff3916feeeecd15f982803fc2203559623e5ae0",
+                "reference": "5ff3916feeeecd15f982803fc2203559623e5ae0",
                 "shasum": ""
             },
             "require": {
@@ -2409,9 +2410,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.4"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.5"
             },
-            "time": "2022-07-01T08:33:05+00:00"
+            "time": "2023-03-09T21:24:32+00:00"
         },
         {
             "name": "drupal/core_context",
@@ -3612,75 +3613,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/fontawesome",
                 "issues": "https://drupal.org/project/issues/fontawesome"
-            }
-        },
-        {
-            "name": "drupal/footnotes",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/footnotes.git",
-                "reference": "3.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/footnotes-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "2b85c7e7a8c318af2b7d15248a5c58027e5b9ba4"
-            },
-            "require": {
-                "drupal/core": ">=8.6",
-                "drupal/fakeobjects": "^1.0"
-            },
-            "require-dev": {
-                "drupal/fakeobjects": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1639328597",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Andrii Aleksandrov (id.aleks)",
-                    "homepage": "https://www.drupal.org/u/idaleks",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Oleksandr Dekhteruk (pifagor)",
-                    "homepage": "https://www.drupal.org/u/pifagor",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Fernando Conceição (yukare)",
-                    "homepage": "https://www.drupal.org/u/yukare",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Henrik Ingo (hingo)",
-                    "homepage": "https://www.drupal.org/u/hingo",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "yukare",
-                    "homepage": "https://www.drupal.org/user/889254"
-                }
-            ],
-            "description": "Add automatically numbered footnotes to your posts.",
-            "homepage": "https://drupal.org/project/footnotes",
-            "support": {
-                "source": "https://cgit.drupalcode.org/footnotes",
-                "issues": "https://drupal.org/project/issues/footnotes"
             }
         },
         {
@@ -6395,12 +6327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "4a391987fef1313d9d4f7b7535c0dcf51502d7d4"
+                "reference": "39d4d754fe292487a278665a8cce37463fd31867"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
-                "drupal/bootstrap": "3.25",
-                "drupal/core": "8.* || 9.* || 10.*",
+                "drupal/bootstrap": "3.27",
+                "drupal/core": "9.* || 10.*",
                 "oomphinc/composer-installers-extender": "^1.1 || ^2"
             },
             "type": "drupal-theme",
@@ -6410,7 +6342,7 @@
                 },
                 "drupal": {
                     "version": "8.x-7.x-dev",
-                    "datestamp": "1678475630",
+                    "datestamp": "1678804964",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6507,12 +6439,12 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "87ab6cbac0b1ad521d75d0ab18bf04d0d7c48b62"
+                "reference": "ffb029eba9d7ec073070272816f63b491c71e337"
             },
             "require": {
                 "composer/installers": "^1.2",
                 "cweagans/composer-patches": "^1.6.0",
-                "drupal/core": "8.* || 9.* || 10.*",
+                "drupal/core": "9.* || 10.*",
                 "oomphinc/composer-installers-extender": "^1.1 || ^2",
                 "wet-boew/theme-base": "4.0.27",
                 "wet-boew/theme-gc-intranet": "4.0.43.1",
@@ -6531,7 +6463,7 @@
                 },
                 "drupal": {
                     "version": "8.x-7.x-dev",
-                    "datestamp": "1678475550",
+                    "datestamp": "1678727527",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6631,6 +6563,15 @@
             "type": "drupal-module"
         },
         {
+            "name": "drupaloverride/footnotes",
+            "version": "dev-389813a1",
+            "dist": {
+                "type": "zip",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Ffootnotes/repository/archive.zip?sha=389813a1"
+            },
+            "type": "drupal-module"
+        },
+        {
             "name": "drupaloverride/webform_migrate",
             "version": "dev-c5e4d9c3",
             "dist": {
@@ -6645,12 +6586,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "9325bfcaccc13f6e85472b3543714dae90a8cb9e"
+                "reference": "7f67115485cb3afe9bff4ac70130e4ed56a85c15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/9325bfcaccc13f6e85472b3543714dae90a8cb9e",
-                "reference": "9325bfcaccc13f6e85472b3543714dae90a8cb9e",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/7f67115485cb3afe9bff4ac70130e4ed56a85c15",
+                "reference": "7f67115485cb3afe9bff4ac70130e4ed56a85c15",
                 "shasum": ""
             },
             "require": {
@@ -6680,11 +6621,11 @@
                 "drupal/entity_browser_block": "^1.0",
                 "drupal/entity_reference_revisions": "^1.8",
                 "drupal/entityqueue": "^1.3",
+                "drupal/fakeobjects": "^1.2",
                 "drupal/field_formatter": "^3.0",
                 "drupal/field_group": "^3.0",
                 "drupal/file_entity": "2.0-beta10",
                 "drupal/fontawesome": "^2.24",
-                "drupal/footnotes": "^3.0",
                 "drupal/group": "1.5",
                 "drupal/image_widget_crop": "^2.1",
                 "drupal/inline_entity_form": "^1.0-rc12",
@@ -6725,6 +6666,7 @@
                 "drupal/wxt_library": "7.x-dev",
                 "drupaloverride/button_link": "dev-0629ba90",
                 "drupaloverride/entity_embed": "dev-efc9bf60",
+                "drupaloverride/footnotes": "dev-389813a1",
                 "drupaloverride/webform_migrate": "dev-c5e4d9c3",
                 "ext-dom": "*",
                 "npm-asset/dropzone": "^5.7.4",
@@ -6887,7 +6829,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.0.x"
             },
-            "time": "2023-03-13T16:06:24+00:00"
+            "time": "2023-03-17T20:15:40+00:00"
         },
         {
             "name": "drush/drush",
@@ -13234,7 +13176,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.0.4",
+            "version": "10.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -13280,7 +13222,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.0.4"
+                "source": "https://github.com/drupal/core-dev/tree/10.0.5"
             },
             "time": "2023-02-23T15:40:18+00:00"
         },
@@ -13376,16 +13318,16 @@
         },
         {
             "name": "drupal/drupal-extension",
-            "version": "v5.0.0alpha1",
+            "version": "v5.0.0rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jhedstrom/drupalextension.git",
-                "reference": "58eb76447085fa96e0ceab79bf591a215b682b49"
+                "reference": "8707984f2ce5a7c90c1e6d064b1db6aeda950d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jhedstrom/drupalextension/zipball/58eb76447085fa96e0ceab79bf591a215b682b49",
-                "reference": "58eb76447085fa96e0ceab79bf591a215b682b49",
+                "url": "https://api.github.com/repos/jhedstrom/drupalextension/zipball/8707984f2ce5a7c90c1e6d064b1db6aeda950d2a",
+                "reference": "8707984f2ce5a7c90c1e6d064b1db6aeda950d2a",
                 "shasum": ""
             },
             "require": {
@@ -13457,7 +13399,7 @@
             ],
             "support": {
                 "issues": "https://github.com/jhedstrom/drupalextension/issues",
-                "source": "https://github.com/jhedstrom/drupalextension/tree/v5.0.0alpha1"
+                "source": "https://github.com/jhedstrom/drupalextension/tree/v5.0.0rc1"
             },
             "funding": [
                 {
@@ -13465,7 +13407,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-27T18:51:57+00:00"
+            "time": "2023-03-17T17:20:38+00:00"
         },
         {
             "name": "friends-of-behat/mink-extension",
@@ -14201,16 +14143,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.6",
+            "version": "1.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "50d089a3e0904b0fe7e2cf2d4fd37d427d64235a"
+                "reference": "b10ceb526d9607903c5b2673f1fc8775dbe48975"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/50d089a3e0904b0fe7e2cf2d4fd37d427d64235a",
-                "reference": "50d089a3e0904b0fe7e2cf2d4fd37d427d64235a",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b10ceb526d9607903c5b2673f1fc8775dbe48975",
+                "reference": "b10ceb526d9607903c5b2673f1fc8775dbe48975",
                 "shasum": ""
             },
             "require": {
@@ -14239,8 +14181,11 @@
                 "static analysis"
             ],
             "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.10.6"
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
             },
             "funding": [
                 {
@@ -14256,7 +14201,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-09T16:55:12+00:00"
+            "time": "2023-03-16T15:24:20+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
