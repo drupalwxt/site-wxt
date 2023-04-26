@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f85981592458e7577d4b32782097252",
+    "content-hash": "c0333df755afb86246b1fa5e196c8d98",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6967,7 +6967,7 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "4.5.3",
+            "version": "4.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
@@ -7068,6 +7068,7 @@
                 "phpspec/prophecy-phpunit": "^2",
                 "squizlabs/php_codesniffer": "3.*"
             },
+            "default-branch": true,
             "type": "drupal-profile",
             "extra": {
                 "drupal-scaffold": {
@@ -17092,7 +17093,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupalwxt/wxt": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
