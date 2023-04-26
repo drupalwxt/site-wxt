@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29d093fde3366020a276a365b997d729",
+    "content-hash": "7f85981592458e7577d4b32782097252",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2361,16 +2361,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.5.5",
+            "version": "9.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "eae5e76a8b403cbd42b3465f567313b52d78b0dc"
+                "reference": "a9a1e4e1fe23fb8c83fd6aeafb740c1462a218fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/eae5e76a8b403cbd42b3465f567313b52d78b0dc",
-                "reference": "eae5e76a8b403cbd42b3465f567313b52d78b0dc",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a9a1e4e1fe23fb8c83fd6aeafb740c1462a218fc",
+                "reference": "a9a1e4e1fe23fb8c83fd6aeafb740c1462a218fc",
                 "shasum": ""
             },
             "require": {
@@ -2522,9 +2522,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.5.5"
+                "source": "https://github.com/drupal/core/tree/9.5.8"
             },
-            "time": "2023-03-15T14:30:25+00:00"
+            "time": "2023-04-19T16:14:39+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -5108,35 +5108,36 @@
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "5.2.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "8.x-5.2"
+                "reference": "6.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-5.2.zip",
-                "reference": "8.x-5.2",
-                "shasum": "e473c32780c567b62b3aa7dd92c2fb5227b9ee12"
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-6.0.1.zip",
+                "reference": "6.0.1",
+                "shasum": "8c07d1b61b319acd4fd395e22ef9bf34d23299ba"
             },
             "require": {
-                "drupal/core": "^9.1",
-                "drupal/migrate_plus": "^5",
-                "php": ">=7.1"
+                "drupal/core": ">=9.1",
+                "php": ">=7.4"
             },
             "require-dev": {
-                "drupal/migrate_source_csv": "^3.0",
-                "drush/drush": "^10"
+                "drupal/migrate_plus": ">=5",
+                "drupal/migrate_source_csv": ">=3",
+                "drush/drush": ">=11"
             },
             "suggest": {
-                "drush/drush": "^9 || ^10"
+                "drupal/migrate_plus": ">=5",
+                "drush/drush": ">=11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.2",
-                    "datestamp": "1672425094",
+                    "version": "6.0.1",
+                    "datestamp": "1672424943",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5144,7 +5145,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": ">=9"
                     }
                 }
             },
@@ -6966,16 +6967,16 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "4.5.1",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "ac70558df5ff49371c1c8800f8280269f927c127"
+                "reference": "c0e444580970642ebf1310e03e18e93e545c2db6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ac70558df5ff49371c1c8800f8280269f927c127",
-                "reference": "ac70558df5ff49371c1c8800f8280269f927c127",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/c0e444580970642ebf1310e03e18e93e545c2db6",
+                "reference": "c0e444580970642ebf1310e03e18e93e545c2db6",
                 "shasum": ""
             },
             "require": {
@@ -6994,7 +6995,7 @@
                 "drupal/ckeditor_codemirror": "2.4",
                 "drupal/ckeditor_details": "^2.0.2",
                 "drupal/config_rewrite": "1.4",
-                "drupal/core": "9.5.5",
+                "drupal/core": "9.5.8",
                 "drupal/core_context": "1.1",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/ctools": "^3.9",
@@ -7027,7 +7028,7 @@
                 "drupal/menu_breadcrumb": "^1.13",
                 "drupal/metatag": "^1.13",
                 "drupal/migrate_plus": "^5.1",
-                "drupal/migrate_tools": "^5.0",
+                "drupal/migrate_tools": "^6.0",
                 "drupal/page_manager": "4.0-rc2",
                 "drupal/panels": "4.7",
                 "drupal/paragraphs": "^1.15",
@@ -7059,7 +7060,6 @@
             },
             "require-dev": {
                 "drupal/console": "~1.9.0",
-                "drupal/console-extend-plugin": "dev-master as 0.9.4",
                 "drupal/core-composer-scaffold": "^9",
                 "drupal/core-dev": "^9",
                 "drupal/drupal-extension": "^4.1.0",
@@ -7197,10 +7197,6 @@
                         "3179757 - TTL handling broken always permanent": "https://www.drupal.org/files/issues/2020-10-30/3179757-4.patch",
                         "3175412 - Use item_id instead of qid for Queue item": "https://www.drupal.org/files/issues/2020-10-07/redis-queue-item-id-3175412-2.patch"
                     },
-                    "drupal/s3fs": {
-                        "Enter drupal/s3fs patch #2986407 description here": "https://www.drupal.org/files/issues/2018-07-17/s3fs-2986407-save-memory-2.patch",
-                        "Enter drupal/s3fs patch #3038992 description here": "https://www.drupal.org/files/issues/2019-03-10/0001-feat-s3fs-Compatibility-with-Minio.patch"
-                    },
                     "toc_filter": {
                         "3262302 - Exclude text above [toc] token when building TOC": "https://www.drupal.org/files/issues/2022-02-03/toc-filter-exclude-text-above-token-3262302-2.patch"
                     },
@@ -7222,9 +7218,9 @@
             "description": "Project template for Drupal 9 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/4.5.1"
+                "source": "https://github.com/drupalwxt/wxt/tree/4.5.3"
             },
-            "time": "2023-03-24T00:59:25+00:00"
+            "time": "2023-04-26T18:06:04+00:00"
         },
         {
             "name": "drush/drush",
