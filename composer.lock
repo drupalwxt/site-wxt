@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab39f11fa7db5a029b9366119ccdac61",
+    "content-hash": "8ae57207fc76bdda39e1c719c4b0d36c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -181,6 +181,21 @@
             "time": "2022-01-19T11:09:59+00:00"
         },
         {
+            "name": "cdubz/ckeditor5-source-editing-codemirror",
+            "version": "35.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@cdubz/ckeditor5-source-editing-codemirror/-/ckeditor5-source-editing-codemirror-35.1.0.tgz"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "ckeditor5-source-editing-codemirror"
+            }
+        },
+        {
             "name": "chi-teck/drupal-code-generator",
             "version": "2.6.2",
             "source": {
@@ -249,6 +264,21 @@
                 "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.17.1.zip"
             },
             "type": "drupal-library"
+        },
+        {
+            "name": "codemirror/codemirror",
+            "version": "5.65.8",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/codemirror/-/codemirror-5.65.8.tgz"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "codemirror"
+            }
         },
         {
             "name": "composer/ca-bundle",
@@ -6589,18 +6619,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "869a72a73c67dc918e197801505538b08a81bad2"
+                "reference": "fd03f7e5ac3ef8c12f25300423dae964c3af29d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/869a72a73c67dc918e197801505538b08a81bad2",
-                "reference": "869a72a73c67dc918e197801505538b08a81bad2",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/fd03f7e5ac3ef8c12f25300423dae964c3af29d4",
+                "reference": "fd03f7e5ac3ef8c12f25300423dae964c3af29d4",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
                 "bower-asset/slick-carousel": "^1.8",
+                "cdubz/ckeditor5-source-editing-codemirror": "^35.1",
                 "ckeditor/fakeobjects": "4.17.1",
+                "codemirror/codemirror": "^5.65",
                 "cweagans/composer-patches": "^1.6.0",
                 "drupal/admin_toolbar": "^3.2.1",
                 "drupal/autosave_form": "^1.2",
@@ -6674,8 +6706,7 @@
                 "ext-dom": "*",
                 "npm-asset/dropzone": "^5.7.4",
                 "phpdocumentor/reflection-docblock": "^5",
-                "vardot/blazy": "^1.8",
-                "w8tcha/ckeditor-codemirror": "1.16"
+                "vardot/blazy": "^1.8"
             },
             "require-dev": {
                 "drupal/core-composer-scaffold": "^10",
@@ -6832,7 +6863,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.0.x"
             },
-            "time": "2023-05-18T21:03:06+00:00"
+            "time": "2023-05-19T14:46:11+00:00"
         },
         {
             "name": "drush/drush",
@@ -11900,20 +11931,6 @@
                 "source": "https://github.com/Vardot/blazy/tree/master"
             },
             "time": "2017-07-16T11:19:13+00:00"
-        },
-        {
-            "name": "w8tcha/ckeditor-codemirror",
-            "version": "v1.16",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin.git",
-                "reference": "1.16"
-            },
-            "dist": {
-                "type": "tar",
-                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz"
-            },
-            "type": "drupal-library"
         },
         {
             "name": "webflo/drupal-finder",
