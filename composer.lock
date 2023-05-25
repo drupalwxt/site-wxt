@@ -6360,7 +6360,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "db6d2ccf25ce2c241aaa4b70005bf44d1c76af38"
+                "reference": "38b8260f22209fa2f3cd4a14067c0fb475a00e91"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -6375,7 +6375,7 @@
                 },
                 "drupal": {
                     "version": "8.x-7.x-dev",
-                    "datestamp": "1684874058",
+                    "datestamp": "1685027346",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6619,12 +6619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "e976ed5c2a44ae2473da5171b06d9f390865c508"
+                "reference": "4c226796dd7da276c5a507fcea21f767d3028d2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/e976ed5c2a44ae2473da5171b06d9f390865c508",
-                "reference": "e976ed5c2a44ae2473da5171b06d9f390865c508",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/4c226796dd7da276c5a507fcea21f767d3028d2f",
+                "reference": "4c226796dd7da276c5a507fcea21f767d3028d2f",
                 "shasum": ""
             },
             "require": {
@@ -6863,7 +6863,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.0.x"
             },
-            "time": "2023-05-19T20:03:26+00:00"
+            "time": "2023-05-25T14:53:10+00:00"
         },
         {
             "name": "drush/drush",
