@@ -3215,6 +3215,83 @@
             }
         },
         {
+            "name": "drupal/entity_embed",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_embed.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "800cb12020d8751d11292018231d93157fc34d4e"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "drupal/embed": "^1.5"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "^1",
+                "drupal/entity_browser": "^2.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1686251084",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                }
+            ],
+            "description": "Allows any entity to be embedded within a text area using a WYSIWYG editor.",
+            "homepage": "https://www.drupal.org/project/entity_embed",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_embed"
+            }
+        },
+        {
             "name": "drupal/entity_reference_revisions",
             "version": "1.10.0",
             "source": {
@@ -6622,15 +6699,6 @@
             }
         },
         {
-            "name": "drupaloverride/entity_embed",
-            "version": "dev-efc9bf60",
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fentity_embed/repository/archive.zip?sha=efc9bf60"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "drupaloverride/footnotes",
             "version": "dev-389813a1",
             "dist": {
@@ -6654,12 +6722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "c69b85fa6eb1cab6a2ed6daec74063764b6cabe5"
+                "reference": "edb89c883d93326204bedaeb4ef4d8987d5ec3e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/c69b85fa6eb1cab6a2ed6daec74063764b6cabe5",
-                "reference": "c69b85fa6eb1cab6a2ed6daec74063764b6cabe5",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/edb89c883d93326204bedaeb4ef4d8987d5ec3e9",
+                "reference": "edb89c883d93326204bedaeb4ef4d8987d5ec3e9",
                 "shasum": ""
             },
             "require": {
@@ -6690,6 +6758,7 @@
                 "drupal/entity_block": "^1.0",
                 "drupal/entity_browser": "^2.3",
                 "drupal/entity_browser_block": "^1.0",
+                "drupal/entity_embed": "^1.4",
                 "drupal/entity_reference_revisions": "^1.8",
                 "drupal/entityqueue": "^1.3",
                 "drupal/fakeobjects": "^1.2",
@@ -6735,7 +6804,6 @@
                 "drupal/webform": "^6.2.0-beta5",
                 "drupal/wxt_bootstrap": "7.x-dev",
                 "drupal/wxt_library": "7.x-dev",
-                "drupaloverride/entity_embed": "dev-efc9bf60",
                 "drupaloverride/footnotes": "dev-389813a1",
                 "drupaloverride/webform_migrate": "dev-c5e4d9c3",
                 "ext-dom": "*",
@@ -6898,7 +6966,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.0.x"
             },
-            "time": "2023-06-09T12:48:45+00:00"
+            "time": "2023-06-09T13:02:43+00:00"
         },
         {
             "name": "drush/drush",
