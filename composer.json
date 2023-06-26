@@ -7,15 +7,15 @@
     "prefer-stable": true,
     "require": {
         "cweagans/composer-patches": "^1.6.0",
-        "drupal/core-composer-scaffold": "*",
-        "drupalwxt/wxt": "5.0.x-dev",
-        "drush/drush": ">=9.7",
-        "oomphinc/composer-installers-extender": "^1.1 || ^2"
+        "drupal/core-composer-scaffold": "^10.0",
+        "drupalwxt/wxt": "5.0.x-dev"
     },
     "require-dev": {
-        "drupal/core-dev": "^10",
-        "drupal/drupal-extension": "^5.0.0-alpha1",
-        "squizlabs/php_codesniffer": "^3.3",
+        "drupal/core-dev": "^10.0",
+        "drupal/drupal-extension": "5.0.0-alpha1",
+        "drush/drush": ">=12.1.0",
+        "oomphinc/composer-installers-extender": "^1.1 || ^2",
+        "squizlabs/php_codesniffer": "3.*",
         "phpspec/prophecy-phpunit": "^2"
     },
     "config": {
@@ -25,9 +25,10 @@
             "minConnections": 5
         },
         "allow-plugins": {
-            "drupal/core-composer-scaffold": true,
             "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
             "cweagans/composer-patches": true,
+            "drupal/console-extend-plugin": true,
             "oomphinc/composer-installers-extender": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true
