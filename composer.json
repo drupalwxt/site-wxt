@@ -50,42 +50,6 @@
         {
             "type": "package",
             "package": {
-                "name": "drupaloverride/button_link",
-                "version": "dev-0629ba90",
-                "type": "drupal-module",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Fbutton_link/repository/archive.zip?sha=0629ba90"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/entity_embed",
-                "version": "dev-efc9bf60",
-                "type": "drupal-module",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Fentity_embed/repository/archive.zip?sha=efc9bf60"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/webform_migrate",
-                "version": "dev-c5e4d9c3",
-                "type": "drupal-module",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwebform_migrate/repository/archive.zip?sha=c5e4d9c3"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "drupaloverride/footnotes",
                 "version": "dev-389813a1",
                 "type": "drupal-module",
