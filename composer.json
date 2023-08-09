@@ -51,11 +51,11 @@
             "type": "package",
             "package": {
                 "name": "drupaloverride/footnotes",
-                "version": "dev-389813a1",
+                "version": "3.1.0-alpha1",
                 "type": "drupal-module",
                 "dist": {
                     "type": "zip",
-                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Ffootnotes/repository/archive.zip?sha=389813a1"
+                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Ffootnotes/repository/archive.zip?sha=7693fba0"
                 }
             }
         },
