@@ -50,18 +50,6 @@
         {
             "type": "package",
             "package": {
-                "name": "drupaloverride/footnotes",
-                "version": "3.1.0-alpha1",
-                "type": "drupal-module",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://git.drupalcode.org/api/v4/projects/project%2Ffootnotes/repository/archive.zip?sha=7693fba0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "cdubz/ckeditor5-source-editing-codemirror",
                 "version": "35.1.0",
                 "type": "drupal-library",
