@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b18b90efafd8c439931acc0b2b21c85",
+    "content-hash": "b6fceb5d38a6169e454168a5649c5533",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6201,11 +6201,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "dev-7.x",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "e7233eb4b307a0f23c26a9504bcbe3800729883f"
+                "reference": "8.x-7.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-7.0.zip",
+                "reference": "8.x-7.0",
+                "shasum": "751bb49694538b371a5f5d57264cc531400a46f3"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -6215,15 +6221,12 @@
             },
             "type": "drupal-theme",
             "extra": {
-                "branch-alias": {
-                    "dev-7.x": "7.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-7.x-dev",
-                    "datestamp": "1690556999",
+                    "version": "8.x-7.0",
+                    "datestamp": "1691978150",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -6313,11 +6316,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "dev-7.x",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8fa4e49866d190d20f4503094b128fd15bb4920a"
+                "reference": "8.x-7.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-7.0.zip",
+                "reference": "8.x-7.0",
+                "shasum": "222806fdc35daa1179de70e1856bd8ccbb530e2a"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -6336,15 +6345,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-7.x": "7.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-7.x-dev",
-                    "datestamp": "1690424682",
+                    "version": "8.x-7.0",
+                    "datestamp": "1691978082",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "installer-paths": {
@@ -6424,16 +6430,16 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "5.0.x-dev",
+            "version": "5.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "7eb9753dc3752020fc75034a96e6211d1978021f"
+                "reference": "dd46048040b59411733cc73724a526293dbd022b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/7eb9753dc3752020fc75034a96e6211d1978021f",
-                "reference": "7eb9753dc3752020fc75034a96e6211d1978021f",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/dd46048040b59411733cc73724a526293dbd022b",
+                "reference": "dd46048040b59411733cc73724a526293dbd022b",
                 "shasum": ""
             },
             "require": {
@@ -6512,8 +6518,8 @@
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.2.0-beta5",
                 "drupal/webform_migrate": "2.0.x-dev",
-                "drupal/wxt_bootstrap": "7.x-dev",
-                "drupal/wxt_library": "7.x-dev",
+                "drupal/wxt_bootstrap": "7.0",
+                "drupal/wxt_library": "7.0",
                 "ext-dom": "*",
                 "npm-asset/dropzone": "^5.7.4",
                 "phpdocumentor/reflection-docblock": "^5",
@@ -6672,9 +6678,9 @@
             "description": "Project template for Drupal 10 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/5.0.x"
+                "source": "https://github.com/drupalwxt/wxt/tree/5.0.0-rc1"
             },
-            "time": "2023-08-14T01:35:16+00:00"
+            "time": "2023-08-14T03:19:14+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -14214,16 +14220,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.28",
+            "version": "1.10.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "e4545b55904ebef470423d3ddddb74fa7325497a"
+                "reference": "ee5d8f2d3977fb09e55603eee6fb53bdd76ee9c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e4545b55904ebef470423d3ddddb74fa7325497a",
-                "reference": "e4545b55904ebef470423d3ddddb74fa7325497a",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ee5d8f2d3977fb09e55603eee6fb53bdd76ee9c1",
+                "reference": "ee5d8f2d3977fb09e55603eee6fb53bdd76ee9c1",
                 "shasum": ""
             },
             "require": {
@@ -14272,7 +14278,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-08T12:33:42+00:00"
+            "time": "2023-08-14T13:24:11+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -17323,9 +17329,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupalwxt/wxt": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
