@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6fceb5d38a6169e454168a5649c5533",
+    "content-hash": "41214363c42e539a8d303c2bbd7fbdda",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2001,37 +2001,37 @@
         },
         {
             "name": "drupal/core_context",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/core_context.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/core_context-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "5ec960c07728d2035c5ab470991e3beb8d2d45e8"
+                "url": "https://ftp.drupal.org/files/projects/core_context-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "0cf4205e8e32df4716ef7ca917941b393c1ae2ae"
             },
             "require": {
                 "drupal/core": ">=8.9 <11.0.0-stable",
-                "drupal/ctools": "*"
+                "drupal/ctools": "^3.11"
+            },
+            "conflict": {
+                "drupal/page_manager": "<4.0-beta6"
             },
             "require-dev": {
-                "drupal/page_manager": "4.x-dev"
+                "drupal/page_manager": "^4.0-beta6"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1660250131",
+                    "version": "8.x-1.1",
+                    "datestamp": "1668558268",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "branch-alias": {
-                    "dev-8.x-1.x": "1.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2868,17 +2868,17 @@
         },
         {
             "name": "drupal/entityqueue",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entityqueue.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "8ae967916d48df995a959cc2725832f327379487"
+                "url": "https://ftp.drupal.org/files/projects/entityqueue-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "94311ac7909f58ecc267c490b89ab3c13ebdbf8e"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9 || ^10"
@@ -2886,8 +2886,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1674474067",
+                    "version": "8.x-1.7",
+                    "datestamp": "1692176074",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6201,17 +6201,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "7.0.0",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-7.0"
+                "reference": "8.x-7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-7.0.zip",
-                "reference": "8.x-7.0",
-                "shasum": "751bb49694538b371a5f5d57264cc531400a46f3"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-7.1.zip",
+                "reference": "8.x-7.1",
+                "shasum": "ce19ea2fd6f1947d51dc5cca33eed5c67838a6dc"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.0",
@@ -6222,8 +6222,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-7.0",
-                    "datestamp": "1691978150",
+                    "version": "8.x-7.1",
+                    "datestamp": "1692582737",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6316,17 +6316,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "7.0.0",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-7.0"
+                "reference": "8.x-7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-7.0.zip",
-                "reference": "8.x-7.0",
-                "shasum": "222806fdc35daa1179de70e1856bd8ccbb530e2a"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-7.1.zip",
+                "reference": "8.x-7.1",
+                "shasum": "bf4294960f2a0d2eaeb9d373729d4bd6d152cfd3"
             },
             "require": {
                 "composer/installers": "^1.2",
@@ -6346,8 +6346,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-7.0",
-                    "datestamp": "1691978082",
+                    "version": "8.x-7.1",
+                    "datestamp": "1692582566",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6430,16 +6430,16 @@
         },
         {
             "name": "drupalwxt/wxt",
-            "version": "5.0.0-rc1",
+            "version": "5.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "dd46048040b59411733cc73724a526293dbd022b"
+                "reference": "246b786d363b5128606b687215b7102725c07d7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/dd46048040b59411733cc73724a526293dbd022b",
-                "reference": "dd46048040b59411733cc73724a526293dbd022b",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/246b786d363b5128606b687215b7102725c07d7f",
+                "reference": "246b786d363b5128606b687215b7102725c07d7f",
                 "shasum": ""
             },
             "require": {
@@ -6463,7 +6463,7 @@
                 "drupal/config_rewrite": "^1.5",
                 "drupal/core-composer-scaffold": "^10.0",
                 "drupal/core-recommended": "10.0.10",
-                "drupal/core_context": "1.0",
+                "drupal/core_context": "1.1",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/ctools": "^3.9",
                 "drupal/diff": "^1.1",
@@ -6518,8 +6518,8 @@
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.2.0-beta5",
                 "drupal/webform_migrate": "2.0.x-dev",
-                "drupal/wxt_bootstrap": "7.0",
-                "drupal/wxt_library": "7.0",
+                "drupal/wxt_bootstrap": "7.1",
+                "drupal/wxt_library": "7.1",
                 "ext-dom": "*",
                 "npm-asset/dropzone": "^5.7.4",
                 "phpdocumentor/reflection-docblock": "^5",
@@ -6529,7 +6529,7 @@
             "require-dev": {
                 "drupal/core-dev": "^10.0",
                 "drupal/drupal-extension": "5.0.0-alpha1",
-                "drush/drush": ">=9.7",
+                "drush/drush": ">=12.1.0",
                 "oomphinc/composer-installers-extender": "^1.1 || ^2",
                 "phpspec/prophecy-phpunit": "^2",
                 "squizlabs/php_codesniffer": "3.*"
@@ -6606,6 +6606,9 @@
                         "Enter drupal/core patch #3236799 description here": "https://www.drupal.org/files/issues/2021-12-22/drupal-core-9.2.x-li-role-separator-tag-linkGenerator-3236799-11.patch",
                         "3107212 - allow translation of views field empty text": "https://www.drupal.org/files/issues/2022-03-09/d9-4-x--3107212-13.patch"
                     },
+                    "drupal/ckeditor4_codemirror": {
+                        "Enter drupal/ckeditor4_codemirror patch #03373907 description here": "https://www.drupal.org/files/issues/2023-08-20/03373907-ckeditor-admin-warning-001.patch"
+                    },
                     "drupal/ctools": {
                         "Enter drupal/ctools patch #2667652 description here": "https://www.drupal.org/files/issues/ctools-option_to_expose-2667652-3.patch",
                         "Enter drupal/ctools patch #2924356 description here": "https://www.drupal.org/files/issues/ctools-entity_field_rendered_twice-2924356-2.patch"
@@ -6641,8 +6644,7 @@
                         "Enter drupal/paragraphs patch #2878615 description here": "https://www.drupal.org/files/issues/comments_entity_uri-2878615-6.patch"
                     },
                     "drupal/password_policy": {
-                        "Enter drupal/password_policy patch #3362201 description here": "https://www.drupal.org/files/issues/2023-05-23/password_policy-d10.patch",
-                        "Enter drupal/password_policy patch #3313282 description here": "https://www.drupal.org/files/issues/2023-07-29/password_policy-8304_fix-3313282-11.patch"
+                        "Enter drupal/password_policy patch #3362201 description here": "https://www.drupal.org/files/issues/2023-05-23/password_policy-d10.patch"
                     },
                     "drupal/panels": {
                         "Enter drupal/panels patch #2849867 description here": "https://www.drupal.org/files/issues/2023-01-11/panels_custom_attributes_in_panels_blocks-2849867-92_0.patch",
@@ -6678,9 +6680,9 @@
             "description": "Project template for Drupal 10 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/5.0.0-rc1"
+                "source": "https://github.com/drupalwxt/wxt/tree/5.0.0-rc2"
             },
-            "time": "2023-08-14T03:19:14+00:00"
+            "time": "2023-08-21T02:01:00+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -14601,16 +14603,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.10",
+            "version": "9.6.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a6d351645c3fe5a30f5e86be6577d946af65a328"
+                "reference": "810500e92855eba8a7a5319ae913be2da6f957b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a6d351645c3fe5a30f5e86be6577d946af65a328",
-                "reference": "a6d351645c3fe5a30f5e86be6577d946af65a328",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/810500e92855eba8a7a5319ae913be2da6f957b0",
+                "reference": "810500e92855eba8a7a5319ae913be2da6f957b0",
                 "shasum": ""
             },
             "require": {
@@ -14684,7 +14686,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.10"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.11"
             },
             "funding": [
                 {
@@ -14700,7 +14702,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-10T04:04:23+00:00"
+            "time": "2023-08-19T07:10:56+00:00"
         },
         {
             "name": "psy/psysh",
