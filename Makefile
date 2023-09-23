@@ -5,5 +5,6 @@ PLATFORM := $(shell uname -s)
 $(eval GIT_USERNAME := $(if $(GIT_USERNAME),$(GIT_USERNAME),gitlab-ci-token))
 $(eval GIT_PASSWORD := $(if $(GIT_PASSWORD),$(GIT_PASSWORD),$(CI_JOB_TOKEN)))
 DOCKER_REPO := https://github.com/drupalwxt/docker-scaffold.git
-GET_DOCKER := $(shell [ -d docker ] || git clone $(DOCKER_REPO) docker)
+SCAFFOLD_VERSION := '9.5.x'
+GET_DOCKER := $(shell [ -d docker ] || git clone --branch $(SCAFFOLD_VERSION) $(DOCKER_REPO) docker)
 include docker/Makefile
