@@ -39,3 +39,4 @@ jobs:
         export DB_PORT=${{ matrix.db.port }}
         make drupal_install
         make drupal_migrate
+        make test
