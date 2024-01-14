@@ -39,6 +39,3 @@ jobs:
         export DB_PORT=${{ matrix.db.port }}
         make drupal_install
         make drupal_migrate
-        # Change ownership on html/core to allow files to be copied (see drupal_cs in Makefile)
-        sudo chown -R $(id -u) html/core
-        make test
