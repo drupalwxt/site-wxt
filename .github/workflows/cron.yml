@@ -13,10 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - uses: statcan/actions/composer@master
-      with:
-        args: install --prefer-dist --no-interaction
-
     - name: Build out the Drupal infrastructure
       run: |
         export DB_TYPE=mysql
@@ -33,6 +29,4 @@ jobs:
         export DB_PORT=3306
         make drupal_install
         make drupal_migrate
-        # Change ownership on html/core to allow files to be copied (see drupal_cs in Makefile)
-        sudo chown -R $(id -u) html/core
         make test
