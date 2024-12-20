@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9471217a39aff50f99e71a56703970d1",
+    "content-hash": "50b03fdb315b17f6f51d7f446c9d1496",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6667,12 +6667,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "ccb8631a43bd14f23a62bd950042d39223f569bb"
+                "reference": "5cb191edcea9310a45fa1010632cf25ad9edd521"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ccb8631a43bd14f23a62bd950042d39223f569bb",
-                "reference": "ccb8631a43bd14f23a62bd950042d39223f569bb",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/5cb191edcea9310a45fa1010632cf25ad9edd521",
+                "reference": "5cb191edcea9310a45fa1010632cf25ad9edd521",
                 "shasum": ""
             },
             "require": {
@@ -6695,8 +6695,8 @@
                 "drupal/ckeditor_codemirror": "^3.0.0-beta4",
                 "drupal/ckeditor_details": "^2.1.0-alpha1",
                 "drupal/config_rewrite": "^1.5",
-                "drupal/core-composer-scaffold": "^10.3",
-                "drupal/core-recommended": "^10.3",
+                "drupal/core-composer-scaffold": "10.4.*",
+                "drupal/core-recommended": "10.4.*",
                 "drupal/core_context": "1.1",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/ctools": "^3.9",
@@ -6769,6 +6769,7 @@
                 "phpspec/prophecy-phpunit": "^2",
                 "squizlabs/php_codesniffer": "3.*"
             },
+            "default-branch": true,
             "type": "drupal-profile",
             "extra": {
                 "drush": {
@@ -6903,9 +6904,9 @@
             "description": "Project template for Drupal 10 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/5.4.x"
+                "source": "https://github.com/drupalwxt/wxt/tree/5.4.0"
             },
-            "time": "2024-12-20T16:44:52+00:00"
+            "time": "2024-12-20T17:12:50+00:00"
         },
         {
             "name": "egulias/email-validator",
