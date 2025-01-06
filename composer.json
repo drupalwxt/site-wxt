@@ -8,18 +8,30 @@
     "require": {
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.7",
-        "drupal/core-composer-scaffold": "10.4.x",
-        "drupalwxt/wxt": "5.4.x-dev"
+        "drupal/core-composer-scaffold": "11.1.*",
+        "drupalwxt/wxt": "6.1.x-dev"
     },
     "require-dev": {
-        "drupal/core-dev": "10.4.x",
+        "drupal/core-dev": "11.1.*",
         "drupal/drupal-extension": "5.0.0-alpha1",
-        "drush/drush": "^12.4.3",
+        "drush/drush": "^13.3.3",
         "oomphinc/composer-installers-extender": "^1.1 || ^2",
         "squizlabs/php_codesniffer": "3.*",
         "phpspec/prophecy-phpunit": "^2",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
+    },
+    "replace": {
+        "drupal/button_link": "self.version",
+        "drupal/embed": "self.version",
+        "drupal/url_embed": "self.version",
+        "drupal/entity_block": "self.version",
+        "drupal/entity_browser_block": "self.version",
+        "drupal/entity_embed": "self.version",
+        "drupal/fontawesome": "self.version",
+        "drupal/layout_builder_st": "self.version",
+        "drupal/layout_library": "self.version",
+        "drupal/toc_api": "self.version"
     },
     "config": {
         "discard-changes": true,
@@ -47,6 +59,136 @@
         {
             "type": "composer",
             "url": "https://drupalwxt.github.io/composer-extdeps/"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/button_link",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/button_link-3429088.git",
+                    "type": "git",
+                    "reference": "project-update-bot-only"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/embed",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/embed-3430097.git",
+                    "type": "git",
+                    "reference": "3430097-automated-drupal-11"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/url_embed",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/url_embed-3438709.git",
+                    "type": "git",
+                    "reference": "composer-workaround-d11"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/entity_block",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/entity_block-3430128.git",
+                    "type": "git",
+                    "reference": "3430128-automated-drupal-11"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/entity_browser_block",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/entity_browser_block-3430130.git",
+                    "type": "git",
+                    "reference": "project-update-bot-only"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/entity_embed",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/entity_embed-3430164.git",
+                    "type": "git",
+                    "reference": "3430164-d11-readiness"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/fontawesome",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/fontawesome-3465765.git",
+                    "type": "git",
+                    "reference": "3465765-drupal-11-compatibility"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/layout_builder_st",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/layout_builder_st-3431600.git",
+                    "type": "git",
+                    "reference": "3431600-automated-drupal-11"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/layout_library",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/layout_library-3431607.git",
+                    "type": "git",
+                    "reference": "3431607-automated-drupal-11"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupaloverride/toc_api",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/issue/toc_api-3455312.git",
+                    "type": "git",
+                    "reference": "3455312-drupal11-fixes"
+                }
+            }
         }
     ],
     "scripts": {
