@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d72c8c925c4a8137b22f1240794e927b",
+    "content-hash": "0edf26416516f285966d8447daedb573",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2224,6 +2224,67 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/entity",
                 "issues": "https://www.drupal.org/project/issues/entity"
+            }
+        },
+        {
+            "name": "drupal/entity_block",
+            "version": "dev-2.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_block.git",
+                "reference": "82c941b30310712efe98b6b4bc8ee060e3f82f32"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.x-dev",
+                    "datestamp": "1736274495",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/66163"
+                },
+                {
+                    "name": "Jaesin",
+                    "homepage": "https://www.drupal.org/user/841054"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rrrob",
+                    "homepage": "https://www.drupal.org/user/273533"
+                },
+                {
+                    "name": "shadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
+                }
+            ],
+            "description": "Let site administrators place content entities as blocks.",
+            "homepage": "https://www.drupal.org/project/entity_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_block"
             }
         },
         {
@@ -5491,16 +5552,6 @@
             "type": "drupal-module"
         },
         {
-            "name": "drupaloverride/entity_block",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/issue/entity_block-3430128.git",
-                "reference": "3430128-automated-drupal-11"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "drupaloverride/entity_browser_block",
             "version": "dev-master",
             "source": {
@@ -5576,12 +5627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "d3634a1322be99c72f9825c0867ab5c6537523b3"
+                "reference": "5100c1351b3e109ac0892fbe4354a268e2561285"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/d3634a1322be99c72f9825c0867ab5c6537523b3",
-                "reference": "d3634a1322be99c72f9825c0867ab5c6537523b3",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/5100c1351b3e109ac0892fbe4354a268e2561285",
+                "reference": "5100c1351b3e109ac0892fbe4354a268e2561285",
                 "shasum": ""
             },
             "require": {
@@ -5607,6 +5658,7 @@
                 "drupal/ctools": "^4.1",
                 "drupal/diff": "^1.8",
                 "drupal/dropzonejs": "^2.11",
+                "drupal/entity_block": "2.0.x-dev@dev",
                 "drupal/entity_browser": "^2.12",
                 "drupal/entity_reference_revisions": "^1.12",
                 "drupal/entityqueue": "^1.9",
@@ -5650,7 +5702,6 @@
                 "drupal/webform": "^6.3@alpha",
                 "drupaloverride/button_link": "dev-master",
                 "drupaloverride/embed": "dev-master",
-                "drupaloverride/entity_block": "dev-master",
                 "drupaloverride/entity_browser_block": "dev-master",
                 "drupaloverride/entity_embed": "dev-master",
                 "drupaloverride/fontawesome": "dev-master",
@@ -5798,7 +5849,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-07T18:24:29+00:00"
+            "time": "2025-01-07T18:30:05+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
