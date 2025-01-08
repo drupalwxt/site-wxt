@@ -22,14 +22,12 @@
         "webflo/drupal-finder": "^1.2"
     },
     "replace": {
-        "drupal/button_link": "self.version",
         "drupal/embed": "self.version",
         "drupal/url_embed": "self.version",
         "drupal/entity_browser_block": "self.version",
         "drupal/entity_embed": "self.version",
         "drupal/fontawesome": "self.version",
         "drupal/layout_builder_st": "self.version",
-        "drupal/layout_library": "self.version",
         "drupal/toc_api": "self.version"
     },
     "config": {
@@ -58,19 +56,6 @@
         {
             "type": "composer",
             "url": "https://drupalwxt.github.io/composer-extdeps/"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/button_link",
-                "version": "dev-master",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/issue/button_link-3429088.git",
-                    "type": "git",
-                    "reference": "project-update-bot-only"
-                }
-            }
         },
         {
             "type": "package",
@@ -147,19 +132,6 @@
                     "url": "https://git.drupalcode.org/issue/layout_builder_st-3431600.git",
                     "type": "git",
                     "reference": "3431600-automated-drupal-11"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/layout_library",
-                "version": "dev-master",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/issue/layout_library-3431607.git",
-                    "type": "git",
-                    "reference": "3431607-automated-drupal-11"
                 }
             }
         },

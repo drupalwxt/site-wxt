@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0edf26416516f285966d8447daedb573",
+    "content-hash": "1ca9295f7624d9c4fe0ac79b23c7058a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1236,6 +1236,47 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/bootstrap_layouts",
                 "issues": "https://www.drupal.org/project/issues/bootstrap_layouts"
+            }
+        },
+        {
+            "name": "drupal/button_link",
+            "version": "dev-2.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/button_link.git",
+                "reference": "8d068976e816622db0c99ba71564596ab7833136"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.1+1-dev",
+                    "datestamp": "1736341716",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hatuhay",
+                    "homepage": "https://www.drupal.org/user/827704"
+                }
+            ],
+            "description": "Provides a simple button link field formatter.",
+            "homepage": "https://www.drupal.org/project/button_link",
+            "support": {
+                "source": "https://git.drupalcode.org/project/button_link"
             }
         },
         {
@@ -3612,6 +3653,71 @@
             }
         },
         {
+            "name": "drupal/layout_library",
+            "version": "1.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_library.git",
+                "reference": "8.x-1.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_library-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "0d5a4ef93194bad2ac3988199b3bf3f433846e41"
+            },
+            "require": {
+                "drupal/core": "^10.1 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1736286495",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "eclipsegc",
+                    "homepage": "https://www.drupal.org/user/61203"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                },
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                },
+                {
+                    "name": "xjm",
+                    "homepage": "https://www.drupal.org/user/65776"
+                }
+            ],
+            "description": "Provides a library of layouts for content-editors to select from",
+            "homepage": "https://www.drupal.org/project/layout_library",
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_library",
+                "issues": "http://drupal.org/project/issues/layout_library"
+            }
+        },
+        {
             "name": "drupal/linkit",
             "version": "7.0.2",
             "source": {
@@ -5541,16 +5647,6 @@
             }
         },
         {
-            "name": "drupaloverride/button_link",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/issue/button_link-3429088.git",
-                "reference": "project-update-bot-only"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "drupaloverride/embed",
             "version": "dev-master",
             "source": {
@@ -5601,16 +5697,6 @@
             "type": "drupal-module"
         },
         {
-            "name": "drupaloverride/layout_library",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/issue/layout_library-3431607.git",
-                "reference": "3431607-automated-drupal-11"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "drupaloverride/toc_api",
             "version": "dev-master",
             "source": {
@@ -5636,12 +5722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "f10ff3cc8b8f3f3cd6658f45615fec9dff7b9d18"
+                "reference": "b0abb211c8a547bad868455094ec337ab7fe00d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f10ff3cc8b8f3f3cd6658f45615fec9dff7b9d18",
-                "reference": "f10ff3cc8b8f3f3cd6658f45615fec9dff7b9d18",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/b0abb211c8a547bad868455094ec337ab7fe00d6",
+                "reference": "b0abb211c8a547bad868455094ec337ab7fe00d6",
                 "shasum": ""
             },
             "require": {
@@ -5657,6 +5743,7 @@
                 "drupal/blog": "^3.1",
                 "drupal/book": "^2.0",
                 "drupal/bootstrap_layouts": "^5.4",
+                "drupal/button_link": "2.0.x-dev@dev",
                 "drupal/ckeditor_abbreviation": "^5.0",
                 "drupal/ckeditor_codemirror": "^3.1",
                 "drupal/ckeditor_details": "^2.1@beta",
@@ -5683,6 +5770,7 @@
                 "drupal/inline_entity_form": "^3.0@RC",
                 "drupal/layout_builder_restrictions": "^3.0",
                 "drupal/layout_builder_styles": "^2.1",
+                "drupal/layout_library": "^1.0@beta",
                 "drupal/linkit": "^7.0",
                 "drupal/media_entity_instagram": "^4.0@beta",
                 "drupal/media_entity_slideshow": "^2.6",
@@ -5710,13 +5798,11 @@
                 "drupal/views_bootstrap": "^5.3",
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.3@alpha",
-                "drupaloverride/button_link": "dev-master",
                 "drupaloverride/embed": "dev-master",
                 "drupaloverride/entity_browser_block": "dev-master",
                 "drupaloverride/entity_embed": "dev-master",
                 "drupaloverride/fontawesome": "dev-master",
                 "drupaloverride/layout_builder_st": "dev-master",
-                "drupaloverride/layout_library": "dev-master",
                 "drupaloverride/toc_api": "dev-master",
                 "drupaloverride/url_embed": "dev-master",
                 "drupalwxt/wxt_bootstrap": "11.1.x-dev",
@@ -5859,7 +5945,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-07T21:43:23+00:00"
+            "time": "2025-01-08T19:12:24+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
