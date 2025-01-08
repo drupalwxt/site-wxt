@@ -181,6 +181,15 @@
             "time": "2023-11-05T23:49:04+00:00"
         },
         {
+            "name": "cdubz/ckeditor5-source-editing-codemirror",
+            "version": "v35.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@cdubz/ckeditor5-source-editing-codemirror/-/ckeditor5-source-editing-codemirror-35.1.0.tgz"
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "codemirror/codemirror",
             "version": "v5.65.8",
             "dist": {
@@ -2232,7 +2241,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_block.git",
-                "reference": "82c941b30310712efe98b6b4bc8ee060e3f82f32"
+                "reference": "09a371ba8db856c3d7b19dbe5bdd63b589d8d3ef"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -2244,7 +2253,7 @@
                 },
                 "drupal": {
                     "version": "2.0.x-dev",
-                    "datestamp": "1736274495",
+                    "datestamp": "1736279461",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5426,17 +5435,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.3.0-alpha3",
+            "version": "6.3.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.3.0-alpha3"
+                "reference": "6.3.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.3.0-alpha3.zip",
-                "reference": "6.3.0-alpha3",
-                "shasum": "845c9127b09c064c7bcf2423c4b42b3c12963d79"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.3.0-beta1.zip",
+                "reference": "6.3.0-beta1",
+                "shasum": "f712d463e883b678d7147b5c80bd8f9da72f13f8"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0"
@@ -5445,16 +5454,16 @@
                 "drupal/address": "^2.0",
                 "drupal/captcha": "^2.0",
                 "drupal/chosen": "^4.0",
-                "drupal/clientside_validation": "*",
+                "drupal/clientside_validation": "^4.1",
                 "drupal/clientside_validation_jquery": "*",
-                "drupal/devel": "*",
+                "drupal/devel": "^5.3",
                 "drupal/entity": "^1.5",
-                "drupal/entity_print": "*",
+                "drupal/entity_print": "^2.15",
                 "drupal/hal": "^2.0",
                 "drupal/jquery_ui": "^1.7",
-                "drupal/jquery_ui_button": "*",
+                "drupal/jquery_ui_button": "^2.1",
                 "drupal/jquery_ui_checkboxradio": "^2.1",
-                "drupal/jquery_ui_datepicker": "*",
+                "drupal/jquery_ui_datepicker": "^2.1",
                 "drupal/mailsystem": "^4.5",
                 "drupal/metatag": "^2.0",
                 "drupal/paragraphs": "^1.18",
@@ -5462,7 +5471,7 @@
                 "drupal/smtp": "^1.4",
                 "drupal/styleguide": "^2.1",
                 "drupal/telephone_validation": "2.x-dev",
-                "drupal/token": "*",
+                "drupal/token": "^1.15",
                 "drupal/webform_access": "*",
                 "drupal/webform_attachment": "*",
                 "drupal/webform_clientside_validation": "*",
@@ -5481,11 +5490,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.3.0-alpha3",
-                    "datestamp": "1733851306",
+                    "version": "6.3.0-beta1",
+                    "datestamp": "1736275819",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -5627,17 +5636,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "5100c1351b3e109ac0892fbe4354a268e2561285"
+                "reference": "f10ff3cc8b8f3f3cd6658f45615fec9dff7b9d18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/5100c1351b3e109ac0892fbe4354a268e2561285",
-                "reference": "5100c1351b3e109ac0892fbe4354a268e2561285",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f10ff3cc8b8f3f3cd6658f45615fec9dff7b9d18",
+                "reference": "f10ff3cc8b8f3f3cd6658f45615fec9dff7b9d18",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
                 "bower-asset/slick-carousel": "^1.8",
+                "cdubz/ckeditor5-source-editing-codemirror": "^35.1",
                 "codemirror/codemirror": "^5.65",
                 "composer/installers": "^2.1",
                 "cweagans/composer-patches": "^1.7",
@@ -5849,7 +5859,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-07T18:30:05+00:00"
+            "time": "2025-01-07T21:43:23+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
