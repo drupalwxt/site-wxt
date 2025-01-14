@@ -5413,17 +5413,17 @@
         },
         {
             "name": "drupal/views_bootstrap",
-            "version": "5.4.1",
+            "version": "5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bootstrap.git",
-                "reference": "5.4.1"
+                "reference": "5.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-5.4.1.zip",
-                "reference": "5.4.1",
-                "shasum": "0b1248be659d069e52be7821875a24b9e78a3484"
+                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-5.3.2.zip",
+                "reference": "5.3.2",
+                "shasum": "8392f22340ecc641a834b0f9336b84796854d94a"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
@@ -5431,8 +5431,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.4.1",
-                    "datestamp": "1725840934",
+                    "version": "5.3.2",
+                    "datestamp": "1735842381",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5445,30 +5445,36 @@
             ],
             "authors": [
                 {
-                    "name": "aburrows",
-                    "homepage": "https://www.drupal.org/user/577844"
+                    "name": "Dmitry Demenchuk",
+                    "homepage": "https://www.drupal.org/u/mrded",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "ericpugh",
-                    "homepage": "https://www.drupal.org/user/130084"
+                    "name": "Alex Burrows",
+                    "homepage": "https://www.drupal.org/u/aburrows",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "ikeigenwijs",
-                    "homepage": "https://www.drupal.org/user/583238"
+                    "name": "Eric Pugh",
+                    "homepage": "https://www.drupal.org/u/ericpugh",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "mrded",
-                    "homepage": "https://www.drupal.org/user/556088"
+                    "name": "Bart Verheyde",
+                    "homepage": "https://www.drupal.org/u/ikeigenwijs",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "shelane",
-                    "homepage": "https://www.drupal.org/user/2674989"
+                    "name": "Shelane French",
+                    "homepage": "https://www.drupal.org/u/shelane",
+                    "role": "Maintainer"
                 }
             ],
-            "description": "Allows for different styles to be used in views to work with Bootstrap 4 components.",
+            "description": "Integrate the Bootstrap framework with Views.",
             "homepage": "https://www.drupal.org/project/views_bootstrap",
             "support": {
-                "source": "https://git.drupalcode.org/project/views_bootstrap"
+                "source": "https://git.drupalcode.org/project/views_bootstrap",
+                "issues": "https://www.drupal.org/project/issues/views_bootstrap"
             }
         },
         {
@@ -5722,12 +5728,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "b0abb211c8a547bad868455094ec337ab7fe00d6"
+                "reference": "95da94ed933ef9c0c4ee326f21d69ba64d275a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/b0abb211c8a547bad868455094ec337ab7fe00d6",
-                "reference": "b0abb211c8a547bad868455094ec337ab7fe00d6",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/95da94ed933ef9c0c4ee326f21d69ba64d275a19",
+                "reference": "95da94ed933ef9c0c4ee326f21d69ba64d275a19",
                 "shasum": ""
             },
             "require": {
@@ -5795,7 +5801,7 @@
                 "drupal/token_filter": "^2.2",
                 "drupal/video_embed_field": "^3.0@alpha",
                 "drupal/views_autocomplete_filters": "^2.0",
-                "drupal/views_bootstrap": "^5.3",
+                "drupal/views_bootstrap": "5.3.*",
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.3@alpha",
                 "drupaloverride/embed": "dev-master",
@@ -5945,7 +5951,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-08T19:12:24+00:00"
+            "time": "2025-01-14T16:38:22+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
