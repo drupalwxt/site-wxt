@@ -24,7 +24,6 @@
     "replace": {
         "drupal/embed": "self.version",
         "drupal/url_embed": "self.version",
-        "drupal/entity_browser_block": "self.version",
         "drupal/entity_embed": "self.version",
         "drupal/fontawesome": "self.version",
         "drupal/layout_builder_st": "self.version",
@@ -80,19 +79,6 @@
                     "url": "https://git.drupalcode.org/issue/url_embed-3438709.git",
                     "type": "git",
                     "reference": "composer-workaround-d11"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/entity_browser_block",
-                "version": "dev-master",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/issue/entity_browser_block-3430130.git",
-                    "type": "git",
-                    "reference": "project-update-bot-only"
                 }
             }
         },

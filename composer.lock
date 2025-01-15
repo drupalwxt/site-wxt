@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ca9295f7624d9c4fe0ac79b23c7058a",
+    "content-hash": "f31fd4293a264ca9ed6e8a96eb61d1b7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -793,17 +793,17 @@
         },
         {
             "name": "drupal/autosave_form",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/autosave_form.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/autosave_form-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "553c7a11db8865e05a96a00cbadfd9fee5035c29"
+                "url": "https://ftp.drupal.org/files/projects/autosave_form-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "d1387edcefb01c3e545a796edfdb1b5b7e31c018"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -811,8 +811,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1730728610",
+                    "version": "8.x-1.8",
+                    "datestamp": "1736953097",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2265,7 +2265,7 @@
                     "homepage": "https://www.drupal.org/user/2416470"
                 },
                 {
-                    "name": "TR",
+                    "name": "tr",
                     "homepage": "https://www.drupal.org/user/202830"
                 }
             ],
@@ -2430,6 +2430,60 @@
                 "source": "https://git.drupalcode.org/project/entity_browser",
                 "issues": "https://www.drupal.org/project/issues/entity_browser",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/entity_browser_block",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_browser_block.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_browser_block-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "cdef79eab466a613229bd6d76f3d7799a380293f"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11",
+                "drupal/entity_browser": "^2.12"
+            },
+            "require-dev": {
+                "drupal/ctools": "^4.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1736900909",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Mortenson (samuel.mortenson)",
+                    "homepage": "https://www.drupal.org/u/samuelmortenson",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
+                }
+            ],
+            "description": "Derives block plugins for every Entity Browser on your site",
+            "homepage": "https://www.drupal.org/project/entity_browser_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_browser_block",
+                "issues": "https://www.drupal.org/project/issues/entity_browser_block"
             }
         },
         {
@@ -4038,7 +4092,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_breadcrumb.git",
-                "reference": "9036de613ec9e83d537ab7d9caf1c77a49f0033b"
+                "reference": "b57a68971ff00e9e660e291696f4cc501854927c"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
@@ -4049,8 +4103,8 @@
                     "dev-2.0.x": "2.0.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha0+9-dev",
-                    "datestamp": "1736244832",
+                    "version": "2.0.0+1-dev",
+                    "datestamp": "1736672978",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4655,11 +4709,11 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -5663,16 +5717,6 @@
             "type": "drupal-module"
         },
         {
-            "name": "drupaloverride/entity_browser_block",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/issue/entity_browser_block-3430130.git",
-                "reference": "project-update-bot-only"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "drupaloverride/entity_embed",
             "version": "dev-master",
             "source": {
@@ -5728,12 +5772,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "95da94ed933ef9c0c4ee326f21d69ba64d275a19"
+                "reference": "ee258671f03b7c402f0ccb90e9d5ec65b348f804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/95da94ed933ef9c0c4ee326f21d69ba64d275a19",
-                "reference": "95da94ed933ef9c0c4ee326f21d69ba64d275a19",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ee258671f03b7c402f0ccb90e9d5ec65b348f804",
+                "reference": "ee258671f03b7c402f0ccb90e9d5ec65b348f804",
                 "shasum": ""
             },
             "require": {
@@ -5763,6 +5807,7 @@
                 "drupal/dropzonejs": "^2.11",
                 "drupal/entity_block": "2.0.x-dev@dev",
                 "drupal/entity_browser": "^2.12",
+                "drupal/entity_browser_block": "^2.0",
                 "drupal/entity_reference_revisions": "^1.12",
                 "drupal/entityqueue": "^1.9",
                 "drupal/fakeobjects": "1.x-dev@dev",
@@ -5805,7 +5850,6 @@
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.3@alpha",
                 "drupaloverride/embed": "dev-master",
-                "drupaloverride/entity_browser_block": "dev-master",
                 "drupaloverride/entity_embed": "dev-master",
                 "drupaloverride/fontawesome": "dev-master",
                 "drupaloverride/layout_builder_st": "dev-master",
@@ -5888,8 +5932,11 @@
                     "drupal/entity_browser": {
                         "2914385 - Fix PHP error": "https://www.drupal.org/files/issues/2023-10-10/2914385-25.patch"
                     },
+                    "drupal/ckeditor_details": {
+                        "3244311 - Allow <details> element to be placed without <div>": "https://www.drupal.org/files/issues/2024-11-15/3244311-9.patch"
+                    },
                     "drupal/bootstrap_layouts": {
-                        "3481450": "https://www.drupal.org/files/issues/2025-01-06/3481450-12.patch"
+                        "3481450 - Fix Drupal 11 support by removing any use of ContainerAwareTrait and ContainerAwareInterface": "https://www.drupal.org/files/issues/2025-01-06/3481450-12.patch"
                     },
                     "drupal/layout_builder_st": {
                         "3411037 - Fix core removing contextual translation links": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/5.patch",
@@ -5951,7 +5998,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-14T16:38:22+00:00"
+            "time": "2025-01-15T16:58:41+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
@@ -5959,12 +6006,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_bootstrap.git",
-                "reference": "5a0236ada65d0fde3e2e1c161a267a523c3fbcf3"
+                "reference": "72ec494deb62e0507e0663272d3f1944565725ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/5a0236ada65d0fde3e2e1c161a267a523c3fbcf3",
-                "reference": "5a0236ada65d0fde3e2e1c161a267a523c3fbcf3",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/72ec494deb62e0507e0663272d3f1944565725ae",
+                "reference": "72ec494deb62e0507e0663272d3f1944565725ae",
                 "shasum": ""
             },
             "require": {
@@ -6018,7 +6065,7 @@
                 "issues": "https://github.com/drupalwxt/wxt_bootstrap/issues",
                 "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.1.x"
             },
-            "time": "2025-01-06T21:55:25+00:00"
+            "time": "2025-01-14T20:53:11+00:00"
         },
         {
             "name": "drupalwxt/wxt_library",
@@ -6026,12 +6073,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_library.git",
-                "reference": "c26baa9699154ffa5f3fd456b645eff9c9009411"
+                "reference": "2ca384e2ab86e36c50aef0e1d7c22217e78c9835"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/c26baa9699154ffa5f3fd456b645eff9c9009411",
-                "reference": "c26baa9699154ffa5f3fd456b645eff9c9009411",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/2ca384e2ab86e36c50aef0e1d7c22217e78c9835",
+                "reference": "2ca384e2ab86e36c50aef0e1d7c22217e78c9835",
                 "shasum": ""
             },
             "require": {
@@ -6083,7 +6130,7 @@
                 "issues": "https://github.com/drupalwxt/wxt_library/issues",
                 "source": "https://github.com/drupalwxt/wxt_library/tree/11.1.x"
             },
-            "time": "2025-01-08T18:24:25+00:00"
+            "time": "2025-01-14T20:36:50+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -15738,16 +15785,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.40",
+            "version": "10.5.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e6ddda95af52f69c1e0c7b4f977cccb58048798c"
+                "reference": "e76586fa3d49714f230221734b44892e384109d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e6ddda95af52f69c1e0c7b4f977cccb58048798c",
-                "reference": "e6ddda95af52f69c1e0c7b4f977cccb58048798c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e76586fa3d49714f230221734b44892e384109d7",
+                "reference": "e76586fa3d49714f230221734b44892e384109d7",
                 "shasum": ""
             },
             "require": {
@@ -15819,7 +15866,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.40"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.41"
             },
             "funding": [
                 {
@@ -15835,7 +15882,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-21T05:49:06+00:00"
+            "time": "2025-01-13T09:33:05+00:00"
         },
         {
             "name": "psr/simple-cache",
