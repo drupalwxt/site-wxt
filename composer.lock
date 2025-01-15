@@ -5772,12 +5772,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "ee258671f03b7c402f0ccb90e9d5ec65b348f804"
+                "reference": "a8e72d381ab46052dc9ba0b3e93b61d9cbc91583"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ee258671f03b7c402f0ccb90e9d5ec65b348f804",
-                "reference": "ee258671f03b7c402f0ccb90e9d5ec65b348f804",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/a8e72d381ab46052dc9ba0b3e93b61d9cbc91583",
+                "reference": "a8e72d381ab46052dc9ba0b3e93b61d9cbc91583",
                 "shasum": ""
             },
             "require": {
@@ -5926,7 +5926,7 @@
                     },
                     "drupal/page_manager": {
                         "Enter drupal/page_manager patch #2626090 description here": "https://www.drupal.org/files/issues/page-manager-2626090-page-title-empty-5.patch",
-                        "Enter drupal/page_manager patch #2752227 description here": "https://www.drupal.org/files/issues/2024-08-22/2752227-50.patch",
+                        "Enter drupal/page_manager patch #2752227 description here": "https://www.drupal.org/files/issues/2025-01-15/2752227-56.patch",
                         "Enter drupal/page_manager patch #3096408 description here": "https://www.drupal.org/files/issues/2019-11-23/Issue-3096408-Page-Manager-issue-with-conflict-modul.patch"
                     },
                     "drupal/entity_browser": {
@@ -5998,7 +5998,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-15T16:58:41+00:00"
+            "time": "2025-01-15T17:28:21+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
