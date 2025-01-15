@@ -5772,12 +5772,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "a8e72d381ab46052dc9ba0b3e93b61d9cbc91583"
+                "reference": "421fd6238c9bed656f5d8284cb6eef68ba5eb025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/a8e72d381ab46052dc9ba0b3e93b61d9cbc91583",
-                "reference": "a8e72d381ab46052dc9ba0b3e93b61d9cbc91583",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/421fd6238c9bed656f5d8284cb6eef68ba5eb025",
+                "reference": "421fd6238c9bed656f5d8284cb6eef68ba5eb025",
                 "shasum": ""
             },
             "require": {
@@ -5998,7 +5998,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-15T17:28:21+00:00"
+            "time": "2025-01-15T19:27:33+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
@@ -6006,12 +6006,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_bootstrap.git",
-                "reference": "72ec494deb62e0507e0663272d3f1944565725ae"
+                "reference": "903816e3e2e804e939d3cc85af1707185c6ae5d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/72ec494deb62e0507e0663272d3f1944565725ae",
-                "reference": "72ec494deb62e0507e0663272d3f1944565725ae",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/903816e3e2e804e939d3cc85af1707185c6ae5d0",
+                "reference": "903816e3e2e804e939d3cc85af1707185c6ae5d0",
                 "shasum": ""
             },
             "require": {
@@ -6065,7 +6065,7 @@
                 "issues": "https://github.com/drupalwxt/wxt_bootstrap/issues",
                 "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.1.x"
             },
-            "time": "2025-01-14T20:53:11+00:00"
+            "time": "2025-01-15T19:27:56+00:00"
         },
         {
             "name": "drupalwxt/wxt_library",
