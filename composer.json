@@ -13,11 +13,12 @@
     },
     "require-dev": {
         "drupal/core-dev": "11.1.*",
+        "drupal/drupal": "^11.1",
         "drupal/drupal-extension": "5.0.0-alpha1",
         "drush/drush": "^13.3.3",
         "oomphinc/composer-installers-extender": "^1.1 || ^2",
-        "squizlabs/php_codesniffer": "3.*",
         "phpspec/prophecy-phpunit": "^2",
+        "squizlabs/php_codesniffer": "3.*",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
     },
@@ -37,6 +38,8 @@
             "cweagans/composer-patches": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
             "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
@@ -136,6 +139,15 @@
         }
     ],
     "scripts": {
+        "post-install-cmd": [
+            "@copy-composer-directory"
+        ],
+        "post-update-cmd": [
+            "@copy-composer-directory"
+        ],
+        "copy-composer-directory": [
+            "[ -d vendor/drupal/drupal/composer ] && mkdir -p html/composer && cp -R vendor/drupal/drupal/composer/* html/composer/ || echo 'composer directory not found; skipping copy'"
+        ],
         "post-create-project-cmd": "rm -r -f behat.yml",
         "quick-start": [
             "composer install"
