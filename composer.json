@@ -27,8 +27,7 @@
         "drupal/url_embed": "self.version",
         "drupal/entity_embed": "self.version",
         "drupal/fontawesome": "self.version",
-        "drupal/layout_builder_st": "self.version",
-        "drupal/toc_api": "self.version"
+        "drupal/layout_builder_st": "self.version"
     },
     "config": {
         "discard-changes": true,
