@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f51a1f677a78fcfb011996df165925b6",
+    "content-hash": "e2451fef117cdaa551c17e874aa44606",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,16 +121,16 @@
         },
         {
             "name": "caxy/php-htmldiff",
-            "version": "v0.1.15",
+            "version": "v0.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caxy/php-htmldiff.git",
-                "reference": "6342b02ddb86fd36093ad7e2db2efc21f01ab7cd"
+                "reference": "5c580b4f09285c078f0c5cb261573412a736a8cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/6342b02ddb86fd36093ad7e2db2efc21f01ab7cd",
-                "reference": "6342b02ddb86fd36093ad7e2db2efc21f01ab7cd",
+                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/5c580b4f09285c078f0c5cb261573412a736a8cb",
+                "reference": "5c580b4f09285c078f0c5cb261573412a736a8cb",
                 "shasum": ""
             },
             "require": {
@@ -176,9 +176,9 @@
             ],
             "support": {
                 "issues": "https://github.com/caxy/php-htmldiff/issues",
-                "source": "https://github.com/caxy/php-htmldiff/tree/v0.1.15"
+                "source": "https://github.com/caxy/php-htmldiff/tree/v0.1.16"
             },
-            "time": "2023-11-05T23:49:04+00:00"
+            "time": "2025-01-22T17:03:45+00:00"
         },
         {
             "name": "cdubz/ckeditor5-source-editing-codemirror",
@@ -3188,6 +3188,60 @@
             }
         },
         {
+            "name": "drupal/fontawesome",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontawesome.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fontawesome-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "48102613a7cb6791db4d50c0ffe8604cdb29623f"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1737497622",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^12 || ^13"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "daniel.moberly",
+                    "homepage": "https://www.drupal.org/user/1160788"
+                },
+                {
+                    "name": "truls1502",
+                    "homepage": "https://www.drupal.org/user/325866"
+                }
+            ],
+            "description": "The web's most popular icon set and toolkit.",
+            "homepage": "https://www.drupal.org/project/fontawesome",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fontawesome",
+                "issues": "https://drupal.org/project/issues/fontawesome"
+            }
+        },
+        {
             "name": "drupal/footnotes",
             "version": "4.0.0-beta5",
             "source": {
@@ -5548,17 +5602,17 @@
         },
         {
             "name": "drupal/video_embed_field",
-            "version": "3.0.0-alpha3",
+            "version": "3.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/video_embed_field.git",
-                "reference": "3.0.0-alpha3"
+                "reference": "3.0.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/video_embed_field-3.0.0-alpha3.zip",
-                "reference": "3.0.0-alpha3",
-                "shasum": "ffaabebe54976a6b92bd703be08356a858bae0d1"
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-3.0.0-alpha4.zip",
+                "reference": "3.0.0-alpha4",
+                "shasum": "9a968b4fd198498fc233261874d207cbe1d42689"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -5570,8 +5624,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-alpha3",
-                    "datestamp": "1735227745",
+                    "version": "3.0.0-alpha4",
+                    "datestamp": "1737495839",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -5933,16 +5987,6 @@
             "type": "drupal-module"
         },
         {
-            "name": "drupaloverride/fontawesome",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/issue/fontawesome-3465765.git",
-                "reference": "3465765-drupal-11-compatibility"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "drupaloverride/layout_builder_st",
             "version": "dev-master",
             "source": {
@@ -5978,12 +6022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "8b3713da0f2f2ee8f9529729d8f2b56b2f04ce29"
+                "reference": "91fbdfdbcc0eeb909f26f581ea41f2af499864f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/8b3713da0f2f2ee8f9529729d8f2b56b2f04ce29",
-                "reference": "8b3713da0f2f2ee8f9529729d8f2b56b2f04ce29",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/91fbdfdbcc0eeb909f26f581ea41f2af499864f2",
+                "reference": "91fbdfdbcc0eeb909f26f581ea41f2af499864f2",
                 "shasum": ""
             },
             "require": {
@@ -6021,6 +6065,7 @@
                 "drupal/field_group": "^3.6",
                 "drupal/file_entity": "^2.1",
                 "drupal/flexible_permissions": "^2.0.1",
+                "drupal/fontawesome": "^3.0",
                 "drupal/footnotes": "^4.0@beta",
                 "drupal/group": "^2.3",
                 "drupal/image_widget_crop": "2.x-dev@dev",
@@ -6057,7 +6102,6 @@
                 "drupal/webform": "^6.3@alpha",
                 "drupaloverride/embed": "dev-master",
                 "drupaloverride/entity_embed": "dev-master",
-                "drupaloverride/fontawesome": "dev-master",
                 "drupaloverride/layout_builder_st": "dev-master",
                 "drupaloverride/toc_api": "dev-master",
                 "drupaloverride/url_embed": "dev-master",
@@ -6207,7 +6251,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-20T18:20:57+00:00"
+            "time": "2025-01-22T18:14:48+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
