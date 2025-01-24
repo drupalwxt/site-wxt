@@ -6259,12 +6259,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_bootstrap.git",
-                "reference": "a63478b35c88a749039425c4e1f7130915d4d202"
+                "reference": "55824e8180ac2f92314b3fe783d5a9c445590106"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/a63478b35c88a749039425c4e1f7130915d4d202",
-                "reference": "a63478b35c88a749039425c4e1f7130915d4d202",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/55824e8180ac2f92314b3fe783d5a9c445590106",
+                "reference": "55824e8180ac2f92314b3fe783d5a9c445590106",
                 "shasum": ""
             },
             "require": {
@@ -6318,7 +6318,7 @@
                 "issues": "https://github.com/drupalwxt/wxt_bootstrap/issues",
                 "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.1.x"
             },
-            "time": "2025-01-15T21:04:56+00:00"
+            "time": "2025-01-24T15:37:51+00:00"
         },
         {
             "name": "drupalwxt/wxt_library",
