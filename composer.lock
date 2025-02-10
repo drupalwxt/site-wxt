@@ -6022,12 +6022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "91fbdfdbcc0eeb909f26f581ea41f2af499864f2"
+                "reference": "0ca0740d6bfdc6044c9aba923cefbc2b29ced222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/91fbdfdbcc0eeb909f26f581ea41f2af499864f2",
-                "reference": "91fbdfdbcc0eeb909f26f581ea41f2af499864f2",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/0ca0740d6bfdc6044c9aba923cefbc2b29ced222",
+                "reference": "0ca0740d6bfdc6044c9aba923cefbc2b29ced222",
                 "shasum": ""
             },
             "require": {
@@ -6142,6 +6142,7 @@
                         "Enter drupal/core patch #2893029 description here": "https://www.drupal.org/files/issues/2893029-9.patch",
                         "3016131 - Improved exception message developer experience": "https://www.drupal.org/files/issues/2020-05-26/drupal-3016131-23-useless-exception.patch",
                         "3107212 - views no results behavior on field level is not translateable": "https://www.drupal.org/files/issues/2023-01-23/d10-1-x--3107212-19.patch",
+                        "2938129 - PageTitle block is non-functional when not handled directly by BlockPageVariant": "https://www.drupal.org/files/issues/2025-01-28/drupal-PageTitle_block-2938129-43.patch",
                         "3359497 - Prevent warnings when library definitions have a license with no URL defined, contrib is not perfect here.": "https://www.drupal.org/files/issues/2023-10-07/fix-license-missing-url.patch"
                     },
                     "drupal/diff": {
@@ -6161,6 +6162,9 @@
                     "drupal/ctools": {
                         "Enter drupal/ctools patch #2667652 description here": "https://www.drupal.org/files/issues/ctools-option_to_expose-2667652-3.patch",
                         "Enter drupal/ctools patch #2924356 description here": "https://www.drupal.org/files/issues/2024-06-14/ctools-entity_field_rendered_twice-2924356-12.patch"
+                    },
+                    "drupal/linkit": {
+                        "3078075 - Detect and strip base URL from pasted URLs": "https://www.drupal.org/files/issues/2025-01-24/linkit-detect-strip-base-url-3078075-109.patch"
                     },
                     "drupal/panels": {
                         "Enter drupal/panels patch #2910704 description here": "https://www.drupal.org/files/issues/panels-ipe-card-flip-ie-error-2910704.diff"
@@ -6183,7 +6187,8 @@
                         "Enter drupal/page_manager patch #3096408 description here": "https://www.drupal.org/files/issues/2019-11-23/Issue-3096408-Page-Manager-issue-with-conflict-modul.patch"
                     },
                     "drupal/entity_browser": {
-                        "2914385 - Fix PHP error": "https://www.drupal.org/files/issues/2023-10-10/2914385-25.patch"
+                        "2914385 - Fix PHP error": "https://www.drupal.org/files/issues/2023-10-10/2914385-25.patch",
+                        "2843247 - Drupal ajax error of undefined method getFileUri() while selecting newly uploaded image": "https://www.drupal.org/files/issues/2025-02-10/entity-browser-2843247-15.patch"
                     },
                     "drupal/ckeditor_details": {
                         "3244311 - Allow <details> element to be placed without <div>": "https://www.drupal.org/files/issues/2024-11-15/3244311-9.patch"
@@ -6251,7 +6256,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-01-22T18:14:48+00:00"
+            "time": "2025-02-10T22:32:33+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
