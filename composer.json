@@ -23,9 +23,6 @@
         "webflo/drupal-finder": "^1.2"
     },
     "replace": {
-        "drupal/embed": "self.version",
-        "drupal/url_embed": "self.version",
-        "drupal/entity_embed": "self.version",
         "drupal/layout_builder_st": "self.version"
     },
     "config": {
@@ -56,45 +53,6 @@
         {
             "type": "composer",
             "url": "https://drupalwxt.github.io/composer-extdeps/"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/embed",
-                "version": "dev-master",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/issue/embed-3430097.git",
-                    "type": "git",
-                    "reference": "3430097-automated-drupal-11"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/url_embed",
-                "version": "dev-master",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/issue/url_embed-3438709.git",
-                    "type": "git",
-                    "reference": "composer-workaround-d11"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupaloverride/entity_embed",
-                "version": "dev-master",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupalcode.org/issue/entity_embed-3430164.git",
-                    "type": "git",
-                    "reference": "3430164-d11-readiness"
-                }
-            }
         },
         {
             "type": "package",
