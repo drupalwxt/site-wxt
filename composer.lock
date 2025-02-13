@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65ecaab076d5267adabfcbc987372442",
+    "content-hash": "9eed7a612c15ad01955fd7b5e6bc3d85",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6283,12 +6283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "06e9b336ba42441d647fcfa01275c771bd00eb26"
+                "reference": "3a4bf97a0e62b6b669a00bfc2360039de972e699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/06e9b336ba42441d647fcfa01275c771bd00eb26",
-                "reference": "06e9b336ba42441d647fcfa01275c771bd00eb26",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/3a4bf97a0e62b6b669a00bfc2360039de972e699",
+                "reference": "3a4bf97a0e62b6b669a00bfc2360039de972e699",
                 "shasum": ""
             },
             "require": {
@@ -6369,6 +6369,7 @@
                 "drupalwxt/wxt_bootstrap": "11.1.x-dev",
                 "drupalwxt/wxt_library": "11.1.x-dev",
                 "ext-dom": "*",
+                "fontawesome/fontawesome": "^6.4",
                 "npm-asset/dropzone": "^5.7.4",
                 "phpdocumentor/reflection-docblock": "^5",
                 "vardot/blazy": "^1.8",
@@ -6437,7 +6438,8 @@
                         "Enter drupal/paragraphs patch #2878615 description here": "https://www.drupal.org/files/issues/comments_entity_uri-2878615-6.patch"
                     },
                     "drupal/fontawesome": {
-                        "3071758 - Fix multiple icons issue": "https://git.drupalcode.org/project/fontawesome/-/merge_requests/4.diff"
+                        "3071758 - Fix multiple icons issue": "https://git.drupalcode.org/project/fontawesome/-/merge_requests/4.diff",
+                        "3274028 - CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2025-02-12/fontawesome-cke5-compatibility-3274028-58.patch"
                     },
                     "drupal/page_manager": {
                         "Enter drupal/page_manager patch #2626090 description here": "https://www.drupal.org/files/issues/page-manager-2626090-page-title-empty-5.patch",
@@ -6514,7 +6516,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-02-12T14:01:52+00:00"
+            "time": "2025-02-13T01:10:41+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
@@ -6864,6 +6866,18 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.18.0"
             },
             "time": "2024-11-01T03:51:45+00:00"
+        },
+        {
+            "name": "fontawesome/fontawesome",
+            "version": "6.4.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://use.fontawesome.com/releases/v6.4.2/fontawesome-free-6.4.2-web.zip"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "fontawesome"
+            }
         },
         {
             "name": "guzzlehttp/guzzle",
