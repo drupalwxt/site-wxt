@@ -6591,12 +6591,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_library.git",
-                "reference": "2ca384e2ab86e36c50aef0e1d7c22217e78c9835"
+                "reference": "6fdb3cd1e164223aacfa4c843427b82aca9f30b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/2ca384e2ab86e36c50aef0e1d7c22217e78c9835",
-                "reference": "2ca384e2ab86e36c50aef0e1d7c22217e78c9835",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/6fdb3cd1e164223aacfa4c843427b82aca9f30b3",
+                "reference": "6fdb3cd1e164223aacfa4c843427b82aca9f30b3",
                 "shasum": ""
             },
             "require": {
@@ -6612,7 +6612,7 @@
                 "wet-boew/theme-gcwu-fegc": "4.0.27",
                 "wet-boew/theme-ogpl": "4.0.27",
                 "wet-boew/theme-wet-boew": "4.0.41",
-                "wet-boew/wet-boew": "4.0.83"
+                "wet-boew/wet-boew": "4.0.85"
             },
             "type": "drupal-module",
             "extra": {
@@ -6648,7 +6648,7 @@
                 "issues": "https://github.com/drupalwxt/wxt_library/issues",
                 "source": "https://github.com/drupalwxt/wxt_library/tree/11.1.x"
             },
-            "time": "2025-01-14T20:36:50+00:00"
+            "time": "2025-02-14T13:50:37+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -11336,15 +11336,15 @@
         },
         {
             "name": "wet-boew/wet-boew",
-            "version": "v4.0.83",
+            "version": "v4.0.85",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wet-boew/wet-boew-cdn.git",
-                "reference": "v4.0.83"
+                "reference": "v4.0.85"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.83.tar.gz"
+                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.85.tar.gz"
             },
             "type": "drupal-library"
         }
