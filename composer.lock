@@ -6668,12 +6668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "9880b5b83ffb8424e12799b55166135326c6e4c0"
+                "reference": "6ce67df0771a32cddec0b56bc03bd149e73fb939"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/9880b5b83ffb8424e12799b55166135326c6e4c0",
-                "reference": "9880b5b83ffb8424e12799b55166135326c6e4c0",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/6ce67df0771a32cddec0b56bc03bd149e73fb939",
+                "reference": "6ce67df0771a32cddec0b56bc03bd149e73fb939",
                 "shasum": ""
             },
             "require": {
@@ -6905,7 +6905,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.4.x"
             },
-            "time": "2025-02-13T16:21:35+00:00"
+            "time": "2025-02-13T17:47:53+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -8293,16 +8293,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "72e51f7c32c5aef7c8b462195b8c599b11199893"
+                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/72e51f7c32c5aef7c8b462195b8c599b11199893",
-                "reference": "72e51f7c32c5aef7c8b462195b8c599b11199893",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
+                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
                 "shasum": ""
             },
             "require": {
@@ -8334,9 +8334,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.0.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.1.0"
             },
-            "time": "2025-02-13T12:25:43+00:00"
+            "time": "2025-02-19T13:28:12+00:00"
         },
         {
             "name": "psr/cache",
