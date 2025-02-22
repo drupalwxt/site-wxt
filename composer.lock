@@ -6666,12 +6666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "995aa528db2ceff207cea7a6ec3a8296cac4c50d"
+                "reference": "05493b3bed28d849f3362b0c83552edc0aaa9b75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/995aa528db2ceff207cea7a6ec3a8296cac4c50d",
-                "reference": "995aa528db2ceff207cea7a6ec3a8296cac4c50d",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/05493b3bed28d849f3362b0c83552edc0aaa9b75",
+                "reference": "05493b3bed28d849f3362b0c83552edc0aaa9b75",
                 "shasum": ""
             },
             "require": {
@@ -6899,7 +6899,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.4.x"
             },
-            "time": "2025-02-22T17:51:29+00:00"
+            "time": "2025-02-22T19:17:53+00:00"
         },
         {
             "name": "egulias/email-validator",
