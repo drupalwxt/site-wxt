@@ -6283,12 +6283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "98920bdc9a864eb86241afc7b8d2a323038d4912"
+                "reference": "31c438c3580883eba0ca1ae47889992b5d7523e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/98920bdc9a864eb86241afc7b8d2a323038d4912",
-                "reference": "98920bdc9a864eb86241afc7b8d2a323038d4912",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/31c438c3580883eba0ca1ae47889992b5d7523e4",
+                "reference": "31c438c3580883eba0ca1ae47889992b5d7523e4",
                 "shasum": ""
             },
             "require": {
@@ -6443,8 +6443,7 @@
                     },
                     "drupal/page_manager": {
                         "Enter drupal/page_manager patch #2626090 description here": "https://www.drupal.org/files/issues/page-manager-2626090-page-title-empty-5.patch",
-                        "Enter drupal/page_manager patch #2752227 description here": "https://www.drupal.org/files/issues/2025-01-15/2752227-56.patch",
-                        "Enter drupal/page_manager patch #3096408 description here": "https://www.drupal.org/files/issues/2019-11-23/Issue-3096408-Page-Manager-issue-with-conflict-modul.patch"
+                        "Enter drupal/page_manager patch #2752227 description here": "https://www.drupal.org/files/issues/2025-01-15/2752227-56.patch"
                     },
                     "drupal/entity_browser": {
                         "2914385 - Fix PHP error": "https://www.drupal.org/files/issues/2023-10-10/2914385-25.patch",
@@ -6513,7 +6512,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-02-18T14:44:40+00:00"
+            "time": "2025-02-22T17:45:04+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
