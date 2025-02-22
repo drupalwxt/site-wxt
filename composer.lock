@@ -1190,30 +1190,29 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.31.0",
+            "version": "3.35.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.31"
+                "reference": "8.x-3.35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.31.zip",
-                "reference": "8.x-3.31",
-                "shasum": "cf2ea2ee56e3fb98b1dc9f8af17942078f1f56bc"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.35.zip",
+                "reference": "8.x-3.35",
+                "shasum": "2c2e078782b6e9cce1bd0db494e20506ac79033d"
             },
             "require": {
-                "drupal/core": "^9.5 || ^10",
+                "drupal/core": "^10 || ^11",
                 "drupal/jquery_ui": "^1.6.0",
-                "drupal/jquery_ui_draggable": "^2.0.0",
-                "drupal/jquery_ui_resizable": "^2.0.0",
-                "php": ">=8.1.0"
+                "drupal/jquery_ui_draggable": "^2.1.0",
+                "drupal/jquery_ui_resizable": "^2.1.0"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.31",
-                    "datestamp": "1718994537",
+                    "version": "8.x-3.35",
+                    "datestamp": "1737761612",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1231,24 +1230,23 @@
             ],
             "authors": [
                 {
-                    "name": "Mark Carver (markcarver)",
-                    "homepage": "https://www.drupal.org/u/markcarver",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "John McCormick (neardark)",
-                    "homepage": "https://www.drupal.org/u/neardark",
-                    "role": "Co-maintainer"
-                },
-                {
                     "name": "Fabiano Sant'Ana (wundo)",
                     "homepage": "https://www.drupal.org/u/wundo",
-                    "role": "Co-maintainer"
+                    "role": "Maintainer"
                 },
                 {
                     "name": "Shelane French (shelane)",
                     "homepage": "https://www.drupal.org/u/shelane",
-                    "role": "Co-maintainer"
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Joseph Olstad (joseph.olstad)",
+                    "homepage": "https://www.drupal.org/u/josepholstad",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
                 }
             ],
             "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
@@ -1257,7 +1255,7 @@
                 "source": "https://git.drupalcode.org/project/bootstrap",
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
-                "irc": "irc://irc.freenode.org/drupal-bootstrap"
+                "slack": "https://drupal.slack.com/archives/C36LX1NK1"
             }
         },
         {
@@ -6434,30 +6432,30 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "8.5.0",
+            "version": "8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-8.5"
+                "reference": "8.x-8.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-8.5.zip",
-                "reference": "8.x-8.5",
-                "shasum": "4d8c70c2e674f83337a741782f9e7fc8dafdb377"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-8.6.zip",
+                "reference": "8.x-8.6",
+                "shasum": "abdfa3dc2a38905e7a87006f51cac599fadc33d2"
             },
             "require": {
                 "composer/installers": "^1.2 || ^2.1",
                 "cweagans/composer-patches": "^1.7",
-                "drupal/bootstrap": "3.31",
+                "drupal/bootstrap": "^3.35",
                 "drupal/core": "10.*",
                 "oomphinc/composer-installers-extender": "^1.1 || ^2"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-8.5",
-                    "datestamp": "1719888215",
+                    "version": "8.x-8.6",
+                    "datestamp": "1740067937",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6668,12 +6666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "6ce67df0771a32cddec0b56bc03bd149e73fb939"
+                "reference": "995aa528db2ceff207cea7a6ec3a8296cac4c50d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/6ce67df0771a32cddec0b56bc03bd149e73fb939",
-                "reference": "6ce67df0771a32cddec0b56bc03bd149e73fb939",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/995aa528db2ceff207cea7a6ec3a8296cac4c50d",
+                "reference": "995aa528db2ceff207cea7a6ec3a8296cac4c50d",
                 "shasum": ""
             },
             "require": {
@@ -6754,7 +6752,7 @@
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.2.0-beta5",
                 "drupal/webform_migrate": "2.0.x-dev",
-                "drupal/wxt_bootstrap": "8.5",
+                "drupal/wxt_bootstrap": "8.6",
                 "drupal/wxt_library": "8.3",
                 "ext-dom": "*",
                 "npm-asset/dropzone": "^5.7.4",
@@ -6826,9 +6824,6 @@
                     "drupal/webform": {
                         "Enter drupal/webform patch #3205860 description here": "https://www.drupal.org/files/issues/2021-03-26/webform_clientside_validation-3205860-2.patch"
                     },
-                    "drupal/bootstrap": {
-                        "3249470 - Error generated when importing translation": "https://www.drupal.org/files/issues/2021-11-17/3249470-3.patch"
-                    },
                     "drupal/paragraphs": {
                         "Enter drupal/paragraphs patch #2878615 description here": "https://www.drupal.org/files/issues/comments_entity_uri-2878615-6.patch"
                     },
@@ -6838,8 +6833,7 @@
                     "drupal/page_manager": {
                         "Enter drupal/page_manager patch #2626090 description here": "https://www.drupal.org/files/issues/page-manager-2626090-page-title-empty-5.patch",
                         "Enter drupal/page_manager patch #2710169 description here": "https://www.drupal.org/files/issues/page_manager-block-css-attributes-9.patch",
-                        "Enter drupal/page_manager patch #2752227 description here": "https://www.drupal.org/files/issues/2021-04-14/2752227-47.patch",
-                        "Enter drupal/page_manager patch #3096408 description here": "https://www.drupal.org/files/issues/2019-11-23/Issue-3096408-Page-Manager-issue-with-conflict-modul.patch"
+                        "Enter drupal/page_manager patch #2752227 description here": "https://www.drupal.org/files/issues/2021-04-14/2752227-47.patch"
                     },
                     "drupal/entity_browser": {
                         "2914385 - Fix PHP error": "https://www.drupal.org/files/issues/2023-10-10/2914385-25.patch",
@@ -6905,7 +6899,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.4.x"
             },
-            "time": "2025-02-13T17:47:53+00:00"
+            "time": "2025-02-22T17:51:29+00:00"
         },
         {
             "name": "egulias/email-validator",
