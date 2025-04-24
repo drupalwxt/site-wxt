@@ -6371,12 +6371,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "38a34cdd9fafb3009978ffe44eb3e19517723ee2"
+                "reference": "565fe83e7fcfa5a8faea758f064348a827006fa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/38a34cdd9fafb3009978ffe44eb3e19517723ee2",
-                "reference": "38a34cdd9fafb3009978ffe44eb3e19517723ee2",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/565fe83e7fcfa5a8faea758f064348a827006fa6",
+                "reference": "565fe83e7fcfa5a8faea758f064348a827006fa6",
                 "shasum": ""
             },
             "require": {
@@ -6540,7 +6540,8 @@
                         "3244311 - Allow <details> element to be placed without <div>": "https://www.drupal.org/files/issues/2024-11-15/3244311-9.patch"
                     },
                     "drupal/layout_builder_st": {
-                        "3411037 - Fix core removing contextual translation links": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/5.patch"
+                        "3411037 - Fix core removing contextual translation links": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/5.patch",
+                        "3420063 - Call to a member function getConfig() OverridesSectionStorage.php": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/6.diff"
                     },
                     "drupal/block_content_permissions": {
                         "2920739 - Allow accessing the 'Custom block library' page without 'Administer blocks' permission": "https://www.drupal.org/files/issues/2022-07-26/2920739-55.access_listing_page.patch"
@@ -6598,7 +6599,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-04-24T22:19:04+00:00"
+            "time": "2025-04-24T22:35:20+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
