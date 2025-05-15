@@ -6371,12 +6371,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "565fe83e7fcfa5a8faea758f064348a827006fa6"
+                "reference": "579544abe098a0217000a3ec2af7a9dd6909d4b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/565fe83e7fcfa5a8faea758f064348a827006fa6",
-                "reference": "565fe83e7fcfa5a8faea758f064348a827006fa6",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/579544abe098a0217000a3ec2af7a9dd6909d4b0",
+                "reference": "579544abe098a0217000a3ec2af7a9dd6909d4b0",
                 "shasum": ""
             },
             "require": {
@@ -6422,7 +6422,7 @@
                 "drupal/image_widget_crop": "2.x-dev@dev",
                 "drupal/inline_entity_form": "^3.0@RC",
                 "drupal/layout_builder_restrictions": "^3.0",
-                "drupal/layout_builder_st": "dev-2.0.x#68f690c8",
+                "drupal/layout_builder_st": "dev-2.0.x",
                 "drupal/layout_builder_styles": "^2.1",
                 "drupal/layout_library": "^1.0@beta",
                 "drupal/linkit": "^7.0",
@@ -6599,7 +6599,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-04-24T22:35:20+00:00"
+            "time": "2025-05-15T01:49:25+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
