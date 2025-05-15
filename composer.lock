@@ -6624,12 +6624,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "03c90a89909c3d9d15b8c5739423e056f587a031"
+                "reference": "62eca69f3515d3e2fc615fda7fa9ad78bee358ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/03c90a89909c3d9d15b8c5739423e056f587a031",
-                "reference": "03c90a89909c3d9d15b8c5739423e056f587a031",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/62eca69f3515d3e2fc615fda7fa9ad78bee358ee",
+                "reference": "62eca69f3515d3e2fc615fda7fa9ad78bee358ee",
                 "shasum": ""
             },
             "require": {
@@ -6798,7 +6798,7 @@
                         "2843247 - Drupal ajax error of undefined method getFileUri() while selecting newly uploaded image": "https://www.drupal.org/files/issues/2025-02-13/entity-browser-2843247-16.patch"
                     },
                     "drupal/layout_builder_st": {
-                        "3411037 - Fix core removing contextual translation links": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/5.patch",
+                        "3411037 - Fix core removing contextual translation links": "https://www.drupal.org/files/issues/2025-05-14/3411037-contextual-links-removed-from-core-26.patch",
                         "3420063 - Call to a member function getConfig() OverridesSectionStorage.php": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/6.diff"
                     },
                     "drupal/block_content_permissions": {
@@ -6855,9 +6855,9 @@
             "description": "Project template for Drupal 10 sites built with the WxT distribution.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt/issues",
-                "source": "https://github.com/drupalwxt/wxt/tree/5.4.1"
+                "source": "https://github.com/drupalwxt/wxt/tree/5.4.x"
             },
-            "time": "2025-03-14T16:05:00+00:00"
+            "time": "2025-05-15T01:35:19+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -19215,7 +19215,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
