@@ -9,7 +9,7 @@
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "10.4.x",
-        "drupalwxt/wxt": "5.4.3"
+        "drupalwxt/wxt": "5.4.x-dev"
     },
     "require-dev": {
         "drupal/core-dev": "10.4.x",
