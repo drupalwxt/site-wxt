@@ -8,12 +8,12 @@
     "require": {
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.7",
-        "drupal/core-composer-scaffold": "11.1.*",
-        "drupalwxt/wxt": "6.1.x-dev"
+        "drupal/core-composer-scaffold": "^11.2",
+        "drupalwxt/wxt": "6.2.x-dev"
     },
     "require-dev": {
-        "drupal/core-dev": "11.1.*",
-        "drupal/drupal": "^11.1",
+        "drupal/core-dev": "^11.2",
+        "drupal/drupal": "^11.2",
         "drupal/drupal-extension": "5.0.0-alpha1",
         "drush/drush": "^13.3.3",
         "oomphinc/composer-installers-extender": "^1.1 || ^2",
@@ -31,6 +31,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
+            "drupal/core-recipe-unpack": true,
             "drupal/core-vendor-hardening": true,
             "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true,
