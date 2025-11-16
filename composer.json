@@ -31,6 +31,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
+            "drupal/core-recipe-unpack": true,
             "drupal/core-vendor-hardening": true,
             "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true,
@@ -68,6 +69,7 @@
         }
     ],
     "scripts": {
+        "drush": "docker compose exec -w /var/www/html web /var/www/vendor/bin/drush",
         "post-install-cmd": [
             "@copy-composer-directory"
         ],
