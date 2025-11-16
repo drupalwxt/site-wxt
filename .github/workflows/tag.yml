@@ -14,12 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: Export github reference var
-      run: echo "GITHUB_REFERENCE=$(echo ${GITHUB_REF#refs/tags/})" >> $GITHUB_ENV
-
-    - uses: statcan/actions/composer@master
+    - name: Setup PHP 8.3
+      uses: shivammathur/setup-php@v2
       with:
-        args: require drupalwxt/wxt:${{ env.GITHUB_REFERENCE }}
+        php-version: '8.3'
 
     - name: Build out the Drupal infrastructure
       run: |
