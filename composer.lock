@@ -6392,12 +6392,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "ef2c8afd08fb50aa8349928a9783c68782036b25"
+                "reference": "34e6f21547d2ecad721c5b7496a313c345f93840"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ef2c8afd08fb50aa8349928a9783c68782036b25",
-                "reference": "ef2c8afd08fb50aa8349928a9783c68782036b25",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/34e6f21547d2ecad721c5b7496a313c345f93840",
+                "reference": "34e6f21547d2ecad721c5b7496a313c345f93840",
                 "shasum": ""
             },
             "require": {
@@ -6476,7 +6476,7 @@
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.3@alpha",
                 "drupalwxt/wxt_bootstrap": "11.1.*",
-                "drupalwxt/wxt_library": "11.1.x-dev",
+                "drupalwxt/wxt_library": "11.1.*",
                 "ext-dom": "*",
                 "fontawesome/fontawesome": "^6.4",
                 "npm-asset/dropzone": "^5.7.4",
@@ -6609,7 +6609,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.1.x"
             },
-            "time": "2025-11-16T02:37:25+00:00"
+            "time": "2025-11-16T03:54:16+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
@@ -6680,16 +6680,16 @@
         },
         {
             "name": "drupalwxt/wxt_library",
-            "version": "11.1.x-dev",
+            "version": "11.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_library.git",
-                "reference": "b18096130c7a01c3a36308926d55bfc0c93c219a"
+                "reference": "b580612dfe12c49d4066b8a821663ed7800224fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/b18096130c7a01c3a36308926d55bfc0c93c219a",
-                "reference": "b18096130c7a01c3a36308926d55bfc0c93c219a",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/b580612dfe12c49d4066b8a821663ed7800224fa",
+                "reference": "b580612dfe12c49d4066b8a821663ed7800224fa",
                 "shasum": ""
             },
             "require": {
@@ -6705,7 +6705,7 @@
                 "wet-boew/theme-gcwu-fegc": "4.0.27",
                 "wet-boew/theme-ogpl": "4.0.27",
                 "wet-boew/theme-wet-boew": "4.0.41",
-                "wet-boew/wet-boew": "4.0.85"
+                "wet-boew/wet-boew": "4.0.91"
             },
             "type": "drupal-module",
             "extra": {
@@ -6739,9 +6739,9 @@
             "description": "Integrates Drupal with the WET-BOEW jQuery Framework Assets.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt_library/issues",
-                "source": "https://github.com/drupalwxt/wxt_library/tree/11.1.x"
+                "source": "https://github.com/drupalwxt/wxt_library/tree/11.1.0"
             },
-            "time": "2025-04-23T01:47:55+00:00"
+            "time": "2025-11-16T03:43:53+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -11496,15 +11496,15 @@
         },
         {
             "name": "wet-boew/wet-boew",
-            "version": "v4.0.85",
+            "version": "v4.0.91",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wet-boew/wet-boew-cdn.git",
-                "reference": "v4.0.85"
+                "reference": "v4.0.91"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.85.tar.gz"
+                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.91.tar.gz"
             },
             "type": "drupal-library"
         }
