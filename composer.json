@@ -50,6 +50,7 @@
         }
     ],
     "scripts": {
+        "drush": "docker compose exec -w /var/www/html web /var/www/vendor/bin/drush",
         "post-create-project-cmd": "rm -r -f behat.yml",
         "quick-start": [
             "composer install"
