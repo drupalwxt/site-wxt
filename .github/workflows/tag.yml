@@ -25,7 +25,7 @@ jobs:
       run: |
         export DB_TYPE=mysql
         export DB_PORT=3306
-        git clone --branch 11.1.x https://github.com/drupalwxt/docker-scaffold.git docker
+        git clone --branch 11.2.x https://github.com/drupalwxt/docker-scaffold.git docker
         make build
         docker compose -f docker-compose.ci.yml up -d
         docker ps -a
@@ -37,6 +37,4 @@ jobs:
         export DB_PORT=3306
         make drupal_install
         make drupal_migrate
-        # Change ownership on html/core to allow files to be copied (see drupal_cs in Makefile)
-        sudo chown -R $(id -u) html/core
         make test

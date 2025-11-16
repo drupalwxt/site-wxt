@@ -69,6 +69,7 @@
         }
     ],
     "scripts": {
+        "drush": "docker compose exec -w /var/www/html web /var/www/vendor/bin/drush",
         "post-install-cmd": [
             "@copy-composer-directory"
         ],
