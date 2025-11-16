@@ -9427,7 +9427,7 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v7.2.9",
+            "version": "7.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
@@ -9485,7 +9485,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v7.2.9"
+                "source": "https://github.com/symfony/http-foundation/tree/7.2"
             },
             "funding": [
                 {
@@ -9494,10 +9494,6 @@
                 },
                 {
                     "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/nicolas-grekas",
                     "type": "github"
                 },
                 {
@@ -18839,5 +18835,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
