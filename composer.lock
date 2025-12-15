@@ -6636,12 +6636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "f3cb6584a83de92565280cfd9da0fccf0182fd0c"
+                "reference": "b1eaebc09c1b48c0ea75cbeeb90bcb5fdff41028"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/f3cb6584a83de92565280cfd9da0fccf0182fd0c",
-                "reference": "f3cb6584a83de92565280cfd9da0fccf0182fd0c",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/b1eaebc09c1b48c0ea75cbeeb90bcb5fdff41028",
+                "reference": "b1eaebc09c1b48c0ea75cbeeb90bcb5fdff41028",
                 "shasum": ""
             },
             "require": {
@@ -6689,7 +6689,7 @@
                 "drupal/image_widget_crop": "^2.1",
                 "drupal/inline_entity_form": "^1.0-rc12",
                 "drupal/layout_builder_restrictions": "^3.0",
-                "drupal/layout_builder_st": "^1.0@alpha",
+                "drupal/layout_builder_st": "^1.0-alpha2",
                 "drupal/layout_builder_styles": "^2.0",
                 "drupal/layout_library": "^1.0-beta1",
                 "drupal/linkit": "^6.1",
@@ -6806,6 +6806,10 @@
                     "drupal/entity_browser": {
                         "2843247 - Drupal ajax error of undefined method getFileUri() while selecting newly uploaded image": "https://www.drupal.org/files/issues/2025-02-13/entity-browser-2843247-16.patch"
                     },
+                    "drupal/layout_builder_st": {
+                        "3411037 - Fix core removing contextual translation links": "https://www.drupal.org/files/issues/2025-05-14/3411037-contextual-links-removed-from-core-26.patch",
+                        "3420063 - Call to a member function getConfig() OverridesSectionStorage.php": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/6.diff"
+                    },
                     "drupal/block_content_permissions": {
                         "2920739 - Allow accessing the 'Custom block library' page without 'Administer blocks' permission": "https://www.drupal.org/files/issues/2022-07-26/2920739-55.access_listing_page.patch"
                     }
@@ -6862,7 +6866,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.4.x"
             },
-            "time": "2025-12-14T18:50:47+00:00"
+            "time": "2025-12-15T01:27:07+00:00"
         },
         {
             "name": "egulias/email-validator",
