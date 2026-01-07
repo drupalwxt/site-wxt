@@ -6337,17 +6337,17 @@
         },
         {
             "name": "drupal/wxt_bootstrap",
-            "version": "8.6.0",
+            "version": "10.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_bootstrap.git",
-                "reference": "8.x-8.6"
+                "reference": "10.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-8.x-8.6.zip",
-                "reference": "8.x-8.6",
-                "shasum": "abdfa3dc2a38905e7a87006f51cac599fadc33d2"
+                "url": "https://ftp.drupal.org/files/projects/wxt_bootstrap-10.6.0.zip",
+                "reference": "10.6.0",
+                "shasum": "7e6d651d40bc26878fca2f2039b4d5897e101f2f"
             },
             "require": {
                 "composer/installers": "^1.2 || ^2.1",
@@ -6359,8 +6359,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-8.6",
-                    "datestamp": "1740067937",
+                    "version": "10.6.0",
+                    "datestamp": "1767815334",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6453,17 +6453,17 @@
         },
         {
             "name": "drupal/wxt_library",
-            "version": "8.3.0",
+            "version": "10.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wxt_library.git",
-                "reference": "8.x-8.3"
+                "reference": "10.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/wxt_library-8.x-8.3.zip",
-                "reference": "8.x-8.3",
-                "shasum": "05b4126f4b9bf03641055c9b73f05a9eb2a996b8"
+                "url": "https://ftp.drupal.org/files/projects/wxt_library-10.6.0.zip",
+                "reference": "10.6.0",
+                "shasum": "3ee7d5695f28b9c7510d35c5de11f67acebb70bb"
             },
             "require": {
                 "composer/installers": "^1.2 || ^2.1",
@@ -6483,8 +6483,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-8.3",
-                    "datestamp": "1719885162",
+                    "version": "10.6.0",
+                    "datestamp": "1767815185",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6571,12 +6571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "b66a61d19868a7af3b0a83098316717d6b9f3073"
+                "reference": "e025538ca6b931b337aef84148b404509a60cecb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/b66a61d19868a7af3b0a83098316717d6b9f3073",
-                "reference": "b66a61d19868a7af3b0a83098316717d6b9f3073",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/e025538ca6b931b337aef84148b404509a60cecb",
+                "reference": "e025538ca6b931b337aef84148b404509a60cecb",
                 "shasum": ""
             },
             "require": {
@@ -6657,8 +6657,8 @@
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.2.0-beta5",
                 "drupal/webform_migrate": "2.0.x-dev",
-                "drupal/wxt_bootstrap": "8.6",
-                "drupal/wxt_library": "8.3",
+                "drupal/wxt_bootstrap": "^10.6",
+                "drupal/wxt_library": "^10.6",
                 "ext-dom": "*",
                 "npm-asset/dropzone": "^5.7.4",
                 "phpdocumentor/reflection-docblock": "^5",
@@ -6797,7 +6797,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.6.x"
             },
-            "time": "2026-01-07T18:42:08+00:00"
+            "time": "2026-01-07T19:49:56+00:00"
         },
         {
             "name": "egulias/email-validator",
