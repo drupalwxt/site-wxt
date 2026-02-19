@@ -6484,12 +6484,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "7c0376bf00904e4c760d0897154e40c54e3a6498"
+                "reference": "cfe0591f4baa57bc13d2b4ace0f6ac0df155b81d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/7c0376bf00904e4c760d0897154e40c54e3a6498",
-                "reference": "7c0376bf00904e4c760d0897154e40c54e3a6498",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/cfe0591f4baa57bc13d2b4ace0f6ac0df155b81d",
+                "reference": "cfe0591f4baa57bc13d2b4ace0f6ac0df155b81d",
                 "shasum": ""
             },
             "require": {
@@ -6633,6 +6633,10 @@
                     "drupal/fontawesome": {
                         "3274028 - CKEditor 5 compatibility": "https://www.drupal.org/files/issues/2026-01-10/fontawesome-cke5-compatibility-3274028-72.patch.patch"
                     },
+                    "drupal/entity_embed": {
+                        "3086162 - Prevent bug of adding img attributes to the parent div.": "https://www.drupal.org/files/issues/2020-06-15/entity_embed-remove_image_attributes_from_div-3086162-13_0.patch",
+                        "3531672 - Tooltip fix for embedded entities relating to cke5 updates included in Drupal 11.2.10/11.3.2 ..": "https://www.drupal.org/files/issues/2025-12-22/entity_embed.issue-3531672-62.patch"
+                    },
                     "drupal/page_manager": {
                         "Enter drupal/page_manager patch #2626090 description here": "https://www.drupal.org/files/issues/page-manager-2626090-page-title-empty-5.patch",
                         "Enter drupal/page_manager patch #2752227 description here": "https://www.drupal.org/files/issues/2025-01-15/2752227-56.patch"
@@ -6705,7 +6709,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.2.x"
             },
-            "time": "2026-02-19T03:28:11+00:00"
+            "time": "2026-02-19T04:21:38+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
