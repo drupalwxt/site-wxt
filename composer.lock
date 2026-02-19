@@ -6568,12 +6568,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "163dc3404959fe1b54b6cc861152762b86b44487"
+                "reference": "9bf7bf242888a812d61ee835c5f449c49dbb84c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/163dc3404959fe1b54b6cc861152762b86b44487",
-                "reference": "163dc3404959fe1b54b6cc861152762b86b44487",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/9bf7bf242888a812d61ee835c5f449c49dbb84c8",
+                "reference": "9bf7bf242888a812d61ee835c5f449c49dbb84c8",
                 "shasum": ""
             },
             "require": {
@@ -6670,6 +6670,7 @@
                 "phpspec/prophecy-phpunit": "^2",
                 "squizlabs/php_codesniffer": "3.*"
             },
+            "default-branch": true,
             "type": "drupal-profile",
             "extra": {
                 "drush": {
@@ -6724,6 +6725,10 @@
                     },
                     "drupal/fontawesome": {
                         "3071758 - Fix multiple icons issue": "https://git.drupalcode.org/project/fontawesome/-/merge_requests/4.diff"
+                    },
+                    "drupal/entity_embed": {
+                        "3086162 - Prevent bug of adding img attributes to the parent div.": "https://www.drupal.org/files/issues/2020-06-15/entity_embed-remove_image_attributes_from_div-3086162-13_0.patch",
+                        "3531672 - Tooltip fix for embedded entities relating to cke5 updates included in Drupal 11.2.10/11.3.2 ..": "https://www.drupal.org/files/issues/2025-12-22/entity_embed.issue-3531672-62.patch"
                     },
                     "drupal/page_manager": {
                         "Enter drupal/page_manager patch #2626090 description here": "https://www.drupal.org/files/issues/page-manager-2626090-page-title-empty-5.patch",
@@ -6793,7 +6798,7 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/5.6.x"
             },
-            "time": "2026-01-13T03:30:23+00:00"
+            "time": "2026-02-19T04:23:21+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -19460,5 +19465,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
