@@ -6717,12 +6717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_bootstrap.git",
-                "reference": "8837351ee0f6effed4ef36be4d3ccfcfed4593a9"
+                "reference": "d53e48f5a0a72c489158c2fa41a589bcf2fe9a05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/8837351ee0f6effed4ef36be4d3ccfcfed4593a9",
-                "reference": "8837351ee0f6effed4ef36be4d3ccfcfed4593a9",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/d53e48f5a0a72c489158c2fa41a589bcf2fe9a05",
+                "reference": "d53e48f5a0a72c489158c2fa41a589bcf2fe9a05",
                 "shasum": ""
             },
             "require": {
@@ -6776,7 +6776,7 @@
                 "issues": "https://github.com/drupalwxt/wxt_bootstrap/issues",
                 "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.2.x"
             },
-            "time": "2025-11-16T05:24:16+00:00"
+            "time": "2026-02-22T05:34:25+00:00"
         },
         {
             "name": "drupalwxt/wxt_library",
@@ -6784,12 +6784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_library.git",
-                "reference": "e81d6a2a8ea4c69c1aa1b1aeabc169e31abe7eb7"
+                "reference": "9af392e6a0131bfb2eb4ea8b9421254640d504dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/e81d6a2a8ea4c69c1aa1b1aeabc169e31abe7eb7",
-                "reference": "e81d6a2a8ea4c69c1aa1b1aeabc169e31abe7eb7",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/9af392e6a0131bfb2eb4ea8b9421254640d504dc",
+                "reference": "9af392e6a0131bfb2eb4ea8b9421254640d504dc",
                 "shasum": ""
             },
             "require": {
@@ -6798,7 +6798,7 @@
                 "drupal/core": "^11.2",
                 "oomphinc/composer-installers-extender": "^1.1 || ^2",
                 "wet-boew/theme-base": "4.0.27",
-                "wet-boew/theme-gc-intranet": "4.0.43.1",
+                "wet-boew/theme-gc-intranet": "5.0.5",
                 "wet-boew/theme-gc-intranet-legacy": "4.0.27",
                 "wet-boew/theme-gcweb": "18.3.0",
                 "wet-boew/theme-gcweb-legacy": "4.0.29",
@@ -6841,7 +6841,7 @@
                 "issues": "https://github.com/drupalwxt/wxt_library/issues",
                 "source": "https://github.com/drupalwxt/wxt_library/tree/11.2.x"
             },
-            "time": "2026-02-19T03:26:46+00:00"
+            "time": "2026-02-22T04:53:42+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -11629,15 +11629,15 @@
         },
         {
             "name": "wet-boew/theme-gc-intranet",
-            "version": "v4.0.43.1",
+            "version": "v5.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/themes-cdn.git",
-                "reference": "v4.0.43.1-theme-gc-intranet"
+                "reference": "v5.0.5-theme-gc-intranet"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/drupalwxt/themes-cdn/archive/v4.0.43.1-theme-gc-intranet.tar.gz"
+                "url": "https://github.com/drupalwxt/themes-cdn/archive/v5.0.5-theme-gc-intranet.tar.gz"
             },
             "type": "drupal-library"
         },
