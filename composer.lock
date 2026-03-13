@@ -6410,12 +6410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "ad6c731ddae88900e01b21195cf9cb348287b656"
+                "reference": "ce17825417881693e31d4b63bd88c912c835fe0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ad6c731ddae88900e01b21195cf9cb348287b656",
-                "reference": "ad6c731ddae88900e01b21195cf9cb348287b656",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/ce17825417881693e31d4b63bd88c912c835fe0b",
+                "reference": "ce17825417881693e31d4b63bd88c912c835fe0b",
                 "shasum": ""
             },
             "require": {
@@ -6493,8 +6493,8 @@
                 "drupal/views_bootstrap": "5.3.*",
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.3@beta",
-                "drupalwxt/wxt_bootstrap": "11.3.x-dev",
-                "drupalwxt/wxt_library": "11.3.x-dev",
+                "drupalwxt/wxt_bootstrap": "^11.3",
+                "drupalwxt/wxt_library": "^11.3",
                 "ext-dom": "*",
                 "fontawesome/fontawesome": "^6.4",
                 "npm-asset/dropzone": "^5.7.4",
@@ -6638,11 +6638,11 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.3.x"
             },
-            "time": "2026-03-12T02:49:16+00:00"
+            "time": "2026-03-13T03:33:00+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
-            "version": "11.3.x-dev",
+            "version": "11.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_bootstrap.git",
@@ -6703,13 +6703,13 @@
             "description": "WxT Bootstrap theme for Drupal WxT.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt_bootstrap/issues",
-                "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.3.x"
+                "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.3.0"
             },
             "time": "2026-03-12T02:45:10+00:00"
         },
         {
             "name": "drupalwxt/wxt_library",
-            "version": "11.3.x-dev",
+            "version": "11.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_library.git",
@@ -6768,7 +6768,7 @@
             "description": "Integrates Drupal with the WET-BOEW jQuery Framework Assets.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt_library/issues",
-                "source": "https://github.com/drupalwxt/wxt_library/tree/11.2.0"
+                "source": "https://github.com/drupalwxt/wxt_library/tree/11.3.0"
             },
             "time": "2026-02-22T04:53:42+00:00"
         },
@@ -7883,7 +7883,6 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
                 "source": "https://github.com/pear/Console_Getopt"
             },
-            "abandoned": true,
             "time": "2019-11-20T18:27:48+00:00"
         },
         {
