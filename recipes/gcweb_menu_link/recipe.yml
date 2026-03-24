@@ -1,0 +1,8 @@
+name: GCWeb Menu Link
+description: Imports GCWeb menu links (EN + FR)
+type: Site
+install:
+  - system
+  - menu_link_content
+config:
+  strict: false

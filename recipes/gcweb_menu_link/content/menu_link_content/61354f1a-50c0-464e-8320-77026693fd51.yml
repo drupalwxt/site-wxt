@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 61354f1a-50c0-464e-8320-77026693fd51
+  bundle: menu_link_content
+  default_langcode: en
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Policing, justice and emergencies'
+  description:
+    -
+      value: 'Policing, justice and emergencies section.'
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      uri: 'https://www.canada.ca/en/services/policing.html'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: true
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 10
+  expanded:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1774317051

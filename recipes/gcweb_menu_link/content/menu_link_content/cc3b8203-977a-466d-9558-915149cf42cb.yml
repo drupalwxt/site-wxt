@@ -1,0 +1,56 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: cc3b8203-977a-466d-9558-915149cf42cb
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    eb5e055c-4910-4225-92bf-d707580bb991: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Améliorations multilingues'
+  description:
+    -
+      value: 'Améliorations multilingues de Drupal 11.'
+  menu_name:
+    -
+      value: sidebar_fr
+  link:
+    -
+      uri: 'https://www.drupal.org/features/multilingual'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: true
+  parent:
+    -
+      value: 'menu_link_content:eb5e055c-4910-4225-92bf-d707580bb991'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1774317099

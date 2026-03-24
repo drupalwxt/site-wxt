@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: a3d8614a-84ff-4dd2-bf6a-a523765288cc
+  bundle: menu_link_content
+  default_langcode: fr
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Impôts
+  menu_name:
+    -
+      value: main-fr
+  link:
+    -
+      uri: 'https://www.canada.ca/fr/services/impots.html'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: true
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 8
+  expanded:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1774317099

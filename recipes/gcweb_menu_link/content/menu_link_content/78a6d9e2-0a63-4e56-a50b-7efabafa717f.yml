@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 78a6d9e2-0a63-4e56-a50b-7efabafa717f
+  bundle: menu_link_content
+  default_langcode: fr
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Argent et finance'
+  description:
+    -
+      value: 'Argent et finance section.'
+  menu_name:
+    -
+      value: footer-fr
+  link:
+    -
+      uri: 'https://www.canada.ca/fr/services/finance.html'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: true
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 13
+  expanded:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1774317099

@@ -1,0 +1,56 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: d810d840-e0f8-4550-a625-19b91c46bce3
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    68614df8-75f6-43fd-823c-85cd659dba8e: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Drupal WxT (Drupal.org)'
+  description:
+    -
+      value: 'Drupal WxT on Drupal.org.'
+  menu_name:
+    -
+      value: sidebar
+  link:
+    -
+      uri: 'http://drupal.org/project/wxt'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: true
+  parent:
+    -
+      value: 'menu_link_content:68614df8-75f6-43fd-823c-85cd659dba8e'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1774317051

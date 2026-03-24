@@ -1,0 +1,56 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 818cf65f-e74e-4ace-9a90-07849371c0be
+  bundle: menu_link_content
+  default_langcode: fr
+  depends:
+    e24281d8-a922-4e7f-b477-124e5f926aa9: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Drupal WxT pour Drupal 11'
+  description:
+    -
+      value: 'Drupal WxT pour Drupal 11'
+  menu_name:
+    -
+      value: sidebar_fr
+  link:
+    -
+      uri: 'internal:/node/1'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: true
+  parent:
+    -
+      value: 'menu_link_content:e24281d8-a922-4e7f-b477-124e5f926aa9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1774317099
