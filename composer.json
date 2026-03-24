@@ -9,6 +9,7 @@
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^11.3",
+        "drupal/default_content": "^2.0@beta",
         "drupalwxt/wxt": "6.3.x-dev"
     },
     "require-dev": {
