@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4181c73e79683bd1624a5d3e06d7514",
+    "content-hash": "58d7414fb41e8377b652f20629680744",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1253,6 +1253,10 @@
             ],
             "description": "This module is going to generate layouts with Bootstrap grid system.",
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
+            "keywords": [
+                "Actively maintained",
+                "Content display"
+            ],
             "support": {
                 "source": "http://cgit.drupalcode.org/bootstrap_layouts",
                 "issues": "https://www.drupal.org/project/issues/bootstrap_layouts"
@@ -2157,6 +2161,10 @@
             ],
             "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
             "homepage": "https://www.drupal.org/project/ctools",
+            "keywords": [
+                "Actively maintained",
+                "Administration tools"
+            ],
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
@@ -3511,30 +3519,31 @@
         },
         {
             "name": "drupal/footnotes",
-            "version": "4.0.0-rc3",
+            "version": "4.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/footnotes.git",
-                "reference": "4.0.0-rc3"
+                "reference": "4.0.0-rc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/footnotes-4.0.0-rc3.zip",
-                "reference": "4.0.0-rc3",
-                "shasum": "47392ed18ec15794165e02c083a941d183f52e32"
+                "url": "https://ftp.drupal.org/files/projects/footnotes-4.0.0-rc4.zip",
+                "reference": "4.0.0-rc4",
+                "shasum": "35771ef0ad252abe6b638cb1279f3a0e871ef548"
             },
             "require": {
                 "drupal/core": ">=10.0"
             },
             "require-dev": {
                 "drupal/metatag": "^2.0",
-                "drupal/search_api": "*"
+                "drupal/search_api": "*",
+                "drupal/token": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0-rc3",
-                    "datestamp": "1789628527",
+                    "version": "4.0.0-rc4",
+                    "datestamp": "1795126927",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3921,6 +3930,10 @@
             ],
             "description": "Provides jQuery UI library.",
             "homepage": "https://www.drupal.org/project/jquery_ui",
+            "keywords": [
+                "Developer tools",
+                "Minimally maintained"
+            ],
             "support": {
                 "source": "https://git.drupalcode.org/project/jquery_ui"
             }
@@ -4414,7 +4427,7 @@
             "extra": {
                 "drupal": {
                     "version": "7.0.18",
-                    "datestamp": "1794259888",
+                    "datestamp": "1795209362",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4447,14 +4460,14 @@
                 {
                     "name": "mark_fullmer",
                     "homepage": "https://www.drupal.org/user/2612816"
-                },
-                {
-                    "name": "utexas",
-                    "homepage": "https://www.drupal.org/user/3716409"
                 }
             ],
             "description": "Linkit - Enriched linking experience",
             "homepage": "http://drupal.org/project/linkit",
+            "keywords": [
+                "Administration tools",
+                "Minimally maintained"
+            ],
             "support": {
                 "source": "http://cgit.drupalcode.org/linkit",
                 "issues": "http://drupal.org/project/linkit"
@@ -6520,12 +6533,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "2e89b8507ec99ea055dffbf4851eb88896d43421"
+                "reference": "019336dbce0534214ca6cef27139e621e222a515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/2e89b8507ec99ea055dffbf4851eb88896d43421",
-                "reference": "2e89b8507ec99ea055dffbf4851eb88896d43421",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/019336dbce0534214ca6cef27139e621e222a515",
+                "reference": "019336dbce0534214ca6cef27139e621e222a515",
                 "shasum": ""
             },
             "require": {
@@ -6585,7 +6598,7 @@
                 "drupal/migrate_tools": "^6.1",
                 "drupal/page_manager": "^4.0@RC",
                 "drupal/panels": "^4.10",
-                "drupal/paragraphs": "^1.19",
+                "drupal/paragraphs": "^1.23",
                 "drupal/password_policy": "^4.0",
                 "drupal/pathauto": "^1.14",
                 "drupal/redirect": "^1.12",
@@ -6616,7 +6629,7 @@
                 "drupal/core-dev": "11.3.*",
                 "drupal/drupal-extension": "^5.2",
                 "drush/drush": "^13.3.3",
-                "oomphinc/composer-installers-extender": "^1.1 || ^2",
+                "mnsami/composer-custom-directory-installer": "^2.1",
                 "phpspec/prophecy-phpunit": "^2",
                 "squizlabs/php_codesniffer": "3.*"
             },
@@ -6733,20 +6746,20 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.3.x"
             },
-            "time": "2026-11-19T21:20:28+00:00"
+            "time": "2026-11-20T20:44:30+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
-            "version": "11.3.2",
+            "version": "11.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_bootstrap.git",
-                "reference": "db3f8ba5a4cb2fbd39828c216298c98bea21b7f1"
+                "reference": "45429b5186202c06acf8c36020c5a24c813598d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/db3f8ba5a4cb2fbd39828c216298c98bea21b7f1",
-                "reference": "db3f8ba5a4cb2fbd39828c216298c98bea21b7f1",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/45429b5186202c06acf8c36020c5a24c813598d1",
+                "reference": "45429b5186202c06acf8c36020c5a24c813598d1",
                 "shasum": ""
             },
             "require": {
@@ -6754,7 +6767,7 @@
                 "cweagans/composer-patches": "^1.7",
                 "drupal/bootstrap": "^3.39",
                 "drupal/core": "^11.2",
-                "oomphinc/composer-installers-extender": "^1.1 || ^2"
+                "mnsami/composer-custom-directory-installer": "^2.1"
             },
             "type": "drupal-theme",
             "extra": {
@@ -6798,29 +6811,29 @@
             "description": "WxT Bootstrap theme for Drupal WxT.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt_bootstrap/issues",
-                "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.3.2"
+                "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.3.3"
             },
-            "time": "2026-11-19T20:55:27+00:00"
+            "time": "2026-11-20T21:05:08+00:00"
         },
         {
             "name": "drupalwxt/wxt_library",
-            "version": "11.3.2",
+            "version": "11.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_library.git",
-                "reference": "bde536b2dce109cf4212deefb6ac69809da581fd"
+                "reference": "1d0f22d168accc435110f0c45c1a0150d3610025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/bde536b2dce109cf4212deefb6ac69809da581fd",
-                "reference": "bde536b2dce109cf4212deefb6ac69809da581fd",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/1d0f22d168accc435110f0c45c1a0150d3610025",
+                "reference": "1d0f22d168accc435110f0c45c1a0150d3610025",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.2 || ^2.1",
                 "cweagans/composer-patches": "^1.7",
                 "drupal/core": "^11.2",
-                "oomphinc/composer-installers-extender": "^1.1 || ^2",
+                "mnsami/composer-custom-directory-installer": "^2.1",
                 "wet-boew/theme-base": "4.0.27",
                 "wet-boew/theme-gc-intranet": "5.0.5",
                 "wet-boew/theme-gc-intranet-legacy": "4.0.27",
@@ -6863,9 +6876,9 @@
             "description": "Integrates Drupal with the WET-BOEW jQuery Framework Assets.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt_library/issues",
-                "source": "https://github.com/drupalwxt/wxt_library/tree/11.3.2"
+                "source": "https://github.com/drupalwxt/wxt_library/tree/11.3.3"
             },
-            "time": "2026-11-19T20:44:32+00:00"
+            "time": "2026-11-20T20:55:44+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -7101,22 +7114,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.16.3",
+            "version": "7.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c88a78082757dd5a0c44191651535259fcb6e605"
+                "reference": "9888e03ac453dbea608b68dbd1f5dd6f688d651c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c88a78082757dd5a0c44191651535259fcb6e605",
-                "reference": "c88a78082757dd5a0c44191651535259fcb6e605",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9888e03ac453dbea608b68dbd1f5dd6f688d651c",
+                "reference": "9888e03ac453dbea608b68dbd1f5dd6f688d651c",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^2.6",
-                "guzzlehttp/psr7": "^2.13.4",
+                "guzzlehttp/promises": "^2.6.1",
+                "guzzlehttp/psr7": "^2.13.5",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.5 || ^3.0",
@@ -7209,7 +7222,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.16.3"
+                "source": "https://github.com/guzzle/guzzle/tree/7.16.4"
             },
             "funding": [
                 {
@@ -7225,20 +7238,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-17T16:23:09+00:00"
+            "time": "2026-11-20T18:11:43+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154"
+                "reference": "a1b6aceb39165acd5c421239e6abfa1b83dbe224"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/3d88c829bd5f13d13847b39067dbf09a60af2154",
-                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a1b6aceb39165acd5c421239e6abfa1b83dbe224",
+                "reference": "a1b6aceb39165acd5c421239e6abfa1b83dbe224",
                 "shasum": ""
             },
             "require": {
@@ -7293,7 +7306,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.6.0"
+                "source": "https://github.com/guzzle/promises/tree/2.6.1"
             },
             "funding": [
                 {
@@ -7309,7 +7322,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-18T12:46:59+00:00"
+            "time": "2026-11-20T00:03:12+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -7748,6 +7761,82 @@
             "time": "2022-09-29T08:45:17+00:00"
         },
         {
+            "name": "mnsami/composer-custom-directory-installer",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mnsami/composer-custom-directory-installer.git",
+                "reference": "66df9d4430c32f191ff12476ddbaea68915f2999"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mnsami/composer-custom-directory-installer/zipball/66df9d4430c32f191ff12476ddbaea68915f2999",
+                "reference": "66df9d4430c32f191ff12476ddbaea68915f2999",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.3",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "composer/installers": "^2.3",
+                "friendsofphp/php-cs-fixer": "^3.75",
+                "phpstan/phpstan": "^2.3",
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "Composer\\CustomDirectoryInstaller\\LibraryPlugin",
+                    "Composer\\CustomDirectoryInstaller\\PluginPlugin"
+                ],
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\CustomDirectoryInstaller\\": "src/Composer/CustomDirectoryInstaller"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mina Nabil Sami",
+                    "email": "mina.nsami@gmail.com"
+                }
+            ],
+            "description": "A composer plugin, to help install packages of different types in custom paths.",
+            "homepage": "https://github.com/mnsami/composer-custom-directory-installer",
+            "keywords": [
+                "composer",
+                "composer-installer",
+                "composer-plugin",
+                "custom-path",
+                "drupal",
+                "installer-paths",
+                "monorepo",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/mnsami/composer-custom-directory-installer/issues",
+                "security": "https://github.com/mnsami/composer-custom-directory-installer/security/policy",
+                "source": "https://github.com/mnsami/composer-custom-directory-installer"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/mnsami",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-10-13T23:16:14+00:00"
+        },
+        {
             "name": "npm-asset/dropzone",
             "version": "5.9.3",
             "dist": {
@@ -7759,64 +7848,6 @@
             "license": [
                 "MIT"
             ]
-        },
-        {
-            "name": "oomphinc/composer-installers-extender",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oomphinc/composer-installers-extender.git",
-                "reference": "cbf4b6f9a24153b785d09eee755b995ba87bd5f9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/cbf4b6f9a24153b785d09eee755b995ba87bd5f9",
-                "reference": "cbf4b6f9a24153b785d09eee755b995ba87bd5f9",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1 || ^2.0",
-                "composer/installers": "^1.0 || ^2.0",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "composer/composer": "^2.0",
-                "phpunit/phpunit": "^7.2",
-                "squizlabs/php_codesniffer": "^3.3"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "OomphInc\\ComposerInstallersExtender\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Beemsterboer",
-                    "email": "stephen@oomphinc.com",
-                    "homepage": "https://github.com/balbuf"
-                },
-                {
-                    "name": "Nathan Dentzau",
-                    "email": "nate@oomphinc.com",
-                    "homepage": "http://oomph.is/ndentzau"
-                }
-            ],
-            "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
-            "homepage": "http://www.oomphinc.com/",
-            "support": {
-                "issues": "https://github.com/oomphinc/composer-installers-extender/issues",
-                "source": "https://github.com/oomphinc/composer-installers-extender/tree/2.0.1"
-            },
-            "abandoned": true,
-            "time": "2021-12-15T12:32:42+00:00"
         },
         {
             "name": "oscarotero/html-parser",
@@ -11836,16 +11867,16 @@
     "packages-dev": [
         {
             "name": "behat/behat",
-            "version": "v3.34.0",
+            "version": "v3.35.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "044fea2f1706abafdf3184e6c4146ac9f9ba7d5a"
+                "reference": "bd51092ed0c274eda63687e8163814c9391cfb52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/044fea2f1706abafdf3184e6c4146ac9f9ba7d5a",
-                "reference": "044fea2f1706abafdf3184e6c4146ac9f9ba7d5a",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/bd51092ed0c274eda63687e8163814c9391cfb52",
+                "reference": "bd51092ed0c274eda63687e8163814c9391cfb52",
                 "shasum": ""
             },
             "require": {
@@ -11855,7 +11886,7 @@
                 "cucumber/tag-expressions": "^11.0",
                 "ext-mbstring": "*",
                 "nikic/php-parser": "^4.19.2 || ^5.2",
-                "php": ">=8.2 <8.6",
+                "php": ">=8.2 <8.7",
                 "psr/container": "^1.0 || ^2.0",
                 "symfony/config": "^5.4 || ^6.4 || ^7.0",
                 "symfony/console": "^5.4.9 || ^6.4 || ^7.0",
@@ -11921,7 +11952,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Behat/issues",
-                "source": "https://github.com/Behat/Behat/tree/v3.34.0"
+                "source": "https://github.com/Behat/Behat/tree/v3.35.1"
             },
             "funding": [
                 {
@@ -11937,30 +11968,31 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-27T15:42:00+00:00"
+            "time": "2026-11-20T17:38:00+00:00"
         },
         {
             "name": "behat/gherkin",
-            "version": "v4.18.0",
+            "version": "v4.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "496248b29d9d7848311a263c2d17c1860e4c7b6c"
+                "reference": "dc765f07d85be8d97a5782bc845f51c3055c115f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/496248b29d9d7848311a263c2d17c1860e4c7b6c",
-                "reference": "496248b29d9d7848311a263c2d17c1860e4c7b6c",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/dc765f07d85be8d97a5782bc845f51c3055c115f",
+                "reference": "dc765f07d85be8d97a5782bc845f51c3055c115f",
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2.2",
-                "php": ">=8.1 <8.6"
+                "php": ">=8.1 <8.7"
             },
             "require-dev": {
-                "cucumber/gherkin-monorepo": "dev-gherkin-v42.0.1",
+                "cucumber/gherkin-monorepo": "dev-gherkin-v43.0.0",
+                "cweagans/composer-patches": "^2.0",
                 "friendsofphp/php-cs-fixer": "^3.77",
-                "mikey179/vfsstream": "^1.6",
+                "mikey179/vfsstream": "1.6.12",
                 "phpstan/extension-installer": "^1",
                 "phpstan/phpstan": "2.2.14",
                 "phpstan/phpstan-deprecation-rules": "^2.0",
@@ -12005,7 +12037,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Gherkin/issues",
-                "source": "https://github.com/Behat/Gherkin/tree/v4.18.0"
+                "source": "https://github.com/Behat/Gherkin/tree/v4.19.0"
             },
             "funding": [
                 {
@@ -12021,7 +12053,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-25T21:26:10+00:00"
+            "time": "2026-11-20T10:20:57+00:00"
         },
         {
             "name": "behat/mink",
@@ -13099,16 +13131,16 @@
         },
         {
             "name": "consolidation/robo",
-            "version": "5.2.3",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/robo.git",
-                "reference": "78a541531cb613e9ce825b64ef3aa666d1e95598"
+                "reference": "2a2327b8dc6c893b76a6fc1cfe51cb785a38b7e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/robo/zipball/78a541531cb613e9ce825b64ef3aa666d1e95598",
-                "reference": "78a541531cb613e9ce825b64ef3aa666d1e95598",
+                "url": "https://api.github.com/repos/consolidation/robo/zipball/2a2327b8dc6c893b76a6fc1cfe51cb785a38b7e2",
+                "reference": "2a2327b8dc6c893b76a6fc1cfe51cb785a38b7e2",
                 "shasum": ""
             },
             "require": {
@@ -13131,11 +13163,11 @@
                 "codegyre/robo": "*"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.95.30",
                 "natxet/cssmin": "3.0.4",
                 "patchwork/jsqueeze": "^2",
                 "pear/archive_tar": "^1.4.4",
                 "phpunit/phpunit": "^7.5.20 || ^8 || ^9",
-                "squizlabs/php_codesniffer": "^3.6",
                 "yoast/phpunit-polyfills": "^0.2.0"
             },
             "suggest": {
@@ -13166,9 +13198,9 @@
             "description": "Modern task runner",
             "support": {
                 "issues": "https://github.com/consolidation/robo/issues",
-                "source": "https://github.com/consolidation/robo/tree/5.2.3"
+                "source": "https://github.com/consolidation/robo/tree/5.2.4"
             },
-            "time": "2026-11-12T17:53:46+00:00"
+            "time": "2026-11-20T19:31:06+00:00"
         },
         {
             "name": "consolidation/self-update",
