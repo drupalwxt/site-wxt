@@ -9,11 +9,11 @@
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^11.3",
-        "drupalwxt/wxt": "6.3.x-dev"
+        "drupalwxt/wxt": "6.4.x-dev"
     },
     "require-dev": {
-        "drupal/core-dev": "^11.3",
-        "drupal/drupal": "^11.3",
+        "drupal/core-dev": "^11.4",
+        "drupal/drupal": "^11.4",
         "drupal/drupal-extension": "^5.2",
         "drush/drush": "^13.3.3",
         "mnsami/composer-custom-directory-installer": "^2.1",
@@ -36,6 +36,7 @@
             "mnsami/composer-custom-directory-installer": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
+            "symfony/runtime": true,
             "tbachert/spi": true
         }
     },
