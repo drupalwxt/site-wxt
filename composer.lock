@@ -5738,6 +5738,10 @@
             ],
             "description": "Creates a standard conform hreflang XML sitemap of the site content and provides a framework for developing other sitemap types.",
             "homepage": "https://drupal.org/project/simple_sitemap",
+            "keywords": [
+                "Actively maintained",
+                "Multilingual"
+            ],
             "support": {
                 "source": "https://cgit.drupalcode.org/simple_sitemap",
                 "issues": "https://drupal.org/project/issues/simple_sitemap"
@@ -6584,12 +6588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "1f6a6bb936f15bf42346af7c2559d4f4e49a10d1"
+                "reference": "444259aff9c645304528fb6ddde0dab8695a51b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/1f6a6bb936f15bf42346af7c2559d4f4e49a10d1",
-                "reference": "1f6a6bb936f15bf42346af7c2559d4f4e49a10d1",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/444259aff9c645304528fb6ddde0dab8695a51b5",
+                "reference": "444259aff9c645304528fb6ddde0dab8695a51b5",
                 "shasum": ""
             },
             "require": {
@@ -6667,8 +6671,8 @@
                 "drupal/views_bootstrap": "5.3.*",
                 "drupal/views_infinite_scroll": "^2.0",
                 "drupal/webform": "^6.3@beta",
-                "drupalwxt/wxt_bootstrap": "^11.3",
-                "drupalwxt/wxt_library": "^11.3",
+                "drupalwxt/wxt_bootstrap": "^11.4",
+                "drupalwxt/wxt_library": "^11.4",
                 "ext-dom": "*",
                 "fontawesome/fontawesome": "^6.4",
                 "npm-asset/dropzone": "^5.7.4",
@@ -6795,27 +6799,27 @@
                 "issues": "https://github.com/drupalwxt/wxt/issues",
                 "source": "https://github.com/drupalwxt/wxt/tree/6.4.x"
             },
-            "time": "2026-11-24T15:31:07+00:00"
+            "time": "2026-11-24T18:34:57+00:00"
         },
         {
             "name": "drupalwxt/wxt_bootstrap",
-            "version": "11.3.3",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_bootstrap.git",
-                "reference": "45429b5186202c06acf8c36020c5a24c813598d1"
+                "reference": "cf2051080181e70bfce52582bf6598291ecd8a4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/45429b5186202c06acf8c36020c5a24c813598d1",
-                "reference": "45429b5186202c06acf8c36020c5a24c813598d1",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_bootstrap/zipball/cf2051080181e70bfce52582bf6598291ecd8a4b",
+                "reference": "cf2051080181e70bfce52582bf6598291ecd8a4b",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.2 || ^2.1",
                 "cweagans/composer-patches": "^1.7",
                 "drupal/bootstrap": "^3.39",
-                "drupal/core": "^11.2",
+                "drupal/core": "^11.4",
                 "mnsami/composer-custom-directory-installer": "^2.1"
             },
             "type": "drupal-theme",
@@ -6860,28 +6864,28 @@
             "description": "WxT Bootstrap theme for Drupal WxT.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt_bootstrap/issues",
-                "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.3.3"
+                "source": "https://github.com/drupalwxt/wxt_bootstrap/tree/11.4.0"
             },
-            "time": "2026-11-20T21:05:08+00:00"
+            "time": "2026-11-24T16:46:30+00:00"
         },
         {
             "name": "drupalwxt/wxt_library",
-            "version": "11.3.3",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt_library.git",
-                "reference": "1d0f22d168accc435110f0c45c1a0150d3610025"
+                "reference": "f65bc56f98b6b8a41d00f0fedb1e2e0cd4b052b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/1d0f22d168accc435110f0c45c1a0150d3610025",
-                "reference": "1d0f22d168accc435110f0c45c1a0150d3610025",
+                "url": "https://api.github.com/repos/drupalwxt/wxt_library/zipball/f65bc56f98b6b8a41d00f0fedb1e2e0cd4b052b0",
+                "reference": "f65bc56f98b6b8a41d00f0fedb1e2e0cd4b052b0",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.2 || ^2.1",
                 "cweagans/composer-patches": "^1.7",
-                "drupal/core": "^11.2",
+                "drupal/core": "^11.4",
                 "mnsami/composer-custom-directory-installer": "^2.1",
                 "wet-boew/theme-base": "4.0.27",
                 "wet-boew/theme-gc-intranet": "5.0.5",
@@ -6925,9 +6929,9 @@
             "description": "Integrates Drupal with the WET-BOEW jQuery Framework Assets.",
             "support": {
                 "issues": "https://github.com/drupalwxt/wxt_library/issues",
-                "source": "https://github.com/drupalwxt/wxt_library/tree/11.3.3"
+                "source": "https://github.com/drupalwxt/wxt_library/tree/11.4.0"
             },
-            "time": "2026-11-20T20:55:44+00:00"
+            "time": "2026-11-24T16:24:08+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -14999,16 +15003,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.27",
+            "version": "v0.3.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2"
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/abdfc75a1ae6c6f21522daed50da7124cbff09d2",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/72247703c4d4ac1d6122955c90433aa9429bd236",
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236",
                 "shasum": ""
             },
             "require": {
@@ -15051,9 +15055,9 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "source": "https://github.com/laravel/prompts/tree/v0.3.27"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.28"
             },
-            "time": "2026-11-09T16:07:10+00:00"
+            "time": "2026-11-23T14:41:10+00:00"
         },
         {
             "name": "league/container",
